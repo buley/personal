@@ -4,9 +4,9 @@ import { Menu, X } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
 
 const AppLayout = () => {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedContent, setSelectedContent] = useState<string | null>(null);
-  const [mediaUrl, setMediaUrl] = useState("/api/placeholder/1920/1080");
+  const mediaUrl = "/api/placeholder/1920/1080";
 
   // Navigation structure
   const primaryNav = [
@@ -40,31 +40,12 @@ const AppLayout = () => {
     ],
   };
 
-  // NavButton renders each link in a stark, monospace style.
-  const NavButton = ({
-    title,
-    path,
-  }: {
-    title: string;
-    path: string;
-  }) => (
-    <button
-      onClick={() => {
-        setSelectedContent(path);
-        setIsMobileMenuOpen(false);
-      }}
-      className={`
-        font-mono text-xs tracking-widest
-        ${selectedContent === path ? "font-bold underline" : "font-normal"}
-        transition-colors duration-200
-      `}
-    >
-      {title}
-    </button>
-  );
+  const handleNavClick = (path: string) => {
+    setSelectedContent(path);
+    setMobileMenuOpen(false);
+  };
 
-  // Helper: find the title for the selected content.
-  const findTitle = (path: string) => {
+  const getTitle = (path: string) => {
     const allItems = [
       ...Object.values(secondaryNav).flat(),
       ...primaryNav,
@@ -73,78 +54,121 @@ const AppLayout = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden relative">
+    <div className="relative min-h-screen bg-black text-white">
       {/* Background Media */}
-      <div className="fixed inset-0 z-0">
+      <div className="absolute inset-0">
         <img
           src={mediaUrl}
           alt="Background"
-          className="object-cover w-full h-full opacity-10"
+          className="w-full h-full object-cover opacity-10"
         />
       </div>
 
-      {/* Mobile Menu Toggle */}
+      {/* Mobile Hamburger Menu */}
       <button
-        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="fixed top-8 right-8 z-50 md:hidden focus:outline-none"
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        className="fixed top-4 right-4 z-50 md:hidden focus:outline-none"
       >
-        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Navigation */}
-      <nav
-        className={`
-          fixed z-40 
-          ${
-            isMobileMenuOpen
-              ? "inset-0 bg-black p-8 flex flex-col space-y-12"
-              : "hidden md:flex flex-col bottom-8 left-8"
-          }
-          transition-all duration-300
-        `}
-      >
-        <div className="flex flex-col space-y-8">
+      {/* Desktop Navigation - Bottom Left */}
+      <nav className="hidden md:block fixed bottom-4 left-4 z-40">
+        <div className="space-y-6">
           {Object.entries(secondaryNav).map(([group, items]) => (
             <div key={group}>
-              <h3 className="text-[10px] font-bold uppercase tracking-widest mb-2">
+              <h3 className="text-[10px] font-bold uppercase tracking-widest">
                 {group}
               </h3>
-              <ul className="space-y-1">
+              <ul className="space-y-1 mt-1">
                 {items.map((item) => (
                   <li key={item.path}>
-                    <NavButton title={item.title} path={item.path} />
+                    <button
+                      onClick={() => handleNavClick(item.path)}
+                      className={`font-mono text-xs tracking-widest ${
+                        selectedContent === item.path ? "underline font-bold" : ""
+                      }`}
+                    >
+                      {item.title}
+                    </button>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-        <div className="pt-8 border-t border-white">
-          {primaryNav.map((item) => (
-            <div key={item.path} className="mt-2">
-              <NavButton title={item.title} path={item.path} />
-            </div>
-          ))}
+          <div className="border-t border-white pt-2">
+            {primaryNav.map((item) => (
+              <button
+                key={item.path}
+                onClick={() => handleNavClick(item.path)}
+                className={`font-mono text-xs tracking-widest block ${
+                  selectedContent === item.path ? "underline font-bold" : ""
+                }`}
+              >
+                {item.title}
+              </button>
+            ))}
+          </div>
         </div>
       </nav>
 
-      {/* Content Area */}
-      <main className="relative z-30 min-h-screen p-8 md:p-16 lg:p-24 flex items-center">
-        <Suspense
-          fallback={
-            <div className="animate-pulse space-y-4 max-w-3xl">
-              <div className="h-12 bg-white w-96"></div>
-              <div className="h-4 bg-white w-full"></div>
-              <div className="h-4 bg-white w-5/6"></div>
+      {/* Mobile Navigation Overlay */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden fixed inset-0 bg-black p-8 z-40 overflow-y-auto">
+          <div className="space-y-8">
+            {Object.entries(secondaryNav).map(([group, items]) => (
+              <div key={group}>
+                <h3 className="text-[10px] font-bold uppercase tracking-widest mb-2">
+                  {group}
+                </h3>
+                <ul className="space-y-2">
+                  {items.map((item) => (
+                    <li key={item.path}>
+                      <button
+                        onClick={() => handleNavClick(item.path)}
+                        className={`font-mono text-base tracking-widest ${
+                          selectedContent === item.path ? "underline font-bold" : ""
+                        }`}
+                      >
+                        {item.title}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            <div className="border-t border-white pt-4">
+              {primaryNav.map((item) => (
+                <div key={item.path} className="mt-2">
+                  <button
+                    onClick={() => handleNavClick(item.path)}
+                    className={`font-mono text-base tracking-widest ${
+                      selectedContent === item.path ? "underline font-bold" : ""
+                    }`}
+                  >
+                    {item.title}
+                  </button>
+                </div>
+              ))}
             </div>
-          }
-        >
-          {selectedContent && (
-            <div className="max-w-3xl mx-auto">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-12 tracking-tight">
-                {findTitle(selectedContent)}
+          </div>
+        </nav>
+      )}
+
+      {/* Content Area */}
+      <main className="relative z-30 flex items-center justify-center min-h-screen px-8 py-16">
+        <Suspense fallback={<div className="text-white">Loading…</div>}>
+          {selectedContent ? (
+            <div className="max-w-3xl w-full bg-black p-8 border border-white">
+              <h1 className="text-4xl md:text-6xl font-bold mb-8 tracking-tight">
+                {getTitle(selectedContent)}
               </h1>
               <MarkdownContent path={selectedContent} />
+            </div>
+          ) : (
+            <div className="text-center">
+              <h2 className="text-3xl md:text-5xl font-bold">Select a Section</h2>
+              <p className="mt-4">Use the navigation to explore content.</p>
             </div>
           )}
         </Suspense>

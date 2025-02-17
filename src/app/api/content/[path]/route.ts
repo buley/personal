@@ -11,7 +11,8 @@ export async function GET(
 ) {
   try {
     // Use process.cwd() to get the root directory
-    const filePath = path.join(cwd() + '/src', 'content', `${await params.path}.md`);
+    const resolvedParams = await params;
+    const filePath = path.join(cwd() + '/src', 'content', `${resolvedParams.path}.md`);
     const markdown = await fs.readFile(filePath, 'utf8');
     
     // Convert markdown to HTML

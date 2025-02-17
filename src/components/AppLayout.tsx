@@ -13,7 +13,7 @@ const AppLayout = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedContent, setSelectedContent] = useState<string | null>(null);
   // All sections are collapsed by default.
-  const [expandedSections, setExpandedSections] = useState({
+  const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({
     identity: false,
     operation: false,
     growth: false,
@@ -28,7 +28,11 @@ const AppLayout = () => {
     { title: "Manifesto", path: "manifesto" },
   ];
 
-  const secondaryNav = {
+  type SecondaryNavType = {
+    [key: string]: { title: string; path: string }[];
+  };
+
+  const secondaryNav: SecondaryNavType = {
     identity: [
       { title: "Who I Am", path: "personality" },
       { title: "How I'm Wired", path: "wired" },
@@ -66,7 +70,7 @@ const AppLayout = () => {
 
   // When the selected content changes, open its parent section.
   useEffect(() => {
-    const newExpanded = {};
+    const newExpanded: { [key: string]: boolean } = {};
     for (const group in secondaryNav) {
       // Open the section if any item in the group matches the current document.
       newExpanded[group] = secondaryNav[group].some(
@@ -180,8 +184,8 @@ const AppLayout = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:block fixed inset-y-8 left-8 z-40">
-        <div className="max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
+      <nav className="hidden md:flex fixed left-8 bottom-8 z-40">
+        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
           <div className="max-w-[250px] w-full space-y-4 pr-4">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} />
@@ -192,9 +196,7 @@ const AppLayout = () => {
                   key={item.path}
                   onClick={() => handleNavClick(item.path)}
                   className={`font-mono text-xs tracking-widest whitespace-normal block mt-2 w-full text-left hover:text-white transition-colors ${
-                    selectedContent === item.path
-                      ? "text-white"
-                      : "text-white/60"
+                    selectedContent === item.path ? "text-white" : "text-white/60"
                   }`}
                 >
                   {selectedContent === item.path ? "→ " : ""}
@@ -208,6 +210,7 @@ const AppLayout = () => {
           </div>
         </div>
       </nav>
+
 
       {/* Mobile Navigation */}
       <nav

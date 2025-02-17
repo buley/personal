@@ -1,5 +1,4 @@
 // app/api/funfact/route.ts
-import { NextRequest } from 'next/server';
 
 const facts = [
   "I’ve jet skiied across Lake Michigan",

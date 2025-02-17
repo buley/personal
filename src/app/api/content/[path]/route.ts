@@ -26,12 +26,13 @@ marked.setOptions({
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { path: string } }
+  context: { params: { path: string } }
 ) {
   try {
-    // Use process.cwd() to get the root directory
-    const resolvedParams = await params;
-    const filePath = path.join(cwd() + '/src', 'content', `${resolvedParams.path}.md`);
+    // Destructure the params from the context
+    const { path: contentPath } = context.params;
+    // Use path.join to build the file path properly
+    const filePath = path.join(cwd(), 'src', 'content', `${contentPath}.md`);
     const markdown = await fs.readFile(filePath, 'utf8');
     
     const options: MarkedOptions = {

@@ -152,12 +152,12 @@ const AppLayout = () => {
         )}
       </button>
       {expandedSections[group] && (
-        <ul className={`${isMobile ? "space-y-3 pl-3" : "space-y-1 pl-2"}`}>
+        <ul className={` ${isMobile ? "space-y-3 pl-3" : "space-y-1 pl-2"}`}>
           {items.map((item) => (
             <li key={item.path}>
               <button
                 onClick={() => handleNavClick(item.path)}
-                className={`font-mono tracking-widest whitespace-normal w-full text-left hover:text-white transition-colors ${
+                className={`marker:text-white font-mono tracking-widest whitespace-normal w-full text-left hover:text-white transition-colors ${
                   selectedContent === item.path
                     ? "text-white"
                     : "text-white/60"

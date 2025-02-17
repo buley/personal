@@ -26,18 +26,19 @@ marked.setOptions({
 
 export async function GET(
   request: NextRequest,
-  context: { params: { path: string } }
+  context: { params: Promise<{ path: string }> }  // Note the Promise type here
 ) {
   try {
-    // Destructure the params from the context
-    const { path: contentPath } = context.params;
-    // Use path.join to build the file path properly
+    // Await the params before destructuring
+    const { path: contentPath } = await context.params;
+
+    // Build the file path properly using cwd()
     const filePath = path.join(cwd(), 'src', 'content', `${contentPath}.md`);
     const markdown = await fs.readFile(filePath, 'utf8');
     
     const options: MarkedOptions = {
-      gfm: true, // GitHub Flavored Markdown
-      breaks: true, // Convert line breaks to <br>
+      gfm: true,   // GitHub Flavored Markdown
+      breaks: true // Convert line breaks to <br>
     };
 
     // Convert markdown to HTML
@@ -47,8 +48,8 @@ export async function GET(
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET',
-      },
+        'Access-Control-Allow-Methods': 'GET'
+      }
     });
   } catch (error) {
     console.error('Error loading content:', error);
@@ -61,7 +62,7 @@ export async function GET(
         status: 404,
         headers: {
           'Content-Type': 'application/json',
-          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Origin': '*'
         }
       }
     );

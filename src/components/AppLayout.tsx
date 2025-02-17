@@ -298,7 +298,7 @@ const AppLayout = () => {
             <div className="pt-4">
               <hr className="border-white/20 pt-4" />
               <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <a href="/">Taylor William Buley</a>
+                <Link href="/">Taylor William Buley</Link>
               </h1>
               <hr className="border-white/20 pt-4" />
             </div>

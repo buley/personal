@@ -1,7 +1,15 @@
 "use client";
 
 import React, { useState, useEffect, Suspense } from "react";
-import { Menu, X, ChevronDown, ChevronRight } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  ExternalLink,
+  Menu,
+  X,
+  ChevronDown,
+  ChevronRight,
+} from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
 import FunFact from "./FunFact";
@@ -12,18 +20,33 @@ const AppLayout = () => {
   const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedContent, setSelectedContent] = useState<string | null>(null);
-  // All sections are collapsed by default.
   const [expandedSections, setExpandedSections] = useState<{ [key: string]: boolean }>({
     identity: false,
     operation: false,
     growth: false,
     impact: false,
   });
-  const mediaUrl = "/api/placeholder/1920/1080";
+
+  // Initialize with a static seed to match the server-rendered HTML.
+  const [mediaUrl, setMediaUrl] = useState(`/api/placeholder/1920/1080?seed=static`);
+
+  useEffect(() => {
+    // After mount, update the background image URL with a dynamic seed.
+    const updateMediaUrl = () => {
+      setMediaUrl(`/api/placeholder/1920/1080?seed=${Date.now()}`);
+    };
+
+    updateMediaUrl(); // Set the initial dynamic URL after mount.
+
+    // Set up the interval for subsequent updates.
+    const interval = setInterval(updateMediaUrl, 10000);
+    return () => clearInterval(interval);
+  }, []);
 
   const primaryNav = [
-    { title: "Contact", path: "contact" },
     { title: "FAQ", path: "faq" },
+    { title: "Email", path: "mailto:buley@outlook.com?subject=website" },
+    { title: "Text", path: "tel:16503537653" },
     { title: "CV", path: "https://buley.info/" },
   ];
 
@@ -70,11 +93,10 @@ const AppLayout = () => {
     setSelectedContent(path || null);
   }, [pathname]);
 
-  // When the selected content changes, open its parent section.
+  // Open the parent section when selected content changes.
   useEffect(() => {
     const newExpanded: { [key: string]: boolean } = {};
     for (const group in secondaryNav) {
-      // Open the section if any item in the group matches the current document.
       newExpanded[group] = secondaryNav[group].some(
         (item) => item.path === selectedContent
       );
@@ -169,11 +191,13 @@ const AppLayout = () => {
         }
       `}</style>
 
+      {/* Background Image */}
       <div className="fixed inset-0">
         <img
+          key={mediaUrl}
           src={mediaUrl}
           alt="Background"
-          className="w-full h-full object-cover opacity-5 transition-opacity duration-1000"
+          className="opacity-55 w-full h-full object-cover transition-opacity duration-1000"
         />
       </div>
 
@@ -186,8 +210,8 @@ const AppLayout = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex fixed left-8 bottom-8 z-40">
-        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">          
+      <nav className="hidden bg-black md:flex fixed left-8 bottom-8 z-40 p-4">
+        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
           <div className="max-w-[250px] w-full space-y-4 pr-4">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} />
@@ -195,45 +219,53 @@ const AppLayout = () => {
             <div className="pt-4">
               <hr className="border-white/20 pt-4" />
               <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <a href="/">
-                  Taylor William Buley
-                </a>
+                <a href="/">Taylor William Buley</a>
               </h1>
               <hr className="border-white/20 pt-4" />
             </div>
-            <div>
-              {primaryNav.map((item) => (
-                item.path.startsWith("http") ? (
+            <div className="flex flex-row space-x-4 items-center">
+              {primaryNav.map((item) => {
+                let icon = null;
+                if (item.path.startsWith("http")) {
+                  icon = <ExternalLink size={14} className="ml-1" />;
+                } else if (item.path.startsWith("mailto")) {
+                  icon = <Mail size={14} className="ml-1" />;
+                } else if (item.path.startsWith("tel")) {
+                  icon = <Phone size={14} className="ml-1" />;
+                }
+                return item.path.startsWith("http") ||
+                  item.path.startsWith("mailto") ||
+                  item.path.startsWith("tel") ? (
                   <a
                     key={item.path}
                     href={item.path}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-mono text-xs tracking-widest whitespace-normal block mt-2 w-full text-left hover:text-white transition-colors text-white/60 hover:text-white"
+                    target={item.path.startsWith("http") ? "_blank" : "_self"}
+                    rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
+                    className="font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors text-white/60 hover:text-white flex items-center"
                   >
-                    {item.title} ↗
+                    {item.title}{" "}
+                    {icon && <span className="inline-flex items-center">{icon}</span>}
                   </a>
                 ) : (
                   <button
                     key={item.path}
                     onClick={() => handleNavClick(item.path)}
-                    className={`font-mono text-xs tracking-widest whitespace-normal block mt-2 w-full text-left hover:text-white transition-colors ${
+                    className={`font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors ${
                       selectedContent === item.path ? "text-white" : "text-white/60"
                     }`}
                   >
                     {selectedContent === item.path ? "→ " : ""}
                     {item.title}
                   </button>
-                )
-              ))}
+                );
+              })}
             </div>
-            <div className="pt-4">
+            <div>
               <FunFact />
             </div>
           </div>
         </div>
       </nav>
-
 
       {/* Mobile Navigation */}
       <nav
@@ -265,9 +297,7 @@ const AppLayout = () => {
             <div className="pt-4">
               <hr className="border-white/20 pt-4" />
               <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <a href="/">
-                  Taylor William Buley
-                </a>
+                <a href="/">Taylor William Buley</a>
               </h1>
               <hr className="border-white/20 pt-4" />
             </div>
@@ -311,8 +341,8 @@ const AppLayout = () => {
             </div>
           </main>
         ) : (
-          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center md:ml-[280px]">
-            <div className="text-center">
+          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-bottom justify-center md:ml-[280px]">
+            <div className="text-left">
               <h2 className="text-4xl md:text-6xl font-black tracking-tight">
                 Taylor William Buley
               </h2>

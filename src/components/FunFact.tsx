@@ -33,8 +33,11 @@ const FunFact = () => {
 
   if (isLoading || facts.length === 0) {
     return (
-      <div className="font-mono text-xs text-white/40">
-        Loading facts...
+      <div className="w-full">
+        {/* Reserve space with min-h */}
+        <div className="min-h-[40px] flex items-center justify-center">
+          <span className="font-mono text-xs text-white/40">Loading facts...</span>
+        </div>
       </div>
     );
   }

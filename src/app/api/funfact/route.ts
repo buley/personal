@@ -242,8 +242,9 @@ const facts = [
   "I have mastered, and have now completely forgotten, Morse code."
 ];
 
-export async function GET(_request: NextRequest) {
+export async function GET() {
   try {
+    
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
 
     return new Response(JSON.stringify({ fact: randomFact }), {

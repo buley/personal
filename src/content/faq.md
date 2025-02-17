@@ -1,6 +1,8 @@
-# Interacting With Me: A Guide
+# A No-Nonsense Guide: Navigating Interactions with Me
 
-> *"Clear communication prevents future complications."*
+> *"If someone can prove me wrong and show me my mistake in any thought or action, I shall gladly change; for I seek the truth, which never harmed anyone. The harm is to persist in one’s own self-deception and ignorance." — Marcus Aurelius*
+
+*Understanding these principles will help you navigate our interactions effectively. I value clarity over comfort, results over intentions, and direct communication over social niceties.*
 
 ## Core Traits & Tendencies
 
@@ -77,7 +79,3 @@ Only if their opinion is based on logic, credibility, and insight. Otherwise, no
 
 **What's the best way to work with you?**  
 Be sharp, be efficient, and bring value to the table. If you can think critically and execute effectively, we'll get along just fine.
-
----
-
-*Understanding these principles will help you navigate our interactions effectively. I value clarity over comfort, results over intentions, and direct communication over social niceties.*

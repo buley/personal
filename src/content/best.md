@@ -1,6 +1,8 @@
-# When I'm at My Best
+# Strategic Mastery: Operating at Full Capacity
 
-> *"Excellence is not a destination; it is a continuous journey that never ends."*
+> *"First say to yourself what you would be; and then do what you have to do." — Epictetus*
+
+*Peak performance isn't accidental—it's the result of deliberate conditions, conscious choices, and relentless refinement.*
 
 I am at my best when I am **solving high-stakes problems, breaking through constraints, and setting a new standard.** I thrive in environments that demand **strategy, adaptability, and high execution**—where independence is valued, and where **results matter more than appearances.**
 
@@ -92,7 +94,3 @@ When this becomes a liability—I get stuck in strategy mode instead of executin
 I am at my best when I am **engaged, decisive, and building something greater than what existed before me.** I operate at my highest level when I am **solving, leading, mastering, and executing with absolute clarity.**
 
 If I am not **pushing forward, breaking barriers, and setting the standard—then I am not truly at my best.**
-
----
-
-*Peak performance isn't accidental—it's the result of deliberate conditions, conscious choices, and relentless refinement.*

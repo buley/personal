@@ -1,6 +1,8 @@
-# Where I Need More Challenge
+# In Pursuit of Discomfort: Unlocking the Next Level
 
-> *"Comfort is the plateau where potential goes to die."*
+> *"Difficulties strengthen the mind, as labor does the body." — Seneca*
+
+*Comfort is not the enemy—complacency is. Every plateau is just a launching pad for the next ascent.*
 
 I thrive in **high-stakes environments that demand intelligence, precision, and strategic thinking.** I am at my best when I am solving complex problems, pushing boundaries, and operating at a level that forces me to refine my skills. But mastery isn't a destination—it's a process. If I'm not being challenged, I'm stagnating.
 
@@ -77,7 +79,3 @@ Growth doesn't just happen in my career—it happens in every aspect of life. I 
 5. Test myself beyond the professional sphere—physically, mentally, and emotionally
 
 I don't fear challenge—I seek it. But I also know that **if I'm not intentional about pushing myself, I risk stagnation disguised as mastery.** The next level is always there—I just have to step into it.
-
----
-
-*Comfort is not the enemy—complacency is. Every plateau is just a launching pad for the next ascent.*

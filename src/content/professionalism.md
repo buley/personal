@@ -1,6 +1,8 @@
-# Professional Strengths Analysis
+# Beyond One Discipline: A Playbook for Comprehensive Impact
 
-> *"True expertise lies not in a single skill, but in the ability to see connections others miss."*
+> *“Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.” — Sun Tzu*
+
+*Professional excellence isn't about mastering a single field—it's about bringing unique insight and systematic thinking to every domain you touch.*
 
 I am a **strategic thinker, independent problem-solver, and systems-oriented leader** with a deep understanding of human behavior and decision-making. My career has taken me across disciplines—from journalism to engineering to mediation—all unified by a core set of strengths that allow me to **analyze, optimize, and resolve complex issues with precision and clarity.**
 
@@ -91,7 +93,3 @@ Whether engineering systems, resolving disputes, or navigating negotiations, the
 5. Independence with influence
 
 I don't just work within systems—I redefine them.
-
----
-
-*Professional excellence isn't about mastering a single field—it's about bringing unique insight and systematic thinking to every domain you touch.*

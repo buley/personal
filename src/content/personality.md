@@ -1,6 +1,8 @@
-# Core Identity Analysis
+# Architect of My Own Design: The Convergence of Self-Knowledge and Strategy
 
-> *"Know yourself and you will win all battles."*
+> *“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Gustav Jung*
+
+*Understanding personality types isn't about fitting into boxes—it's about recognizing patterns that can be strategically leveraged or consciously redirected.*
 
 I am a **visionary strategist, independent thinker, and high-standard leader.** I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures. I don't conform—I create. I don't follow—I lead.
 
@@ -127,7 +129,3 @@ Across all frameworks, consistent themes emerge:
 - Control maintenance
 - Knowledge valuation
 - Implementation focus
-
----
-
-*Understanding personality types isn't about fitting into boxes—it's about recognizing patterns that can be strategically leveraged or consciously redirected.*

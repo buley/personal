@@ -1,6 +1,8 @@
-# Understanding Edges & Limitations
+# Mastering the Boundaries: Using Intensity to Build, Not Burn
 
-> *"True strength lies in knowing where your power ends."*
+> *“It is not the mountain we conquer, but ourselves.” — Sir Edmund Hillary*
+
+*Awareness of limitations isn't about correction—it's about strategic adaptation. The goal isn't to dull the blade, but to master its use.*
 
 I hold myself to high standards, but I recognize that my strengths come with sharp edges. My effectiveness is not just about leveraging my capabilities, but understanding where they might become limitations.
 
@@ -70,7 +72,3 @@ I recognize that:
 - Patience is sometimes as valuable as action
 
 **Growth for me is learning when to refine my intensity rather than diminish it.**
-
----
-
-*Awareness of limitations isn't about correction—it's about strategic adaptation. The goal isn't to dull the blade, but to master its use.*

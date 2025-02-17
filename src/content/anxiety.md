@@ -1,6 +1,8 @@
-# Managing Internal State: A Strategic Approach
+# Dismantling Anxiety: A System for Mind Mastery
 
-> *"Chaos in the mind creates chaos in the world. Order in the mind creates order in the world."*
+> *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions—not outside." —Marcus Aurelius*
+
+*This is not about managing anxiety—it's about mastering the mind. Every disruption is an opportunity to impose order, every challenge a chance to refine control.*
 
 Anxiety, at its core, is **a disruption of control, clarity, or certainty.** It's the mind running scenarios faster than it can process them, the body responding to threats that may not even exist, and the feeling of being stuck between **what is and what should be.**
 
@@ -86,7 +88,3 @@ I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my externa
 I don't tolerate **external inefficiency—so why would I tolerate it in myself?** **Anxiety is an unoptimized mental process.** I refine it, restructure it, and redirect it toward something that serves me.
 
 I don't just *cope* with anxiety. **I override it.**
-
----
-
-*This is not about managing anxiety—it's about mastering the mind. Every disruption is an opportunity to impose order, every challenge a chance to refine control.*

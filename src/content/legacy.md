@@ -1,6 +1,8 @@
-# What's My Legacy?
+# Driven by Design: Ensuring My Work Lives On
 
-> *"The meaning of life is to find your gift. The purpose of life is to give it away."*
+> *“What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.” — Pericles (adapted)*
+
+*A legacy is not what you leave behind, but what continues to build in your absence. True impact grows stronger, not weaker, with time.*
 
 I don't measure success by conventional standards—I measure it by **impact, mastery, and the systems I leave behind.** I am not interested in fleeting recognition, surface-level achievements, or being remembered for playing by the rules. My legacy is about **what I build, what I change, and how I reshape the spaces I move through.**
 
@@ -71,7 +73,3 @@ Distilled Version:
 
 **Core Truth:**  
 Legacy isn't something I think about at the end of my life—it's something I build every single day.
-
----
-
-*A legacy is not what you leave behind, but what continues to build in your absence. True impact grows stronger, not weaker, with time.*

@@ -1,6 +1,8 @@
-# Core Operating System: Independence, Logic, & Self-Sufficiency
+# Iron Spine, Open Mind: Balancing Independence and Insight
 
-> *"Character is not created in a moment, but revealed through a lifetime."*
+> *“Freedom is not the absence of commitments, but the ability to choose—and commit myself to—what is best for me.” — Paulo Coelho (adapted)*
+
+*Core wiring isn't destiny—it's foundation. The question isn't how to change it, but how to optimize it.*
 
 I am independent to my core. I don't expect others to take care of me, and I have no interest in taking responsibility for someone else's emotional well-being. I value relationships built on **mutual strength, intelligence, and respect—not dependency or emotional neediness.**
 
@@ -78,7 +80,3 @@ I learned early on that **self-reliance is the surest way to get things done.** 
 - Balance analysis with presence
 
 I will always value **autonomy, intelligence, and high standards**—that will never change. But I also know that true mastery isn't just about control; it's about **knowing when to push forward, when to let go, and when to fully engage.**
-
----
-
-*Core wiring isn't destiny—it's foundation. The question isn't how to change it, but how to optimize it.*

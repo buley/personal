@@ -1,6 +1,8 @@
-# When I'm at My Worst
+# From Mastery to Misalignment: A Map of My Worst Patterns and Their Corrections
 
-> *"Our greatest strengths, unchecked, become our greatest vulnerabilities."*
+> *“He who conquers himself is the mightiest warrior.” — Confucius (adapted)*
+
+*Understanding potential pitfalls isn't about self-criticism—it's about maintaining excellence through conscious course correction.*
 
 I know what I look like at my best—sharp, decisive, disciplined, and operating at the highest level. But when my strengths become unchecked, when I'm misaligned or caught in unproductive cycles, I can slip into patterns that work **against me instead of for me.**
 
@@ -107,7 +109,3 @@ Speed matters, but precision matters more. I move fast when I can, but I recogni
 6. Am I being strategic, or just resisting for the sake of resistance?
 
 Knowing my best means I also need to know my worst. If I'm slipping into these patterns, I course-correct immediately.
-
----
-
-*Understanding potential pitfalls isn't about self-criticism—it's about maintaining excellence through conscious course correction.*

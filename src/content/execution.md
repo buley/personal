@@ -1,6 +1,8 @@
-# Execution & Accountability
+# Action Over Intention: Building a Legacy Through Execution
 
-> *"Vision without execution is hallucination."*
+> *“How long are you going to wait before you demand the best for yourself?” — Epictetus*
+
+*Analysis without action is merely philosophy. Every insight demands implementation, every understanding requires execution.*
 
 Self-awareness is only as valuable as the **action it leads to.** I now have a complete understanding of how I operate—my strengths, my blind spots, my patterns, and my highest potential. Now, the focus shifts to **execution, consistency, and accountability.**
 
@@ -84,7 +86,3 @@ If I don't actively integrate these insights into my daily life, they become **i
 5. I don't just exist—I move, lead, and create
 
 Now, there is nothing left to analyze—**only action remains.**
-
----
-
-*Analysis without action is merely philosophy. Every insight demands implementation, every understanding requires execution.*

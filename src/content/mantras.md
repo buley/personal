@@ -1,6 +1,8 @@
-# Meditations & Mantras
+# Disciplined Resolve: Meditations on Strategy, Self-Control, and Success
 
-> *"The discipline of the mind shapes the reality of tomorrow."*
+> *“Waste no more time arguing about what a good man should be. Be one.” — Marcus Aurelius*
+
+*These mantras are not mere words—they are principles of operation, standards of excellence, and guides for mastery.*
 
 ## Self-Mastery & Control
 
@@ -97,7 +99,3 @@
 - Make moves that future you will thank you for
 - Your name should mean something when spoken
 - Do something worthy of being remembered
-
----
-
-*These mantras are not mere words—they are principles of operation, standards of excellence, and guides for mastery.*

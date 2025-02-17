@@ -1,11 +1,12 @@
-# A Note on Interaction Style
+# No Comfort Zone: Engaging with My Unfiltered Method
 
-> *"The truth is rarely pure and never simple."* — Oscar Wilde
+> *“It is no measure of health to be well adjusted to a profoundly sick society.” — Jiddu Krishnamurti*
+
+*I build, solve, and lead. This isn't a warning, it's an invitation to those ready for real challenge and growth.*
 
 ## Core Traits
 
 I operate with unwavering directness, analytical precision, and steadfast independence. My approach may be challenging for those who:
-
 - Seek constant validation
 - Prefer comfort over growth
 - Expect unconditional agreement
@@ -25,7 +26,3 @@ You'll thrive in my presence if you value:
 - Strategic thinking
 - Continuous improvement
 - Direct communication
-
-## Final Note
-
-I build, solve, and lead. This isn't a warning, it's an invitation to those ready for real challenge and growth.

@@ -1,6 +1,8 @@
-# My Definition of Success
+# My Standard, My Scale: Measuring Success by Personal Mastery
 
-> *"True success is not measured by what you achieve, but by what you become."*
+> *“Do not go where the path may lead, go instead where there is no path and leave a trail.” — Ralph Waldo Emerson*
+
+*Success is not a destination to reach, but a standard to maintain. External metrics are irrelevant when you build your own measuring stick.*
 
 I don't measure success the way most people do. Titles, external validation, and societal benchmarks don't define me. **Success, for me, is not about fitting into someone else's system—it's about mastering my own.**
 
@@ -94,7 +96,3 @@ Success isn't about being comfortable—it's about living fully aligned with who
    Standard: Complete congruence between values and actions
 
 If the answer to these is yes, then I am succeeding—no matter how anyone else defines it.
-
----
-
-*Success is not a destination to reach, but a standard to maintain. External metrics are irrelevant when you build your own measuring stick.*

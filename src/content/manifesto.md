@@ -1,6 +1,8 @@
-# Personal Manifesto
+# Unshakable: Living on My Own Terms, Building Without Limits
 
-> *"Vision without compromise is the foundation of extraordinary achievement."*
+> *“The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.” — Friedrich Nietzsche*
+
+*A manifesto is not a preference—it is a declaration of non-negotiable standards that shape reality.*
 
 I am fiercely independent, relentlessly driven, and unapologetically original. My path is my own, forged by vision, discipline, and a refusal to accept mediocrity. I don't follow convention—I challenge it. I don't seek validation—I create impact. I don't settle—I build.
 
@@ -81,7 +83,3 @@ The right people will:
 - Build something lasting
 
 This is my path. This is my purpose. This is my unshakable commitment to building a life that is truly mine.
-
----
-
-*A manifesto is not a preference—it is a declaration of non-negotiable standards that shape reality.*

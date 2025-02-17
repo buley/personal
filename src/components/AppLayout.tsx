@@ -152,12 +152,12 @@ const AppLayout = () => {
         )}
       </button>
       {expandedSections[group] && (
-        <ul className={`${isMobile ? "space-y-3 pl-3" : "space-y-1 pl-2"}`}>
+        <ul className={` ${isMobile ? "space-y-3 pl-3" : "space-y-1 pl-2"}`}>
           {items.map((item) => (
             <li key={item.path}>
               <button
                 onClick={() => handleNavClick(item.path)}
-                className={`font-mono tracking-widest whitespace-normal w-full text-left hover:text-white transition-colors ${
+                className={`marker:text-white font-mono tracking-widest whitespace-normal w-full text-left hover:text-white transition-colors ${
                   selectedContent === item.path
                     ? "text-white"
                     : "text-white/60"
@@ -221,7 +221,7 @@ const AppLayout = () => {
             <div className="pt-4">
               <hr className="border-white/20 pt-4" />
               <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <Link href="/">Taylor William Buley</Link>
+                <Link href="/about">Taylor William Buley</Link>
               </h1>
               <hr className="border-white/20 pt-4" />
             </div>
@@ -299,7 +299,7 @@ const AppLayout = () => {
             <div className="pt-4">
               <hr className="border-white/20 pt-4" />
               <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <Link href="/">Taylor William Buley</Link>
+                <Link href="/about">Taylor William Buley</Link>
               </h1>
               <hr className="border-white/20 pt-4" />
             </div>

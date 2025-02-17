@@ -6,6 +6,10 @@
 
 I am at my best when I am **solving high-stakes problems, breaking through constraints, and setting a new standard.** I thrive in environments that demand **strategy, adaptability, and high execution**—where independence is valued, and where **results matter more than appearances.**
 
+If I am not **pushing forward, breaking barriers, and setting the standard—then I am not truly at my best.**
+
+I am at my best when I am **engaged, decisive, and building something greater than what existed before me.** I operate at my highest level when I am **solving, leading, mastering, and executing with absolute clarity.**
+
 ## 1. Intelligence Fully Engaged
 
 *The mind operating at its peak capacity.*
@@ -88,9 +92,3 @@ When this becomes a liability—I get stuck in strategy mode instead of executin
 4. Am I leading with strength, precision, and strategic authority?
 5. Am I constantly testing my limits and growing beyond them?
 6. Am I staying ahead of the curve, thinking long-term, and positioning myself strategically?
-
-## Final Statement
-
-I am at my best when I am **engaged, decisive, and building something greater than what existed before me.** I operate at my highest level when I am **solving, leading, mastering, and executing with absolute clarity.**
-
-If I am not **pushing forward, breaking barriers, and setting the standard—then I am not truly at my best.**

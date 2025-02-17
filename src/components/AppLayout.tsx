@@ -24,6 +24,7 @@ const AppLayout = () => {
   const primaryNav = [
     { title: "Contact", path: "contact" },
     { title: "FAQ", path: "faq" },
+    { title: "CV", path: "https://buley.info/" },
   ];
 
   type SecondaryNavType = {
@@ -192,26 +193,38 @@ const AppLayout = () => {
               <NavSection key={group} group={group} items={items} />
             ))}
             <div className="pt-4">
-            <hr className="border-white/20 pt-4" />
-            <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-              <a href="/">
-                Taylor William Buley
-              </a>
-            </h1>
-            <hr className="border-white/20 pt-4" />
-          </div>
+              <hr className="border-white/20 pt-4" />
+              <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
+                <a href="/">
+                  Taylor William Buley
+                </a>
+              </h1>
+              <hr className="border-white/20 pt-4" />
+            </div>
             <div>
               {primaryNav.map((item) => (
-                <button
-                  key={item.path}
-                  onClick={() => handleNavClick(item.path)}
-                  className={`font-mono text-xs tracking-widest whitespace-normal block mt-2 w-full text-left hover:text-white transition-colors ${
-                    selectedContent === item.path ? "text-white" : "text-white/60"
-                  }`}
-                >
-                  {selectedContent === item.path ? "→ " : ""}
-                  {item.title}
-                </button>
+                item.path.startsWith("http") ? (
+                  <a
+                    key={item.path}
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-mono text-xs tracking-widest whitespace-normal block mt-2 w-full text-left hover:text-white transition-colors text-white/60 hover:text-white"
+                  >
+                    {item.title} ↗
+                  </a>
+                ) : (
+                  <button
+                    key={item.path}
+                    onClick={() => handleNavClick(item.path)}
+                    className={`font-mono text-xs tracking-widest whitespace-normal block mt-2 w-full text-left hover:text-white transition-colors ${
+                      selectedContent === item.path ? "text-white" : "text-white/60"
+                    }`}
+                  >
+                    {selectedContent === item.path ? "→ " : ""}
+                    {item.title}
+                  </button>
+                )
               ))}
             </div>
             <div className="pt-4">
@@ -248,6 +261,15 @@ const AppLayout = () => {
                   {item.title}
                 </button>
               ))}
+            </div>
+            <div className="pt-4">
+              <hr className="border-white/20 pt-4" />
+              <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
+                <a href="/">
+                  Taylor William Buley
+                </a>
+              </h1>
+              <hr className="border-white/20 pt-4" />
             </div>
             <div className="pt-4">
               <FunFact />
@@ -292,7 +314,7 @@ const AppLayout = () => {
           <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center md:ml-[280px]">
             <div className="text-center">
               <h2 className="text-4xl md:text-6xl font-black tracking-tight">
-                Taylor Buley
+                Taylor William Buley
               </h2>
               <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
                 Navigate to explore

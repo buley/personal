@@ -22,10 +22,8 @@ const AppLayout = () => {
   const mediaUrl = "/api/placeholder/1920/1080";
 
   const primaryNav = [
+    { title: "Contact", path: "contact" },
     { title: "FAQ", path: "faq" },
-    { title: "Interaction Style", path: "interaction-style" },
-    { title: "Mantras", path: "mantras" },
-    { title: "Manifesto", path: "manifesto" },
   ];
 
   type SecondaryNavType = {
@@ -36,8 +34,11 @@ const AppLayout = () => {
     identity: [
       { title: "Who I Am", path: "personality" },
       { title: "How I'm Wired", path: "wired" },
+      { title: "Interaction Style", path: "interaction-style" },
       { title: "At My Best", path: "best" },
       { title: "At My Worst", path: "worst" },
+      { title: "Manifesto", path: "manifesto" },
+      { title: "Mantras", path: "mantras" },
     ],
     operation: [
       { title: "Decision Making", path: "decisions" },
@@ -185,12 +186,21 @@ const AppLayout = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex fixed left-8 bottom-8 z-40">
-        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
+        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">          
           <div className="max-w-[250px] w-full space-y-4 pr-4">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} />
             ))}
-            <div className="pt-4 border-t border-white/20">
+            <div className="pt-4">
+            <hr className="border-white/20 pt-4" />
+            <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
+              <a href="/">
+                Taylor William Buley
+              </a>
+            </h1>
+            <hr className="border-white/20 pt-4" />
+          </div>
+            <div>
               {primaryNav.map((item) => (
                 <button
                   key={item.path}

@@ -22,7 +22,14 @@ module.exports = {
           '100%': { transform: 'translateX(-50%)' }, // Move left by 50% to create seamless loop
         },
       },
+      fontFamily: {
+        sans: ["var(--font-geist-sans)", "sans-serif"],
+        mono: ["var(--font-geist-mono)", "monospace"],
+        serif: ["var(--font-merriweather)", "serif"], // <-- Use the custom var
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };

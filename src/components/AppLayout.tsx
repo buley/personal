@@ -39,6 +39,7 @@ const AppLayout = () => {
   const primaryNav = [
     { title: "FAQ", path: "faq" },
     { title: "Contact", path: "contact" },
+    { title: "Mantras", path: "mantras" },
     { title: "Manifesto", path: "manifesto" },
   ];
 
@@ -56,6 +57,8 @@ const AppLayout = () => {
       { title: "At My Worst", path: "worst" },
     ],
     growth: [
+      { title: "Emotion", path: "emotion" },
+      { title: "Anxiety", path: "anxiety" },
       { title: "Blind Spots", path: "blind-spots" },
       { title: "Self-Sabotage", path: "self-sabotage" },
       { title: "Challenges", path: "challenges" },
@@ -65,11 +68,6 @@ const AppLayout = () => {
       { title: "Legacy", path: "legacy" },
       { title: "Execution", path: "execution" },
       { title: "Action", path: "action" },
-    ],
-    emotional: [
-      { title: "Anxiety", path: "anxiety" },
-      { title: "Emotion", path: "emotion" },
-      { title: "Mantras", path: "mantras" },
     ],
   };
 
@@ -119,14 +117,11 @@ const AppLayout = () => {
         {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
-      {/* Desktop Navigation
-          - Anchored to bottom-left for visual tension
-          - Monospace typography emphasizes digital nature
-          - Hierarchical opacity for visual organization
-          - Arrow indicators (→) show current selection */}
+      {/* Desktop Navigation */}
       <nav className="hidden md:block fixed bottom-8 left-8 z-40">
-        <div className="space-y-8">
-          {Object.entries(secondaryNav).map(([group, items]) => (
+        {/* Constrain width and enable scrolling/word-wrapping */}
+        <div className="max-w-[250px] w-full overflow-auto space-y-8">
+        {Object.entries(secondaryNav).map(([group, items]) => (
             <div key={group} className="space-y-2">
               <h3 className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
                 {group}
@@ -137,11 +132,9 @@ const AppLayout = () => {
                     <button
                       onClick={() => handleNavClick(item.path)}
                       className={`
-                        font-mono text-xs tracking-widest hover:text-white transition-colors
-                        ${selectedContent === item.path 
-                          ? "text-white" 
-                          : "text-white/60"
-                        }
+                        font-mono text-xs tracking-widest whitespace-normal
+                        hover:text-white transition-colors
+                        ${selectedContent === item.path ? "text-white" : "text-white/60"}
                       `}
                     >
                       {selectedContent === item.path ? "→ " : ""}
@@ -158,11 +151,9 @@ const AppLayout = () => {
                 key={item.path}
                 onClick={() => handleNavClick(item.path)}
                 className={`
-                  font-mono text-xs tracking-widest block mt-2 hover:text-white transition-colors
-                  ${selectedContent === item.path 
-                    ? "text-white" 
-                    : "text-white/60"
-                  }
+                  font-mono text-xs tracking-widest whitespace-normal block mt-2
+                  hover:text-white transition-colors
+                  ${selectedContent === item.path ? "text-white" : "text-white/60"}
                 `}
               >
                 {selectedContent === item.path ? "→ " : ""}
@@ -170,14 +161,13 @@ const AppLayout = () => {
               </button>
             ))}
           </div>
-          {/* Fun Fact Component
-              - Monospace typography for consistency
-              - Hoverable info button for context */}
+          {/* Fun Fact Component */}
           <div className="pt-4">
             <FunFact />
           </div>
         </div>
       </nav>
+
 
       {/* Mobile Navigation
           - Full-screen overlay maintains focus
@@ -237,6 +227,10 @@ const AppLayout = () => {
               ))}
             </div>
           </div>
+          {/* Fun Fact Component */}
+          <div className="pt-4">
+            <FunFact />
+          </div>
         </div>
       </nav>
 
@@ -246,60 +240,50 @@ const AppLayout = () => {
           - Centered content with generous padding
           - Typography optimized for readability */}
       <Suspense fallback={<ContentSkeleton />}>
-        {selectedContent ? (
-          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center">
-            <div className="w-full max-w-5xl animate-fadeIn px-6 md:px-12">
-              <h1 className="text-5xl md:text-7xl font-bold mb-12 tracking-tight">
-                {getTitle(selectedContent)}
-              </h1>
-              {/* Content Typography
-                  - Dramatic type scale (xl to 7xl)
-                  - Light weight body text contrasts with bold headlines
-                  - Generous vertical spacing
-                  - Limited line length (38em) for readability
-                  - Monospace for technical elements */}
-              <div className="
-                prose prose-invert 
-                font-sans
-                prose-headings:font-sans prose-headings:tracking-tight
-                prose-h1:text-6xl prose-h1:mb-12 prose-h1:font-black
-                prose-h2:text-5xl prose-h2:mb-8 prose-h2:font-black
-                prose-h3:text-4xl prose-h3:mb-6 prose-h3:font-bold
-                prose-h4:text-2xl prose-h4:mb-4 prose-h4:font-bold
-                prose-p:text-xl prose-p:leading-relaxed prose-p:mb-8 prose-p:font-light
-                prose-li:text-xl prose-li:leading-relaxed prose-li:font-light
-                prose-ul:space-y-3 prose-ol:space-y-3
-                prose-strong:text-white prose-strong:font-bold
-                prose-a:text-white prose-a:underline hover:prose-a:text-white/80
-                prose-blockquote:border-l-4 prose-blockquote:border-white/40 
-                prose-blockquote:pl-6 prose-blockquote:text-white/80
-                prose-blockquote:text-xl prose-blockquote:font-mono
-                prose-hr:border-white/20 prose-hr:my-12
-                prose-code:font-mono
-                max-w-[38em]
-                [&>*]:max-w-[38em]
-                space-y-8
-                mb-24
-              ">
-                <MarkdownContent path={selectedContent} />
-              </div>
-            </div>
-          </main>
-        ) : (
-          /* Welcome Screen
-           * - Initial state sets expectations
-           * - Bold typography establishes aesthetic
-           * - Monospace instruction maintains theme */
-          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center">
-            <div className="text-center">
-              <h2 className="text-4xl md:text-6xl font-black tracking-tight">Identity</h2>
-              <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
-                Navigate to explore
-              </p>
-            </div>
-          </main>
-        )}
-      </Suspense>
+      {selectedContent ? (
+        <main className="relative z-30 min-h-screen px-6 py-8 md:py-12 flex items-center justify-center md:ml-[280px]">
+          <div className="w-full max-w-5xl animate-fadeIn px-6 md:px-12">
+          <div className="
+            prose prose-invert 
+            prose-headings:font-sans prose-headings:tracking-tight
+            prose-h1:text-6xl prose-h1:mb-12 prose-h1:font-black
+            prose-h2:text-5xl prose-h2:mb-8 prose-h2:font-black
+            prose-h3:text-4xl prose-h3:mb-6 prose-h3:font-bold
+            prose-h4:text-2xl prose-h4:mb-4 prose-h4:font-bold
+
+            /* Chunkier body text: set paragraphs & list items to serif + heavier weight */
+            prose-p:font-serif prose-p:font-medium prose-p:text-xl prose-p:leading-loose prose-p:mb-8
+            prose-li:font-serif prose-li:font-medium prose-li:text-xl prose-li:leading-loose
+
+            prose-ul:space-y-3 prose-ol:space-y-3
+            prose-strong:text-white prose-strong:font-bold
+            prose-a:text-white prose-a:underline hover:prose-a:text-white/80
+            prose-blockquote:border-l-4 prose-blockquote:border-white/40 
+            prose-blockquote:pl-6 prose-blockquote:text-white/80
+            prose-blockquote:text-xl prose-blockquote:font-mono
+            prose-hr:border-white/20 prose-hr:my-12
+            prose-code:font-mono
+            max-w-[38em]
+            [&>*]:max-w-[38em]
+            space-y-8
+            mb-24
+          ">
+            <MarkdownContent path={selectedContent} />
+          </div>
+
+          </div>
+        </main>
+      ) : (
+        <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center md:ml-[280px]">
+          <div className="text-center">
+            <h2 className="text-4xl md:text-6xl font-black tracking-tight">Taylor Buley</h2>
+            <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
+              Navigate to explore
+            </p>
+          </div>
+        </main>
+      )}
+    </Suspense>
     </div>
   );
 };

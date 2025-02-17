@@ -1,3 +1,4 @@
+// FunFact.tsx
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -32,7 +33,7 @@ const FunFact = () => {
 
   if (isLoading || facts.length === 0) {
     return (
-      <div className="font-mono text-xs mt-12 text-white/40">
+      <div className="font-mono text-xs text-white/40">
         Loading facts...
       </div>
     );
@@ -42,13 +43,11 @@ const FunFact = () => {
   const repeatedFacts = new Array(5).fill(facts).flat();
 
   return (
-    // Wrap the component with a max-width container (adjust max-w-xl as needed)
-    <div className="max-w-xl mx-auto">
-      <div className="font-mono text-xs mt-12 relative">
-        {/* Use a grid layout with three columns: auto | 1fr | auto */}
+    // Remove the fixed max-width so that it uses 100% of its container
+    <div className="w-full">
+      <div className="font-mono text-xs mt-4 relative">
         <div className="grid grid-cols-[auto,1fr,auto] items-center gap-2">
-          {/* Info Icon */}
-          <div className="relative">
+          <div className="relative flex-shrink-0">
             <button
               onMouseEnter={() => setShowInfo(true)}
               onMouseLeave={() => setShowInfo(false)}
@@ -83,11 +82,10 @@ const FunFact = () => {
             </div>
           </div>
 
-          {/* Refresh Button */}
           <button
             onClick={fetchFacts}
             disabled={isLoading}
-            className="text-white/40 hover:text-white/60 transition-colors disabled:text-white/20"
+            className="flex-shrink-0 text-white/40 hover:text-white/60 transition-colors disabled:text-white/20"
           >
             <Repeat size={12} className={isLoading ? 'animate-spin' : ''} />
           </button>

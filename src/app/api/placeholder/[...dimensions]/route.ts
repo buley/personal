@@ -14,10 +14,13 @@ export async function GET(
       return new Response('Invalid dimensions', { status: 400 });
     }
 
+    // Generate a random color for the placeholder
+    const fillColor = Math.floor(Math.random() * 16777215).toString(16);
+    
     // Create a simple SVG with the specified dimensions
     const svg = `
       <svg width="${width}" height="${height}" xmlns="http://www.w3.org/2000/svg">
-        <rect width="100%" height="100%" fill="#1a1a1a"/>
+        <rect width="100%" height="100%" fill="#${fillColor}"/>
       </svg>
     `;
 

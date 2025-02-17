@@ -1,5 +1,7 @@
+// app/layout.tsx (or wherever RootLayout is defined)
+
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Merriweather } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,6 +14,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Merriweather can have multiple weights: 400, 700, etc.
+// Adjust as needed for normal & bold text in paragraphs
+const merriweather = Merriweather({
+  variable: "--font-merriweather",
+  subsets: ["latin"],
+  weight: ["400", "700"], // can add 300, 600, 900 if desired
+});
+
 export const metadata: Metadata = {
   title: "About Taylor Buley",
   description: "Taylor Buley is a writer, mediator, and developer.",
@@ -19,13 +29,19 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
+      {/* Include Merriweather variable */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          ${geistSans.variable} 
+          ${geistMono.variable} 
+          ${merriweather.variable} 
+          antialiased
+        `}
       >
         {children}
       </body>

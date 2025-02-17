@@ -211,7 +211,8 @@ const AppLayout = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="hidden bg-black md:flex fixed left-8 bottom-8 z-40 p-4">
+      <nav className="hidden md:flex fixed left-8 bottom-16 z-40">
+        {/* Content */}
         <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
           <div className="max-w-[250px] w-full space-y-4 pr-4">
             {Object.entries(secondaryNav).map(([group, items]) => (

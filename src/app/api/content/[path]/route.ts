@@ -18,8 +18,6 @@ export async function GET(
     const content = marked(markdown, {
       gfm: true, // GitHub Flavored Markdown
       breaks: true, // Convert line breaks to <br>
-      headerIds: true, // Add IDs to headers
-      mangle: false // Don't escape HTML
     });
 
     return new Response(JSON.stringify({ content }), {

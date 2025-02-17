@@ -246,16 +246,16 @@ const AppLayout = () => {
           <div className="
             prose prose-invert 
             prose-headings:font-sans prose-headings:tracking-tight
-            prose-h1:text-6xl prose-h1:mb-12 prose-h1:font-black
-            prose-h2:text-5xl prose-h2:mb-8 prose-h2:font-black
-            prose-h3:text-4xl prose-h3:mb-6 prose-h3:font-bold
-            prose-h4:text-2xl prose-h4:mb-4 prose-h4:font-bold
+            prose-h1:text-4xl prose-h1:mb-5 prose-h1:font-black
+            prose-h2:text-3xl prose-h2:mb-4 prose-h2:font-black
+            prose-h3:text-2xl prose-h3:mb-3 prose-h3:font-bold
+            prose-h4:text-1xl prose-h4:mb-2 prose-h4:font-bold
 
             /* Chunkier body text: set paragraphs & list items to serif + heavier weight */
-            prose-p:font-serif prose-p:font-medium prose-p:text-xl prose-p:leading-loose prose-p:mb-8
+            prose-p:font-serif prose-p:font-medium prose-p:text-xl prose-p:leading-loose prose-p:mb-1
             prose-li:font-serif prose-li:font-medium prose-li:text-xl prose-li:leading-loose
 
-            prose-ul:space-y-3 prose-ol:space-y-3
+            prose-ul:space-y-2 prose-ol:space-y-2
             prose-strong:text-white prose-strong:font-bold
             prose-a:text-white prose-a:underline hover:prose-a:text-white/80
             prose-blockquote:border-l-4 prose-blockquote:border-white/40 

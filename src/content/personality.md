@@ -1,4 +1,4 @@
-# **Who I Am**
+## **Who I Am**
 
 I am a **visionary strategist, independent thinker, and high-standard leader.** I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures. I don’t conform—I create. I don’t follow—I lead.  
 

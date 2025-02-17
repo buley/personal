@@ -1,0 +1,5 @@
+# Taylor William Buley
+
+Taylor (Tay) Buley is a Director of Engineering at Forbes and the Neutral at Neutral Mediation, his boutique firm where he coaches, mediates, and negotiates. He combines deep technical expertise with a systems-oriented approach that spans multiple disciplines. With a background in Philosophy, Politics & Economics from the University of Pennsylvania and Communications from Stanford, Taylor sees both the forest and the trees—an ability that enables him to analyze complex challenges and implement lasting solutions.
+
+At Forbes, he drives data initiatives with a calm, decisive approach, while at Neutral Mediation he brings clarity and balance to high-stakes negotiations. His work in media technology has earned recognition in Editor & Publisher and New York Times Magazine, and he was featured on CSPAN discussing his book. Taylor’s professional philosophy centers on strategic execution, rigorous analysis, and the seamless integration of technical precision with human insight, allowing him to consistently deliver comprehensive impact across every domain he touches.

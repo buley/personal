@@ -242,7 +242,7 @@ const facts = [
   "I have mastered, and have now completely forgotten, Morse code."
 ];
 
-export async function GET(request: NextRequest) {
+export async function GET(_request: NextRequest) {
   try {
     const randomFact = facts[Math.floor(Math.random() * facts.length)];
 
@@ -253,6 +253,7 @@ export async function GET(request: NextRequest) {
       },
     });
   } catch (error) {
+    console.error('Failed to fetch fun fact:', error);
     return new Response(
       JSON.stringify({ error: 'Failed to fetch fun fact' }),
       { status: 500 }

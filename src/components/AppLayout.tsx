@@ -1,36 +1,52 @@
 "use client";
+
+/**
+ * AppLayout - Core component for brutalist personal website
+ * 
+ * Design Philosophy:
+ * - Stark black/white brutalist aesthetic
+ * - Typography-driven with dramatic size contrasts
+ * - Geist font family used intentionally:
+ *   - Sans for clean, modern body text (light weight)
+ *   - Sans Black for commanding headlines
+ *   - Mono for mechanical/digital UI elements
+ * - Content presented in lightbox style
+ * - Navigation anchored bottom-left for visual tension
+ * - Full-screen backdrop with minimal opacity
+ */
 import React, { useState, Suspense } from "react";
 import { Menu, X } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
+import ContentSkeleton from "./ContentSkeleton";
 
-/**
- * AppLayout - Main component for the brutalist-style personal website
- * 
- * Design Philosophy:
- * - Stark, minimalist aesthetic with strong typography
- * - Navigation anchored to bottom-left (desktop) for visual tension
- * - Pure black/white color scheme with opacity for depth
- * - Content presented in lightbox style
- * - German modernist/Bauhaus-inspired typography
- */
 const AppLayout = () => {
-  // State for mobile menu visibility and current content selection
+  /**
+   * State Management
+   * - Mobile menu state for overlay navigation
+   * - Selected content determines current view
+   * - Media URL for background (could be expanded to dynamic content)
+   */
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [selectedContent, setSelectedContent] = useState<string | null>(null);
-  
-  // Placeholder background - could be replaced with video/dynamic media
   const mediaUrl = "/api/placeholder/1920/1080";
 
-  // Primary navigation - footer-style items
-  // These are separated from secondary nav to create hierarchy
+  /**
+   * Primary Navigation
+   * Primary items appear at bottom of nav
+   * Separated by subtle border to distinguish from main categories
+   */
   const primaryNav = [
     { title: "FAQ", path: "faq" },
     { title: "Contact", path: "contact" },
     { title: "Manifesto", path: "manifesto" },
   ];
 
-  // Secondary navigation - grouped by theme
-  // Groups create cognitive chunking and improve scanability
+  /**
+   * Secondary Navigation
+   * Organized into thematic groups for cognitive chunking
+   * Each section represents a different aspect of identity
+   * Order flows from concrete (identity) to abstract (emotional)
+   */
   const secondaryNav = {
     identity: [
       { title: "Who I Am", path: "personality" },
@@ -57,10 +73,9 @@ const AppLayout = () => {
   };
 
   /**
-   * Handles navigation item clicks
-   * - Updates selected content
-   * - Closes mobile menu if open
-   * @param path - The content path to load
+   * Navigation Handler
+   * Manages both content selection and mobile menu state
+   * Single function ensures synchronized state changes
    */
   const handleNavClick = (path: string) => {
     setSelectedContent(path);
@@ -68,9 +83,9 @@ const AppLayout = () => {
   };
 
   /**
-   * Retrieves the display title for a given path
-   * - Combines both nav arrays to search for title
-   * - Returns empty string if not found (shouldn't happen)
+   * Title Retrieval
+   * Flattens navigation structure to find current content title
+   * Used for both content display and document title
    */
   const getTitle = (path: string) => {
     const allItems = [...Object.values(secondaryNav).flat(), ...primaryNav];
@@ -79,10 +94,10 @@ const AppLayout = () => {
 
   return (
     <div className="relative min-h-screen bg-black text-white antialiased">
-      {/* Background Media Layer
-          - Fixed positioning creates parallax-like effect
-          - Low opacity (5%) adds depth without distraction
-          - Transition for smooth media changes */}
+      {/* Background Layer
+          - Fixed positioning for parallax effect
+          - 5% opacity creates depth without distraction
+          - Smooth transition for potential media changes */}
       <div className="fixed inset-0">
         <img
           src={mediaUrl}
@@ -92,9 +107,9 @@ const AppLayout = () => {
       </div>
 
       {/* Mobile Menu Toggle
-          - Fixed positioning keeps it accessible
-          - Higher z-index ensures clickability
-          - Sized for easy touch targets */}
+          - Fixed position for consistent access
+          - Sits above all content (z-50)
+          - Transforms between menu and close icons */}
       <button
         onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         className="fixed top-6 right-6 z-50 md:hidden w-8 h-8 flex items-center justify-center"
@@ -104,31 +119,20 @@ const AppLayout = () => {
       </button>
 
       {/* Desktop Navigation
-          - Hidden on mobile (md:block)
-          - Bottom-left positioning creates visual tension
-          - Generous spacing improves readability */}
+          - Anchored to bottom-left for visual tension
+          - Monospace typography emphasizes digital nature
+          - Hierarchical opacity for visual organization
+          - Arrow indicators (→) show current selection */}
       <nav className="hidden md:block fixed bottom-8 left-8 z-40">
         <div className="space-y-8">
-          {/* Secondary Navigation Groups
-              - Mapped from secondaryNav object
-              - Each group has its own header and items
-              - Spacing creates clear group separation */}
           {Object.entries(secondaryNav).map(([group, items]) => (
             <div key={group} className="space-y-2">
-              {/* Group Header
-                  - Small caps for modernist feel
-                  - Low opacity creates hierarchy
-                  - Extra tracking for emphasis */}
-              <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
+              <h3 className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
                 {group}
               </h3>
               <ul className="space-y-1">
                 {items.map((item) => (
                   <li key={item.path}>
-                    {/* Navigation Item
-                        - Monospace font continues modernist theme
-                        - Hover and active states for interactivity
-                        - Arrow indicator for current selection */}
                     <button
                       onClick={() => handleNavClick(item.path)}
                       className={`
@@ -147,11 +151,6 @@ const AppLayout = () => {
               </ul>
             </div>
           ))}
-
-          {/* Primary Navigation
-              - Separated by subtle border
-              - Maintains consistent styling
-              - Slightly different spacing for distinction */}
           <div className="pt-4 border-t border-white/20">
             {primaryNav.map((item) => (
               <button
@@ -174,9 +173,10 @@ const AppLayout = () => {
       </nav>
 
       {/* Mobile Navigation
-          - Full screen overlay
-          - Slide-up animation
-          - Scrollable for tall content */}
+          - Full-screen overlay maintains focus
+          - Smooth slide-up transition
+          - Larger touch targets for mobile use
+          - Maintains consistent typography with desktop */}
       <nav 
         className={`
           md:hidden fixed inset-0 bg-black z-40 transition-transform duration-300
@@ -185,10 +185,6 @@ const AppLayout = () => {
       >
         <div className="h-full overflow-auto p-8 pt-16">
           <div className="space-y-8">
-            {/* Mobile Secondary Navigation
-                - Larger text for touch targets
-                - Maintains consistent styling
-                - Adjusted spacing for touch */}
             {Object.entries(secondaryNav).map(([group, items]) => (
               <div key={group} className="space-y-3">
                 <h3 className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">
@@ -215,10 +211,6 @@ const AppLayout = () => {
                 </ul>
               </div>
             ))}
-
-            {/* Mobile Primary Navigation
-                - Consistent with desktop styling
-                - Adjusted spacing for mobile context */}
             <div className="pt-6 border-t border-white/20">
               {primaryNav.map((item) => (
                 <button
@@ -241,48 +233,66 @@ const AppLayout = () => {
         </div>
       </nav>
 
-      {/* Content Area
-          - Centered in viewport
-          - Responsive padding
-          - Maximum width for readability */}
-      <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center">
-        {/* Loading State
-            - Simple spinning indicator
-            - Maintains minimalist aesthetic */}
-        <Suspense 
-          fallback={
-            <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-          }
-        >
-          {selectedContent ? (
-            // Content Display
-            <div className="w-full max-w-3xl transition-opacity duration-300">
-              {/* Content Title
-                  - Large, bold typography
-                  - Tight tracking for impact
-                  - Generous bottom margin */}
+      {/* Content Area with Suspense
+          - Suspense boundary outside main prevents layout shifts
+          - ContentSkeleton matches exact layout during loading
+          - Centered content with generous padding
+          - Typography optimized for readability */}
+      <Suspense fallback={<ContentSkeleton />}>
+        {selectedContent ? (
+          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center">
+            <div className="w-full max-w-5xl animate-fadeIn px-6 md:px-12">
               <h1 className="text-5xl md:text-7xl font-bold mb-12 tracking-tight">
                 {getTitle(selectedContent)}
               </h1>
-              {/* Content Body
-                  - Uses Tailwind prose for markdown styling
-                  - Increased size for readability
-                  - No maximum width constraint */}
-              <div className="prose prose-invert prose-lg max-w-none">
+              {/* Content Typography
+                  - Dramatic type scale (xl to 7xl)
+                  - Light weight body text contrasts with bold headlines
+                  - Generous vertical spacing
+                  - Limited line length (38em) for readability
+                  - Monospace for technical elements */}
+              <div className="
+                prose prose-invert 
+                font-sans
+                prose-headings:font-sans prose-headings:tracking-tight
+                prose-h1:text-6xl prose-h1:mb-12 prose-h1:font-black
+                prose-h2:text-5xl prose-h2:mb-8 prose-h2:font-black
+                prose-h3:text-4xl prose-h3:mb-6 prose-h3:font-bold
+                prose-h4:text-2xl prose-h4:mb-4 prose-h4:font-bold
+                prose-p:text-xl prose-p:leading-relaxed prose-p:mb-8 prose-p:font-light
+                prose-li:text-xl prose-li:leading-relaxed prose-li:font-light
+                prose-ul:space-y-3 prose-ol:space-y-3
+                prose-strong:text-white prose-strong:font-bold
+                prose-a:text-white prose-a:underline hover:prose-a:text-white/80
+                prose-blockquote:border-l-4 prose-blockquote:border-white/40 
+                prose-blockquote:pl-6 prose-blockquote:text-white/80
+                prose-blockquote:text-xl prose-blockquote:font-mono
+                prose-hr:border-white/20 prose-hr:my-12
+                prose-code:font-mono
+                max-w-[38em]
+                [&>*]:max-w-[38em]
+                space-y-8
+                mb-24
+              ">
                 <MarkdownContent path={selectedContent} />
               </div>
             </div>
-          ) : (
-            // Initial State
+          </main>
+        ) : (
+          /* Welcome Screen
+           * - Initial state sets expectations
+           * - Bold typography establishes aesthetic
+           * - Monospace instruction maintains theme */
+          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-center justify-center">
             <div className="text-center">
-              <h2 className="text-4xl md:text-6xl font-bold tracking-tight">Identity</h2>
+              <h2 className="text-4xl md:text-6xl font-black tracking-tight">Identity</h2>
               <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
                 Navigate to explore
               </p>
             </div>
-          )}
-        </Suspense>
-      </main>
+          </main>
+        )}
+      </Suspense>
     </div>
   );
 };

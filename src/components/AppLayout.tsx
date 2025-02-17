@@ -18,6 +18,7 @@ import React, { useState, Suspense } from "react";
 import { Menu, X } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
+import FunFact from "./FunFact";
 
 const AppLayout = () => {
   /**
@@ -168,6 +169,12 @@ const AppLayout = () => {
                 {item.title}
               </button>
             ))}
+          </div>
+          {/* Fun Fact Component
+              - Monospace typography for consistency
+              - Hoverable info button for context */}
+          <div className="pt-4">
+            <FunFact />
           </div>
         </div>
       </nav>

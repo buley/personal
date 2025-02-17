@@ -8,12 +8,18 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        ticker: 'ticker 30s linear infinite',
+        pause: 'ticker 30s linear infinite paused',
         fadeIn: 'fadeIn 0.3s ease-in-out',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
+        },
+        ticker: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' }, // Move left by 50% to create seamless loop
         },
       },
     },

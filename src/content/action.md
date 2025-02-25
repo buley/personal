@@ -1,4 +1,4 @@
-# Proof in Action
+# Action: Because Talk Comes Cheap
 
 > *"Theory becomes meaningless the moment it stops inspiring action."*
 

@@ -1,4 +1,4 @@
-# In Pursuit of Discomfort: Unlocking the Next Level
+# Challenges: In Pursuit of Discomfort
 
 > *"Difficulties strengthen the mind, as labor does the body." — Seneca*
 

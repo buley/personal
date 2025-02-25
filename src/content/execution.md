@@ -1,4 +1,4 @@
-# Action Over Intention: Building a Legacy Through Execution
+# Execution: Action Over Intention
 
 > *“How long are you going to wait before you demand the best for yourself?” — Epictetus*
 

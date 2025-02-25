@@ -1,4 +1,4 @@
-# Sustainable Independence: Balancing High Standards with Adaptability
+# Self-Sabotage: Sustainable Independence
 
 > *“Be master of mind rather than mastered by mind.” — Zen Proverb*
 

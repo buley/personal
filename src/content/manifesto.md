@@ -1,4 +1,4 @@
-# Unshakable: Living on My Own Terms, Building Without Limits
+# Manifesto: Unshakable
 
 > *“The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.” — Friedrich Nietzsche*
 

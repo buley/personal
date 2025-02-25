@@ -1,4 +1,4 @@
-# Emotions as Assets: A Strategic Framework for Inner Mastery
+# Emotion: A Strategic Framework for Inner Mastery
 
 > *“No man is free who is not master of himself.” — Epictetus*
 

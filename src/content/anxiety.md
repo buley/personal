@@ -1,4 +1,4 @@
-# Dismantling Anxiety: A System for Mind Mastery
+# Anxiety: A System for Mind Mastery
 
 > *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions—not outside." —Marcus Aurelius*
 

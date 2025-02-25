@@ -1,4 +1,4 @@
-# Systemic Advantage: My Philosophy of Competition and Collaboration
+# Competition and Collaboration: A Systemic Advantage
 
 > *“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.” — Sun Tzu*
 

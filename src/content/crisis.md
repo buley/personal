@@ -1,4 +1,4 @@
-# Strategic Storm-Proofing: My Protocol for Turning Crisis into Opportunity
+# Crisis: Strategic Storm-Proofing
 
 > *"The impediment to action advances action. What stands in the way becomes the way." — Marcus Aurelius*
 

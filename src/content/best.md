@@ -1,4 +1,4 @@
-# Strategic Mastery: Operating at Full Capacity
+# At My Best: Operating at Full Capacity
 
 > *"First say to yourself what you would be; and then do what you have to do." — Epictetus*
 

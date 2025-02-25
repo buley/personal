@@ -71,6 +71,7 @@ const AppLayout = () => {
       { title: "Learning", path: "learning" },
       { title: "Crisis Response", path: "crisis" },
       { title: "Competition", path: "competition-collaboration" },
+      { title: "Attention", path: "adhd" },
     ],
     growth: [
       { title: "Emotion", path: "emotion" },

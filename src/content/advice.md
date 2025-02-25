@@ -1,7 +1,9 @@
 **The Unyielding Mind: A Masterlist of Power, Strategy, and Self-Mastery**  
 
 > *"In a world that really has been turned on its head, truth is a moment of falsehood."* — Guy Debord  
+
 > *"The general population doesn't know what's happening, and it doesn't even know that it doesn't know."* — Noam Chomsky  
+
 > *"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."* — Ernest Hemingway  
 
 Strength is not given; it is sculpted. Every thought, action, and principle I live by shapes that image. These quotes are not about empty philosophy—they are strategies for operation, execution, and results.  

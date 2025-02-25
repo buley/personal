@@ -66,6 +66,7 @@ const AppLayout = () => {
       { title: "Mantras", path: "mantras" },
     ],
     operation: [
+      { title: "Advice", path: "advice" },
       { title: "Decision Making", path: "decisions" },
       { title: "Time & Energy", path: "time-energy" },
       { title: "Learning", path: "learning" },

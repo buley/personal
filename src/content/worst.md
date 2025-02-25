@@ -1,4 +1,4 @@
-# At My Worst: Mastery to Misalignment
+# At My Worst: Mastery of Misalignment
 
 > *“He who conquers himself is the mightiest warrior.” — Confucius (adapted)*
 

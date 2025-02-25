@@ -1,14 +1,14 @@
 # *The Unyielding Mind: Power, Strategy, and Self-Mastery*
 
-> *"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."* — Ernest Hemingway  
+> *"In a world that really has been turned on its head, truth is a moment of falsehood."* — Guy Debord  
 
 > *"The general population doesn’t know what’s happening, and it doesn’t even know that it doesn’t know."* — Noam Chomsky  
 
-> *"In a world that really has been turned on its head, truth is a moment of falsehood."* — Guy Debord  
+> *"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."* — Ernest Hemingway  
 
-Strength is not given; it is forged. Every thought, action, and principle I live by shapes the foundation of that power. This is not about empty philosophy—this is about operation, execution, and results. 
+Strength is not given; it is crafted. Every thought, action, and principle I live by shapes the art of that image. This is not about empty philosophy—this is about operation, execution, and results. 
 
-My path is my own. No one will walk it for me. Power, mastery, and clarity come at a cost. I pay the price. Do the work. And leave something behind that cannot be ignored. Or I don't, and I won't.
+My path is my own. No one will walk it for me. Power, mastery, and clarity come at a cost. I pay the price. Do the work. And leave something behind that cannot be ignored. And if I don't, then I won't.
 
 ## **Self-Mastery & Control**  
 *The first conquest is always the self.*  

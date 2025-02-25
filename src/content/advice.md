@@ -6,9 +6,7 @@
 
 > *"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."* — Ernest Hemingway  
 
-Strength is not given; it is crafted. Every thought, action, and principle I live by shapes the art of that image. This is not about empty philosophy—this is about operation, execution, and results. 
-
-My path is my own. No one will walk it for me. Power, mastery, and clarity come at a cost. I pay the price. Do the work. And leave something behind that cannot be ignored. And if I don't, then I won't.
+Strength is not given; it is sculpted. Every thought, action, and principle I live by shapes that image. These quotes are not about empty philosophy—they are strategies for operation, execution, and results. 
 
 ## **Self-Mastery & Control**  
 *The first conquest is always the self.*  

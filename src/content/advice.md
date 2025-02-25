@@ -230,6 +230,7 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 ## **Legacy & Purpose**  
 *Build something that echoes beyond your time.*  
 
+- *"Every normal man must be tempted, at times, to spit on his hands, hoist the black flag, and begin slitting throats."* ― H.L. Mencken
 - *"Build a legacy that outlives you."* — Gary Keller  
 - *"Fame is a vapor, popularity an accident, and riches take wings. Only one thing endures and that is character."* — Horace Greeley  
 - *"It's better to burn out than to fade away."* — Neil Young, "Hey Hey, My My"  

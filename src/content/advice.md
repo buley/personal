@@ -21,8 +21,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"Every act of rebellion expresses a nostalgia for innocence and an appeal to the essence of being."* — Albert Camus  
 - *"I do not seek. I find."* — Pablo Picasso  
 
----
-
 ## **Action & Execution**  
 *The world rewards execution, not intention.*  
 
@@ -33,8 +31,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"The secret of getting ahead is getting started."* — Mark Twain  
 - *"Most people are not after truth. They are after reassurance."* — Naval Ravikant  
 - *"Everything you can imagine is real."* — Pablo Picasso  
-
----
 
 ## **Decision-Making & Strategy**  
 *Every move is either a step forward or a step backward—choose wisely.*  
@@ -47,8 +43,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"The best way to find out if you can trust somebody is to trust them."* — Ernest Hemingway  
 - *"I am seeking, I am striving, I am in it with all my heart."* — Vincent van Gogh  
 
----
-
 ## **Independence & Strength**  
 *Depend on no one. Choose your allies wisely.*  
 
@@ -57,8 +51,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"If you are not a king in your own mind, you are a peasant in someone else's."* — Proverb  
 - *"Be tolerant with others and strict with yourself."* — Marcus Aurelius  
 - *"Art is not a reflection of reality, it is the reality of reflection."* — Jean-Luc Godard  
-
----
 
 ## **Resilience & Endurance**  
 *Pressure does not break the prepared mind.*  
@@ -70,8 +62,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"Every setback is a test—pass it with composure."* — Proverb  
 - *"Grit outlasts talent every time."* — Proverb  
 - *"Courage is grace under pressure."* — Ernest Hemingway  
-
----
 
 ## **Growth & Adaptation**  
 *If you're not evolving, you're fading.*  
@@ -85,8 +75,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"What I dream of is an art of balance, of purity and serenity."* — Henri Matisse  
 - *"An idea is a point of departure and no more. As soon as you elaborate, it becomes transformed by thought."* — Pablo Picasso  
 
----
-
 ## **Conflict & Power**  
 *True power lies in strategic control.*  
 
@@ -97,8 +85,6 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"You are not here to be liked; you are here to be respected."* — Proverb  
 - *"Calm is the cradle of power."* — Proverb  
 - *"The best leaders are those most willing to be questioned."* — Peter Drucker  
-
----
 
 ## **Legacy & Purpose**  
 *Build something that echoes beyond your time.*  

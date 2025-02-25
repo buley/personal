@@ -1,4 +1,4 @@
-# Shaping Tomorrow: The Architecture of My Decision-Making
+# Decisions: The Architecture of My Tomorrow
 
 > *“If one does not know to which port one is sailing, no wind is favorable.” — Seneca*
 

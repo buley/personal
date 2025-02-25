@@ -1,4 +1,4 @@
-# Iron Spine, Open Mind: Balancing Independence and Insight
+# How I'm Wired: Iron Spine, Open Mind
 
 > *“Freedom is not the absence of commitments, but the ability to choose—and commit myself to—what is best for me.” — Paulo Coelho (adapted)*
 

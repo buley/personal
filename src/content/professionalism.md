@@ -1,4 +1,4 @@
-# Beyond One Discipline: A Playbook for Comprehensive Impact
+# Professionalism: Beyond One Discipline
 
 > *“Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.” — Sun Tzu*
 

@@ -1,4 +1,4 @@
-# Architect of My Own Design: The Convergence of Self-Knowledge and Strategy
+# Personality: Architect of My Own Design
 
 > *“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Gustav Jung*
 

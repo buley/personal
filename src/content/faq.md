@@ -1,4 +1,4 @@
-# A No-Nonsense Guide: Navigating Interactions with Me
+# FAQ: A No-Nonsense Guide to Navigating Interactions with Me
 
 > *"If someone can prove me wrong and show me my mistake in any thought or action, I shall gladly change; for I seek the truth, which never harmed anyone. The harm is to persist in one’s own self-deception and ignorance." — Marcus Aurelius*
 

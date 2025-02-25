@@ -1,4 +1,4 @@
-**The Unyielding Mind: A Masterlist of Power, Strategy, and Self-Mastery**  
+**Advice: A Masterlist of Power, Strategy, and Self-Mastery**  
 
 > *"In a world that really has been turned on its head, truth is a moment of falsehood."* — Guy Debord  
 

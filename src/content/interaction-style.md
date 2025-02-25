@@ -1,4 +1,4 @@
-# No Comfort Zone: Engaging with My Unfiltered Method
+# Interaction Style: No Comfort Zone
 
 > *“It is no measure of health to be well adjusted to a profoundly sick society.” — Jiddu Krishnamurti*
 

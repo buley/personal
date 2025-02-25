@@ -1,4 +1,4 @@
-# Driven by Design: Ensuring My Work Lives On
+# Legacy: Driven by Design
 
 > *“What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.” — Pericles (adapted)*
 

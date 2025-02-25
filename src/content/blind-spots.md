@@ -1,4 +1,4 @@
-# Beyond My Periphery: A Systematic Look at Blind Spots
+# Blind Spots: A Systematic Look Beyond My Periphery
 
 > *"Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth." — Marcus Aurelius*
 

@@ -1,4 +1,4 @@
-# Taylor William Buley
+# About: Taylor William Buley
 
 Taylor (Tay) Buley works as an engineering director at Forbes and runs Neutral Mediation, where he helps with coaching and negotiation. He studied Philosophy, Politics & Economics at UPenn and Communications at Stanford.
 

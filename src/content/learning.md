@@ -1,4 +1,4 @@
-# Beyond Theory: Converting Information into Strategic Advantage
+# Learning: Converting Information into Strategic Advantage
 
 > *“It is impossible for a man to learn what he thinks he already knows.” — Epictetus*
 

@@ -2,6 +2,8 @@
 
 > *"The impediment to action advances action. What stands in the way becomes the way."* — Marcus Aurelius  
 
+*I don’t need to be neurotypical. I need to be effective, strategic, and in full control of how I execute. I don’t fight my ADHD—I engineer a system where it works for me.*
+
 I don’t see ADHD as a flaw—it’s an optimized cognitive system that runs on **intensity, challenge, and high-value thinking.** My brain isn’t designed for routine and repetition; it’s built for **solving complex problems, creating, and leading.**  
 
 My goal isn’t to force myself into neurotypical constraints—it’s to **engineer my environment, refine my strategy, and impose structure where needed** so that my attention becomes a weapon, not a weakness.  
@@ -58,8 +60,3 @@ I refuse to let my wiring be a limitation. I control my mind, my focus, and my e
 - I refuse to let my mind be a liability—it is **an asset to refine.**  
 - I don’t wait for the world to accommodate me—I **build my own systems and environments** to maximize my execution.  
 - I reject mediocrity—not just in results, but in **how I train my mind to operate.**  
-
-**Final Commitment:**  
-I don’t fight my ADHD—I engineer a system where it works for me.  
-
-I don’t need to be neurotypical. I need to be effective, strategic, and in full control of how I execute.

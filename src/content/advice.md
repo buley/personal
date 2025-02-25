@@ -51,6 +51,7 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"If you are not a king in your own mind, you are a peasant in someone else's."* — Proverb  
 - *"Be tolerant with others and strict with yourself."* — Marcus Aurelius  
 - *"Power is not given. It is taken."* — Proverb  
+- *"From each as they choose, to each as they are chosen."* - Robert Noziak
 
 ## **Resilience & Endurance**  
 *Pressure does not break the prepared mind.*  
@@ -70,6 +71,14 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"Every situation teaches—pay attention."* — Proverb  
 - *"You don't need permission to evolve."* — Proverb  
 - *"There is no single self. Who you are is an ever-shifting state, dictated by context and past experience."* — Robert Sapolsky  
+
+## **Perception & Awareness**
+- *"The eye sees only what the mind is prepared to comprehend."* — Robertson Davies
+- *"A fool thinks himself to be wise, but a wise man knows himself to be a fool."* — William Shakespeare
+- *"Most people are not after truth. They are after reassurance."* — Naval Ravikant
+- *"The further a society drifts from truth, the more it will hate those who speak it."* — George Orwell
+- *"Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won’t come in."* — Isaac Asimov
+- *"He who controls perception controls reality."* — Proverb
 
 ## **Conflict & Power**  
 *True power lies in strategic control.*  
@@ -92,3 +101,75 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"Do something worthy of being remembered."* — Proverb  
 - *"Rather than love, than money, than fame, give me truth."* — Henry David Thoreau  
 - *"Transformation is not about control. It is about curiosity, courage, and commitment."* — Ken Cloke  
+
+## **Hyper-Awareness & Perception**  
+*Seeing what others don’t, questioning reality itself.*  
+
+- *"The eye sees only what the mind is prepared to comprehend."* — Robertson Davies  
+- *"A fool thinks himself to be wise, but a wise man knows himself to be a fool."* — William Shakespeare  
+- *"Most people are not after truth. They are after reassurance."* — Naval Ravikant  
+- *"The further a society drifts from truth, the more it will hate those who speak it."* — George Orwell  
+- *"Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won’t come in."* — Isaac Asimov  
+- *"He who controls perception controls reality."* — Proverb  
+- *"The spectacle is not a collection of images, but a social relation among people, mediated by images."* — Guy Debord  
+- *"The mind creates the abyss, and the heart crosses it."* — Nisargadatta Maharaj  
+
+## **Mental Sovereignty & Cognitive Warfare**  
+*Control your own mind before others do it for you.*  
+
+- *"You do not rise to the level of your goals. You fall to the level of your systems."* — James Clear  
+- *"If you do not control your mind, someone else will."* — Napoleon Hill  
+- *"Propaganda works best when those who are being manipulated are confident they are acting on their own free will."* — Joseph Goebbels  
+- *"The conscious and intelligent manipulation of the organized habits and opinions of the masses is an important element in democratic society."* — Edward Bernays  
+- *"A man who stands for nothing will fall for anything."* — Malcolm X  
+- *"The price of apathy towards public affairs is to be ruled by evil men."* — Plato  
+- *"The first and greatest victory is to conquer yourself."* — Plato  
+- *"Until you make the unconscious conscious, it will direct your life and you will call it fate."* — Carl Jung  
+- *"People do not believe lies because they have to, but because they want to."* — Malcolm Muggeridge  
+
+## **Freedom, Autonomy & The Illusion of Choice**  
+*Not all choices are real. Not all freedom is free.*  
+
+- *"Taxation of earnings from labor is on a par with forced labor."* — Robert Nozick  
+- *"From each as they choose, to each as they are chosen."* — Robert Nozick  
+- *"The trouble with government regulation of the market is that it prohibits capitalistic acts between consenting adults."* — Robert Nozick  
+- *"None are more hopelessly enslaved than those who falsely believe they are free."* — Johann Wolfgang von Goethe  
+- *"Liberty means responsibility. That is why most men dread it."* — George Bernard Shaw  
+- *"If voting made any difference, they wouldn’t let us do it."* — Mark Twain  
+- *"Democracy is the theory that the common people know what they want, and deserve to get it good and hard."* — H.L. Mencken  
+- *"All our knowledge merely helps us to die a more painful death than animals that know nothing."* — Maurice Maeterlinck  
+- *"Man is born free, and everywhere he is in chains."* — Jean-Jacques Rousseau  
+
+## **Disruption, Subversion, and Deconstructing the System**  
+*Breaking out of the illusion requires dismantling it first.*  
+
+- *"Every successful revolution puts on in time the robes of the tyrant it has deposed."* — Barbara Tuchman  
+- *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."* — Buckminster Fuller  
+- *"It is no measure of health to be well adjusted to a profoundly sick society."* — Jiddu Krishnamurti  
+- *"The state calls its own violence law, but that of the individual crime."* — Max Stirner  
+- *"When exposing a crime is treated as committing a crime, you are ruled by criminals."* — Proverb  
+- *"When the people shall have nothing more to eat, they will eat the rich."* — Jean-Jacques Rousseau  
+- *"The most effective way to destroy people is to deny and obliterate their own understanding of their history."* — George Orwell  
+- *"Sometimes people don’t want to hear the truth because they don’t want their illusions destroyed."* — Friedrich Nietzsche  
+
+## **Anarchy, Authority, and The Nature of Power**  
+*Who rules? Who obeys? And why?*  
+
+- *"The more laws and restrictions there are, the poorer the people become."* — Lao Tzu  
+- *"The law, in its majestic equality, forbids the rich as well as the poor to sleep under bridges, to beg in the streets, and to steal bread."* — Anatole France  
+- *"No state more extensive than the minimal state can be justified."* — Robert Nozick  
+- *"Rebellion to tyrants is obedience to God."* — Benjamin Franklin  
+- *"Anarchy is the mother of order."* — Pierre-Joseph Proudhon  
+- *"When tyranny becomes law, rebellion becomes duty."* — Thomas Jefferson  
+- *"To learn who rules over you, simply find out who you are not allowed to criticize."* — Voltaire (disputed attribution)  
+- *"Political language is designed to make lies sound truthful and murder respectable."* — George Orwell  
+
+## **Reality, Control & The Post-Free Will Perspective**  
+*You do not control as much as you think. But neither does anyone else.*  
+
+- *"We think we are making rational decisions, but every choice is shaped by biology, environment, and history. Free will is the illusion of the moment."* — Robert Sapolsky  
+- *"The self is not one thing but many—contextually shifting and biologically constrained."* — Robert Sapolsky  
+- *"A human being is a part of the whole called by us 'universe,' a part limited in time and space. He experiences himself, his thoughts and feelings, as something separated from the rest—a kind of optical delusion of his consciousness."* — Albert Einstein  
+- *"There is no single self. Who you are is an ever-shifting state, dictated by context and past experience."* — Robert Sapolsky  
+- *"Men are disturbed not by things, but by the view which they take of them."* — Epictetus  
+- *"What we call reality is merely an agreed-upon illusion."* — Proverb  

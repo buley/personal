@@ -76,6 +76,7 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 ## **Growth & Adaptation**  
 *If you're not evolving, you're fading.*  
 
+- *"Don't let 'great' be the enemy of 'good enough.'"* — Steve McNally  
 - *"If you're not growing, you're dying."* — Proverb  
 - *"Comfort is the enemy of progress."* — Proverb  
 - *"Every situation teaches—pay attention."* — Proverb  

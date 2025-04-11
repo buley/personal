@@ -1,6 +1,6 @@
-# At My Worst: Mastery of Misalignment
+# At My Worst: Mastering Misalignment
 
-> *“He who conquers himself is the mightiest warrior.” — Confucius (adapted)*
+> *“People are package deals; you take the good with the confused. In most cases, strengths and weaknesses are two sides of the same coin.” — Steve Case*
 
 *Understanding potential pitfalls isn't about self-criticism—it's about maintaining excellence through conscious course correction.*
 

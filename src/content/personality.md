@@ -1,12 +1,24 @@
-# Personality: Architect of My Own Design
+# Personality
 
-> *“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Gustav Jung*
+> *“Until you make the unconscious conscious, it will direct your life and you will call it fate.” -- Carl Gustav Jung*
 
-*Understanding personality types isn't about fitting into boxes—it's about recognizing patterns that can be strategically leveraged or consciously redirected.*
+> *"Personality is the original personal property." -- Norman Mailer*
 
-I am a **visionary strategist, independent thinker, and high-standard leader.** I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures. I don't conform—I create. I don't follow—I lead.
+*Understanding personality types isn't about fitting into boxes--it's about recognizing patterns that can be strategically leveraged or consciously redirected.*
 
-The right people rise to meet me. The wrong ones fall away. That's how it should be.
+I am a **visionary strategist, independent thinker, and high-standard leader.**
+
+I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures.
+
+I don't conform--I create.
+
+I don't follow--I lead.
+
+The right people rise to meet me.
+
+The wrong ones fall away.
+
+That's how it should be.
 
 ## OCEAN Model Analysis
 
@@ -14,15 +26,17 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### 1. Openness to Experience – Very High
 
-**Core Traits:**
+**Core Traits**
 - Thrives on innovation and independent thinking
 - Actively seeks out and challenges new ideas
 - Resists convention and forges unique paths
 - Values intellectual exploration and creativity
 
+> *"I am not what happened to me, I am what I choose to become." -- Carl Jung*
+
 ### 2. Conscientiousness – Very High
 
-**Core Traits:**
+**Core Traits**
 - Sets and maintains exceptionally high standards
 - Displays strong discipline and goal orientation
 - Pursues mastery in chosen domains
@@ -30,7 +44,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### 3. Extraversion – Low to Moderate
 
-**Core Traits:**
+**Core Traits**
 - Engages selectively rather than broadly
 - Prefers depth over surface-level interaction
 - Self-sufficient in energy management
@@ -38,7 +52,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### 4. Agreeableness – Low to Moderate
 
-**Core Traits:**
+**Core Traits**
 - Prioritizes truth over comfort
 - Challenges ideas readily
 - Stands firm on principles
@@ -46,7 +60,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### 5. Neuroticism – Low
 
-**Core Traits:**
+**Core Traits**
 - Maintains strong emotional control
 - Values stability and rationality
 - Approaches challenges with resilience
@@ -58,7 +72,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### The Architect (INTJ)
 
-**Core Manifestations:**
+**Core Manifestations**
 - Views world as system to optimize
 - Operates with strategy and precision
 - Values independence and efficiency
@@ -67,7 +81,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### The Visionary (ENTP)
 
-**Core Manifestations:**
+**Core Manifestations**
 - Challenges established thinking
 - Enjoys intellectual debate
 - Pushes boundaries consistently
@@ -80,7 +94,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### Type 8 Core: The Challenger
 
-**Key Traits:**
+**Key Traits**
 - Takes control of environment
 - Refuses external limitation
 - Demands competence
@@ -89,7 +103,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### 5 Wing Influence: The Thinker
 
-**Key Traits:**
+**Key Traits**
 - Analyzes deeply
 - Values knowledge as power
 - Seeks mastery through understanding
@@ -102,7 +116,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### Logical Intuitive Extrovert (LIE)
 
-**Core Traits:**
+**Core Traits**
 - Entrepreneurial mindset
 - Systems and opportunity focused
 - Values efficiency and effectiveness
@@ -111,7 +125,7 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 
 ### Intuitive Logical Introvert (ILI)
 
-**Core Traits:**
+**Core Traits**
 - Strong pattern recognition
 - Long-term strategic thinking
 - Precise and calculated movement

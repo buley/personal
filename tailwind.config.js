@@ -27,6 +27,18 @@ module.exports = {
         mono: ["var(--font-geist-mono)", "monospace"],
         serif: ["var(--font-merriweather)", "serif"], // <-- Use the custom var
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            'blockquote p:first-of-type::before': {
+              content: 'none',
+            },
+            'blockquote p:first-of-type::after': {
+              content: 'none',
+            },
+          },
+        },
+      },
     },
   },
   plugins: [

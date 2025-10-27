@@ -1,16 +1,24 @@
-# Anxiety: A System for Mind Mastery
+# Anxiety
 
-> *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions—not outside." —Marcus Aurelius*
+> *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions--not outside." --Marcus Aurelius*
 
-*This is not about managing anxiety—it's about mastering the mind. Every disruption is an opportunity to impose order, every challenge a chance to refine control.*
+> *"The greatest weapon against stress is our ability to choose one thought over another." -- William James*
 
-Anxiety, at its core, is **a disruption of control, clarity, or certainty.** It's the mind running scenarios faster than it can process them, the body responding to threats that may not even exist, and the feeling of being stuck between **what is and what should be.**
+*This is not about managing anxiety--it's about mastering the mind. Every disruption is an opportunity to impose order, every challenge a chance to refine control.*
 
-I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my external world—so why should I allow it in my internal world? **Anxiety is not something I submit to—it's something I dismantle, solve, and move beyond.**
+Anxiety, at its core, is **a disruption of control, clarity, or certainty.**
+
+It's the mind running scenarios faster than it can process them, the body responding to threats that may not even exist, and the feeling of being stuck between **what is and what should be.**
+
+I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my external world--so why should I allow it in my internal world?
+
+**Anxiety is not something I submit to--it's something I dismantle, solve, and move beyond.**
 
 ## Root Causes
 
 *Understanding the triggers allows for strategic intervention:*
+
+> *"Peace comes from within. Do not seek it without." -- Buddha*
 
 1. **Lack of Control**  
    When I feel powerless in a situation, my mind will try to regain control by overanalyzing, preparing, or resisting uncertainty.
@@ -22,7 +30,7 @@ I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my externa
    If I feel like I'm stagnating, being slowed down, or not optimizing my skills, my internal frustration manifests as unease.
 
 4. **External Incompetence or Chaos**  
-   I operate best in structured, high-functioning environments. When I'm surrounded by inefficiency, disorganization, or unpredictability, I instinctively try to **fix or escape**—if I can't do either, anxiety rises.
+   I operate best in structured, high-functioning environments. When I'm surrounded by inefficiency, disorganization, or unpredictability, I instinctively try to **fix or escape**--if I can't do either, anxiety rises.
 
 5. **Emotional Ambiguity**  
    I don't like emotions I can't quantify or resolve. If something feels **off** but I can't pinpoint why, it lingers in my mind until I process it logically.
@@ -58,7 +66,7 @@ I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my externa
 
 ### 4. Processing Emotions
 
-*Think it through once—then act or let it go.*
+*Think it through once--then act or let it go.*
 
 - Identify and address emotional triggers directly
 - Analyze feelings objectively, then decide on action
@@ -76,15 +84,15 @@ I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my externa
 
 ## Final Integration
 
-*These are not coping mechanisms—they are systems of control.*
+*These are not coping mechanisms--they are systems of control.*
 
-1. Anxiety does not run my life—I do
+1. Anxiety does not run my life--I do
 2. When uncertainty arises, I create clarity
 3. When control is lost, I focus on what I *can* influence
 4. When my mind spirals, I impose structure and logic
-5. When emotion clouds thinking, I process it—then act
+5. When emotion clouds thinking, I process it--then act
 6. When energy builds up, I channel it into **movement, mastery, or execution**
 
-I don't tolerate **external inefficiency—so why would I tolerate it in myself?** **Anxiety is an unoptimized mental process.** I refine it, restructure it, and redirect it toward something that serves me.
+I don't tolerate **external inefficiency--so why would I tolerate it in myself?** **Anxiety is an unoptimized mental process.** I refine it, restructure it, and redirect it toward something that serves me.
 
 I don't just *cope* with anxiety. **I override it.**

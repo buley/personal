@@ -1,5 +1,5 @@
 /**
- * ContentSkeleton - Exactly matches content layout to prevent CLS
+ * ContentSkeleton -- Exactly matches content layout to prevent CLS
  */
 const ContentSkeleton = () => {
     return (

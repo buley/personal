@@ -1,23 +1,29 @@
-# Professionalism: Beyond One Discipline
+# Professionalism
 
-> *“Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.” — Sun Tzu*
+> *“Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.” -- Sun Tzu*
 
-*Professional excellence isn't about mastering a single field—it's about bringing unique insight and systematic thinking to every domain you touch.*
+> *"Excellence is not a skill. It is an attitude." -- Ralph Marston*
 
-I am a **strategic thinker, independent problem-solver, and systems-oriented leader** with a deep understanding of human behavior and decision-making. My career has taken me across disciplines—from journalism to engineering to mediation—all unified by a core set of strengths that allow me to **analyze, optimize, and resolve complex issues with precision and clarity.**
+*Professional excellence isn't about mastering a single field--it's about bringing unique insight and systematic thinking to every domain you touch.*
+
+I am a **strategic thinker, independent problem-solver, and systems-oriented leader** with a deep understanding of human behavior and decision-making.
+
+My career has taken me across disciplines--from journalism to engineering to mediation--all unified by a core set of strengths that allow me to **analyze, optimize, and resolve complex issues with precision and clarity.**
 
 ## 1. Comprehensive Vision
 
 *Seeing both forest and trees.*
 
-**Foundation:**
+**Foundation**
 - Deep background in philosophy, politics, and economics
 - Understanding of human behavior and choice architecture
 - Ability to see systems, incentives, and motivations
 - Pattern recognition across seemingly unrelated domains
 
-**Application:**
-This makes me effective in roles requiring both analysis and action—whether it's:
+> *"The best way to predict the future is to create it." -- Peter Drucker*
+
+**Application**
+This makes me effective in roles requiring both analysis and action--whether it's:
 - Reporting truth as a journalist
 - Designing information systems as an engineer
 - Guiding high-stakes negotiations as a mediator
@@ -26,13 +32,13 @@ This makes me effective in roles requiring both analysis and action—whether it
 
 *Thriving under pressure.*
 
-**Key Capabilities:**
+**Key Capabilities**
 - Navigation of uncertainty
 - Extraction of clarity from chaos
 - Systems-based problem-solving
 - Calm decision-making under pressure
 
-**Cross-Domain Success:**
+**Cross-Domain Success**
 - Journalism: Navigating uncertainty while maintaining accuracy
 - Engineering: Breaking down complex problems systematically
 - Mediation: Creating resolution strategies in high-conflict situations
@@ -41,13 +47,13 @@ This makes me effective in roles requiring both analysis and action—whether it
 
 *Autonomous execution with impact.*
 
-**Core Approach:**
+**Core Approach**
 - Taking ownership without waiting for permission
 - Analyzing landscape comprehensively
 - Executing with precision
 - Building for long-term impact
 
-**Domain Applications:**
+**Domain Applications**
 - Engineering: Systems designed for long-term efficiency
 - Mediation: Structural solutions, not temporary fixes
 - Journalism: Depth over surface-level reporting
@@ -56,13 +62,13 @@ This makes me effective in roles requiring both analysis and action—whether it
 
 *Bridging logic and human factors.*
 
-**Unique Capability:**
+**Unique Capability**
 Few can move seamlessly between technical precision and human intuition. This allows me to:
 - Solve problems using both rational analysis and human insight
 - Navigate difficult personalities and high-conflict situations
 - Communicate complex ideas to diverse audiences
 
-**Professional Impact:**
+**Professional Impact**
 - Technical accuracy without losing human connection
 - Emotional intelligence without sacrificing precision
 - Clear communication across different understanding levels
@@ -71,12 +77,12 @@ Few can move seamlessly between technical precision and human intuition. This al
 
 *Core professional attributes.*
 
-**Essential Characteristics:**
+**Essential Characteristics**
 - Independent-minded: Critical thinking and decisive action
 - Analytically rigorous: Comprehensive problem breakdown
 - Uncompromising standards: Excellence as baseline
 
-**Professional Application:**
+**Professional Application**
 Whether engineering systems, resolving disputes, or navigating negotiations, these traits allow me to:
 - See what others miss
 - Solve what others avoid
@@ -92,4 +98,4 @@ Whether engineering systems, resolving disputes, or navigating negotiations, the
 4. Analysis with action
 5. Independence with influence
 
-I don't just work within systems—I redefine them.
+I don't just work within systems--I redefine them.

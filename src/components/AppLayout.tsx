@@ -13,6 +13,7 @@ import {
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
 import FunFact from "./FunFact";
+import RandomFragment from "./RandomFragment";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -30,6 +31,7 @@ const AppLayout = () => {
 
   // Initialize with a static seed to match the server-rendered HTML.
   const [mediaUrl, setMediaUrl] = useState(`/api/placeholder/1920/1080?seed=static`);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     // After mount, update the background image URL with a dynamic seed.
@@ -43,6 +45,11 @@ const AppLayout = () => {
     const interval = setInterval(updateMediaUrl, 300000);
     return () => clearInterval(interval);
   }, []);
+
+  // Reset loaded state when URL changes
+  useEffect(() => {
+    setImageLoaded(false);
+  }, [mediaUrl]);
 
   const primaryNav = [
     { title: "FAQ", path: "faq" },
@@ -69,9 +76,9 @@ const AppLayout = () => {
     operation: [
       { title: "Strategy", path: "strategy" },
       { title: "Decision Making", path: "decisions" },
-      { title: "Attention Systems (ADHD)", path: "adhd" },
-      { title: "Autistic Processing (Autism)", path: "autism" },
-      { title: "Hybrid Cognition (AuADHD)", path: "audhd" },
+      { title: "Attention Systems", path: "adhd" },
+      { title: "Autistic Processing", path: "autism" },
+      { title: "Hybrid Cognition", path: "audhd" },
       { title: "Learning & Knowledge", path: "learning" },
       { title: "Time & Energy Management", path: "time-energy" },
       { title: "Crisis Response", path: "crisis" },
@@ -123,10 +130,23 @@ const AppLayout = () => {
   };
 
   const toggleSection = (section: string) => {
-    setExpandedSections((prev) => ({
-      ...prev,
-      [section]: !prev[section],
-    }));
+    setExpandedSections((prev) => {
+      const isCurrentlyExpanded = prev[section];
+      if (isCurrentlyExpanded) {
+        // If closing, just close this one
+        return {
+          ...prev,
+          [section]: false,
+        };
+      } else {
+        // If opening, close all others and open this one
+        const newExpanded = Object.keys(prev).reduce((acc, key) => {
+          acc[key] = key === section;
+          return acc;
+        }, {} as { [key: string]: boolean });
+        return newExpanded;
+      }
+    });
   };
 
   // Navigation Section Component
@@ -210,7 +230,10 @@ const AppLayout = () => {
           key={mediaUrl}
           src={mediaUrl}
           alt="Background"
-          className="opacity-55 w-full h-full object-cover transition-opacity duration-1000"
+          onLoad={() => setImageLoaded(true)}
+          className={`w-full h-full object-cover transition-opacity duration-1000 ${
+            imageLoaded ? 'opacity-55' : 'opacity-0'
+          }`}
         />
       </div>
 
@@ -363,6 +386,7 @@ const AppLayout = () => {
               <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
                 Navigate to explore
               </p>
+              <RandomFragment />
             </div>
           </main>
         )}

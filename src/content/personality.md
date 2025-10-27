@@ -1,4 +1,4 @@
-# Personality: Architect of My Own Design
+# Personality
 
 > *“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Gustav Jung*
 

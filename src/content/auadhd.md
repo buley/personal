@@ -4,7 +4,7 @@
 
 > *"The mind is everything. What you think you become." — Buddha*
 
-## **I. Core Premise: Divergence as Design**
+## **I. Divergence as Design**
 
 I am not a malfunction of the norm.
 
@@ -20,7 +20,7 @@ Where others see noise, I detect signal.
 
 Where others slow down, I *ignite*.
 
-## **II. Strengths: The Double Engine**
+## **II. The Double Engine**
 
 AUADHD is a dual-core processor —
 
@@ -32,7 +32,7 @@ When aligned, I am unstoppable.
 
 > *“The mind that is still, sees. The mind that moves, creates.”* — Proverb
 
-## **III. The Shadow Domain: Misalignment**
+## **III. Misalignment**
 
 When the systems desynchronize, chaos follows.
 My focus fractures. My standards become prisons.
@@ -69,14 +69,14 @@ I do not adapt to systems; I *engineer* them.
 
 > *“If you cannot fit the mold, melt it.”* — Proverb
 
-## **V. Communication: Translation as a Superpower**
+## **V. Translation as a Superpower**
 
 My mind runs in non-linear loops; most people speak in straight lines.
 I have learned to translate — between chaos and order, between raw thought and social code.
 This translation is not deception; it is diplomacy.
 Connection requires interpretation, not imitation.
 
-## **VI. Resilience: Reframing the Cycle**
+## **VI. Reframing the Cycle**
 
 My fluctuations are not failures — they are data.
 Each hyperfocus, each crash, each burst of creation is a pulse in a larger rhythm.
@@ -84,7 +84,7 @@ Stability is not stillness; it is *recovery speed*.
 
 > *“Resilience is not how long you endure, but how quickly you realign.”* — Proverb
 
-## **VII. Legacy: The Divergent Vanguard**
+## **VII. The Divergent Vanguard**
 
 The world is built by people who refuse to function “normally.”
 AUADHD is not an affliction; it’s evolution under pressure.

@@ -1,4 +1,4 @@
-# Failure: Adaptive Resilience
+# Failure
 
 > *“Our inward power, when it obeys Nature, adapts itself to every circumstance. It turns each impediment into fuel, and each obstacle into steps by which we rise.” — Marcus Aurelius (adapted)*
 

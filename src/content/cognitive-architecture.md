@@ -1,8 +1,8 @@
 # Cognitive Architecture
 
-> *"Do not wish for a lighter burden; build the structure that can carry it."* — Consilium Aurelius
+> *"For my yoke is easy and my burden is light."* — Jesus Christ (Matthew 11:30)
 
-> *"The brain is wider than the sky." — Emily Dickinson*
+> *"The brain is wider than the sky."* — Emily Dickinson
 
 This is not a list of symptoms. It is a **systems map** — a living documentation of how my cognitive machinery operates across speed, pattern, and integrity.
 
@@ -100,7 +100,7 @@ Where others see data, I see narrative ecosystems.
 
 **Operational Insight:** Lean into narrative systems thinking — strategy as story. When presenting data, construct coherence through narrative causality, not mere enumeration.
 
-## **Summary: The Divergent Engine**
+## **The Divergent Engine**
 
 The AuADHD mind is not a split; it is a dual-core processor.
 It thrives in paradox — logic and intuition, structure and motion, depth and improvisation.

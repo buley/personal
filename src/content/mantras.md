@@ -1,4 +1,4 @@
-# Mantras: Meditations on Strategy, Self-Control, and Success
+# Mantras
 
 > *“Waste no more time arguing about what a good man should be. Be one.” — Marcus Aurelius*
 

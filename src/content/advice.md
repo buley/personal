@@ -1,4 +1,4 @@
-**Advice: A Masterlist of Power, Strategy, and Self-Mastery**  
+**Advice**
 
 > *"In a world that really has been turned on its head, truth is a moment of falsehood."* — Guy Debord  
 
@@ -77,6 +77,9 @@ These quotes are not about empty philosophy—they are strategies for operation,
 - *"Your greatest strength is not invulnerability, but the ability to recover rapidly."* — Gabor Maté  
 - *"Fall seven times, stand up eight."* — Japanese Proverb
 - *"Hardships often prepare ordinary people for an extraordinary destiny."* — C.S. Lewis
+- *"Success is not final, failure is not fatal: It is the courage to continue that counts."* — Winston Churchill
+- *"Failure is simply the opportunity to begin again, this time more intelligently."* — Henry Ford
+- *"Our inward power, when it obeys Nature, adapts itself to every circumstance. It turns each impediment into fuel, and each obstacle into steps by which we rise."* — Marcus Aurelius
 
 ## **Growth & Adaptation**  
 *If you're not evolving, you're fading.*  
@@ -87,6 +90,25 @@ These quotes are not about empty philosophy—they are strategies for operation,
 - *"Education is not the filling of a pail, but the lighting of a fire."* — William Butler Yeats  
 - *"Be the change that you wish to see in the world."* — Mahatma Gandhi  
 - *"There is no single self. Who you are is an ever-shifting state, dictated by context and past experience."* — Robert Sapolsky  
+
+## **Balancing Strengths and Weaknesses**  
+*Know your best to avoid your worst—strengths unchecked become liabilities.*  
+
+- *"First say to yourself what you would be; and then do what you have to do."* — Epictetus  
+- *"People are package deals; you take the good with the confused. In most cases, strengths and weaknesses are two sides of the same coin."* — Steve Case  
+- *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it."* — Michelangelo  
+
+## **Learning & Mastery**  
+*Knowledge without application is merely entertainment. Learn to build, not just to know.*  
+
+- *"It is impossible for a man to learn what he thinks he already knows."* — Epictetus  
+- *"Live as if you were to die tomorrow. Learn as if you were to live forever."* — Mahatma Gandhi  
+- *"The more that you read, the more things you will know. The more that you learn, the more places you'll go."* — Dr. Seuss  
+- *"If you can't explain it simply or apply it practically, you don't truly understand it."* — Adapted from Albert Einstein  
+- *"Education is not the filling of a pail, but the lighting of a fire."* — William Butler Yeats  
+- *"The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge."* — Daniel J. Boorstin  
+- *"Believe those who seek the truth; doubt those who find it."* — André Gide  
+- *"We do not see things as they are; we see them as we are."* — Anaïs Nin  
 
 ## **Perception & Awareness**
 - *"The eye sees only what the mind is prepared to comprehend."* — Robertson Davies
@@ -110,6 +132,19 @@ These quotes are not about empty philosophy—they are strategies for operation,
 - *"People do not believe lies because they have to, but because they want to."* — Malcolm Muggeridge  
 - *"The mind is its own place, and in itself can make a heaven of hell, a hell of heaven."* — John Milton
 - *"The only limits to the possibilities in your life tomorrow are the buts you use today."* — Les Brown
+
+## **Embracing Neurodiversity & Cognitive Strengths**  
+*Divergence is design, not disorder. Leverage your unique cognitive architecture.*  
+
+- *"Why fit in when you were born to stand out?"* — Dr. Seuss  
+- *"The mind is everything. What you think you become."* — Buddha  
+- *"For my yoke is easy and my burden is light."* — Jesus Christ (Matthew 11:30)  
+- *"The brain is wider than the sky."* — Emily Dickinson  
+- *"Out of chaos comes order."* — Friedrich Nietzsche  
+- *"The mind that is still, sees. The mind that moves, creates."* — Proverb  
+- *"If you cannot fit the mold, melt it."* — Proverb  
+- *"Resilience is not how long you endure, but how quickly you realign."* — Proverb  
+- *"The fire that burns too bright for the world was never meant to stay dim."* — Proverb  
 
 ## **Conflict & Power**  
 *True power lies in strategic control.*  
@@ -244,6 +279,13 @@ These quotes are not about empty philosophy—they are strategies for operation,
 - *"The mind creates the abyss, and the heart crosses it."* — Nisargadatta Maharaj  
 - *"Man is equally incapable of seeing the nothingness from which he emerges and the infinity in which he is engulfed."* — Blaise Pascal  
 - *"The laws of physics are merely a statistical outcome of some deeper phenomena which we don't yet fully understand."* — Richard Feynman  
+
+## **Defining Personal Success**  
+*Success is autonomy, mastery, legacy, impact, and alignment—not external validation.*  
+
+- *"Do not go where the path may lead, go instead where there is no path and leave a trail."* — Ralph Waldo Emerson  
+- *"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful."* — Albert Schweitzer  
+- *"The best way to predict the future is to create it."* — Peter Drucker  
 
 ## **Legacy & Purpose**  
 *Build something that echoes beyond your time.*  

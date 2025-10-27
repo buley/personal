@@ -1,4 +1,4 @@
-# Action: Because Talk Comes Cheap
+# Action
 
 > *"Theory becomes meaningless the moment it stops inspiring action."*
 
@@ -12,7 +12,7 @@ But knowledge alone is **nothing without application.**
 
 Now, the focus is **living every single insight, principle, and commitment—daily, relentlessly, without compromise.**
 
-## Operating System: How I Move Through the World
+## Operating System
 
 *These are not guidelines—they are laws of operation.*
 
@@ -27,7 +27,7 @@ Now, the focus is **living every single insight, principle, and commitment—dai
 
 I don't just think this—I live it.
 
-## Self-Check System: Keeping the Edge Sharp
+## Keeping the Edge Sharp
 
 *Critical questions that demand honest answers:*
 
@@ -40,7 +40,7 @@ I don't just think this—I live it.
 
 If I can't answer these with **confidence and conviction**, I course-correct immediately.
 
-## Non-Negotiables: What I Will Not Tolerate
+## What I Will Not Tolerate
 
 *These are absolute boundaries, not preferences:*
 
@@ -52,7 +52,7 @@ If I can't answer these with **confidence and conviction**, I course-correct imm
 
 If it doesn't meet my standard, **I cut it out—no hesitation.**
 
-## Execution Plan: The Path Forward
+## The Path Forward
 
 *Action items that demand immediate implementation:*
 
@@ -62,7 +62,7 @@ If it doesn't meet my standard, **I cut it out—no hesitation.**
 4. Ensure work, relationships, and time align with long-term goals
 5. Move forward with absolute clarity and no second-guessing
 
-## Final Command: Live It
+## Live It
 
 Everything we've broken down is **now my foundation**—not just something I know, but something I embody. **Every decision, every habit, every relationship must reflect this.**
 
@@ -71,3 +71,7 @@ I don't hesitate.
 I don't compromise.  
 
 Now, I move.
+
+## How I Move Through the World
+
+*These are not guidelines—they are laws of operation.*

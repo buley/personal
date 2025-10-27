@@ -1,4 +1,4 @@
-# Time, Energy, and Results: A Systemic Approach to High-Impact Hours
+# Time, Energy, and Results
 
 > *"Time is not just a resource to manage—it's the currency of impact."*
 

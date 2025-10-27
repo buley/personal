@@ -1,4 +1,4 @@
-# Self-Sabotage: Sustainable Independence
+# Self-Sabotage
 
 > *“Be master of mind rather than mastered by mind.” — Zen Proverb*
 

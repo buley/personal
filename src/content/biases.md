@@ -140,7 +140,7 @@ I control access to myself, my time, and my expertise—**never making myself to
 - **Not all structure is bad.** Just because I resist authority **doesn't mean every system should be burned down.**
 - **Some battles aren't worth fighting.** Efficiency includes **choosing when to engage and when to walk away.**
 
-## Final Commitment: Mastering My Own Mind
+## Mastering My Own Mind
 
 *Biases are not inherently good or bad. They are tools.*
 

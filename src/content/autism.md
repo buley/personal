@@ -1,4 +1,4 @@
-# Autistic Processing
+# Autism
 
 > *“The reward for conformity is that everyone likes you except yourself.”* — Rita Mae Brown
 

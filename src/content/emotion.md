@@ -1,4 +1,4 @@
-# Emotion: A Strategic Framework for Inner Mastery
+# Emotion
 
 > *“No man is free who is not master of himself.” — Epictetus*
 

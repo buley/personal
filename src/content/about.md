@@ -1,4 +1,4 @@
-# About: Taylor William Buley
+# About
 
 > *"The unexamined life is not worth living." — Socrates*
 

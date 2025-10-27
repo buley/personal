@@ -1,4 +1,4 @@
-# Interaction Style: No Comfort Zone
+# Interaction Style
 
 > *“It is no measure of health to be well adjusted to a profoundly sick society.” — Jiddu Krishnamurti*
 

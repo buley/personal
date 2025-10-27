@@ -1,4 +1,4 @@
-# Challenges: In Pursuit of Discomfort
+# Challenges
 
 > *"Difficulties strengthen the mind, as labor does the body." — Seneca*
 

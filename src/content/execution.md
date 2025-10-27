@@ -1,4 +1,4 @@
-# Execution: Action Over Intention
+# Execution
 
 > *“How long are you going to wait before you demand the best for yourself?” — Epictetus*
 
@@ -85,7 +85,7 @@ If I don't actively integrate these insights into my daily life, they become **i
 **Guiding Principle:**  
 *A disciplined mind and body are the foundation of high performance.*
 
-## Final Commitment: No Excuses, Only Execution
+## No Excuses, Only Execution
 
 1. I operate at my highest level, every single day
 2. I don't let distractions, inefficiencies, or emotional noise slow me down

@@ -168,7 +168,7 @@ I convert information into mythic systems — taxonomies, manifestos, frameworks
 
 > *“The universe is made of stories, not atoms.”* — **Muriel Rukeyser**
 
-## **Operational Summary: The Divergent Engine**
+## **The Divergent Engine**
 
 The AuADHD mind is a **dual-processing system** — analytic and impulsive, structural and generative.
 Its strength lies not in moderation, but in oscillation.

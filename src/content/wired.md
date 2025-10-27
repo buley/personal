@@ -1,8 +1,8 @@
-# How I'm Wired: Iron Spine, Open Mind
+# How I'm Wired
 
 > *“Freedom is not the absence of commitments, but the ability to choose—and commit myself to—what is best for me.” — Paulo Coelho (adapted)*
 
-# Wired: Independence Processing
+# Independence Processing
 
 > *“Freedom is not the absence of commitments, but the ability to choose—and commit myself to—what is best for me.” — Paulo Coelho*
 

@@ -2,6 +2,8 @@
 
 > *“Waste no more time arguing about what a good man should be. Be one.” — Marcus Aurelius*
 
+> *"The only limit to our realization of tomorrow will be our doubts of today." — Franklin D. Roosevelt*
+
 *These mantras are not mere words—they are principles of operation, standards of excellence, and guides for mastery.*
 
 ## Self-Mastery & Control
@@ -15,6 +17,8 @@
 - You are only as powerful as your ability to remain composed
 - Master your impulses, and nothing can master you
 - Your mind is a weapon—keep it sharp, keep it steady
+
+> *"The mind is its own place, and in itself can make a heaven of hell, a hell of heaven." — John Milton*
 
 ## Action & Execution
 

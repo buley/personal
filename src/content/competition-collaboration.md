@@ -2,9 +2,15 @@
 
 > *“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.” — Sun Tzu*
 
+> *"Alone we can do so little; together we can do so much." — Helen Keller*
+
 *Competition isn't about beating others, and collaboration isn't about working together. Both are strategic tools for building long-term, systemic advantages.*
 
-I don't compete to win—I position myself to make winning inevitable. I don't collaborate for connection—I align with others for strategic advantage. Every interaction, whether competitive or collaborative, must serve a larger strategic purpose.
+I don't compete to win—I position myself to make winning inevitable.
+
+I don't collaborate for connection—I align with others for strategic advantage.
+
+Every interaction, whether competitive or collaborative, must serve a larger strategic purpose.
 
 ## 1. Competition Framework
 
@@ -16,6 +22,8 @@ I don't compete to win—I position myself to make winning inevitable. I don't c
 - Real competition is with standards, not just others
 - Most "competitors" are irrelevant to long-term objectives
 - True competition happens at the system level
+
+> *"If you know the enemy and know yourself, you need not fear the result of a hundred battles." — Sun Tzu*
 
 **Essential Truth:**  
 The highest form of competition isn't about beating others—it's about becoming unstoppable.

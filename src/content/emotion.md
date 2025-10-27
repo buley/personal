@@ -2,9 +2,17 @@
 
 > *“No man is free who is not master of himself.” — Epictetus*
 
+> *"Your emotions are the slaves to your thoughts, and you are the slave to your emotions." — Elizabeth Gilbert*
+
 *Emotional intelligence isn't about feeling more—it's about understanding better. The goal is integration, not transformation.*
 
-I lead with logic, strategy, and analysis. I don't make decisions based on fleeting emotions, and I don't allow feelings—mine or others'—to dictate my actions. But that doesn't mean emotion is absent from my life. **I experience it, I recognize it, but I don't let it control me.**
+I lead with logic, strategy, and analysis.
+
+I don't make decisions based on fleeting emotions, and I don't allow feelings—mine or others'—to dictate my actions.
+
+But that doesn't mean emotion is absent from my life.
+
+**I experience it, I recognize it, but I don't let it control me.**
 
 However, I also know that **emotion, when understood and harnessed correctly, can be a tool—not a liability.**
 
@@ -14,6 +22,8 @@ However, I also know that **emotion, when understood and harnessed correctly, ca
 
 **Pattern:**
 When I feel something, my instinct is to analyze it rather than just let myself feel it. Instead of processing emotions naturally, I dissect them, categorize them, and find a logical way to deal with them. This helps me stay clear-headed, but it can also create distance between myself and my own emotional reality.
+
+> *"The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart." — Helen Keller*
 
 **Key Understanding:**
 I don't need to *become* an emotional person, but I do need to recognize when I'm treating emotions as a problem to solve rather than an experience to process.

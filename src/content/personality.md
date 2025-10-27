@@ -2,11 +2,23 @@
 
 > *“Until you make the unconscious conscious, it will direct your life and you will call it fate.” — Carl Gustav Jung*
 
+> *"Personality is the original personal property." — Norman Mailer*
+
 *Understanding personality types isn't about fitting into boxes—it's about recognizing patterns that can be strategically leveraged or consciously redirected.*
 
-I am a **visionary strategist, independent thinker, and high-standard leader.** I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures. I don't conform—I create. I don't follow—I lead.
+I am a **visionary strategist, independent thinker, and high-standard leader.**
 
-The right people rise to meet me. The wrong ones fall away. That's how it should be.
+I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures.
+
+I don't conform—I create.
+
+I don't follow—I lead.
+
+The right people rise to meet me.
+
+The wrong ones fall away.
+
+That's how it should be.
 
 ## OCEAN Model Analysis
 
@@ -19,6 +31,8 @@ The right people rise to meet me. The wrong ones fall away. That's how it should
 - Actively seeks out and challenges new ideas
 - Resists convention and forges unique paths
 - Values intellectual exploration and creativity
+
+> *"I am not what happened to me, I am what I choose to become." — Carl Jung*
 
 ### 2. Conscientiousness – Very High
 

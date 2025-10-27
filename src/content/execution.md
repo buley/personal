@@ -2,9 +2,15 @@
 
 > *“How long are you going to wait before you demand the best for yourself?” — Epictetus*
 
+> *"The way to get started is to quit talking and begin doing." — Walt Disney*
+
 *Analysis without action is merely philosophy. Every insight demands implementation, every understanding requires execution.*
 
-Self-awareness is only as valuable as the **action it leads to.** I now have a complete understanding of how I operate—my strengths, my blind spots, my patterns, and my highest potential. Now, the focus shifts to **execution, consistency, and accountability.**
+Self-awareness is only valuable as the **action it leads to.**
+
+I now have a complete understanding of how I operate—my strengths, my blind spots, my patterns, and my highest potential.
+
+Now, the focus shifts to **execution, consistency, and accountability.**
 
 If I don't actively integrate these insights into my daily life, they become **intellectual exercises rather than real transformation.**
 
@@ -18,6 +24,8 @@ If I don't actively integrate these insights into my daily life, they become **i
 - Regularly audit myself: Am I staying sharp, pushing limits, and refining my systems?
 - Build non-negotiable routines that reinforce my values and long-term goals
 - Assess my relationships, commitments, and priorities to ensure they align with who I am becoming
+
+> *"We are what we repeatedly do. Excellence, then, is not an act, but a habit." — Aristotle*
 
 **Guiding Principle:**  
 *Excellence isn't about what I say—it's about what I consistently do.*

@@ -2,11 +2,29 @@
 
 > *“Freedom is not the absence of commitments, but the ability to choose—and commit myself to—what is best for me.” — Paulo Coelho (adapted)*
 
-*Core wiring isn't destiny—it's foundation. The question isn't how to change it, but how to optimize it.*
+# Wired: Independence Processing
 
-I am independent to my core. I don't expect others to take care of me, and I have no interest in taking responsibility for someone else's emotional well-being. I value relationships built on **mutual strength, intelligence, and respect—not dependency or emotional neediness.**
+> *“Freedom is not the absence of commitments, but the ability to choose—and commit myself to—what is best for me.” — Paulo Coelho*
 
-I process the world through **logic and strategy** rather than unchecked emotion. I prefer **clear communication, rational thinking, and decisive action** over ambiguity or emotional indulgence. If something isn't working, I either **fix it, leave it, or rebuild it**—but I don't dwell in it.
+> *"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion." — Albert Camus*
+
+*My core traits are not flaws—they're the foundation of my independence. I process differently, and that's my advantage.*
+
+I am wired for independence. This isn't a choice—it's how I operate.
+
+My mind is designed for self-reliance, and I thrive when I can control my environment.
+
+I am independent to my core.
+
+I don't expect others to take care of me, and I have no interest in taking responsibility for someone else's emotional well-being.
+
+I value relationships built on **mutual strength, intelligence, and respect—not dependency or emotional neediness.**
+
+I process the world through **logic and strategy** rather than unchecked emotion.
+
+I prefer **clear communication, rational thinking, and decisive action** over ambiguity or emotional indulgence.
+
+If something isn't working, I either **fix it, leave it, or rebuild it**—but I don't dwell in it.
 
 ## Formation of Core Traits
 
@@ -14,6 +32,8 @@ I process the world through **logic and strategy** rather than unchecked emotion
 
 ### Early Learning
 I learned early on that **self-reliance is the surest way to get things done.** Whether through high expectations, a focus on problem-solving, or simply an environment that rewarded competence over vulnerability, I internalized that being **capable, logical, and in control of myself** was the best way to move through life.
+
+> *"The only person you are destined to become is the person you decide to be." — Ralph Waldo Emerson*
 
 ### Key Development Patterns
 

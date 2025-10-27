@@ -2,9 +2,17 @@
 
 > *"The impediment to action advances action. What stands in the way becomes the way." — Marcus Aurelius*
 
+> *"In the middle of difficulty lies opportunity." — Albert Einstein*
+
 *Crisis response isn't about survival—it's about strategic transformation. The goal isn't to return to normal, but to emerge stronger.*
 
-In moments of crisis, most people react emotionally, make rushed decisions, or freeze entirely. I don't. Crisis situations are where my **strategic thinking, emotional control, and systematic approach** create the greatest advantage. When everything is falling apart, I become more focused, more precise, and more effective.
+In moments of crisis, most people react emotionally, make rushed decisions, or freeze entirely.
+
+I don't.
+
+Crisis situations are where my **strategic thinking, emotional control, and systematic approach** create the greatest advantage.
+
+When everything is falling apart, I become more focused, more precise, and more effective.
 
 ## 1. Initial Response Framework
 
@@ -16,6 +24,8 @@ In moments of crisis, most people react emotionally, make rushed decisions, or f
 - Establish control over controllable elements
 - Create space for strategic thinking
 - Implement immediate stabilization measures
+
+> *"Smooth seas do not make skillful sailors." — African Proverb*
 
 **Core Principle:**  
 The goal in crisis isn't to solve everything immediately—it's to create stability for strategic response.

@@ -13,6 +13,7 @@ import {
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
 import FunFact from "./FunFact";
+import RandomFragment from "./RandomFragment";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -376,6 +377,7 @@ const AppLayout = () => {
               <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
                 Navigate to explore
               </p>
+              <RandomFragment />
             </div>
           </main>
         )}

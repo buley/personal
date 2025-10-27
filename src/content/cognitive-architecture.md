@@ -2,9 +2,13 @@
 
 > *"Do not wish for a lighter burden; build the structure that can carry it."* — Consilium Aurelius
 
+> *"The brain is wider than the sky." — Emily Dickinson*
+
 This is not a list of symptoms. It is a **systems map** — a living documentation of how my cognitive machinery operates across speed, pattern, and integrity.
 
 I am neither fragmented nor disordered; I am **multi-threaded**, running concurrent processes of logic, intensity, and patterning.
+
+> *"The mind is everything. What you think you become." — Buddha*
 
 ## **Core Cognitive Signature**
 

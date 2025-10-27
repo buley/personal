@@ -2,9 +2,13 @@
 
 > *“Be master of mind rather than mastered by mind.” — Zen Proverb*
 
+> *"The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge." — Stephen Hawking*
+
 *Self-awareness isn't about self-criticism—it's about strategic optimization of natural tendencies.*
 
-I hold myself to high standards, value independence above all else, and operate with a level of precision that ensures I stay in control of my own outcomes. These traits have made me **effective, resilient, and sharp**, but I also recognize that my greatest strengths can turn against me when left unchecked.
+I hold myself to high standards, value independence above all else, and operate with a level of precision that ensures I stay in control of my own outcomes.
+
+These traits have made me **effective, resilient, and sharp**, but I also recognize that my greatest strengths can turn against me when left unchecked.
 
 ## 1. The Independence Paradox
 
@@ -18,6 +22,8 @@ I trust myself to get things done at a high level, and I don't like relying on o
 - Highly selective in engagement
 - Risk missing valuable relationships
 - May filter out potentially valuable collaborations
+
+> *"The first step toward getting somewhere is to decide that you are not going to stay where you are." — J.P. Morgan*
 
 **Strategic Adjustment:**
 Recognize when independence is serving progression versus limiting potential.

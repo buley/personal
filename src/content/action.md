@@ -2,9 +2,15 @@
 
 > *"Theory becomes meaningless the moment it stops inspiring action."*
 
+> *"The only way to do great work is to love what you do." — Steve Jobs*
+
 *This is not a manifesto to be read—it is a system to be lived. Every word demands action, every principle requires embodiment, every standard must be maintained.*
 
-At this point, I have clarity on who I am, how I operate, where I thrive, and where I can refine. But knowledge alone is **nothing without application.** Now, the focus is **living every single insight, principle, and commitment—daily, relentlessly, without compromise.**
+At this point, I have clarity on who I am, how I operate, where I thrive, and where I can refine.
+
+But knowledge alone is **nothing without application.**
+
+Now, the focus is **living every single insight, principle, and commitment—daily, relentlessly, without compromise.**
 
 ## Operating System: How I Move Through the World
 
@@ -16,6 +22,8 @@ At this point, I have clarity on who I am, how I operate, where I thrive, and wh
 - I challenge everything—tradition, authority, and my own limits
 - I refine constantly—growth is non-negotiable
 - I leave behind more than I take—I build systems that last
+
+> *"Action is the antidote to despair." — Joan Baez*
 
 I don't just think this—I live it.
 

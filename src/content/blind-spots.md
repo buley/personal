@@ -2,9 +2,17 @@
 
 > *"Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth." — Marcus Aurelius*
 
+> *"The eye sees only what the mind is prepared to comprehend." — Robertson Davies*
+
 *Awareness of blind spots isn't about fundamental change—it's about strategic expansion of perspective while maintaining core strengths.*
 
-I see the world with clarity, logic, and strategic precision. I am sharp, independent, and able to break down complex situations with ease. But just because I see **a lot** doesn't mean I see **everything.** Like anyone, I have blind spots—patterns, assumptions, or habits that go unnoticed because they feel so natural to me.
+I see the world with clarity, logic, and strategic precision.
+
+I am sharp, independent, and able to break down complex situations with ease.
+
+But just because I see **a lot** doesn't mean I see **everything.**
+
+Like anyone, I have blind spots—patterns, assumptions, or habits that go unnoticed because they feel so natural to me.
 
 ## 1. Emotional Intelligence Undervaluation
 
@@ -12,6 +20,8 @@ I see the world with clarity, logic, and strategic precision. I am sharp, indepe
 
 **Pattern:**
 I prioritize logic, efficiency, and competence over emotional nuance. I don't make decisions based on feelings, and I don't respond well to emotional overreactions in others. While this keeps me clear-headed and effective, it also means I may dismiss emotions too quickly—both my own and those of the people around me.
+
+> *"The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge." — Daniel J. Boorstin*
 
 **Key Realizations:**
 - Just because an emotion isn't logical doesn't mean it isn't valid

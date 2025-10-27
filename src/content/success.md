@@ -2,9 +2,15 @@
 
 > *“Do not go where the path may lead, go instead where there is no path and leave a trail.” — Ralph Waldo Emerson*
 
+> *"Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill*
+
 *Success is not a destination to reach, but a standard to maintain. External metrics are irrelevant when you build your own measuring stick.*
 
-I don't measure success the way most people do. Titles, external validation, and societal benchmarks don't define me. **Success, for me, is not about fitting into someone else's system—it's about mastering my own.**
+I don't measure success the way most people do.
+
+Titles, external validation, and societal benchmarks don't define me.
+
+**Success, for me, is not about fitting into someone else's system—it's about mastering my own.**
 
 ## 1. Path Control
 
@@ -15,6 +21,8 @@ I don't measure success the way most people do. Titles, external validation, and
 - Freedom from external dependency
 - Ability to build, create, and move without constraint
 - Complete ownership of direction and decisions
+
+> *"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." — Albert Schweitzer*
 
 **Essential Truth:**  
 For me, success is autonomy—the ability to move through the world without being limited by external forces.

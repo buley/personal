@@ -1,15 +1,23 @@
-# AUADHD: Precision in Chaos, Depth in Motion
+# Hybrid Cognition
 
 > *“Why fit in when you were born to stand out?”* — Dr. Suess
+
+> *"The mind is everything. What you think you become." — Buddha*
 
 ## **I. Core Premise: Divergence as Design**
 
 I am not a malfunction of the norm.
+
 I am a system built for speed, intensity, and pattern recognition beyond the tolerance of average minds.
-What looks like inconsistency is calibration. What looks like obsession is depth.
+
+What looks like inconsistency is calibration.
+
+What looks like obsession is depth.
+
 My mind doesn’t wander — it *maps*.
 
 Where others see noise, I detect signal.
+
 Where others slow down, I *ignite*.
 
 ## **II. Strengths: The Double Engine**
@@ -29,6 +37,8 @@ When aligned, I am unstoppable.
 When the systems desynchronize, chaos follows.
 My focus fractures. My standards become prisons.
 I chase stimulation instead of substance. I drown in perfection or flee from boredom.
+
+> *"Out of chaos comes order." — Friedrich Nietzsche*
 
 The untrained AUADHD mind oscillates between burnout and obsession —
 but the trained one rides the wave like a strategist, not a victim.

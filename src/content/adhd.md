@@ -4,11 +4,15 @@
 
 *I don’t need to be neurotypical. I need to be effective, strategic, and in full control of how I execute. I don’t fight my ADHD—I engineer a system where it works for me.*
 
-I don’t see ADHD as a flaw—it’s an optimized cognitive system that runs on **intensity, challenge, and high-value thinking.** My brain isn’t designed for routine and repetition; it’s built for **solving complex problems, creating, and leading.**  
+I don’t see ADHD as a flaw—it’s an optimized cognitive system that runs on **intensity, challenge, and high-value thinking.**
+
+My brain isn’t designed for routine and repetition; it’s built for **solving complex problems, creating, and leading.**  
 
 My goal isn’t to force myself into neurotypical constraints—it’s to **engineer my environment, refine my strategy, and impose structure where needed** so that my attention becomes a weapon, not a weakness.  
 
-I refuse to let my wiring be a limitation. I control my mind, my focus, and my execution—on my terms.  
+I refuse to let my wiring be a limitation.
+
+I control my mind, my focus, and my execution—on my terms.  
 
 ## 1. I Thrive on Challenge, Not Compliance  
 
@@ -19,12 +23,12 @@ I refuse to let my wiring be a limitation. I control my mind, my focus, and my e
 - I don’t struggle with work because I’m lazy—I struggle because my mind requires **challenge, reward, or consequence** to engage fully.  
 - The world isn’t built for minds like mine, but **that doesn’t mean I won’t master it anyway.**  
 
-**Strategic Adaptation:**  
-- I gamify tasks that lack intrinsic challenge, creating stakes where none exist.  
-- I set elite personal standards—not for validation, but to keep my brain engaged in continuous refinement.  
-- I leverage urgency, competition, and complexity as tools to sustain focus and drive.  
+**Strategic Adaptation:**
+- I gamify tasks that lack intrinsic challenge, creating stakes where none exist.
+- I set elite personal standards—not for validation, but to keep my brain engaged in continuous refinement.
+- I leverage urgency, competition, and complexity as tools to sustain focus and drive.
 
-## 2. My Attention is an Engine, Not a Faulty Switch  
+> *"What lies behind us and what lies before us are tiny matters compared to what lies within us." — Ralph Waldo Emerson*## 2. My Attention is an Engine, Not a Faulty Switch  
 
 *The problem isn’t focus—it’s engagement with what matters.*  
 

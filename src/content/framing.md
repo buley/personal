@@ -2,9 +2,17 @@
 
 > *"You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist." — Friedrich Nietzsche*
 
-The combination of **independence, superiority, and nonconformity** creates a unique internal dynamic that drives me forward but can also create tension if left unchecked. These traits push me to operate on my own terms, set my own standards, and reject anything that feels arbitrary or mediocre. However, they also require **deliberate refinement** to ensure they remain strengths rather than limitations.
+> *"The individual has always had to struggle to keep from being overwhelmed by the tribe." — Friedrich Nietzsche*
 
-*Power lies not in the traits themselves, but in how deliberately we wield them. True mastery is conscious direction, not unconscious expression.*
+The combination of **independence, superiority, and nonconformity** creates a unique internal dynamic that drives me forward but can also create tension if left unchecked.
+
+These traits push me to operate on my own terms, set my own standards, and reject anything that feels arbitrary or mediocre.
+
+However, they also require **deliberate refinement** to ensure they remain strengths rather than limitations.
+
+*Power lies not in the traits themselves, but in how deliberately we wield them.
+
+True mastery is conscious direction, not unconscious expression.*
 
 ## 1. The Lone Maverick
 
@@ -18,6 +26,8 @@ My independence pushes me to rely on myself, my superiority makes me want to sta
 - Strong sense of personal agency
 - Willingness to take unconventional risks
 - Clear vision and direction
+
+> *"To be great is to be misunderstood." — Ralph Waldo Emerson*
 
 **Potential Tensions:**
 - Collaboration can feel like constraint

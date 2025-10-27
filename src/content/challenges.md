@@ -2,9 +2,17 @@
 
 > *"Difficulties strengthen the mind, as labor does the body." — Seneca*
 
+> *"What lies behind us and what lies before us are tiny matters compared to what lies within us." — Ralph Waldo Emerson*
+
 *Comfort is not the enemy—complacency is. Every plateau is just a launching pad for the next ascent.*
 
-I thrive in **high-stakes environments that demand intelligence, precision, and strategic thinking.** I am at my best when I am solving complex problems, pushing boundaries, and operating at a level that forces me to refine my skills. But mastery isn't a destination—it's a process. If I'm not being challenged, I'm stagnating.
+I thrive in **high-stakes environments that demand intelligence, precision, and strategic thinking.**
+
+I am at my best when I am solving complex problems, pushing boundaries, and operating at a level that forces me to refine my skills.
+
+But mastery isn't a destination—it's a process.
+
+If I'm not being challenged, I'm stagnating.
 
 To continue evolving, I need to make sure that I'm not just **operating at a high level—I'm actively pushing myself into new territory.**
 
@@ -16,6 +24,8 @@ To continue evolving, I need to make sure that I'm not just **operating at a hig
 - I challenge systems, but am I pushing myself as hard as I push others?
 - I master what I do, but have I settled into competence instead of seeking the next frontier?
 - Comfort is not something I strive for—so where have I unintentionally let it creep in?
+
+> *"Comfort is the enemy of progress." — P.T. Barnum*
 
 **Core Truth:**  
 Just because I am better than most at what I do doesn't mean I am at my best.

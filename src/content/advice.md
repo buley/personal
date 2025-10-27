@@ -6,7 +6,11 @@
 
 > *"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."* — Ernest Hemingway  
 
-Strength is not given; it is sculpted. Every thought, action, and principle I live by shapes that image. These quotes are not about empty philosophy—they are strategies for operation, execution, and results.  
+Strength is not given; it is sculpted.
+
+Every thought, action, and principle I live by shapes that image.
+
+These quotes are not about empty philosophy—they are strategies for operation, execution, and results.  
 
 ## **Self-Mastery & Control**  
 *The first conquest is always the self.*  
@@ -25,6 +29,8 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"Our ability to be self-aware is our greatest strength, and our biggest weakness is thinking that this awareness grants us full control."* — Robert Sapolsky  
 - *"He who conquers himself is the mightiest warrior."* — Confucius
 - *"The greatest of empires is the empire over oneself."* — Seneca
+
+> *"Discipline is the bridge between goals and accomplishment." — Jim Rohn*
 
 ## **Action & Execution**  
 *The world rewards execution, not intention.*  
@@ -128,6 +134,9 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"Democracy is the theory that the common people know what they want, and deserve to get it good and hard."* — H.L. Mencken  
 - *"All our knowledge merely helps us to die a more painful death than animals that know nothing."* — Maurice Maeterlinck  
 - *"Man is born free, and everywhere he is in chains."* — Jean-Jacques Rousseau  
+- *"Power corrupts, and absolute power corrupts absolutely."* — Lord Acton  
+- *"The greatest trick the devil ever pulled was convincing the world he didn't exist."* — Charles Baudelaire  
+- *"The only thing necessary for the triumph of evil is for good men to do nothing."* — Edmund Burke  
 
 ## **Disruption, Subversion, and Deconstructing the System**  
 *Breaking out of the illusion requires dismantling it first.*  
@@ -140,6 +149,13 @@ Strength is not given; it is sculpted. Every thought, action, and principle I li
 - *"When the people shall have nothing more to eat, they will eat the rich."* — Jean-Jacques Rousseau  
 - *"The most effective way to destroy people is to deny and obliterate their own understanding of their history."* — George Orwell  
 - *"Sometimes people don't want to hear the truth because they don't want their illusions destroyed."* — Friedrich Nietzsche  
+- *"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion."* — Albert Camus  
+- *"In a time of universal deceit, telling the truth is a revolutionary act."* — George Orwell  
+- *"The most dangerous man to any government is the man who is able to think things out for himself, without regard to the prevailing superstitions and taboos."* — H.L. Mencken  
+- *"The price of apathy towards public affairs is to be ruled by evil men."* — Plato  
+- *"To be governed is to be watched, inspected, spied upon, directed, law-driven, numbered, regulated, enrolled, indoctrinated, preached at, controlled, checked, estimated, valued, censured, commanded, by creatures who have neither the right nor the wisdom nor the virtue to do so."* — Pierre-Joseph Proudhon  
+- *"The state is the coldest of all cold monsters."* — Friedrich Nietzsche  
+- *"Anarchy is the mother of order."* — Pierre-Joseph Proudhon  
 
 ## **Anarchy, Authority, and The Nature of Power**  
 *Who rules? Who obeys? And why?*  

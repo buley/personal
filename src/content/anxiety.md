@@ -2,15 +2,23 @@
 
 > *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions—not outside." —Marcus Aurelius*
 
+> *"The greatest weapon against stress is our ability to choose one thought over another." — William James*
+
 *This is not about managing anxiety—it's about mastering the mind. Every disruption is an opportunity to impose order, every challenge a chance to refine control.*
 
-Anxiety, at its core, is **a disruption of control, clarity, or certainty.** It's the mind running scenarios faster than it can process them, the body responding to threats that may not even exist, and the feeling of being stuck between **what is and what should be.**
+Anxiety, at its core, is **a disruption of control, clarity, or certainty.**
 
-I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my external world—so why should I allow it in my internal world? **Anxiety is not something I submit to—it's something I dismantle, solve, and move beyond.**
+It's the mind running scenarios faster than it can process them, the body responding to threats that may not even exist, and the feeling of being stuck between **what is and what should be.**
+
+I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my external world—so why should I allow it in my internal world?
+
+**Anxiety is not something I submit to—it's something I dismantle, solve, and move beyond.**
 
 ## Root Causes
 
 *Understanding the triggers allows for strategic intervention:*
+
+> *"Peace comes from within. Do not seek it without." — Buddha*
 
 1. **Lack of Control**  
    When I feel powerless in a situation, my mind will try to regain control by overanalyzing, preparing, or resisting uncertainty.

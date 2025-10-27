@@ -2,9 +2,17 @@
 
 > *"If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment." — Marcus Aurelius*
 
+> *"Stress is like spice - in the right proportion it enhances the flavor of a dish. Too little, it's bland. Too much, it's intolerable." — Donald Tubesing*
+
 *Stress isn't a condition to treat—it's intelligence to interpret. The goal isn't to feel less, but to understand more.*
 
-I don't view stress as something to manage, avoid, or overcome. Stress is a **diagnostic tool**—a precise indicator that something in my system needs attention. Like a check engine light, it doesn't create the problem; it reveals it. The goal isn't to eliminate stress but to **understand what it's telling me.**
+I don't view stress as something to manage, avoid, or overcome.
+
+Stress is a **diagnostic tool**—a precise indicator that something in my system needs attention.
+
+Like a check engine light, it doesn't create the problem; it reveals it.
+
+The goal isn't to eliminate stress but to **understand what it's telling me.**
 
 ## 1. Stress as Intelligence
 
@@ -16,6 +24,8 @@ I don't view stress as something to manage, avoid, or overcome. Stress is a **di
 - Intensity correlates with urgency
 - Pattern recognition reveals root causes
 - Response should match the signal
+
+> *"You must do the thing you think you cannot do." — Eleanor Roosevelt*
 
 **Essential Truth:**  
 Stress isn't the enemy—ignorance is. Every stress signal contains valuable information about what needs to change.

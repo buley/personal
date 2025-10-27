@@ -2,9 +2,15 @@
 
 > *“Our inward power, when it obeys Nature, adapts itself to every circumstance. It turns each impediment into fuel, and each obstacle into steps by which we rise.” — Marcus Aurelius (adapted)*
 
+> *"Failure is simply the opportunity to begin again, this time more intelligently." — Henry Ford*
+
 *Every setback is an opportunity for refinement, but refinement requires both analysis and acknowledgment.*
 
-I hold myself to high standards, so when something doesn't go as planned, my instinct is to **analyze, adapt, and move forward.** I don't dwell on failure emotionally—I break it down logically, extract the lesson, and apply it. However, I also recognize that my natural response to failure has **patterns—some of which serve me well and others that may limit my growth.**
+I hold myself to high standards, so when something doesn't go as planned, my instinct is to **analyze, adapt, and move forward.**
+
+I don't dwell on failure emotionally—I break it down logically, extract the lesson, and apply it.
+
+However, I also recognize that my natural response to failure has **patterns—some of which serve me well and others that may limit my growth.**
 
 ## 1. Problem-Solving Default
 
@@ -16,6 +22,8 @@ When something doesn't work, my instinct is to fix it, rebuild it, or move on. I
 **Strengths:**
 - I see failure as a data point, not a personal flaw
 - I don't waste time lamenting mistakes—I focus on what to do next
+
+> *"Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill*
 
 **Potential Blind Spot:**  
 Sometimes, I move on too quickly and miss the deeper insight. Not every failure is just a problem to be solved—some require reflection, not just correction.

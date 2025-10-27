@@ -2,9 +2,15 @@
 
 > *"The first principle is that you must not fool yourself — and you are the easiest person to fool."* — Richard Feynman
 
+> *"It is the mark of an educated mind to be able to entertain a thought without accepting it." — Aristotle*
+
 *The mind is not just a tool; it's the master tool that shapes all others. Controlling your biases doesn't eliminate them—it weaponizes them.*
 
-I know that **my mind is my strongest weapon—but every weapon has its weaknesses.** Cognitive biases are not just flaws in thinking; they are **predictable patterns** that can be understood, leveraged, or corrected. My ability to **recognize, refine, and control these biases** determines whether they work **for me or against me.**
+I know that **my mind is my strongest weapon—but every weapon has its weaknesses.**
+
+Cognitive biases are not just flaws in thinking; they are **predictable patterns** that can be understood, leveraged, or corrected.
+
+My ability to **recognize, refine, and control these biases** determines whether they work **for me or against me.**
 
 ## 1. Biases I Am Most Susceptible To
 
@@ -61,6 +67,8 @@ I ask myself: *Am I rejecting this because it's truly flawed, or because I disli
 ## 2. Biases I Can Leverage Best
 
 *What gives me a strategic edge.*
+
+> *"We see things not as they are, but as we are." — H.M. Tomlinson*
 
 ### A. The Survivorship Bias
 

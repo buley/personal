@@ -4,11 +4,15 @@
 
 *Peak performance isn't accidental—it's the result of deliberate conditions, conscious choices, and relentless refinement.*
 
-I am at my best when I am **solving high-stakes problems, breaking through constraints, and setting a new standard.** I thrive in environments that demand **strategy, adaptability, and high execution**—where independence is valued, and where **results matter more than appearances.**
+I am at my best when I am **solving high-stakes problems, breaking through constraints, and setting a new standard.**
+
+I thrive in environments that demand **strategy, adaptability, and high execution**—where independence is valued, and where **results matter more than appearances.**
 
 If I am not **pushing forward, breaking barriers, and setting the standard—then I am not truly at my best.**
 
-I am at my best when I am **engaged, decisive, and building something greater than what existed before me.** I operate at my highest level when I am **solving, leading, mastering, and executing with absolute clarity.**
+I am at my best when I am **engaged, decisive, and building something greater than what existed before me.**
+
+I operate at my highest level when I am **solving, leading, mastering, and executing with absolute clarity.**
 
 ## 1. Intelligence Fully Engaged
 
@@ -18,6 +22,8 @@ I am at my best when I am **engaged, decisive, and building something greater th
 - I analyze deeply, think strategically, and execute precisely
 - I thrive in complex, high-level problem-solving where sharp thinking is required
 - I see patterns others miss and make connections that lead to breakthrough solutions
+
+> *"The mind is everything. What you think you become." — Buddha*
 
 **Edge Cases:**  
 When this becomes a liability—I overanalyze and delay execution. **I think when I should be acting.**

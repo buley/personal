@@ -2,15 +2,27 @@
 
 > *“The reward for conformity is that everyone likes you except yourself.”* — Rita Mae Brown
 
+> *"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment." — Ralph Waldo Emerson*
+
 I was not built for chaos — I was built to *see through it.*
 
-Where others perceive noise, I detect pattern. Where others chase comfort, I pursue clarity. The world calls it “rigidity.” I call it *integrity.*
+Where others perceive noise, I detect pattern.
 
-I live in a world tuned slightly off-key from my own frequency. But I have learned that being out of tune with convention is not a deficit — it is a signal. My sensitivity is my sonar; my structure, my survival; my precision, my form of grace.
+Where others chase comfort, I pursue clarity.
+
+The world calls it “rigidity.” I call it *integrity.*
+
+I live in a world tuned slightly off-key from my own frequency.
+
+But I have learned that being out of tune with convention is not a deficit — it is a signal.
+
+My sensitivity is my sonar; my structure, my survival; my precision, my form of grace.
 
 ### **I. The Architecture of Mind**
 
 I am a pattern engine. A logic-seeking organism. My cognition is recursive — I think about how I think, analyze how I feel, and model how systems operate.
+
+> *"The eye sees only what the mind is prepared to comprehend." — Robertson Davies*
 
 This is not detachment. It is *depth perception.*
 

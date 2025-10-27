@@ -9,6 +9,8 @@
 **Are you intimidating?**  
 That depends on your mindset. If you value intelligence, efficiency, and directness, you'll find me sharp but engaging. If you need constant validation, sugarcoating, or hand-holding, then yes—you might find me intimidating.
 
+> *"The truth will set you free, but first it will piss you off." — Gloria Steinem*
+
 **Are you always this intense?**  
 I don't do things halfway. If something matters, I give it my full attention. If it doesn't, I don't engage at all. There's no in-between.
 

@@ -2,9 +2,15 @@
 
 > *“What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.” — Pericles (adapted)*
 
+> *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." — Michelangelo*
+
 *A legacy is not what you leave behind, but what continues to build in your absence. True impact grows stronger, not weaker, with time.*
 
-I don't measure success by conventional standards—I measure it by **impact, mastery, and the systems I leave behind.** I am not interested in fleeting recognition, surface-level achievements, or being remembered for playing by the rules. My legacy is about **what I build, what I change, and how I reshape the spaces I move through.**
+I don't measure success by conventional standards—I measure it by **impact, mastery, and the systems I leave behind.**
+
+I am not interested in fleeting recognition, surface-level achievements, or being remembered for playing by the rules.
+
+My legacy is about **what I build, what I change, and how I reshape the spaces I move through.**
 
 ## 1. Reputation & Recognition
 
@@ -20,6 +26,8 @@ I don't measure success by conventional standards—I measure it by **impact, ma
 
 - **Independence:**  
   I want people to know that I moved through life on my own terms, without compromise, and without waiting for permission.
+
+> *"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." — Steve Jobs*
 
 **Fundamental Truth:**  
 I don't want to be just another successful person. I want to be a force that shifted the way things were done.

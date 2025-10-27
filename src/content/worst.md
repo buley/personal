@@ -2,9 +2,13 @@
 
 > *“People are package deals; you take the good with the confused. In most cases, strengths and weaknesses are two sides of the same coin.” — Steve Case*
 
+> *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." — Michelangelo*
+
 *Understanding potential pitfalls isn't about self-criticism—it's about maintaining excellence through conscious course correction.*
 
-I know what I look like at my best—sharp, decisive, disciplined, and operating at the highest level. But when my strengths become unchecked, when I'm misaligned or caught in unproductive cycles, I can slip into patterns that work **against me instead of for me.**
+I know what I look like at my best—sharp, decisive, disciplined, and operating at the highest level.
+
+But when my strengths become unchecked, when I'm misaligned or caught in unproductive cycles, I can slip into patterns that work **against me instead of for me.**
 
 ## 1. Independence to Isolation
 
@@ -15,6 +19,8 @@ At my best, I am self-sufficient, highly capable, and in full control of my own 
 - Push people away too quickly—assuming no one can match my pace or add value
 - Refuse help, even when it's strategically beneficial
 - Operate in a vacuum, limiting my exposure to perspectives that could refine my approach
+
+> *"The only way to make sense out of change is to plunge into it, move with it, and join the dance." — Alan Watts*
 
 **Correction:**  
 Independence doesn't mean isolation. I stay in control, but I recognize when strategic alliances and valuable connections enhance my execution.

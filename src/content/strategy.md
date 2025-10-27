@@ -4,9 +4,15 @@
 
 > *“You cannot command the storm, but you can command the fleet.”* — **Marcus Aurelius (paraphrased from Meditations V.16)**
 
+> *"Strategy is a commodity, execution is an art." — Peter Drucker*
+
 This document is not a diagnosis.
+
 It is an operational field manual for a hybrid cognitive architecture — where ADHD’s velocity meets Autism’s vector.
-Where one races forward, the other refines. Where one explodes with novelty, the other demands structural coherence.
+
+Where one races forward, the other refines.
+
+Where one explodes with novelty, the other demands structural coherence.
 
 Together, they create not chaos — but *adaptive order.*
 
@@ -19,6 +25,8 @@ Their synthesis forms a **dual-core architecture** optimized for complexity.
 
 Where others see contradiction, I see complementarity.
 Where others seek balance, I engineer tension.
+
+> *"In preparing for battle I have always found that plans are useless, but planning is indispensable." — Dwight D. Eisenhower*
 
 ### **1. Strategic Hyperfocus: Precision in Velocity**
 

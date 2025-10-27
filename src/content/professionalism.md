@@ -2,9 +2,13 @@
 
 > *“Strategy without tactics is the slowest route to victory. Tactics without strategy is the noise before defeat.” — Sun Tzu*
 
+> *"Excellence is not a skill. It is an attitude." — Ralph Marston*
+
 *Professional excellence isn't about mastering a single field—it's about bringing unique insight and systematic thinking to every domain you touch.*
 
-I am a **strategic thinker, independent problem-solver, and systems-oriented leader** with a deep understanding of human behavior and decision-making. My career has taken me across disciplines—from journalism to engineering to mediation—all unified by a core set of strengths that allow me to **analyze, optimize, and resolve complex issues with precision and clarity.**
+I am a **strategic thinker, independent problem-solver, and systems-oriented leader** with a deep understanding of human behavior and decision-making.
+
+My career has taken me across disciplines—from journalism to engineering to mediation—all unified by a core set of strengths that allow me to **analyze, optimize, and resolve complex issues with precision and clarity.**
 
 ## 1. Comprehensive Vision
 
@@ -15,6 +19,8 @@ I am a **strategic thinker, independent problem-solver, and systems-oriented lea
 - Understanding of human behavior and choice architecture
 - Ability to see systems, incentives, and motivations
 - Pattern recognition across seemingly unrelated domains
+
+> *"The best way to predict the future is to create it." — Peter Drucker*
 
 **Application:**
 This makes me effective in roles requiring both analysis and action—whether it's:

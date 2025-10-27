@@ -40,7 +40,7 @@ const AppLayout = () => {
     updateMediaUrl(); // Set the initial dynamic URL after mount.
 
     // Set up the interval for subsequent updates.
-    const interval = setInterval(updateMediaUrl, 10000);
+    const interval = setInterval(updateMediaUrl, 300000);
     return () => clearInterval(interval);
   }, []);
 
@@ -57,37 +57,46 @@ const AppLayout = () => {
 
   const secondaryNav: SecondaryNavType = {
     identity: [
-      { title: "At My Best", path: "best" },
-      { title: "At My Worst", path: "worst" },
+      { title: "Who I Am", path: "personality" },
       { title: "How I'm Wired", path: "wired" },
       { title: "Interaction Style", path: "interaction-style" },
-      { title: "Manifesto", path: "manifesto" },
+      { title: "At My Best", path: "best" },
+      { title: "At My Worst", path: "worst" },
       { title: "Mantras", path: "mantras" },
-      { title: "Who I Am", path: "personality" },
+      { title: "Manifesto", path: "manifesto" },
     ],
+
     operation: [
-      { title: "Advice", path: "advice" },
-      { title: "Attention", path: "adhd" },
-      { title: "Biases", path: "biases" },
-      { title: "Competition", path: "competition-collaboration" },
-      { title: "Crisis Response", path: "crisis" },
+      { title: "Strategy", path: "strategy" },
       { title: "Decision Making", path: "decisions" },
-      { title: "Learning", path: "learning" },
-      { title: "Time & Energy", path: "time-energy" },
+      { title: "Attention Systems (ADHD)", path: "adhd" },
+      { title: "Autistic Processing (Autism)", path: "autism" },
+      { title: "Hybrid Cognition (AuADHD)", path: "audhd" },
+      { title: "Learning & Knowledge", path: "learning" },
+      { title: "Time & Energy Management", path: "time-energy" },
+      { title: "Crisis Response", path: "crisis" },
+      { title: "Competition & Collaboration", path: "competition-collaboration" },
+      { title: "Vulnerability", path: "vulnerability" },
+      { title: "Counter-Vulnerability", path: "counter-vulnerability" },
+      { title: "Biases", path: "biases" },
+      { title: "Advice Protocol", path: "advice" },
     ],
+
     growth: [
-      { title: "Anxiety", path: "anxiety" },
-      { title: "Blind Spots", path: "blind-spots" },
       { title: "Challenges", path: "challenges" },
-      { title: "Emotion", path: "emotion" },
-      { title: "Self-Sabotage", path: "self-sabotage" },
-      { title: "Stress", path: "stress" },
+      { title: "Blind Spots", path: "blind-spots" },
+      { title: "Anxiety", path: "anxiety" },
+      { title: "Stress & Regulation", path: "stress" },
+      { title: "Emotion & Integration", path: "emotion" },
+      { title: "Self-Sabotage Patterns", path: "self-sabotage" },
+      { title: "Cognitive Architecture", path: "cognitive-architecture" },
     ],
+
     impact: [
       { title: "Action", path: "action" },
       { title: "Execution", path: "execution" },
+      { title: "Success Framework", path: "success" },
       { title: "Legacy", path: "legacy" },
-      { title: "Success", path: "success" },
     ],
   };
 

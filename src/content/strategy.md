@@ -18,7 +18,7 @@ Together, they create not chaos — but *adaptive order.*
 
 ## **Core Cognitive Engine**
 
-**Operating Principle:**
+**Operating Principle**
 ADHD provides *thrust* — speed, curiosity, pattern explosion.
 Autism provides *stability* — system integrity, logic, consistency.
 Their synthesis forms a **dual-core architecture** optimized for complexity.
@@ -30,91 +30,91 @@ Where others seek balance, I engineer tension.
 
 ### **1. Strategic Hyperfocus: Precision in Velocity**
 
-**Description:**
+**Description**
 When the mind locks onto meaning, time ceases. The world narrows into pure execution.
 This is not inattention to the irrelevant — it is strategic disregard.
 
-**Doctrine:**
+**Doctrine**
 
 * Protect focus as an operational asset.
 * Treat attention like bandwidth under limited supply — allocate only where return is maximal.
 * Channel hyperfocus through *mission parameters*: clarity, stakes, novelty, complexity.
 
-**Field Command:**
+**Field Command**
 
 > *“The successful warrior is the average man, with laser-like focus.”* — **Bruce Lee**
 
 ### **2. Systems Patterning: The Architecture of Insight**
 
-**Description:**
+**Description**
 Where others memorize, I *map.*
 Where others categorize, I *connect.*
 
 My cognition runs recursive pattern analysis across domains — philosophy, psychology, physics, governance — converting data into symmetry and synthesis.
 
-**Doctrine:**
+**Doctrine**
 
 * Build frameworks, not lists.
 * Seek structure in chaos — not to tame it, but to *understand its topology.*
 * Every idea belongs somewhere; find its coordinates.
 
-**Field Command:**
+**Field Command**
 
 > *“The pattern is the message.”* — **Marshall McLuhan**
 
 ### **3. Integrity as Law: Cognitive Consistency**
 
-**Description:**
+**Description**
 I reject distortion — factual, moral, or structural.
 Misattribution, false logic, and aesthetic incoherence register as system errors.
 
-**Doctrine:**
+**Doctrine**
 
 * Guard conceptual precision.
 * Treat truth as infrastructure — not opinion.
 * Build internal logic models that cannot be falsified by convenience.
 
-**Field Command:**
+**Field Command**
 
 > *“Integrity is doing the right thing, even when no one is watching.”* — **C.S. Lewis**
 
 ### **4. Emotional Regulation Through Structure**
 
-**Description:**
+**Description**
 Intensity without structure combusts.
 Structure without intensity calcifies.
 
 Emotion is converted into order — agitation becomes refinement; frustration becomes system repair.
 
-**Doctrine:**
+**Doctrine**
 
 * Use creation as regulation.
 * When chaos rises, *build something.*
 * Anchor emotion in action — not reaction.
 
-**Field Command:**
+**Field Command**
 
 > *“In the midst of chaos, there is also opportunity.”* — **Sun Tzu**
 
 ### **5. Metacognitive Layering: The Observer and the Operator**
 
-**Description:**
+**Description**
 The mind observes itself as both strategist and instrument.
 Self-analysis becomes continuous optimization.
 
-**Doctrine:**
+**Doctrine**
 
 * Maintain inner dialogue logs.
 * Use self-observation as calibration, not judgment.
 * Run mental diagnostics: What is signal? What is noise?
 
-**Field Command:**
+**Field Command**
 
 > *“Knowing yourself is the beginning of all wisdom.”* — **Aristotle**
 
 ### **6. Precision–Velocity Duality**
 
-**Description:**
+**Description**
 Two competing forces define production:
 
 * *Autistic Precision*: “It must be correct.”
@@ -122,23 +122,23 @@ Two competing forces define production:
 
 Their tension generates innovation under pressure.
 
-**Doctrine:**
+**Doctrine**
 
 * Alternate modes: creation → refinement → release.
 * Do not aim for balance — aim for *rhythmic alternation.*
 * Define end states before beginning sprints.
 
-**Field Command:**
+**Field Command**
 
 > *“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”* — **Antoine de Saint-Exupéry**
 
 ### **7. Reframing Pathology into Power**
 
-**Description:**
+**Description**
 Labels are control mechanisms; narratives are weapons.
 Pathologization reduces agency — reframing restores it.
 
-**Doctrine:**
+**Doctrine**
 
 * Convert “deficits” into *operational asymmetries.*
 * Replace medicalized terms with functional descriptors:
@@ -148,23 +148,23 @@ Pathologization reduces agency — reframing restores it.
   * “Overfocus” → *strategic immersion.*
 * Define your own lexicon.
 
-**Field Command:**
+**Field Command**
 
 > *“The most common way people give up their power is by thinking they don’t have any.”* — **Alice Walker**
 
 ### **8. Narrative Systematization**
 
-**Description:**
+**Description**
 Meaning requires architecture.
 I convert information into mythic systems — taxonomies, manifestos, frameworks — where ideas interlock and reinforce.
 
-**Doctrine:**
+**Doctrine**
 
 * Organize chaos through narrative logic.
 * Present complexity as story — cause, consequence, coherence.
 * Let structure carry emotion.
 
-**Field Command:**
+**Field Command**
 
 > *“The universe is made of stories, not atoms.”* — **Muriel Rukeyser**
 

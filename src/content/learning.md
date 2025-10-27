@@ -56,7 +56,7 @@ If I can't explain it simply or apply it practically, I don't truly understand i
 - Does it offer unique insight or perspective?
 - Will it remain valuable long-term?
 
-**Core Principle:**  
+**Core Principle**  
 Not all knowledge is worth acquiring. I focus on what serves my strategic objectives.
 
 ## 4. Learning Methodology

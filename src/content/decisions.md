@@ -25,7 +25,7 @@ I don't decide based on emotion or convention—I decide based on **clear princi
 
 > *"In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing." — Theodore Roosevelt*
 
-**Core Principle:**  
+**Core Principle**  
 The depth of analysis should match the potential impact and reversibility of the decision.
 
 ## 2. Analysis Protocol

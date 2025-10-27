@@ -27,7 +27,7 @@ When everything is falling apart, I become more focused, more precise, and more 
 
 > *"Smooth seas do not make skillful sailors." — African Proverb*
 
-**Core Principle:**  
+**Core Principle**  
 The goal in crisis isn't to solve everything immediately—it's to create stability for strategic response.
 
 ## 2. Threat Assessment Matrix

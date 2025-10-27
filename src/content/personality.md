@@ -26,7 +26,7 @@ That's how it should be.
 
 ### 1. Openness to Experience – Very High
 
-**Core Traits:**
+**Core Traits**
 - Thrives on innovation and independent thinking
 - Actively seeks out and challenges new ideas
 - Resists convention and forges unique paths
@@ -36,7 +36,7 @@ That's how it should be.
 
 ### 2. Conscientiousness – Very High
 
-**Core Traits:**
+**Core Traits**
 - Sets and maintains exceptionally high standards
 - Displays strong discipline and goal orientation
 - Pursues mastery in chosen domains
@@ -44,7 +44,7 @@ That's how it should be.
 
 ### 3. Extraversion – Low to Moderate
 
-**Core Traits:**
+**Core Traits**
 - Engages selectively rather than broadly
 - Prefers depth over surface-level interaction
 - Self-sufficient in energy management
@@ -52,7 +52,7 @@ That's how it should be.
 
 ### 4. Agreeableness – Low to Moderate
 
-**Core Traits:**
+**Core Traits**
 - Prioritizes truth over comfort
 - Challenges ideas readily
 - Stands firm on principles
@@ -60,7 +60,7 @@ That's how it should be.
 
 ### 5. Neuroticism – Low
 
-**Core Traits:**
+**Core Traits**
 - Maintains strong emotional control
 - Values stability and rationality
 - Approaches challenges with resilience
@@ -72,7 +72,7 @@ That's how it should be.
 
 ### The Architect (INTJ)
 
-**Core Manifestations:**
+**Core Manifestations**
 - Views world as system to optimize
 - Operates with strategy and precision
 - Values independence and efficiency
@@ -81,7 +81,7 @@ That's how it should be.
 
 ### The Visionary (ENTP)
 
-**Core Manifestations:**
+**Core Manifestations**
 - Challenges established thinking
 - Enjoys intellectual debate
 - Pushes boundaries consistently
@@ -94,7 +94,7 @@ That's how it should be.
 
 ### Type 8 Core: The Challenger
 
-**Key Traits:**
+**Key Traits**
 - Takes control of environment
 - Refuses external limitation
 - Demands competence
@@ -103,7 +103,7 @@ That's how it should be.
 
 ### 5 Wing Influence: The Thinker
 
-**Key Traits:**
+**Key Traits**
 - Analyzes deeply
 - Values knowledge as power
 - Seeks mastery through understanding
@@ -116,7 +116,7 @@ That's how it should be.
 
 ### Logical Intuitive Extrovert (LIE)
 
-**Core Traits:**
+**Core Traits**
 - Entrepreneurial mindset
 - Systems and opportunity focused
 - Values efficiency and effectiveness
@@ -125,7 +125,7 @@ That's how it should be.
 
 ### Intuitive Logical Introvert (ILI)
 
-**Core Traits:**
+**Core Traits**
 - Strong pattern recognition
 - Long-term strategic thinking
 - Precise and calculated movement

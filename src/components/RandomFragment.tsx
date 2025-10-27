@@ -56,7 +56,7 @@ const RandomFragment: React.FC = () => {
   return (
     <div className="mt-8 max-w-md">
       <div className="flex items-center justify-between mb-2">
-        <h3 className="text-lg font-bold text-white/80">{fragment.title}</h3>
+        <h3 className="text-md font-bold text-white/80">{fragment.title}</h3>
         <button
           onClick={fetchFragment}
           disabled={loading}
@@ -72,10 +72,10 @@ const RandomFragment: React.FC = () => {
       />
       <Link 
         href={`/${fragment.source}`}
-        className="text-white/40 font-mono text-xs tracking-widest hover:text-white/60 transition-colors flex items-center gap-1"
+        className="float-right text-white/40 font-mono text-xs tracking-widest hover:text-white/60 transition-colors flex items-center gap-1"
       >
-        <ExternalLink size={12} />
         {fragment.source}
+        <ExternalLink size={12} />
       </Link>
     </div>
   );

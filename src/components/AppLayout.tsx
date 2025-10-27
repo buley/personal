@@ -69,9 +69,9 @@ const AppLayout = () => {
     operation: [
       { title: "Strategy", path: "strategy" },
       { title: "Decision Making", path: "decisions" },
-      { title: "Attention Systems (ADHD)", path: "adhd" },
-      { title: "Autistic Processing (Autism)", path: "autism" },
-      { title: "Hybrid Cognition (AuADHD)", path: "audhd" },
+      { title: "Attention Systems", path: "adhd" },
+      { title: "Autistic Processing", path: "autism" },
+      { title: "Hybrid Cognition", path: "audhd" },
       { title: "Learning & Knowledge", path: "learning" },
       { title: "Time & Energy Management", path: "time-energy" },
       { title: "Crisis Response", path: "crisis" },
@@ -123,10 +123,23 @@ const AppLayout = () => {
   };
 
   const toggleSection = (section: string) => {
-    setExpandedSections((prev) => ({
-      ...prev,
-      [section]: !prev[section],
-    }));
+    setExpandedSections((prev) => {
+      const isCurrentlyExpanded = prev[section];
+      if (isCurrentlyExpanded) {
+        // If closing, just close this one
+        return {
+          ...prev,
+          [section]: false,
+        };
+      } else {
+        // If opening, close all others and open this one
+        const newExpanded = Object.keys(prev).reduce((acc, key) => {
+          acc[key] = key === section;
+          return acc;
+        }, {} as { [key: string]: boolean });
+        return newExpanded;
+      }
+    });
   };
 
   // Navigation Section Component

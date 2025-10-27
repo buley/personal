@@ -1,4 +1,4 @@
-# Autism: The Architecture of Precision
+# Autistic Processing
 
 > *“The reward for conformity is that everyone likes you except yourself.”* — Rita Mae Brown
 

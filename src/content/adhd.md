@@ -1,4 +1,4 @@
-# Attention: A System for Power, Not a Disorder
+# Attention Systems
 
 > *"The impediment to action advances action. What stands in the way becomes the way."* — Marcus Aurelius  
 

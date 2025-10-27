@@ -25,7 +25,7 @@ const merriweather = Merriweather({
 
 export const metadata: Metadata = {
   title: "About Taylor Buley",
-  description: "Taylor Buley is a writer, mediator, and developer.",
+  description: "Taylor Buley is a systematic problem solver.",
 };
 
 export default function RootLayout({

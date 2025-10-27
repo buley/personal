@@ -1,10 +1,10 @@
 # Crisis
 
-> *"The impediment to action advances action. What stands in the way becomes the way." — Marcus Aurelius*
+> *"The impediment to action advances action. What stands in the way becomes the way." -- Marcus Aurelius*
 
-> *"In the middle of difficulty lies opportunity." — Albert Einstein*
+> *"In the middle of difficulty lies opportunity." -- Albert Einstein*
 
-*Crisis response isn't about survival—it's about strategic transformation. The goal isn't to return to normal, but to emerge stronger.*
+*Crisis response isn't about survival--it's about strategic transformation. The goal isn't to return to normal, but to emerge stronger.*
 
 In moments of crisis, most people react emotionally, make rushed decisions, or freeze entirely.
 
@@ -25,10 +25,10 @@ When everything is falling apart, I become more focused, more precise, and more 
 - Create space for strategic thinking
 - Implement immediate stabilization measures
 
-> *"Smooth seas do not make skillful sailors." — African Proverb*
+> *"Smooth seas do not make skillful sailors." -- African Proverb*
 
 **Core Principle**  
-The goal in crisis isn't to solve everything immediately—it's to create stability for strategic response.
+The goal in crisis isn't to solve everything immediately--it's to create stability for strategic response.
 
 ## 2. Threat Assessment Matrix
 
@@ -145,4 +145,4 @@ Crisis requires faster decisions but not rushed ones. The goal is strategic spee
 5. Use pressure to eliminate weaknesses
 6. Emerge stronger than before
 
-I don't just survive crises—I use them to **eliminate weaknesses, build stronger systems, and create strategic advantages.** Every crisis is an opportunity for systematic improvement.
+I don't just survive crises--I use them to **eliminate weaknesses, build stronger systems, and create strategic advantages.** Every crisis is an opportunity for systematic improvement.

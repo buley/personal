@@ -1,18 +1,18 @@
 # Manifesto
 
-> *“The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.” — Friedrich Nietzsche*
+> *“The surest way to corrupt a youth is to instruct him to hold in higher esteem those who think alike than those who think differently.” -- Friedrich Nietzsche*
 
-*A manifesto is not a preference—it is a declaration of non-negotiable standards that shape reality.*
+*A manifesto is not a preference--it is a declaration of non-negotiable standards that shape reality.*
 
 I am fiercely independent, relentlessly driven, and unapologetically original.
 
 My path is my own, forged by vision, discipline, and a refusal to accept mediocrity.
 
-I don't follow convention—I challenge it.
+I don't follow convention--I challenge it.
 
-I don't seek validation—I create impact.
+I don't seek validation--I create impact.
 
-I don't settle—I build.
+I don't settle--I build.
 
 ## Aligned Forces
 

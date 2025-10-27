@@ -1,12 +1,12 @@
 # Cognitive Biases: A Manifesto for Mastery
 
-> *"The first principle is that you must not fool yourself — and you are the easiest person to fool."* — Richard Feynman
+> *"The first principle is that you must not fool yourself -- and you are the easiest person to fool."* -- Richard Feynman
 
-> *"It is the mark of an educated mind to be able to entertain a thought without accepting it." — Aristotle*
+> *"It is the mark of an educated mind to be able to entertain a thought without accepting it." -- Aristotle*
 
-*The mind is not just a tool; it's the master tool that shapes all others. Controlling your biases doesn't eliminate them—it weaponizes them.*
+*The mind is not just a tool; it's the master tool that shapes all others. Controlling your biases doesn't eliminate them--it weaponizes them.*
 
-I know that **my mind is my strongest weapon—but every weapon has its weaknesses.**
+I know that **my mind is my strongest weapon--but every weapon has its weaknesses.**
 
 Cognitive biases are not just flaws in thinking; they are **predictable patterns** that can be understood, leveraged, or corrected.
 
@@ -35,7 +35,7 @@ Before dismissing an idea or critique, I ask: *What would convince me otherwise?
 **Pattern**
 - I naturally assume that **my outcomes are the result of my choices, actions, and discipline**
 - This can lead me to **overestimate how much influence I have in unpredictable situations**
-- I may **underestimate external factors** that genuinely impact results—luck, timing, or hidden variables
+- I may **underestimate external factors** that genuinely impact results--luck, timing, or hidden variables
 
 **Correction**  
 I separate what is **truly within my control** from what is **externally influenced** and strategize accordingly.
@@ -46,7 +46,7 @@ I separate what is **truly within my control** from what is **externally influen
 
 **Pattern**
 - If I invest time, energy, or resources into something, **I instinctively resist abandoning it, even when it's no longer viable**
-- I equate **difficulty with value**—assuming something must be worthwhile **because I worked hard for it**
+- I equate **difficulty with value**--assuming something must be worthwhile **because I worked hard for it**
 - This can lead me to **push forward on a path that no longer serves me** simply because I refuse to "quit"
 
 **Correction**  
@@ -57,7 +57,7 @@ I remind myself: *Past investment is irrelevant. Only future value matters.*
 *Reactance, rebellion for its own sake.*
 
 **Pattern**
-- I naturally **reject authority, mainstream ideas, and conventional wisdom**—assuming anything widely accepted is **probably flawed**
+- I naturally **reject authority, mainstream ideas, and conventional wisdom**--assuming anything widely accepted is **probably flawed**
 - I instinctively prefer **ideas, systems, or methods that are unconventional or self-derived**
 - This can lead to **automatic opposition rather than strategic analysis**
 
@@ -68,7 +68,7 @@ I ask myself: *Am I rejecting this because it's truly flawed, or because I disli
 
 *What gives me a strategic edge.*
 
-> *"We see things not as they are, but as we are." — H.M. Tomlinson*
+> *"We see things not as they are, but as we are." -- H.M. Tomlinson*
 
 ### A. The Survivorship Bias
 
@@ -100,11 +100,11 @@ I challenge **default assumptions in business, relationships, and strategy** to 
 
 **Strategic Value**
 - I evaluate decisions **based on results, not intentions**
-- I don't waste time **justifying failure** if something doesn't work—I **adjust and move forward**
+- I don't waste time **justifying failure** if something doesn't work--I **adjust and move forward**
 - I value **execution over discussion**, progress over perfection
 
 **Application**  
-I don't let theory override reality—**I measure success in outcomes, not effort.**
+I don't let theory override reality--**I measure success in outcomes, not effort.**
 
 ### D. The Scarcity Bias
 
@@ -116,7 +116,7 @@ I don't let theory override reality—**I measure success in outcomes, not effor
 - I know how to **withhold, create distance, and set high standards** to make my time and attention more valuable
 
 **Application**  
-I control access to myself, my time, and my expertise—**never making myself too available.**
+I control access to myself, my time, and my expertise--**never making myself too available.**
 
 ## 3. What People Should Be Wary of When Dealing with Me
 
@@ -127,7 +127,7 @@ I control access to myself, my time, and my expertise—**never making myself to
 - I have **little patience for inefficiency or weak reasoning.** If your argument isn't well-structured, I will dismantle it.
 - I am **not easily persuaded by emotion alone.** Logic and strategy win my respect.
 - I move **fast and decisively.** If you hesitate, I will move forward without you.
-- I expect **competence, directness, and self-sufficiency**—I do not accommodate excuses or passivity.
+- I expect **competence, directness, and self-sufficiency**--I do not accommodate excuses or passivity.
 
 ## 4. What I Should Be Wary of When Dealing with Others
 
@@ -136,7 +136,7 @@ I control access to myself, my time, and my expertise—**never making myself to
 **Key Recognitions**
 - **Not everyone processes information as quickly as I do.** This does not mean they are unintelligent.
 - **Some people value relationships over efficiency.** Dismissing this outright may cost me valuable allies.
-- **Emotional intelligence matters—even if I prioritize logic.** Sometimes, the best move is **understanding emotions, not dismissing them.**
+- **Emotional intelligence matters--even if I prioritize logic.** Sometimes, the best move is **understanding emotions, not dismissing them.**
 - **Not all structure is bad.** Just because I resist authority **doesn't mean every system should be burned down.**
 - **Some battles aren't worth fighting.** Efficiency includes **choosing when to engage and when to walk away.**
 
@@ -149,4 +149,4 @@ I will:
 - **Leverage my strongest mental shortcuts for strategic advantage**
 - **Refine how I assess people and situations to make smarter decisions**
 
-My goal is not to be free of bias—that is impossible. **My goal is to be the master of my own mind, so no blind spot, emotional impulse, or flawed assumption ever controls me.**
+My goal is not to be free of bias--that is impossible. **My goal is to be the master of my own mind, so no blind spot, emotional impulse, or flawed assumption ever controls me.**

@@ -1,18 +1,18 @@
 # Time, Energy, and Results
 
-> *"Time is not just a resource to manage—it's the currency of impact."*
+> *"Time is not just a resource to manage--it's the currency of impact."*
 
-> *"Energy and persistence conquer all things." — Benjamin Franklin*
+> *"Energy and persistence conquer all things." -- Benjamin Franklin*
 
-*Time management isn't about filling hours—it's about maximizing impact through strategic allocation of finite resources.*
+*Time management isn't about filling hours--it's about maximizing impact through strategic allocation of finite resources.*
 
-I don't just manage time—I **engineer it.**
+I don't just manage time--I **engineer it.**
 
 Every hour is an investment that must yield returns.
 
 Energy is not an infinite resource, so I allocate it with precision and purpose.
 
-I don't believe in balance for balance's sake—I believe in **strategic allocation for maximum impact.**
+I don't believe in balance for balance's sake--I believe in **strategic allocation for maximum impact.**
 
 ## 1. Time Architecture
 
@@ -25,10 +25,10 @@ I don't believe in balance for balance's sake—I believe in **strategic allocat
 - Create systems that prevent time waste
 - Design days around energy patterns, not just clock time
 
-> *"The key is not to prioritize what's on your schedule, but to schedule your priorities." — Stephen Covey*
+> *"The key is not to prioritize what's on your schedule, but to schedule your priorities." -- Stephen Covey*
 
 **Essential Truth**  
-Time management isn't about doing more—it's about achieving more with strategic focus.
+Time management isn't about doing more--it's about achieving more with strategic focus.
 
 ## 2. Energy Optimization
 
@@ -113,7 +113,7 @@ Time management isn't about doing more—it's about achieving more with strategi
 - Energy renewal activities identified
 
 **Core Understanding**
-Recovery isn't optional—it's a strategic necessity for sustained high performance.
+Recovery isn't optional--it's a strategic necessity for sustained high performance.
 
 ## 7. Decision Velocity
 
@@ -144,4 +144,4 @@ Recovery isn't optional—it's a strategic necessity for sustained high performa
 5. Maintain strategic rather than reactive focus
 6. Protect recovery as seriously as productivity
 
-I don't chase balance—I pursue **impact.** Every minute, every ounce of energy, must serve my larger strategic objectives.
+I don't chase balance--I pursue **impact.** Every minute, every ounce of energy, must serve my larger strategic objectives.

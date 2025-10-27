@@ -1,12 +1,12 @@
 # At My Worst
 
-> *“People are package deals; you take the good with the confused. In most cases, strengths and weaknesses are two sides of the same coin.” — Steve Case*
+> *“People are package deals; you take the good with the confused. In most cases, strengths and weaknesses are two sides of the same coin.” -- Steve Case*
 
-> *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." — Michelangelo*
+> *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." -- Michelangelo*
 
-*Understanding potential pitfalls isn't about self-criticism—it's about maintaining excellence through conscious course correction.*
+*Understanding potential pitfalls isn't about self-criticism--it's about maintaining excellence through conscious course correction.*
 
-I know what I look like at my best—sharp, decisive, disciplined, and operating at the highest level.
+I know what I look like at my best--sharp, decisive, disciplined, and operating at the highest level.
 
 But when my strengths become unchecked, when I'm misaligned or caught in unproductive cycles, I can slip into patterns that work **against me instead of for me.**
 
@@ -16,11 +16,11 @@ But when my strengths become unchecked, when I'm misaligned or caught in unprodu
 
 **Pattern**  
 At my best, I am self-sufficient, highly capable, and in full control of my own path. At my worst, I:
-- Push people away too quickly—assuming no one can match my pace or add value
+- Push people away too quickly--assuming no one can match my pace or add value
 - Refuse help, even when it's strategically beneficial
 - Operate in a vacuum, limiting my exposure to perspectives that could refine my approach
 
-> *"The only way to make sense out of change is to plunge into it, move with it, and join the dance." — Alan Watts*
+> *"The only way to make sense out of change is to plunge into it, move with it, and join the dance." -- Alan Watts*
 
 **Correction**  
 Independence doesn't mean isolation. I stay in control, but I recognize when strategic alliances and valuable connections enhance my execution.
@@ -36,7 +36,7 @@ At my best, I demand excellence from myself and those around me. At my worst, I:
 - Delay action, waiting for the "perfect" approach instead of executing and refining as I go
 
 **Correction**  
-Excellence is the goal—but I remember that perfection is often just an excuse for inaction. I refine as I move forward.
+Excellence is the goal--but I remember that perfection is often just an excuse for inaction. I refine as I move forward.
 
 ## 3. Nonconformity to Rebellion
 
@@ -58,11 +58,11 @@ Nonconformity should be purposeful, not reactionary. I challenge what's broken, 
 **Pattern**  
 At my best, I think with clarity, strategy, and precision. At my worst, I:
 - Over-intellectualize emotions instead of actually feeling them
-- Dismiss emotional needs—both mine and others'—as "inefficiencies"
+- Dismiss emotional needs--both mine and others'--as "inefficiencies"
 - Prioritize logic so much that I miss the human element of situations
 
 **Correction**  
-Emotion isn't weakness—it's information. I don't let emotions control me, but I allow them to inform me when necessary.
+Emotion isn't weakness--it's information. I don't let emotions control me, but I allow them to inform me when necessary.
 
 ## 5. Strategy to Paralysis
 

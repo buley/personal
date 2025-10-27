@@ -2,15 +2,15 @@
 
 > *“If one does not know to which port one is sailing, no wind is favorable.” -- Seneca*
 
-> *"The quality of your life is determined by the quality of your decisions." — Tony Robbins*
+> *"The quality of your life is determined by the quality of your decisions." -- Tony Robbins*
 
-*Decision-making isn't about being right—it's about being strategic. The goal isn't perfect decisions, but optimal ones given available information and resources.*
+*Decision-making isn't about being right--it's about being strategic. The goal isn't perfect decisions, but optimal ones given available information and resources.*
 
 I approach decisions with **strategic precision.**
 
 Every choice is an investment of time, energy, and resources that either moves me forward or holds me back.
 
-I don't decide based on emotion or convention—I decide based on **clear principles, strategic analysis, and long-term impact.**
+I don't decide based on emotion or convention--I decide based on **clear principles, strategic analysis, and long-term impact.**
 
 ## 1. Decision Classification
 
@@ -23,7 +23,7 @@ I don't decide based on emotion or convention—I decide based on **clear princi
 - Type 4: Strategic positioning decisions
 - Type 5: Resource allocation decisions
 
-> *"In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing." — Theodore Roosevelt*
+> *"In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing." -- Theodore Roosevelt*
 
 **Core Principle**  
 The depth of analysis should match the potential impact and reversibility of the decision.
@@ -141,4 +141,4 @@ Even the best decisions need monitoring and adjustment as conditions change.
 5. Execute decisively once committed
 6. Monitor and adjust as needed
 
-I don't decide based on convention or comfort—I decide based on **strategic impact and long-term advantage.** Every choice must align with larger objectives and strategic direction.
+I don't decide based on convention or comfort--I decide based on **strategic impact and long-term advantage.** Every choice must align with larger objectives and strategic direction.

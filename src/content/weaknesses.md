@@ -1,10 +1,10 @@
 # Weakness
 
-> *“It is not the mountain we conquer, but ourselves.” — Sir Edmund Hillary*
+> *“It is not the mountain we conquer, but ourselves.” -- Sir Edmund Hillary*
 
-> *"Our strength grows out of our weaknesses." — Ralph Waldo Emerson*
+> *"Our strength grows out of our weaknesses." -- Ralph Waldo Emerson*
 
-*Awareness of limitations isn't about correction—it's about strategic adaptation. The goal isn't to dull the blade, but to master its use.*
+*Awareness of limitations isn't about correction--it's about strategic adaptation. The goal isn't to dull the blade, but to master its use.*
 
 I hold myself to high standards, but I recognize that my strengths come with sharp edges.
 
@@ -21,7 +21,7 @@ My independence can make me resistant to collaboration when I don't respect the 
 - Potential isolation from valuable perspectives
 - Risk of reinventing rather than leveraging
 
-> *"In the middle of every difficulty lies opportunity." — Albert Einstein*
+> *"In the middle of every difficulty lies opportunity." -- Albert Einstein*
 
 ### Standards & Patience
 **Pattern**  

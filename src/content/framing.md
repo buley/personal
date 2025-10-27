@@ -1,8 +1,8 @@
 # Framing
 
-> *"You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist." — Friedrich Nietzsche*
+> *"You have your way. I have my way. As for the right way, the correct way, and the only way, it does not exist." -- Friedrich Nietzsche*
 
-> *"The individual has always had to struggle to keep from being overwhelmed by the tribe." — Friedrich Nietzsche*
+> *"The individual has always had to struggle to keep from being overwhelmed by the tribe." -- Friedrich Nietzsche*
 
 The combination of **independence, superiority, and nonconformity** creates a unique internal dynamic that drives me forward but can also create tension if left unchecked.
 
@@ -19,7 +19,7 @@ True mastery is conscious direction, not unconscious expression.*
 *Independence meets innovation.*
 
 **Core Dynamic**  
-My independence pushes me to rely on myself, my superiority makes me want to stand out, and my nonconformity ensures I reject traditional paths. I am a self-sufficient trailblazer—someone who not only carves my own way but does so with the belief that my way is superior to the conventional.
+My independence pushes me to rely on myself, my superiority makes me want to stand out, and my nonconformity ensures I reject traditional paths. I am a self-sufficient trailblazer--someone who not only carves my own way but does so with the belief that my way is superior to the conventional.
 
 **Strengths**
 - Innovation and norm-challenging
@@ -27,7 +27,7 @@ My independence pushes me to rely on myself, my superiority makes me want to sta
 - Willingness to take unconventional risks
 - Clear vision and direction
 
-> *"To be great is to be misunderstood." — Ralph Waldo Emerson*
+> *"To be great is to be misunderstood." -- Ralph Waldo Emerson*
 
 **Potential Tensions**
 - Collaboration can feel like constraint
@@ -40,7 +40,7 @@ My independence pushes me to rely on myself, my superiority makes me want to sta
 *Excellence meets execution.*
 
 **Core Dynamic**  
-My superiority fuels my pursuit of excellence, my independence makes me self-reliant, and my nonconformity ensures that I'm not following pre-set standards—I'm creating my own. This results in high expectations, not just for myself but for those around me.
+My superiority fuels my pursuit of excellence, my independence makes me self-reliant, and my nonconformity ensures that I'm not following pre-set standards--I'm creating my own. This results in high expectations, not just for myself but for those around me.
 
 **Strengths**
 - Consistent drive for excellence
@@ -96,8 +96,8 @@ My nonconformity ensures that I don't follow blindly, my superiority makes me co
 *Maintaining power while minimizing limitation.*
 
 1. Use independence to build unique value, while remaining open to strategic partnerships
-2. Channel superiority into excellence rather than exclusion—become an example others want to follow
-3. Direct nonconformity with purpose—disrupt for progress, not just defiance
+2. Channel superiority into excellence rather than exclusion--become an example others want to follow
+3. Direct nonconformity with purpose--disrupt for progress, not just defiance
 
 **Core Truth**  
 If I can master these qualities rather than letting them unconsciously drive me, they will remain a source of strength and innovation rather than a limiting force.

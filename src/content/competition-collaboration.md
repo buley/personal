@@ -1,14 +1,14 @@
 # Competition and Collaboration
 
-> *“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.” — Sun Tzu*
+> *“Victorious warriors win first and then go to war, while defeated warriors go to war first and then seek to win.” -- Sun Tzu*
 
-> *"Alone we can do so little; together we can do so much." — Helen Keller*
+> *"Alone we can do so little; together we can do so much." -- Helen Keller*
 
 *Competition isn't about beating others, and collaboration isn't about working together. Both are strategic tools for building long-term, systemic advantages.*
 
-I don't compete to win—I position myself to make winning inevitable.
+I don't compete to win--I position myself to make winning inevitable.
 
-I don't collaborate for connection—I align with others for strategic advantage.
+I don't collaborate for connection--I align with others for strategic advantage.
 
 Every interaction, whether competitive or collaborative, must serve a larger strategic purpose.
 
@@ -23,10 +23,10 @@ Every interaction, whether competitive or collaborative, must serve a larger str
 - Most "competitors" are irrelevant to long-term objectives
 - True competition happens at the system level
 
-> *"If you know the enemy and know yourself, you need not fear the result of a hundred battles." — Sun Tzu*
+> *"If you know the enemy and know yourself, you need not fear the result of a hundred battles." -- Sun Tzu*
 
 **Essential Truth**  
-The highest form of competition isn't about beating others—it's about becoming unstoppable.
+The highest form of competition isn't about beating others--it's about becoming unstoppable.
 
 ## 2. Collaboration Criteria
 
@@ -58,7 +58,7 @@ The highest form of competition isn't about beating others—it's about becoming
 - Design scalable systems
 
 **Key Understanding**
-True competition isn't about individual battles—it's about building systems that make victory automatic.
+True competition isn't about individual battles--it's about building systems that make victory automatic.
 
 ## 4. Alliance Architecture
 
@@ -139,4 +139,4 @@ Collaboration is a strategic tool, not a social exercise. Every partnership must
 5. Preserve strategic flexibility in all relationships
 6. Focus on long-term positioning over short-term victories
 
-I don't compete just to win today—I position myself to **dominate tomorrow.** I don't collaborate just to work together—I align with others to **create compound advantages.**
+I don't compete just to win today--I position myself to **dominate tomorrow.** I don't collaborate just to work together--I align with others to **create compound advantages.**

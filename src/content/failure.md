@@ -1,16 +1,16 @@
 # Failure
 
-> *“Our inward power, when it obeys Nature, adapts itself to every circumstance. It turns each impediment into fuel, and each obstacle into steps by which we rise.” — Marcus Aurelius (adapted)*
+> *“Our inward power, when it obeys Nature, adapts itself to every circumstance. It turns each impediment into fuel, and each obstacle into steps by which we rise.” -- Marcus Aurelius (adapted)*
 
-> *"Failure is simply the opportunity to begin again, this time more intelligently." — Henry Ford*
+> *"Failure is simply the opportunity to begin again, this time more intelligently." -- Henry Ford*
 
 *Every setback is an opportunity for refinement, but refinement requires both analysis and acknowledgment.*
 
 I hold myself to high standards, so when something doesn't go as planned, my instinct is to **analyze, adapt, and move forward.**
 
-I don't dwell on failure emotionally—I break it down logically, extract the lesson, and apply it.
+I don't dwell on failure emotionally--I break it down logically, extract the lesson, and apply it.
 
-However, I also recognize that my natural response to failure has **patterns—some of which serve me well and others that may limit my growth.**
+However, I also recognize that my natural response to failure has **patterns--some of which serve me well and others that may limit my growth.**
 
 ## 1. Problem-Solving Default
 
@@ -21,12 +21,12 @@ When something doesn't work, my instinct is to fix it, rebuild it, or move on. I
 
 **Strengths**
 - I see failure as a data point, not a personal flaw
-- I don't waste time lamenting mistakes—I focus on what to do next
+- I don't waste time lamenting mistakes--I focus on what to do next
 
-> *"Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill*
+> *"Success is not final, failure is not fatal: It is the courage to continue that counts." -- Winston Churchill*
 
 **Potential Blind Spot**  
-Sometimes, I move on too quickly and miss the deeper insight. Not every failure is just a problem to be solved—some require reflection, not just correction.
+Sometimes, I move on too quickly and miss the deeper insight. Not every failure is just a problem to be solved--some require reflection, not just correction.
 
 ## 2. Loss-Cutting Efficiency
 
@@ -42,7 +42,7 @@ Because I value efficiency, I don't like throwing good energy after bad. If some
 **Potential Blind Spot**  
 I need to make sure I'm not abandoning something valuable just because it's frustrating or imperfect:
 - Some challenges require persistence, not just strategy
-- Not every difficulty means something is broken—some things take time
+- Not every difficulty means something is broken--some things take time
 - Just because I could pivot doesn't always mean I should
 
 ## 3. Analytical Depth
@@ -50,7 +50,7 @@ I need to make sure I'm not abandoning something valuable just because it's frus
 *The line between understanding and overthinking.*
 
 **Pattern**  
-I don't dwell on failure emotionally, but I do have a tendency to dissect it intellectually—sometimes more than necessary. I want to understand every variable, every mistake, and every weak point.
+I don't dwell on failure emotionally, but I do have a tendency to dissect it intellectually--sometimes more than necessary. I want to understand every variable, every mistake, and every weak point.
 
 **Strengths**
 - Highly adaptive and precise in adjustments
@@ -67,7 +67,7 @@ I can get caught in a loop of analysis instead of just moving forward:
 *The space between logic and impact.*
 
 **Pattern**  
-Because I pride myself on rationality and resilience, I don't let failure shake me. But sometimes, I use logic as a defense mechanism—convincing myself that failure doesn't affect me when, in reality, it does.
+Because I pride myself on rationality and resilience, I don't let failure shake me. But sometimes, I use logic as a defense mechanism--convincing myself that failure doesn't affect me when, in reality, it does.
 
 **Strengths**
 - Strong emotional resilience
@@ -83,9 +83,9 @@ I need to acknowledge when something was significant enough to require more than
 
 *Strategic adaptations for better failure response:*
 
-1. Give myself space to process—not everything is just a problem to solve
+1. Give myself space to process--not everything is just a problem to solve
 2. Ensure I'm not cutting losses too soon when persistence might pay off
 3. Recognize when I'm overanalyzing instead of simply taking action
 4. Allow myself to acknowledge the emotional impact of failure, even if I don't dwell on it
 
-Failure doesn't define me—but **how I refine myself after failure does.** My goal is to make sure that **I'm not just learning from failure, but also evolving in how I handle it.**
+Failure doesn't define me--but **how I refine myself after failure does.** My goal is to make sure that **I'm not just learning from failure, but also evolving in how I handle it.**

@@ -1,8 +1,8 @@
 # Success
 
-> *“Do not go where the path may lead, go instead where there is no path and leave a trail.” — Ralph Waldo Emerson*
+> *“Do not go where the path may lead, go instead where there is no path and leave a trail.” -- Ralph Waldo Emerson*
 
-> *"Success is not final, failure is not fatal: It is the courage to continue that counts." — Winston Churchill*
+> *"Success is not final, failure is not fatal: It is the courage to continue that counts." -- Winston Churchill*
 
 *Success is not a destination to reach, but a standard to maintain. External metrics are irrelevant when you build your own measuring stick.*
 
@@ -10,7 +10,7 @@ I don't measure success the way most people do.
 
 Titles, external validation, and societal benchmarks don't define me.
 
-**Success, for me, is not about fitting into someone else's system—it's about mastering my own.**
+**Success, for me, is not about fitting into someone else's system--it's about mastering my own.**
 
 ## 1. Path Control
 
@@ -22,10 +22,10 @@ Titles, external validation, and societal benchmarks don't define me.
 - Ability to build, create, and move without constraint
 - Complete ownership of direction and decisions
 
-> *"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." — Albert Schweitzer*
+> *"Success is not the key to happiness. Happiness is the key to success. If you love what you are doing, you will be successful." -- Albert Schweitzer*
 
 **Essential Truth**  
-For me, success is autonomy—the ability to move through the world without being limited by external forces.
+For me, success is autonomy--the ability to move through the world without being limited by external forces.
 
 ## 2. Peak Operation
 
@@ -51,7 +51,7 @@ If I am not growing, evolving, and refining my expertise, I am not truly succeed
 - Building beyond immediate needs
 
 **Essential Truth**  
-Success isn't just doing great work—it's building something that continues to operate at a high level long after I've moved on.
+Success isn't just doing great work--it's building something that continues to operate at a high level long after I've moved on.
 
 ## 4. Strategic Influence
 
@@ -64,7 +64,7 @@ Success isn't just doing great work—it's building something that continues to 
 - Respect from the right observers
 
 **Essential Truth**  
-If I can look at my work and see undeniable impact—real change, real progress, and real transformation—then I know I've succeeded.
+If I can look at my work and see undeniable impact--real change, real progress, and real transformation--then I know I've succeeded.
 
 ## 5. Uncompromised Living
 
@@ -77,7 +77,7 @@ If I can look at my work and see undeniable impact—real change, real progress,
 - Alignment with core values
 
 **Essential Truth**  
-Success isn't about being comfortable—it's about living fully aligned with who I am, what I value, and what I'm capable of.
+Success isn't about being comfortable--it's about living fully aligned with who I am, what I value, and what I'm capable of.
 
 ## Success Metrics
 
@@ -103,4 +103,4 @@ Success isn't about being comfortable—it's about living fully aligned with who
    Question: Am I living without compromise?  
    Standard: Complete congruence between values and actions
 
-If the answer to these is yes, then I am succeeding—no matter how anyone else defines it.
+If the answer to these is yes, then I am succeeding--no matter how anyone else defines it.

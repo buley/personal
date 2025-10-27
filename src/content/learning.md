@@ -1,12 +1,12 @@
 # Learning
 
-> *“It is impossible for a man to learn what he thinks he already knows.” — Epictetus*
+> *“It is impossible for a man to learn what he thinks he already knows.” -- Epictetus*
 
-> *"The more that you read, the more things you will know. The more that you learn, the more places you'll go." — Dr. Seuss*
+> *"The more that you read, the more things you will know. The more that you learn, the more places you'll go." -- Dr. Seuss*
 
-*Learning isn't about collecting information—it's about building capabilities. Knowledge is only valuable when it enhances execution.*
+*Learning isn't about collecting information--it's about building capabilities. Knowledge is only valuable when it enhances execution.*
 
-I don't learn for the sake of learning—I learn to **master, to apply, and to evolve.**
+I don't learn for the sake of learning--I learn to **master, to apply, and to evolve.**
 
 My approach to knowledge acquisition is systematic, deliberate, and focused on practical application.
 
@@ -23,7 +23,7 @@ I'm not interested in surface-level understanding or theoretical knowledge that 
 - Build knowledge that transfers across domains
 - Test understanding through immediate application
 
-> *"Live as if you were to die tomorrow. Learn as if you were to live forever." — Mahatma Gandhi*
+> *"Live as if you were to die tomorrow. Learn as if you were to live forever." -- Mahatma Gandhi*
 
 **Essential Truth**  
 If I can't explain it simply or apply it practically, I don't truly understand it.
@@ -122,4 +122,4 @@ Knowledge without application is merely entertainment. Every piece of informatio
 5. Integrate across domains for innovation
 6. Refine through teaching and execution
 
-I don't learn to know—I learn to **do, to build, to solve, and to lead.** Every piece of knowledge must serve my larger strategic objectives.
+I don't learn to know--I learn to **do, to build, to solve, and to lead.** Every piece of knowledge must serve my larger strategic objectives.

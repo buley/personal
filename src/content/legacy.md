@@ -1,12 +1,12 @@
 # Legacy
 
-> *“What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.” — Pericles (adapted)*
+> *“What you leave behind is not what is engraved in stone monuments, but what is woven into the lives of others.” -- Pericles (adapted)*
 
-> *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." — Michelangelo*
+> *"The greatest danger for most of us is not that our aim is too high and we miss it, but that it is too low and we reach it." -- Michelangelo*
 
 *A legacy is not what you leave behind, but what continues to build in your absence. True impact grows stronger, not weaker, with time.*
 
-I don't measure success by conventional standards—I measure it by **impact, mastery, and the systems I leave behind.**
+I don't measure success by conventional standards--I measure it by **impact, mastery, and the systems I leave behind.**
 
 I am not interested in fleeting recognition, surface-level achievements, or being remembered for playing by the rules.
 
@@ -27,7 +27,7 @@ My legacy is about **what I build, what I change, and how I reshape the spaces I
 - **Independence**  
   I want people to know that I moved through life on my own terms, without compromise, and without waiting for permission.
 
-> *"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." — Steve Jobs*
+> *"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." -- Steve Jobs*
 
 **Fundamental Truth**  
 I don't want to be just another successful person. I want to be a force that shifted the way things were done.
@@ -68,7 +68,7 @@ Primary Version:
 *"He challenged conventional thinking, built systems that lasted, and refused to settle for anything less than excellence."*
 
 Distilled Version:  
-*"He didn't just exist—he changed things."*
+*"He didn't just exist--he changed things."*
 
 ## Moving Forward
 
@@ -80,4 +80,4 @@ Distilled Version:
 4. Live aligned with values so legacy reflects true character
 
 **Core Truth**  
-Legacy isn't something I think about at the end of my life—it's something I build every single day.
+Legacy isn't something I think about at the end of my life--it's something I build every single day.

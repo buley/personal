@@ -1,21 +1,21 @@
 # FAQ
 
-> *"If someone can prove me wrong and show me my mistake in any thought or action, I shall gladly change; for I seek the truth, which never harmed anyone. The harm is to persist in one’s own self-deception and ignorance." — Marcus Aurelius*
+> *"If someone can prove me wrong and show me my mistake in any thought or action, I shall gladly change; for I seek the truth, which never harmed anyone. The harm is to persist in one’s own self-deception and ignorance." -- Marcus Aurelius*
 
 *Understanding these principles will help you navigate our interactions effectively. I value clarity over comfort, results over intentions, and direct communication over social niceties.*
 
 ## Core Traits & Tendencies
 
 **Are you intimidating?**  
-That depends on your mindset. If you value intelligence, efficiency, and directness, you'll find me sharp but engaging. If you need constant validation, sugarcoating, or hand-holding, then yes—you might find me intimidating.
+That depends on your mindset. If you value intelligence, efficiency, and directness, you'll find me sharp but engaging. If you need constant validation, sugarcoating, or hand-holding, then yes--you might find me intimidating.
 
-> *"The truth will set you free, but first it will piss you off." — Gloria Steinem*
+> *"The truth will set you free, but first it will piss you off." -- Gloria Steinem*
 
 **Are you always this intense?**  
 I don't do things halfway. If something matters, I give it my full attention. If it doesn't, I don't engage at all. There's no in-between.
 
 **Do you ever relax?**  
-Relaxation for me isn't about doing nothing—it's about engaging with something meaningful on my own terms. That might be deep conversation, intellectual exploration, or physical training. I don't idle well.
+Relaxation for me isn't about doing nothing--it's about engaging with something meaningful on my own terms. That might be deep conversation, intellectual exploration, or physical training. I don't idle well.
 
 ## Independence & Emotion
 
@@ -23,7 +23,7 @@ Relaxation for me isn't about doing nothing—it's about engaging with something
 Because I've learned that self-sufficiency is the surest way to maintain control over my life. I don't avoid people, but I don't *need* anyone to function at a high level. The right connections enhance my life, but I won't compromise my autonomy for them.
 
 **Do you have emotions?**  
-Of course. I just don't let them dictate my actions. I process them, extract what's useful, and move forward. Emotional control isn't suppression—it's mastery.
+Of course. I just don't let them dictate my actions. I process them, extract what's useful, and move forward. Emotional control isn't suppression--it's mastery.
 
 ## Standards & Expectations
 
@@ -31,15 +31,15 @@ Of course. I just don't let them dictate my actions. I process them, extract wha
 Because I know what's possible when people operate at their peak. I hold myself to those standards, and I expect the same from the people I invest in. If that's too much, we probably aren't compatible.
 
 **Why do you challenge everything?**  
-Because most things—systems, traditions, ways of thinking—were built by people no smarter than me. If something doesn't make sense, I question it. If something is broken, I fix it. That's how progress happens.
+Because most things--systems, traditions, ways of thinking--were built by people no smarter than me. If something doesn't make sense, I question it. If something is broken, I fix it. That's how progress happens.
 
 ## Feedback & Communication
 
 **Are you open to feedback?**  
-Absolutely—but only if it's logical, well-structured, and intended for improvement rather than just opinion-sharing. If your feedback is emotional venting disguised as advice, I'll ignore it.
+Absolutely--but only if it's logical, well-structured, and intended for improvement rather than just opinion-sharing. If your feedback is emotional venting disguised as advice, I'll ignore it.
 
 **Do you have patience?**  
-For intelligence, effort, and genuine curiosity—yes. For incompetence, excuses, and inefficiency—no.
+For intelligence, effort, and genuine curiosity--yes. For incompetence, excuses, and inefficiency--no.
 
 **What's the best way to get along with you?**  
 Be direct, be competent, and don't take things personally. I respect intelligence, self-awareness, and efficiency. If you challenge me in a well-reasoned way, I'll respect you more for it.
@@ -53,7 +53,7 @@ Being passive-aggressive, emotionally manipulative, or expecting me to read betw
 They lose.
 
 **Do you ever change your mind?**  
-Yes—but only when presented with new, compelling evidence or a stronger argument. I don't change my stance just to appease people or avoid conflict.
+Yes--but only when presented with new, compelling evidence or a stronger argument. I don't change my stance just to appease people or avoid conflict.
 
 ## Working Together
 
@@ -69,12 +69,12 @@ Excuses, laziness, and people who expect results without effort.
 ## Conflict & Resolution
 
 **How do you handle conflict?**  
-Directly and strategically. I don't avoid it, and I don't escalate unnecessarily. I aim for resolution—but if resolution isn't possible, I ensure that I walk away with the advantage.
+Directly and strategically. I don't avoid it, and I don't escalate unnecessarily. I aim for resolution--but if resolution isn't possible, I ensure that I walk away with the advantage.
 
 ## Personal Philosophy
 
 **Are you a perfectionist?**  
-No—I aim for excellence, not perfection. Perfectionism is often a form of procrastination. I'd rather execute at a high level, refine as I go, and keep improving.
+No--I aim for excellence, not perfection. Perfectionism is often a form of procrastination. I'd rather execute at a high level, refine as I go, and keep improving.
 
 **Do you care what people think of you?**  
 Only if their opinion is based on logic, credibility, and insight. Otherwise, no.

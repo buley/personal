@@ -1,10 +1,10 @@
 # Mantras
 
-> *“Waste no more time arguing about what a good man should be. Be one.” — Marcus Aurelius*
+> *“Waste no more time arguing about what a good man should be. Be one.” -- Marcus Aurelius*
 
-> *"The only limit to our realization of tomorrow will be our doubts of today." — Franklin D. Roosevelt*
+> *"The only limit to our realization of tomorrow will be our doubts of today." -- Franklin D. Roosevelt*
 
-*These mantras are not mere words—they are principles of operation, standards of excellence, and guides for mastery.*
+*These mantras are not mere words--they are principles of operation, standards of excellence, and guides for mastery.*
 
 ## Self-Mastery & Control
 
@@ -12,13 +12,13 @@
 
 - Control yourself, control your world
 - React less, strategize more
-- Emotion is information—use it, don't obey it
+- Emotion is information--use it, don't obey it
 - A sharp mind requires discipline, not indulgence
 - You are only as powerful as your ability to remain composed
 - Master your impulses, and nothing can master you
-- Your mind is a weapon—keep it sharp, keep it steady
+- Your mind is a weapon--keep it sharp, keep it steady
 
-> *"The mind is its own place, and in itself can make a heaven of hell, a hell of heaven." — John Milton*
+> *"The mind is its own place, and in itself can make a heaven of hell, a hell of heaven." -- John Milton*
 
 ## Action & Execution
 
@@ -38,9 +38,9 @@
 *Every choice either moves you forward or holds you back.*
 
 - Think long-term. Move accordingly
-- Every move is either a step forward or a step backward—choose wisely
+- Every move is either a step forward or a step backward--choose wisely
 - Slow is smooth, smooth is fast
-- Don't react—assess, decide, then act
+- Don't react--assess, decide, then act
 - A moment of patience can prevent a year of regret
 - Control the pace of the game, and you control the outcome
 - Move with precision, not impulse
@@ -52,7 +52,7 @@
 
 - Depend on no one. Choose your allies wisely
 - Self-sufficiency is freedom
-- You are not owed support—earn it, or do without it
+- You are not owed support--earn it, or do without it
 - Never outsource your self-worth
 - Stand alone if you must, but never lower your standards to fit in
 - Your autonomy is non-negotiable
@@ -63,11 +63,11 @@
 *Pressure does not break the prepared mind.*
 
 - Pain is temporary. Mastery lasts
-- Hardship is training—embrace it
+- Hardship is training--embrace it
 - Pressure refines those who can endure it
 - You've survived worse. Keep going
 - Adapt, don't collapse
-- Every setback is a test—pass it with composure
+- Every setback is a test--pass it with composure
 - Grit outlasts talent every time
 
 ## Growth & Adaptation
@@ -76,11 +76,11 @@
 
 - If you're not growing, you're dying
 - Comfort is the enemy of progress
-- Every situation teaches—pay attention
+- Every situation teaches--pay attention
 - You don't need permission to evolve
 - Destroy what no longer serves you
 - If you want more, become more
-- Sharpen your mind like a blade—daily, relentlessly
+- Sharpen your mind like a blade--daily, relentlessly
 - Don't let great be the enemy of good enough
 
 ## Conflict & Power
@@ -90,7 +90,7 @@
 - Win with strategy, not aggression
 - If they control your emotions, they control you
 - Know when to fight, know when to walk away
-- Never argue with a fool—it lowers you to their level
+- Never argue with a fool--it lowers you to their level
 - Silence is often the most strategic move
 - You are not here to be liked; you are here to be respected
 - Calm is the cradle of power
@@ -100,7 +100,7 @@
 *Build something that echoes beyond your time.*
 
 - Build something that outlasts you
-- Forget status—aim for impact
+- Forget status--aim for impact
 - Be exceptional, or be forgotten
 - Make moves that future you will thank you for
 - Your name should mean something when spoken

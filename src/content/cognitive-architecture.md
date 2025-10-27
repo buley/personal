@@ -99,5 +99,6 @@ The AuADHD mind is not a split; it is a dual-core processor. It thrives in parad
 I am not inconsistent. I am **multi-modal.**
 My cognition is not disorder -- it is design under unconventional parameters.
 
-> *"Do not tame the storm. Build the vessel that rides it."* -- Consilium Aurelius
+> "You can't stop the waves, but you can learn to surf." --Jon Kabat-Zinn
 
+> "The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails." --William Arthur Ward (attributed)

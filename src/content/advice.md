@@ -298,3 +298,42 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"Give a man a mask and he'll show you his true face."* -- Oscar Wilde  
 - *"Rather than love, than money, than fame, give me truth."* -- Henry David Thoreau  
 - *"Transformation is not about control. It is about curiosity, courage, and commitment."* -- Ken Cloke
+
+## **Additional Quotes**
+
+- *"Your emotions are the slaves to your thoughts, and you are the slave to your emotions." -- Elizabeth Gilbert*
+- *"The best and most beautiful things in the world cannot be seen or even touched -- they must be felt with the heart." -- Helen Keller*
+- *"If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment." -- Marcus Aurelius*
+- *"Stress is like spice -- in the right proportion it enhances the flavor of a dish. Too little, it's bland. Too much, it's intolerable." -- Donald Tubesing*
+- *"You must do the thing you think you cannot do." -- Eleanor Roosevelt*
+- *"You can't stop the waves, but you can learn to surf." --Jon Kabat-Zinn*
+- *"The pessimist complains about the wind; the optimist expects it to change; the realist adjusts the sails." --William Arthur Ward (attributed)*
+- *"Theory becomes meaningless the moment it stops inspiring action."*
+- *"The only way to do great work is to love what you do." -- Steve Jobs*
+- *"The only way to make sense out of change is to plunge into it, move with it, and join the dance." -- Alan Watts*
+- *"The only limit to our realization of tomorrow will be our doubts of today." -- Franklin D. Roosevelt*
+- *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions--not outside." --Marcus Aurelius*
+- *"The greatest weapon against stress is our ability to choose one thought over another." -- William James*
+- *"Peace comes from within. Do not seek it without." -- Buddha*
+- *"The unexamined life is not worth living." -- Socrates*
+- *"To thine own self be true." -- William Shakespeare*
+- *"The quality of your life is determined by the quality of your decisions." -- Tony Robbins*
+- *"In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing." -- Theodore Roosevelt*
+- *"Strategy is a commodity, execution is an art." -- Peter Drucker*
+- *"In preparing for battle I have always found that plans are useless, but planning is indispensable." -- Dwight D. Eisenhower*
+- *"Excellence is not a skill. It is an attitude." -- Ralph Marston*
+- *"Personality is the original personal property." -- Norman Mailer*
+- *"I am not what happened to me, I am what I choose to become." -- Carl Jung*
+- *"Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind." -- Bernard M. Baruch*
+- *"I am not a product of my circumstances. I am a product of my decisions." -- Stephen Covey*
+- *"Our strength grows out of our weaknesses." -- Ralph Waldo Emerson*
+- *"In the middle of every difficulty lies opportunity." -- Albert Einstein*
+- *"Smooth seas do not make skillful sailors." -- African Proverb*
+- *"The way to get started is to quit talking and begin doing." -- Walt Disney*
+- *"We are what we repeatedly do. Excellence, then, is not an act, but a habit." -- Aristotle*
+- *"The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge." -- Stephen Hawking*
+- *"The first step toward getting somewhere is to decide that you are not going to stay where you are." -- J.P. Morgan*
+- *"Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth." -- Marcus Aurelius*
+- *"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." -- Steve Jobs*
+- *"The only person you are destined to become is the person you decide to be." -- Ralph Waldo Emerson*
+- *"Difficulties strengthen the mind, as labor does the body." -- Seneca*

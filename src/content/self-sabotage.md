@@ -14,10 +14,10 @@ These traits have made me **effective, resilient, and sharp**, but I also recogn
 
 *When self-reliance becomes self-limitation.*
 
-**Pattern:**
+**Pattern**
 I trust myself to get things done at a high level, and I don't like relying on others—especially if they can't meet my standards. This leads to taking on too much and avoiding delegation, even when it would free up my time and allow me to operate at a higher level.
 
-**Social Impact:**
+**Social Impact**
 - Resist unnecessary social obligations
 - Highly selective in engagement
 - Risk missing valuable relationships
@@ -25,63 +25,63 @@ I trust myself to get things done at a high level, and I don't like relying on o
 
 > *"The first step toward getting somewhere is to decide that you are not going to stay where you are." — J.P. Morgan*
 
-**Strategic Adjustment:**
+**Strategic Adjustment**
 Recognize when independence is serving progression versus limiting potential.
 
 ## 2. Standards and Patience
 
 *When high expectations create distance.*
 
-**Pattern:**
+**Pattern**
 I expect a lot from myself, and I naturally extend those expectations to others. I don't have patience for incompetence, inefficiency, or excuses, and I can be blunt when I see flaws that need addressing.
 
-**Professional Impact:**
+**Professional Impact**
 - Strong but potentially intimidating leadership
 - Difficulty with varying skill levels
 - Risk of dismissing developing talent
 - May create unnecessary distance
 
-**Strategic Adjustment:**
+**Strategic Adjustment**
 Maintain high standards while allowing for growth and development in others.
 
 ## 3. Authority and Learning
 
 *When nonconformity blocks growth.*
 
-**Pattern:**
+**Pattern**
 I have a deep need for autonomy, and I naturally challenge conventional wisdom and authority structures. While this makes me a strong independent thinker, it also means I sometimes reject leadership, advice, or mentorship that could benefit me.
 
-**Key Recognition:**
+**Key Recognition**
 - Not every system is broken
 - Not every authority figure is incompetent
 - Not every piece of advice needs to be challenged
 
-**Strategic Adjustment:**
+**Strategic Adjustment**
 Learn to evaluate guidance based on merit rather than source.
 
 ## 4. Analysis Paralysis
 
 *When problem-solving becomes procrastination.*
 
-**Pattern:**
+**Pattern**
 When something isn't working, my instinct is to dissect it, analyze it, and rebuild it better. This serves me well in most areas, but sometimes, I don't need to fix something—I just need to let it go.
 
-**Common Manifestations:**
+**Common Manifestations**
 - Overthinking instead of acting
 - Getting stuck in analytical loops
 - Seeking perfect solutions unnecessarily
 
-**Strategic Adjustment:**
+**Strategic Adjustment**
 Recognize when analysis should give way to action or acceptance.
 
 ## 5. Support Resistance
 
 *When self-sufficiency becomes isolation.*
 
-**Pattern:**
+**Pattern**
 I take pride in being self-sufficient, but there are moments when I would genuinely benefit from leaning on the right people. I don't like feeling dependent, but I have to remind myself that the right partnerships, friendships, and connections don't weaken me—they enhance my ability to execute at a higher level.
 
-**Core Insight:**
+**Core Insight**
 The key isn't rejecting support outright but choosing it wisely. It's not about being open to everyone—it's about recognizing the people who are actually valuable and knowing when to engage with them.
 
 ## Moving Forward

@@ -18,7 +18,7 @@ If I don't actively integrate these insights into my daily life, they become **i
 
 *Excellence requires measurement.*
 
-**Core Practices:**
+**Core Practices**
 - Set clear, measurable benchmarks for growth—professionally, intellectually, and physically
 - Track execution, progress, and impact—not just intentions
 - Regularly audit myself: Am I staying sharp, pushing limits, and refining my systems?
@@ -27,62 +27,62 @@ If I don't actively integrate these insights into my daily life, they become **i
 
 > *"We are what we repeatedly do. Excellence, then, is not an act, but a habit." — Aristotle*
 
-**Guiding Principle:**  
+**Guiding Principle**  
 *Excellence isn't about what I say—it's about what I consistently do.*
 
 ## 2. Edge Maintenance
 
 *Staying sharp requires constant refinement.*
 
-**Core Practices:**
+**Core Practices**
 - Seek intellectual and professional challenges that force me to operate at a higher level
 - Engage with people who challenge my thinking and push my limits
 - Take on physical and mental challenges that reinforce my discipline and resilience
 - Stay adaptable—never rigid, always refining
 - Ensure that my daily actions reflect my long-term ambitions
 
-**Guiding Principle:**  
+**Guiding Principle**  
 *Mastery is a moving target—I evolve faster than the world around me.*
 
 ## 3. Stagnation Prevention
 
 *Growth or death—no middle ground.*
 
-**Core Practices:**
+**Core Practices**
 - Don't mistake efficiency for growth—just because I'm good at something doesn't mean I'm evolving
 - Remain self-critical in a productive way—not doubting myself, but refining myself
 - Ask regularly: Where am I holding back? Where am I too comfortable?
 - Don't let my competence become an excuse for not seeking the next level
 - Deliberately expose myself to new challenges, ideas, and environments that force growth
 
-**Guiding Principle:**  
+**Guiding Principle**  
 *If I'm not slightly uncomfortable, I'm not growing fast enough.*
 
 ## 4. Legacy Alignment
 
 *Building beyond the immediate.*
 
-**Core Practices:**
+**Core Practices**
 - Assess my work, projects, and commitments—do they contribute to what I actually want to build?
 - Make decisions based on long-term impact, not short-term comfort
 - Ensure that what I create is built to outlast me
 - Refine my leadership, influence, and strategic thinking to maximize my impact
 
-**Guiding Principle:**  
+**Guiding Principle**  
 *If it doesn't move me forward, it's a distraction.*
 
 ## 5. Optimization Protocol
 
 *Mind, body, and execution in harmony.*
 
-**Core Practices:**
+**Core Practices**
 - Eliminate mental inefficiencies—overthinking, wasted time, unnecessary emotional distractions
 - Maintain a structured routine that keeps me sharp and focused
 - Engage in physical training to reinforce mental resilience
 - Process emotions logically and efficiently—then move forward
 - Refine emotional intelligence as a strategic asset
 
-**Guiding Principle:**  
+**Guiding Principle**  
 *A disciplined mind and body are the foundation of high performance.*
 
 ## No Excuses, Only Execution

@@ -18,12 +18,12 @@ Like anyone, I have blind spots—patterns, assumptions, or habits that go unnot
 
 *Logic isn't always enough.*
 
-**Pattern:**
+**Pattern**
 I prioritize logic, efficiency, and competence over emotional nuance. I don't make decisions based on feelings, and I don't respond well to emotional overreactions in others. While this keeps me clear-headed and effective, it also means I may dismiss emotions too quickly—both my own and those of the people around me.
 
 > *"The greatest enemy of knowledge is not ignorance, it is the illusion of knowledge." — Daniel J. Boorstin*
 
-**Key Realizations:**
+**Key Realizations**
 - Just because an emotion isn't logical doesn't mean it isn't valid
 - Just because I can intellectualize a problem doesn't mean I've fully processed it
 - Just because someone struggles with emotional regulation doesn't mean they have nothing valuable to contribute
@@ -32,10 +32,10 @@ I prioritize logic, efficiency, and competence over emotional nuance. I don't ma
 
 *Speed of judgment versus depth of understanding.*
 
-**Pattern:**
+**Pattern**
 I have no problem walking away from people, situations, or systems that don't meet my standards. If something feels like a waste of time, I move on. While this keeps my energy focused, it also means I may dismiss people too quickly—before they've fully shown their value.
 
-**Key Realizations:**
+**Key Realizations**
 - Not everyone reveals their best qualities upfront
 - Some people improve over time if given the right direction
 - Cutting ties too fast can mean losing out on something worthwhile
@@ -44,10 +44,10 @@ I have no problem walking away from people, situations, or systems that don't me
 
 *Independence versus strategic collaboration.*
 
-**Pattern:**
+**Pattern**
 I take pride in my self-sufficiency. I don't like relying on others, and I don't expect others to rely on me. But just because I *can* do something alone doesn't always mean I should.
 
-**Key Realizations:**
+**Key Realizations**
 - The right people can enhance what I do, not limit it
 - I don't have to carry every responsibility, even if I'm capable of doing so
 - Strategic alliances, partnerships, and collaborations aren't a sign of weakness—they're a sign of efficiency
@@ -56,10 +56,10 @@ I take pride in my self-sufficiency. I don't like relying on others, and I don't
 
 *Quick judgment versus comprehensive understanding.*
 
-**Pattern:**
+**Pattern**
 Because I process information so quickly, I instinctively categorize people, ideas, and arguments to make sense of them. This allows me to cut through noise efficiently, but it also means I may dismiss certain perspectives before fully engaging with them.
 
-**Key Realizations:**
+**Key Realizations**
 - Just because an idea isn't framed well doesn't mean it lacks merit
 - Just because someone is less articulate, less confident, or more emotional doesn't mean they don't have a valid point
 - Some of the best insights come from unexpected places—I need to leave space for that
@@ -68,10 +68,10 @@ Because I process information so quickly, I instinctively categorize people, ide
 
 *Personal standards versus universal application.*
 
-**Pattern:**
+**Pattern**
 I have a strong internal code for how I think people *should* behave—rationally, efficiently, and with a sense of personal responsibility. But not everyone thinks or moves the way I do, and that doesn't automatically mean they're wrong or ineffective.
 
-**Key Realizations:**
+**Key Realizations**
 - Some people process things slower, and that's not a flaw—it's just different
 - Some people need more emotional engagement, and that doesn't make them weak
 - Some people thrive in structured environments, while I prefer autonomy. That doesn't mean one approach is superior

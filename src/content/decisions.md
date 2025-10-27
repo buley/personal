@@ -1,6 +1,6 @@
 # Decisions
 
-> *“If one does not know to which port one is sailing, no wind is favorable.” — Seneca*
+> *“If one does not know to which port one is sailing, no wind is favorable.” -- Seneca*
 
 > *"The quality of your life is determined by the quality of your decisions." — Tony Robbins*
 
@@ -16,7 +16,7 @@ I don't decide based on emotion or convention—I decide based on **clear princi
 
 *Not all decisions deserve equal attention.*
 
-**Categories:**
+**Categories**
 - Type 1: Irreversible, high-impact decisions
 - Type 2: Reversible decisions with known variables
 - Type 3: Low-impact, high-frequency choices
@@ -32,14 +32,14 @@ The depth of analysis should match the potential impact and reversibility of the
 
 *Systematic evaluation framework.*
 
-**Key Elements:**
+**Key Elements**
 - Objective assessment of current situation
 - Clear definition of desired outcomes
 - Identification of key variables
 - Analysis of potential consequences
 - Strategic timing considerations
 
-**Strategic Focus:**
+**Strategic Focus**
 - Long-term implications over short-term gains
 - System impacts over isolated effects
 - Strategic positioning over immediate utility
@@ -50,14 +50,14 @@ The depth of analysis should match the potential impact and reversibility of the
 
 *Evaluating uncertainty and impact.*
 
-**Core Components:**
+**Core Components**
 - Probability of various outcomes
 - Magnitude of potential impact
 - Reversibility of decision
 - Resource requirements
 - Strategic alignment
 
-**Risk Categories:**
+**Risk Categories**
 1. Acceptable Risk (High potential return, reversible)
 2. Strategic Risk (High impact, calculated uncertainty)
 3. Unnecessary Risk (Low return, high uncertainty)
@@ -67,14 +67,14 @@ The depth of analysis should match the potential impact and reversibility of the
 
 *When is as important as what.*
 
-**Critical Considerations:**
+**Critical Considerations**
 - Market/environmental conditions
 - Resource availability
 - Strategic positioning
 - Competitive landscape
 - Personal readiness
 
-**Timing Principles:**
+**Timing Principles**
 - Some opportunities require immediate action
 - Some decisions benefit from strategic delay
 - Some choices need to mature with more data
@@ -84,14 +84,14 @@ The depth of analysis should match the potential impact and reversibility of the
 
 *Moving from decision to action.*
 
-**Protocol:**
+**Protocol**
 1. Clear action plan developed
 2. Resources allocated
 3. Timeline established
 4. Metrics defined
 5. Feedback loops created
 
-**Core Focus:**
+**Core Focus**
 - Swift execution once decided
 - Clear communication of direction
 - Resource alignment
@@ -102,14 +102,14 @@ The depth of analysis should match the potential impact and reversibility of the
 
 *Speed versus precision.*
 
-**Framework for Fast Decisions:**
+**Framework for Fast Decisions**
 - Clear criteria established
 - Quick elimination of non-viable options
 - Rapid assessment of reversibility
 - Fast execution of obvious choices
 - Quick kills for clear misalignment
 
-**Framework for Slow Decisions:**
+**Framework for Slow Decisions**
 - Deep analysis of variables
 - Scenario planning
 - Stakeholder consideration
@@ -120,14 +120,14 @@ The depth of analysis should match the potential impact and reversibility of the
 
 *Maintaining strategic flexibility.*
 
-**Key Elements:**
+**Key Elements**
 - Regular decision review
 - Clear success/failure metrics
 - Adaptation triggers identified
 - Exit strategies prepared
 - Learning integration process
 
-**Core Understanding:**
+**Core Understanding**
 Even the best decisions need monitoring and adjustment as conditions change.
 
 ## Moving Forward

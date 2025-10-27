@@ -65,7 +65,7 @@ These quotes are not about empty philosophy—they are strategies for operation,
 - *"You can't be king of the world if you're a slave to the grind."* — Skid Row, "Slave to the Grind"  
 - *"Be tolerant with others and strict with yourself."* — Marcus Aurelius  
 - *"Power is not given to you. You have to take it."* — Beyoncé Knowles  
-- *"From each as they choose, to each as they are chosen."* - Robert Noziak
+- *"From each as they choose, to each as they are chosen."* -- Robert Noziak
 
 ## **Resilience & Endurance**  
 *Pressure does not break the prepared mind.*  

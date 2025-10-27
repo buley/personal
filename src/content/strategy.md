@@ -19,20 +19,16 @@ Together, they create not chaos — but *adaptive order.*
 ## **Core Cognitive Engine**
 
 **Operating Principle**
-ADHD provides *thrust* — speed, curiosity, pattern explosion.
-Autism provides *stability* — system integrity, logic, consistency.
-Their synthesis forms a **dual-core architecture** optimized for complexity.
+ADHD provides *thrust* — speed, curiosity, pattern explosion. Autism provides *stability* — system integrity, logic, consistency. Their synthesis forms a **dual-core architecture** optimized for complexity.
 
-Where others see contradiction, I see complementarity.
-Where others seek balance, I engineer tension.
+Where others see contradiction, I see complementarity. Where others seek balance, I engineer tension.
 
 > *"In preparing for battle I have always found that plans are useless, but planning is indispensable." — Dwight D. Eisenhower*
 
 ### **1. Strategic Hyperfocus: Precision in Velocity**
 
 **Description**
-When the mind locks onto meaning, time ceases. The world narrows into pure execution.
-This is not inattention to the irrelevant — it is strategic disregard.
+When the mind locks onto meaning, time ceases. The world narrows into pure execution. This is not inattention to the irrelevant — it is strategic disregard.
 
 **Doctrine**
 
@@ -65,8 +61,7 @@ My cognition runs recursive pattern analysis across domains — philosophy, psyc
 ### **3. Integrity as Law: Cognitive Consistency**
 
 **Description**
-I reject distortion — factual, moral, or structural.
-Misattribution, false logic, and aesthetic incoherence register as system errors.
+I reject distortion — factual, moral, or structural. Misattribution, false logic, and aesthetic incoherence register as system errors.
 
 **Doctrine**
 
@@ -81,8 +76,7 @@ Misattribution, false logic, and aesthetic incoherence register as system errors
 ### **4. Emotional Regulation Through Structure**
 
 **Description**
-Intensity without structure combusts.
-Structure without intensity calcifies.
+Intensity without structure combusts. Structure without intensity calcifies.
 
 Emotion is converted into order — agitation becomes refinement; frustration becomes system repair.
 
@@ -99,8 +93,7 @@ Emotion is converted into order — agitation becomes refinement; frustration be
 ### **5. Metacognitive Layering: The Observer and the Operator**
 
 **Description**
-The mind observes itself as both strategist and instrument.
-Self-analysis becomes continuous optimization.
+The mind observes itself as both strategist and instrument. Self-analysis becomes continuous optimization.
 
 **Doctrine**
 
@@ -135,8 +128,7 @@ Their tension generates innovation under pressure.
 ### **7. Reframing Pathology into Power**
 
 **Description**
-Labels are control mechanisms; narratives are weapons.
-Pathologization reduces agency — reframing restores it.
+Labels are control mechanisms; narratives are weapons. Pathologization reduces agency — reframing restores it.
 
 **Doctrine**
 
@@ -155,8 +147,7 @@ Pathologization reduces agency — reframing restores it.
 ### **8. Narrative Systematization**
 
 **Description**
-Meaning requires architecture.
-I convert information into mythic systems — taxonomies, manifestos, frameworks — where ideas interlock and reinforce.
+Meaning requires architecture. I convert information into mythic systems — taxonomies, manifestos, frameworks — where ideas interlock and reinforce.
 
 **Doctrine**
 
@@ -170,17 +161,16 @@ I convert information into mythic systems — taxonomies, manifestos, frameworks
 
 ## **The Divergent Engine**
 
-The AuADHD mind is a **dual-processing system** — analytic and impulsive, structural and generative.
-Its strength lies not in moderation, but in oscillation.
+The AuADHD mind is a **dual-processing system** — analytic and impulsive, structural and generative. Its strength lies not in moderation, but in oscillation.
 
-**Strategic Assets:**
+**Strategic Assets**
 
 * **Pattern Intelligence** → System design, cross-domain synthesis, rapid generalization.
 * **Cognitive Sovereignty** → Self-directed focus, internal logic integrity.
 * **Emotional Alchemy** → Transforming tension into precision and creation.
 * **Metacognitive Command** → Continuous self-audit and adaptive strategy.
 
-**Final Directive:**
+**Final Directive**
 
 > *“We are what we repeatedly do. Excellence, then, is not an act, but a habit.”* — **Aristotle**
 

@@ -18,7 +18,7 @@ I don't believe in balance for balance's sake—I believe in **strategic allocat
 
 *Strategic structuring of temporal resources.*
 
-**Core Framework:**
+**Core Framework**
 - Block time in focused, uninterrupted segments
 - Align peak energy hours with critical tasks
 - Build buffer zones for strategic thinking
@@ -27,21 +27,21 @@ I don't believe in balance for balance's sake—I believe in **strategic allocat
 
 > *"The key is not to prioritize what's on your schedule, but to schedule your priorities." — Stephen Covey*
 
-**Essential Truth:**  
+**Essential Truth**  
 Time management isn't about doing more—it's about achieving more with strategic focus.
 
 ## 2. Energy Optimization
 
 *Managing the fuel that drives execution.*
 
-**Key Elements:**
+**Key Elements**
 - Peak performance windows identified and protected
 - Energy drains eliminated or isolated
 - Recovery periods strategically placed
 - Physical and mental energy aligned
 - Environmental factors controlled
 
-**Strategic Implementation:**
+**Strategic Implementation**
 - High-stakes work during peak hours
 - Routine tasks during lower energy periods
 - Strategic breaks for maintaining sharpness
@@ -52,14 +52,14 @@ Time management isn't about doing more—it's about achieving more with strategi
 
 *Decision framework for time allocation.*
 
-**Critical Questions:**
+**Critical Questions**
 - Does this move me toward long-term objectives?
 - Is this the highest leverage use of my time?
 - Can this be delegated or eliminated?
 - Will this compound in value over time?
 - Is this truly urgent, or just pressing?
 
-**Core Categories:**
+**Core Categories**
 1. Strategic (High impact, long-term)
 2. Operational (Necessary, can be systematized)
 3. Maintenance (Required, should be minimized)
@@ -69,14 +69,14 @@ Time management isn't about doing more—it's about achieving more with strategi
 
 *Maintaining operational clarity.*
 
-**System Elements:**
+**System Elements**
 - Clear boundaries around work periods
 - Digital and physical environment controlled
 - Communication channels managed
 - Interruptions systematically eliminated
 - Focus triggers established
 
-**Implementation:**
+**Implementation**
 - Deep work periods protected
 - Shallow work batched
 - Communication structured
@@ -87,14 +87,14 @@ Time management isn't about doing more—it's about achieving more with strategi
 
 *Strategic handling of concurrent priorities.*
 
-**Core Approach:**
+**Core Approach**
 - Projects categorized by energy type required
 - Clear boundaries between different workstreams
 - Strategic switching to maintain momentum
 - Progress tracked across all fronts
 - Resources allocated based on impact
 
-**Key Principles:**
+**Key Principles**
 - Not all projects deserve equal time
 - Energy type matters more than time quantity
 - Strategic pause points predetermined
@@ -105,28 +105,28 @@ Time management isn't about doing more—it's about achieving more with strategi
 
 *Strategic restoration of resources.*
 
-**Protocol:**
+**Protocol**
 - Active recovery periods scheduled
 - Physical exercise strategically timed
 - Mental decompression structured
 - Environment changes planned
 - Energy renewal activities identified
 
-**Core Understanding:**
+**Core Understanding**
 Recovery isn't optional—it's a strategic necessity for sustained high performance.
 
 ## 7. Decision Velocity
 
 *Speed and precision in choices.*
 
-**Framework:**
+**Framework**
 - Quick decisions for reversible situations
 - Deeper analysis for permanent impacts
 - Clear criteria for different decision types
 - Fast elimination of non-essential choices
 - Strategic deferral when appropriate
 
-**Implementation:**
+**Implementation**
 - Decision types categorized
 - Response times predetermined
 - Analysis depth matched to impact

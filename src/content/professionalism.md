@@ -14,7 +14,7 @@ My career has taken me across disciplines—from journalism to engineering to me
 
 *Seeing both forest and trees.*
 
-**Foundation:**
+**Foundation**
 - Deep background in philosophy, politics, and economics
 - Understanding of human behavior and choice architecture
 - Ability to see systems, incentives, and motivations
@@ -22,7 +22,7 @@ My career has taken me across disciplines—from journalism to engineering to me
 
 > *"The best way to predict the future is to create it." — Peter Drucker*
 
-**Application:**
+**Application**
 This makes me effective in roles requiring both analysis and action—whether it's:
 - Reporting truth as a journalist
 - Designing information systems as an engineer
@@ -32,13 +32,13 @@ This makes me effective in roles requiring both analysis and action—whether it
 
 *Thriving under pressure.*
 
-**Key Capabilities:**
+**Key Capabilities**
 - Navigation of uncertainty
 - Extraction of clarity from chaos
 - Systems-based problem-solving
 - Calm decision-making under pressure
 
-**Cross-Domain Success:**
+**Cross-Domain Success**
 - Journalism: Navigating uncertainty while maintaining accuracy
 - Engineering: Breaking down complex problems systematically
 - Mediation: Creating resolution strategies in high-conflict situations
@@ -47,13 +47,13 @@ This makes me effective in roles requiring both analysis and action—whether it
 
 *Autonomous execution with impact.*
 
-**Core Approach:**
+**Core Approach**
 - Taking ownership without waiting for permission
 - Analyzing landscape comprehensively
 - Executing with precision
 - Building for long-term impact
 
-**Domain Applications:**
+**Domain Applications**
 - Engineering: Systems designed for long-term efficiency
 - Mediation: Structural solutions, not temporary fixes
 - Journalism: Depth over surface-level reporting
@@ -62,13 +62,13 @@ This makes me effective in roles requiring both analysis and action—whether it
 
 *Bridging logic and human factors.*
 
-**Unique Capability:**
+**Unique Capability**
 Few can move seamlessly between technical precision and human intuition. This allows me to:
 - Solve problems using both rational analysis and human insight
 - Navigate difficult personalities and high-conflict situations
 - Communicate complex ideas to diverse audiences
 
-**Professional Impact:**
+**Professional Impact**
 - Technical accuracy without losing human connection
 - Emotional intelligence without sacrificing precision
 - Clear communication across different understanding levels
@@ -77,12 +77,12 @@ Few can move seamlessly between technical precision and human intuition. This al
 
 *Core professional attributes.*
 
-**Essential Characteristics:**
+**Essential Characteristics**
 - Independent-minded: Critical thinking and decisive action
 - Analytically rigorous: Comprehensive problem breakdown
 - Uncompromising standards: Excellence as baseline
 
-**Professional Application:**
+**Professional Application**
 Whether engineering systems, resolving disputes, or navigating negotiations, these traits allow me to:
 - See what others miss
 - Solve what others avoid

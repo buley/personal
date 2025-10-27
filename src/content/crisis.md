@@ -18,7 +18,7 @@ When everything is falling apart, I become more focused, more precise, and more 
 
 *The first moments determine the trajectory.*
 
-**Immediate Protocol:**
+**Immediate Protocol**
 - Assess situation without emotional interference
 - Identify critical variables and immediate threats
 - Establish control over controllable elements
@@ -34,14 +34,14 @@ The goal in crisis isn't to solve everything immediately—it's to create stabil
 
 *Systematic evaluation of crisis elements.*
 
-**Key Components:**
+**Key Components**
 - Immediate threats requiring action
 - Secondary risks requiring monitoring
 - Cascade effect possibilities
 - Resource vulnerability points
 - Strategic opportunity elements
 
-**Priority Levels:**
+**Priority Levels**
 1. Critical (Immediate response required)
 2. Urgent (Response needed within hours)
 3. Important (Response needed within days)
@@ -52,14 +52,14 @@ The goal in crisis isn't to solve everything immediately—it's to create stabil
 
 *Strategic allocation under pressure.*
 
-**Core Focus:**
+**Core Focus**
 - Critical resource identification
 - Vulnerability point protection
 - Alternative resource paths
 - Emergency reserve management
 - Strategic resource reallocation
 
-**Implementation Protocol:**
+**Implementation Protocol**
 1. Secure critical resources
 2. Identify backup options
 3. Create contingency paths
@@ -70,28 +70,28 @@ The goal in crisis isn't to solve everything immediately—it's to create stabil
 
 *Maintaining strategic thinking under pressure.*
 
-**Framework:**
+**Framework**
 - Rapid situation assessment
 - Quick elimination of non-viable options
 - Fast-track decision protocols
 - Clear action thresholds
 - Immediate execution triggers
 
-**Core Understanding:**
+**Core Understanding**
 Crisis requires faster decisions but not rushed ones. The goal is strategic speed, not panic response.
 
 ## 5. Communication Protocol
 
 *Information management during crisis.*
 
-**Key Elements:**
+**Key Elements**
 - Clear communication channels established
 - Information flow controlled
 - Message consistency maintained
 - Stakeholder management structured
 - Rumor control implemented
 
-**Strategic Focus:**
+**Strategic Focus**
 - Control narrative
 - Manage information flow
 - Maintain strategic positioning
@@ -102,14 +102,14 @@ Crisis requires faster decisions but not rushed ones. The goal is strategic spee
 
 *Handling concurrent emergencies.*
 
-**Core Approach:**
+**Core Approach**
 - Crisis prioritization framework
 - Resource allocation system
 - Multiple stream management
 - Cross-impact assessment
 - Strategic coordination
 
-**Implementation:**
+**Implementation**
 - Priority matrix established
 - Resource sharing protocols
 - Cross-crisis opportunities
@@ -120,14 +120,14 @@ Crisis requires faster decisions but not rushed ones. The goal is strategic spee
 
 *Building strength through crisis.*
 
-**Strategic Elements:**
+**Strategic Elements**
 - Immediate stabilization
 - Strategic repositioning
 - Opportunity capture
 - System strengthening
 - Future prevention
 
-**Core Focus:**
+**Core Focus**
 - Turn crisis into advantage
 - Build stronger systems
 - Create strategic barriers

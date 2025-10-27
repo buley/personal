@@ -18,74 +18,74 @@ I operate at my highest level when I am **solving, leading, mastering, and execu
 
 *The mind operating at its peak capacity.*
 
-**Strengths:**
+**Strengths**
 - I analyze deeply, think strategically, and execute precisely
 - I thrive in complex, high-level problem-solving where sharp thinking is required
 - I see patterns others miss and make connections that lead to breakthrough solutions
 
 > *"The mind is everything. What you think you become." — Buddha*
 
-**Edge Cases:**  
+**Edge Cases**  
 When this becomes a liability—I overanalyze and delay execution. **I think when I should be acting.**
 
 ## 2. Full Path Control
 
 *Maximum autonomy, maximum responsibility.*
 
-**Strengths:**
+**Strengths**
 - I perform at my peak when I am autonomous, self-directed, and executing at my own standard
 - I operate best when I have the freedom to create, refine, and push limits without unnecessary constraints
 - I thrive when I am building, innovating, and optimizing systems, not just following them
 
-**Edge Cases:**  
+**Edge Cases**  
 When this becomes a liability—My independence becomes isolation, and I refuse collaboration even when it's valuable.
 
 ## 3. Pursuit of Mastery
 
 *Beyond competence, toward excellence.*
 
-**Strengths:**
+**Strengths**
 - I am at my best when I am not just competent—but exceptional
 - I constantly refine, optimize, and pursue the highest level of execution
 - I push beyond surface-level understanding and aim for deep, structural mastery
 
-**Edge Cases:**  
+**Edge Cases**  
 When this becomes a liability—I set perfectionist expectations that slow me down instead of moving forward.
 
 ## 4. Precision Leadership
 
 *Setting standards through example.*
 
-**Strengths:**
+**Strengths**
 - I lead best when I am setting a vision, raising standards, and making decisive moves
 - I elevate those around me by demonstrating what is possible with high expectations and relentless discipline
 - I thrive when I can challenge outdated thinking and drive real progress
 
-**Edge Cases:**  
+**Edge Cases**  
 When this becomes a liability—My leadership becomes uncompromising and impatient, and I expect others to match my pace instantly.
 
 ## 5. Testing Limits
 
 *Growth at the edge of capability.*
 
-**Strengths:**
+**Strengths**
 - I perform best when I am operating at my edge, pushing into new challenges, and growing under pressure
 - I seek challenges that force me to refine my skills, expand my thinking, and test my resilience
 - I do not thrive in comfort or stagnation—I need an environment that demands my best
 
-**Edge Cases:**  
+**Edge Cases**  
 When this becomes a liability—I seek disruption instead of progress, chasing challenge for its own sake rather than using it to evolve.
 
 ## 6. Strategic Foresight
 
 *Playing the long game.*
 
-**Strengths:**
+**Strengths**
 - I am most effective when I am playing the long game—thinking multiple moves ahead
 - I see trends before they emerge, anticipate obstacles, and position myself ahead of the competition
 - I operate best in high-level strategy, where deep thinking translates into real-world execution
 
-**Edge Cases:**  
+**Edge Cases**  
 When this becomes a liability—I get stuck in strategy mode instead of executing and adjusting in real time.
 
 ## Maintaining Peak Performance

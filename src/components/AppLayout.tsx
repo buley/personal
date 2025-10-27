@@ -31,6 +31,7 @@ const AppLayout = () => {
 
   // Initialize with a static seed to match the server-rendered HTML.
   const [mediaUrl, setMediaUrl] = useState(`/api/placeholder/1920/1080?seed=static`);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     // After mount, update the background image URL with a dynamic seed.
@@ -44,6 +45,11 @@ const AppLayout = () => {
     const interval = setInterval(updateMediaUrl, 300000);
     return () => clearInterval(interval);
   }, []);
+
+  // Reset loaded state when URL changes
+  useEffect(() => {
+    setImageLoaded(false);
+  }, [mediaUrl]);
 
   const primaryNav = [
     { title: "FAQ", path: "faq" },
@@ -224,7 +230,10 @@ const AppLayout = () => {
           key={mediaUrl}
           src={mediaUrl}
           alt="Background"
-          className="opacity-55 w-full h-full object-cover transition-opacity duration-1000"
+          onLoad={() => setImageLoaded(true)}
+          className={`w-full h-full object-cover transition-opacity duration-1000 ${
+            imageLoaded ? 'opacity-55' : 'opacity-0'
+          }`}
         />
       </div>
 

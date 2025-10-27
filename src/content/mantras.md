@@ -44,6 +44,7 @@
 - A moment of patience can prevent a year of regret
 - Control the pace of the game, and you control the outcome
 - Move with precision, not impulse
+- Seek to understand
 
 ## Independence & Strength
 
@@ -55,6 +56,7 @@
 - Never outsource your self-worth
 - Stand alone if you must, but never lower your standards to fit in
 - Your autonomy is non-negotiable
+- This too shall pass
 
 ## Resilience & Endurance
 

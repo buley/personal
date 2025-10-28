@@ -20,20 +20,20 @@ I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my externa
 
 > *"Peace comes from within. Do not seek it without." -- Buddha*
 
-1. **Lack of Control**  
-   When I feel powerless in a situation, my mind will try to regain control by overanalyzing, preparing, or resisting uncertainty.
+1.  **Lack of Control**
+    When I feel powerless in a situation, my mind will try to regain control by overanalyzing, preparing, or resisting uncertainty.
 
-2. **Unclear Paths Forward**  
-   I don't mind challenges, but I need a strategy. When I don't have one, my mind churns until I create clarity.
+2.  **Unclear Paths Forward**
+    I don't mind challenges, but I need a strategy. When I don't have one, my mind churns until I create clarity.
 
-3. **Wasted Time or Potential**  
-   If I feel like I'm stagnating, being slowed down, or not optimizing my skills, my internal frustration manifests as unease.
+3.  **Wasted Time or Potential**
+    If I feel like I'm stagnating, being slowed down, or not optimizing my skills, my internal frustration manifests as unease.
 
-4. **External Incompetence or Chaos**  
-   I operate best in structured, high-functioning environments. When I'm surrounded by inefficiency, disorganization, or unpredictability, I instinctively try to **fix or escape**--if I can't do either, anxiety rises.
+4.  **External Incompetence or Chaos**
+    I operate best in structured, high-functioning environments. When I'm surrounded by inefficiency, disorganization, or unpredictability, I instinctively try to **fix or escape**--if I can't do either, anxiety rises.
 
-5. **Emotional Ambiguity**  
-   I don't like emotions I can't quantify or resolve. If something feels **off** but I can't pinpoint why, it lingers in my mind until I process it logically.
+5.  **Emotional Ambiguity**
+    I don't like emotions I can't quantify or resolve. If something feels **off** but I can't pinpoint why, it lingers in my mind until I process it logically.
 
 ## Strategic Countermeasures
 
@@ -86,12 +86,12 @@ I don't tolerate unnecessary chaos, inefficiency, or wasted energy in my externa
 
 *These are not coping mechanisms--they are systems of control.*
 
-1. Anxiety does not run my life--I do
-2. When uncertainty arises, I create clarity
-3. When control is lost, I focus on what I *can* influence
-4. When my mind spirals, I impose structure and logic
-5. When emotion clouds thinking, I process it--then act
-6. When energy builds up, I channel it into **movement, mastery, or execution**
+1.  Anxiety does not run my life--I do
+2.  When uncertainty arises, I create clarity
+3.  When control is lost, I focus on what I *can* influence
+4.  When my mind spirals, I impose structure and logic
+5.  When emotion clouds thinking, I process it--then act
+6.  When energy builds up, I channel it into **movement, mastery, or execution**
 
 I don't tolerate **external inefficiency--so why would I tolerate it in myself?** **Anxiety is an unoptimized mental process.** I refine it, restructure it, and redirect it toward something that serves me.
 

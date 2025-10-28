@@ -13,10 +13,10 @@ My effectiveness is not just about leveraging my capabilities, but understanding
 ## Core Tension Points
 
 ### Independence & Collaboration
-**Pattern**  
+**Pattern**
 My independence can make me resistant to collaboration when I don't respect the competency of others.
 
-**Impact**  
+**Impact**
 - Missed opportunities for synergy
 - Potential isolation from valuable perspectives
 - Risk of reinventing rather than leveraging
@@ -24,7 +24,7 @@ My independence can make me resistant to collaboration when I don't respect the 
 > *"In the middle of every difficulty lies opportunity." -- Albert Einstein*
 
 ### Standards & Patience
-**Pattern**  
+**Pattern**
 My high standards can make me impatient with inefficiency or slow progress.
 
 **Impact**
@@ -33,7 +33,7 @@ My high standards can make me impatient with inefficiency or slow progress.
 - Missed opportunities for mentorship
 
 ### Structure & Innovation
-**Pattern**  
+**Pattern**
 My nonconformity can sometimes lead me to reject structure, even when it serves a purpose.
 
 **Impact**
@@ -44,7 +44,7 @@ My nonconformity can sometimes lead me to reject structure, even when it serves 
 ## Communication Patterns
 
 ### Direct Communication
-**Pattern**  
+**Pattern**
 I can be blunt when I see flaws, and I don't always filter my critiques to make them more digestible.
 
 **Impact**
@@ -53,7 +53,7 @@ I can be blunt when I see flaws, and I don't always filter my critiques to make 
 - Can limit effectiveness of feedback
 
 ### Energy Management
-**Pattern**  
+**Pattern**Check
 I am selective with my energy, which means I don't invest in relationships or projects that don't challenge me.
 
 **Impact**
@@ -62,7 +62,7 @@ I am selective with my energy, which means I don't invest in relationships or pr
 - Potential for narrow focus
 
 ### Self-Reliance
-**Pattern**  
+**Pattern**
 I can be overly self-reliant, sometimes pushing forward alone when a strategic alliance would serve better.
 
 **Impact**

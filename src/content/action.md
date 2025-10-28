@@ -4,7 +4,7 @@
 
 > *"The only way to do great work is to love what you do." -- Steve Jobs*
 
-*This is not a manifesto to be read--it is a system to be lived. Every word demands action, every principle requires embodiment, every standard must be maintained.*
+*This is a system to be lived. These are not guidelines--they are laws of operation. Every word demands action, every principle requires embodiment, every standard must be maintained. 
 
 At this point, I have clarity on who I am, how I operate, where I thrive, and where I can refine.
 
@@ -71,7 +71,3 @@ I don't hesitate.
 I don't compromise.  
 
 Now, I move.
-
-## How I Move Through the World
-
-*These are not guidelines--they are laws of operation.*

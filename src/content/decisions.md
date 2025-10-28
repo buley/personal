@@ -25,7 +25,7 @@ I don't decide based on emotion or convention--I decide based on **clear princip
 
 > *"In any moment of decision, the best thing you can do is the right thing, the next best thing is the wrong thing, and the worst thing you can do is nothing." -- Theodore Roosevelt*
 
-**Core Principle**  
+**Core Principle**
 The depth of analysis should match the potential impact and reversibility of the decision.
 
 ## 2. Analysis Protocol
@@ -58,10 +58,10 @@ The depth of analysis should match the potential impact and reversibility of the
 - Strategic alignment
 
 **Risk Categories**
-1. Acceptable Risk (High potential return, reversible)
-2. Strategic Risk (High impact, calculated uncertainty)
-3. Unnecessary Risk (Low return, high uncertainty)
-4. Fatal Risk (Existential threat potential)
+1.  Acceptable Risk (High potential return, reversible)
+2.  Strategic Risk (High impact, calculated uncertainty)
+3.  Unnecessary Risk (Low return, high uncertainty)
+4.  Fatal Risk (Existential threat potential)
 
 ## 4. Strategic Timing
 
@@ -85,11 +85,11 @@ The depth of analysis should match the potential impact and reversibility of the
 *Moving from decision to action.*
 
 **Protocol**
-1. Clear action plan developed
-2. Resources allocated
-3. Timeline established
-4. Metrics defined
-5. Feedback loops created
+1.  Clear action plan developed
+2.  Resources allocated
+3.  Timeline established
+4.  Metrics defined
+5.  Feedback loops created
 
 **Core Focus**
 - Swift execution once decided
@@ -134,11 +134,11 @@ Even the best decisions need monitoring and adjustment as conditions change.
 
 *Strategic imperatives for decision-making:*
 
-1. Match analysis depth to decision impact
-2. Consider long-term strategic implications
-3. Assess risk and reversibility
-4. Time decisions for maximum effect
-5. Execute decisively once committed
-6. Monitor and adjust as needed
+1.  Match analysis depth to decision impact
+2.  Consider long-term strategic implications
+3.  Assess risk and reversibility
+4.  Time decisions for maximum effect
+5.  Execute decisively once committed
+6.  Monitor and adjust as needed
 
 I don't decide based on convention or comfort--I decide based on **strategic impact and long-term advantage.** Every choice must align with larger objectives and strategic direction.

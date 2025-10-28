@@ -32,7 +32,7 @@ My capacity for long-form structuring (manifestos, quote hierarchies, nested sys
 
 ### **2. Pattern-Driven Cognition**
 
-I think in **systems of systems**, translating scattered data into architectures of meaning. My cross-domain synthesis -- Sapolsky to Debord to Aurelius to Rovelli -- demonstrates **meta-conceptual threading**, where ideas are not isolated but *nested.*
+I think in **systems of systems**, translating scattered data into architectures of meaning. My cross-domain synthesis -- Sapolsky to Debord to Aurelius -- hints at my **meta-conceptual threading**, where ideas are not isolated but *nested.*
 
 This is not curiosity -- it is **semantic engineering.** My cognition organizes information into layered meaning networks.
 

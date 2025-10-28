@@ -1,6 +1,6 @@
 # Hybrid Cognition
 
-> *“Why fit in when you were born to stand out?”* -- Dr. Suess
+> *"Why fit in when you were born to stand out?”* -- Dr. Seuss
 
 > *"The mind is everything. What you think you become." -- Buddha*
 
@@ -16,8 +16,8 @@ My mind doesn’t wander -- it *maps*. Where others see noise, I detect signal. 
 
 AUADHD is a dual-core processor --
 
-* The **Autistic precision** gives me focus, integrity, and an intolerance for superficiality.
-* The **ADHD momentum** gives me creativity, velocity, and fearless iteration.
+- The **Autistic precision** gives me focus, integrity, and an intolerance for superficiality.
+- The **ADHD momentum** gives me creativity, velocity, and fearless iteration.
 
 Together, they forge an intellect that oscillates between stillness and storm -- capable of abstraction and action, detail and vision, silence and brilliance. When aligned, I am unstoppable.
 

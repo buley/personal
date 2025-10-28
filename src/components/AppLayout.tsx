@@ -9,6 +9,7 @@ import {
   X,
   ChevronDown,
   ChevronRight,
+  Home,
 } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
@@ -52,6 +53,7 @@ const AppLayout = () => {
   }, [mediaUrl]);
 
   const primaryNav = [
+    { title: "Home", path: null },
     { title: "FAQ", path: "faq" },
     { title: "Email", path: "mailto:buley@outlook.com?subject=website" },
     { title: "Text", path: "tel:16503537653" },
@@ -78,7 +80,7 @@ const AppLayout = () => {
       { title: "Decision Making", path: "decisions" },
       { title: "Attention Systems", path: "adhd" },
       { title: "Autistic Processing", path: "autism" },
-      { title: "Hybrid Cognition", path: "audhd" },
+      { title: "Hybrid Cognition", path: "auadhd" },
       { title: "Learning & Knowledge", path: "learning" },
       { title: "Time & Energy Management", path: "time-energy" },
       { title: "Crisis Response", path: "crisis" },
@@ -124,8 +126,12 @@ const AppLayout = () => {
     setExpandedSections(newExpanded);
   }, [selectedContent]);
 
-  const handleNavClick = (path: string) => {
-    router.push(`/${path}`);
+  const handleNavClick = (path: string | null) => {
+    if (path === null) {
+      router.push("/");
+    } else {
+      router.push(`/${path}`);
+    }
     setMobileMenuOpen(false);
   };
 
@@ -262,19 +268,20 @@ const AppLayout = () => {
             </div>
             <div className="flex flex-row space-x-4 items-center">
               {primaryNav.map((item) => {
+                const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
                 let icon = null;
-                if (item.path.startsWith("http")) {
+                if (item.path && item.path.startsWith("http")) {
                   icon = <ExternalLink size={14} className="ml-1" />;
-                } else if (item.path.startsWith("mailto")) {
+                } else if (item.path && item.path.startsWith("mailto")) {
                   icon = <Mail size={14} className="ml-1" />;
-                } else if (item.path.startsWith("tel")) {
+                } else if (item.path && item.path.startsWith("tel")) {
                   icon = <Phone size={14} className="ml-1" />;
                 }
-                return item.path.startsWith("http") ||
+                return item.path && (item.path.startsWith("http") ||
                   item.path.startsWith("mailto") ||
-                  item.path.startsWith("tel") ? (
+                  item.path.startsWith("tel")) ? (
                   <a
-                    key={item.path}
+                    key={item.path || item.title}
                     href={item.path}
                     target={item.path.startsWith("http") ? "_blank" : "_self"}
                     rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
@@ -285,14 +292,14 @@ const AppLayout = () => {
                   </a>
                 ) : (
                   <button
-                    key={item.path}
+                    key={item.path || item.title}
                     onClick={() => handleNavClick(item.path)}
                     className={`font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors ${
-                      selectedContent === item.path ? "text-white" : "text-white/60"
+                      isSelected ? "text-white" : "text-white/60"
                     }`}
                   >
-                    {selectedContent === item.path ? "→ " : ""}
-                    {item.title}
+                    {isSelected && item.path !== null ? "→ " : ""}
+                    {item.path === null ? <Home size={14} /> : item.title}
                   </button>
                 );
               })}
@@ -316,20 +323,23 @@ const AppLayout = () => {
               <NavSection key={group} group={group} items={items} isMobile />
             ))}
             <div className="pt-6 border-t border-white/20">
-              {primaryNav.map((item) => (
-                <button
-                  key={item.path}
-                  onClick={() => handleNavClick(item.path)}
-                  className={`font-mono text-base tracking-widest block mt-4 w-full text-left ${
-                    selectedContent === item.path
-                      ? "text-white"
-                      : "text-white/60"
-                  }`}
-                >
-                  {selectedContent === item.path ? "→ " : ""}
-                  {item.title}
-                </button>
-              ))}
+              {primaryNav.map((item) => {
+                const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
+                return (
+                  <button
+                    key={item.path || item.title}
+                    onClick={() => handleNavClick(item.path)}
+                    className={`font-mono text-base tracking-widest block mt-4 w-full text-left ${
+                      isSelected
+                        ? "text-white"
+                        : "text-white/60"
+                    }`}
+                  >
+                    {isSelected && item.path !== null ? "→ " : ""}
+                    {item.path === null ? <Home size={16} /> : item.title}
+                  </button>
+                );
+              })}
             </div>
             <div className="pt-4">
               <hr className="border-white/20 pt-4" />
@@ -384,7 +394,7 @@ const AppLayout = () => {
                 Taylor William Buley
               </h2>
               <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
-                Navigate to explore
+                Systematic problem-solver
               </p>
               <RandomFragment />
             </div>

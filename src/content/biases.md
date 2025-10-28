@@ -25,7 +25,7 @@ My ability to **recognize, refine, and control these biases** determines whether
 - I may dismiss **contrary perspectives too quickly, assuming others have not thought as deeply**
 - When someone makes a mistake, I assume **they are the problem, rather than considering situational factors**
 
-**Correction**  
+**Correction**
 Before dismissing an idea or critique, I ask: *What would convince me otherwise?* If the answer is *nothing,* that's a blind spot.
 
 ### B. The Control Fallacy
@@ -37,7 +37,7 @@ Before dismissing an idea or critique, I ask: *What would convince me otherwise?
 - This can lead me to **overestimate how much influence I have in unpredictable situations**
 - I may **underestimate external factors** that genuinely impact results--luck, timing, or hidden variables
 
-**Correction**  
+**Correction**
 I separate what is **truly within my control** from what is **externally influenced** and strategize accordingly.
 
 ### C. The Effort Justification Bias
@@ -49,7 +49,7 @@ I separate what is **truly within my control** from what is **externally influen
 - I equate **difficulty with value**--assuming something must be worthwhile **because I worked hard for it**
 - This can lead me to **push forward on a path that no longer serves me** simply because I refuse to "quit"
 
-**Correction**  
+**Correction**
 I remind myself: *Past investment is irrelevant. Only future value matters.*
 
 ### D. The Contrarian Bias
@@ -61,7 +61,7 @@ I remind myself: *Past investment is irrelevant. Only future value matters.*
 - I instinctively prefer **ideas, systems, or methods that are unconventional or self-derived**
 - This can lead to **automatic opposition rather than strategic analysis**
 
-**Correction**  
+**Correction**
 I ask myself: *Am I rejecting this because it's truly flawed, or because I dislike conformity?*
 
 ## 2. Biases I Can Leverage Best
@@ -79,7 +79,7 @@ I ask myself: *Am I rejecting this because it's truly flawed, or because I disli
 - I look for **patterns in winning strategies** rather than fixating on why something failed
 - This allows me to **adopt and refine the best models, rather than reinventing the wheel**
 
-**Application**  
+**Application**
 I build on proven success while remaining aware that **hidden failures may still provide insight.**
 
 ### B. The First Principles Bias
@@ -91,7 +91,7 @@ I build on proven success while remaining aware that **hidden failures may still
 - This helps me **see solutions that others overlook** because they are stuck in outdated assumptions
 - I focus on **core truths rather than relying on tradition, authority, or precedent**
 
-**Application**  
+**Application**
 I challenge **default assumptions in business, relationships, and strategy** to uncover **more effective solutions.**
 
 ### C. The Outcome Bias
@@ -103,7 +103,7 @@ I challenge **default assumptions in business, relationships, and strategy** to 
 - I don't waste time **justifying failure** if something doesn't work--I **adjust and move forward**
 - I value **execution over discussion**, progress over perfection
 
-**Application**  
+**Application**
 I don't let theory override reality--**I measure success in outcomes, not effort.**
 
 ### D. The Scarcity Bias
@@ -115,7 +115,7 @@ I don't let theory override reality--**I measure success in outcomes, not effort
 - This applies to **negotiation, relationships, leadership, and positioning myself strategically**
 - I know how to **withhold, create distance, and set high standards** to make my time and attention more valuable
 
-**Application**  
+**Application**
 I control access to myself, my time, and my expertise--**never making myself too available.**
 
 ## 3. What People Should Be Wary of When Dealing with Me

@@ -32,7 +32,7 @@ My capacity for long-form structuring (manifestos, quote hierarchies, nested sys
 
 ### **2. Pattern-Driven Cognition**
 
-I think in **systems of systems**, translating scattered data into architectures of meaning. My cross-domain synthesis -- Sapolsky to Debord to Aurelius to Rovelli -- demonstrates **meta-conceptual threading**, where ideas are not isolated but *nested.*
+I think in **systems of systems**, translating scattered data into architectures of meaning. My cross-domain synthesis -- Sapolsky to Debord to Aurelius -- hints at my **meta-conceptual threading**, where ideas are not isolated but *nested.*
 
 This is not curiosity -- it is **semantic engineering.** My cognition organizes information into layered meaning networks.
 
@@ -80,6 +80,7 @@ I resist medicalized narratives. I refuse to be pathologized for operating outsi
 My reframing of “symptoms” as **operational modes** reflects **metacognitive sovereignty** -- the reclamation of definition.
 
 This is a philosophical adaptation:
+
 To name one’s own traits is to regain agency over their narrative.
 
 **Operational Insight** Continue reframing frameworks -- turn diagnostic language into operational lexicon (e.g., “deficit” → “selectivity,” “rigidity” → “system fidelity”).
@@ -97,6 +98,7 @@ This is the **ADHD storyteller’s velocity** merged with the **autistic archite
 The AuADHD mind is not a split; it is a dual-core processor. It thrives in paradox -- logic and intuition, structure and motion, depth and improvisation.
 
 I am not inconsistent. I am **multi-modal.**
+
 My cognition is not disorder -- it is design under unconventional parameters.
 
 > "You can't stop the waves, but you can learn to surf." --Jon Kabat-Zinn

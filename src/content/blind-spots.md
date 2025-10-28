@@ -80,10 +80,10 @@ I have a strong internal code for how I think people *should* behave--rationally
 
 *Strategic adaptations to address blind spots:*
 
-1. Stay open to emotional intelligence--not everything needs to be solved logically
-2. Make sure I'm not cutting people off before seeing their full potential
-3. Recognize that collaboration isn't a weakness--it's a strategic advantage
-4. Check my filtering process--valuable insights can come from unexpected places
-5. Acknowledge that not everyone thinks like I do--and that's okay
+1.  Stay open to emotional intelligence--not everything needs to be solved logically
+2.  Make sure I'm not cutting people off before seeing their full potential
+3.  Recognize that collaboration isn't a weakness--it's a strategic advantage
+4.  Check my filtering process--valuable insights can come from unexpected places
+5.  Acknowledge that not everyone thinks like I do--and that's okay
 
 I will always be **sharp, independent, and efficient**, but I also know that **true mastery comes from refining--not just reinforcing--my natural instincts.**

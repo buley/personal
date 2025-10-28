@@ -1,4 +1,4 @@
-# Time, Energy, and Results
+# Time, Energy and Results
 
 > *"Time is not just a resource to manage--it's the currency of impact."*
 
@@ -27,7 +27,7 @@ I don't believe in balance for balance's sake--I believe in **strategic allocati
 
 > *"The key is not to prioritize what's on your schedule, but to schedule your priorities." -- Stephen Covey*
 
-**Essential Truth**  
+**Essential Truth**
 Time management isn't about doing more--it's about achieving more with strategic focus.
 
 ## 2. Energy Optimization
@@ -60,10 +60,10 @@ Time management isn't about doing more--it's about achieving more with strategic
 - Is this truly urgent, or just pressing?
 
 **Core Categories**
-1. Strategic (High impact, long-term)
-2. Operational (Necessary, can be systematized)
-3. Maintenance (Required, should be minimized)
-4. Waste (Eliminate or delegate)
+1.  Strategic (High impact, long-term)
+2.  Operational (Necessary, can be systematized)
+3.  Maintenance (Required, should be minimized)
+4.  Waste (Eliminate or delegate)
 
 ## 4. Focus Protocol
 
@@ -137,11 +137,11 @@ Recovery isn't optional--it's a strategic necessity for sustained high performan
 
 *Strategic imperatives for time & energy:*
 
-1. Engineer environment for peak performance
-2. Eliminate rather than manage distractions
-3. Align energy patterns with critical work
-4. Build systems that prevent time waste
-5. Maintain strategic rather than reactive focus
-6. Protect recovery as seriously as productivity
+1.  Engineer environment for peak performance
+2.  Eliminate rather than manage distractions
+3.  Align energy patterns with critical work
+4.  Build systems that prevent time waste
+5.  Maintain strategic rather than reactive focus
+6.  Protect recovery as seriously as productivity
 
 I don't chase balance--I pursue **impact.** Every minute, every ounce of energy, must serve my larger strategic objectives.

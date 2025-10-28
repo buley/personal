@@ -27,7 +27,7 @@ When everything is falling apart, I become more focused, more precise, and more 
 
 > *"Smooth seas do not make skillful sailors." -- African Proverb*
 
-**Core Principle**  
+**Core Principle**
 The goal in crisis isn't to solve everything immediately--it's to create stability for strategic response.
 
 ## 2. Threat Assessment Matrix
@@ -42,11 +42,11 @@ The goal in crisis isn't to solve everything immediately--it's to create stabili
 - Strategic opportunity elements
 
 **Priority Levels**
-1. Critical (Immediate response required)
-2. Urgent (Response needed within hours)
-3. Important (Response needed within days)
-4. Monitor (Requires tracking)
-5. Opportunity (Potential advantage)
+1.  Critical (Immediate response required)
+2.  Urgent (Response needed within hours)
+3.  Important (Response needed within days)
+4.  Monitor (Requires tracking)
+5.  Opportunity (Potential advantage)
 
 ## 3. Resource Management
 
@@ -60,11 +60,11 @@ The goal in crisis isn't to solve everything immediately--it's to create stabili
 - Strategic resource reallocation
 
 **Implementation Protocol**
-1. Secure critical resources
-2. Identify backup options
-3. Create contingency paths
-4. Establish resource priorities
-5. Monitor consumption rates
+1.  Secure critical resources
+2.  Identify backup options
+3.  Create contingency paths
+4.  Establish resource priorities
+5.  Monitor consumption rates
 
 ## 4. Decision Acceleration
 
@@ -138,11 +138,11 @@ Crisis requires faster decisions but not rushed ones. The goal is strategic spee
 
 *Strategic imperatives for crisis response:*
 
-1. Maintain strategic thinking under pressure
-2. Control immediate situation without losing long-term focus
-3. Turn crisis into strategic advantage
-4. Build systems that prevent future crises
-5. Use pressure to eliminate weaknesses
-6. Emerge stronger than before
+1.  Maintain strategic thinking under pressure
+2.  Control immediate situation without losing long-term focus
+3.  Turn crisis into strategic advantage
+4.  Build systems that prevent future crises
+5.  Use pressure to eliminate weaknesses
+6.  Emerge stronger than before
 
 I don't just survive crises--I use them to **eliminate weaknesses, build stronger systems, and create strategic advantages.** Every crisis is an opportunity for systematic improvement.

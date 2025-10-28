@@ -41,8 +41,19 @@ const RandomFragment: React.FC = () => {
 
   if (loading && !fragment) {
     return (
-      <div className="mt-8 text-white/40 font-mono text-xs tracking-widest">
-        Loading fragment...
+      <div className="mt-8 max-w-md space-y-3">
+        <div className="flex items-center justify-between mb-2">
+          <div className="h-5 bg-white/5 w-3/4 rounded" />
+          <div className="w-4 h-4 bg-white/5 rounded" />
+        </div>
+        <div className="space-y-2">
+          <div className="h-4 bg-white/5 w-full rounded" />
+          <div className="h-4 bg-white/5 w-11/12 rounded" />
+          <div className="h-4 bg-white/5 w-4/5 rounded" />
+        </div>
+        <div className="flex justify-end">
+          <div className="h-3 bg-white/5 w-1/4 rounded" />
+        </div>
       </div>
     );
   }

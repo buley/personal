@@ -2,10 +2,6 @@
 
 > *“Freedom is not the absence of commitments, but the ability to choose--and commit myself to--what is best for me.” -- Paulo Coelho (adapted)*
 
-# Independence Processing
-
-> *“Freedom is not the absence of commitments, but the ability to choose--and commit myself to--what is best for me.” -- Paulo Coelho*
-
 > *"The only way to deal with an unfree world is to become so absolutely free that your very existence is an act of rebellion." -- Albert Camus*
 
 *My core traits are not flaws--they're the foundation of my independence. I process differently, and that's my advantage.*
@@ -87,11 +83,11 @@ I learned early on that **self-reliance is the surest way to get things done.** 
 *Strategic adaptation while maintaining core strength.*
 
 ### Core Principles
-1. Maintain autonomy while allowing connection
-2. Preserve independence while recognizing interdependence
-3. Keep standards while allowing flexibility
-4. Value logic while honoring emotion
-5. Stay strong while remaining adaptable
+1.  Maintain autonomy while allowing connection
+2.  Preserve independence while recognizing interdependence
+3.  Keep standards while allowing flexibility
+4.  Value logic while honoring emotion
+5.  Stay strong while remaining adaptable
 
 ### Growth Focus
 - Recognize when to lean in versus stand alone

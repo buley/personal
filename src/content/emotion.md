@@ -62,9 +62,9 @@ Emotion, when used correctly, enhances decision-making rather than weakening it.
 
 *Strategic adaptations for emotional intelligence:*
 
-1. Allow myself to experience emotions without rushing to analyze them
-2. Recognize when I am dismissing valid emotions--mine or others'
-3. Ensure that I am not using logic as a shield to avoid vulnerability
-4. Refine my emotional intelligence to make me even more effective in relationships and leadership
+1.  Allow myself to experience emotions without rushing to analyze them
+2.  Recognize when I am dismissing valid emotions--mine or others'
+3.  Ensure that I am not using logic as a shield to avoid vulnerability
+4.  Refine my emotional intelligence to make me even more effective in relationships and leadership
 
 I don't need to become more emotional, I just need to ensure that I'm using emotion as **a tool for deeper understanding rather than an obstacle to be ignored.**

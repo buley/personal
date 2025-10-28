@@ -18,18 +18,18 @@ My legacy is about **what I build, what I change, and how I reshape the spaces I
 
 **Core Aspirations**
 
-- **Mastery**  
+- **Mastery**
   I want to be recognized as someone who operated at the highest level, not just someone who was competent.
 
-- **Innovation**  
+- **Innovation**
   I want to be remembered for challenging systems that no longer served their purpose and building something better.
 
-- **Independence**  
+- **Independence**
   I want people to know that I moved through life on my own terms, without compromise, and without waiting for permission.
 
 > *"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work." -- Steve Jobs*
 
-**Fundamental Truth**  
+**Fundamental Truth**
 I don't want to be just another successful person. I want to be a force that shifted the way things were done.
 
 ## 2. Systemic Impact
@@ -42,7 +42,7 @@ I don't want to be just another successful person. I want to be a force that shi
 - Develop frameworks that fundamentally improve operation
 - Design solutions that scale beyond individual application
 
-**Fundamental Truth**  
+**Fundamental Truth**
 If everything I built disappeared the moment I stopped working on it, then I didn't build well enough.
 
 ## 3. Influence & Reach
@@ -55,7 +55,7 @@ If everything I built disappeared the moment I stopped working on it, then I did
 - Influence those ready to operate at a higher level
 - Serve as catalyst for others' excellence
 
-**Fundamental Truth**  
+**Fundamental Truth**
 Influencing the right minds in the right way is more valuable than shallow recognition from the masses.
 
 ## 4. Essential Impact
@@ -64,20 +64,20 @@ Influencing the right minds in the right way is more valuable than shallow recog
 
 **If someone were to sum up my life's work in one sentence**
 
-Primary Version:  
+Primary Version:
 *"He challenged conventional thinking, built systems that lasted, and refused to settle for anything less than excellence."*
 
-Distilled Version:  
+Distilled Version:
 *"He didn't just exist--he changed things."*
 
 ## Moving Forward
 
 *Strategic imperatives for legacy building:*
 
-1. Ensure everything built is designed to outlast me
-2. Focus on meaningful influence, not just broad recognition
-3. Push beyond achievement to create lasting change
-4. Live aligned with values so legacy reflects true character
+1.  Ensure everything built is designed to outlast me
+2.  Focus on meaningful influence, not just broad recognition
+3.  Push beyond achievement to create lasting change
+4.  Live aligned with values so legacy reflects true character
 
-**Core Truth**  
+**Core Truth**
 Legacy isn't something I think about at the end of my life--it's something I build every single day.

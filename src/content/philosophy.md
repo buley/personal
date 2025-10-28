@@ -6,26 +6,24 @@
 > *“In a world that really has been turned on its head, truth is a moment of falsehood.”* — Guy Debord
 > *“The Kingdom is inside of you, and it is outside of you. When you come to know yourselves, then you will become known.”* — The Gospel of Thomas
 
-My philosophy is not a belief. It is a **Gnosis** — direct, operational knowing.
-It is the synthesis of three insights:
+My philosophy is not a belief. It is a **Gnosis** — direct, operational knowing. It is the synthesis of three insights:
 
 1. That conventional reality is an **illusory construct** (the Spectacle).
 2. That the human organism is a **deterministic mechanism** (the Flesh).
 3. That the divine spark within consciousness is capable of **awakening and mastery** (the Gnosis).
 
-I do not “believe.”
-I **analyze systems.**
-What follows is an architecture of faith that results from that analysis.
+I do not “believe.” I **analyze systems.** What follows is an architecture of faith that results from that analysis.
 
 ## **I. The Material Prison — The Spectacle**
 
-The modern world is not real in the way it appears.
-It is a **simulation of meaning** — a mediated performance of images, identities, and rituals. Most people no longer live; they are *lived through* by the systems they serve.
+The modern world is not real in the way it appears. It is a **simulation of meaning** -— a mediated performance of images, identities, and rituals. Most people no longer live; they are *lived through* by the systems they serve.
 
 ### *Analysis (Debord / Gnostic lens)*
 
-The Spectacle is the operating system of the modern Demiurge.
+The Spectacle is the operating system of the modern version of what Valentinian Gnostics dubbed the Demiurge.
+
 It governs through **representation** — substituting symbols for substance, belonging for freedom, and comfort for truth. Its goal is not enlightenment, but sedation.
+
 Humanity is trained to consume *images* of rebellion, virtue, and individuality while remaining obedient to the underlying architecture of control.
 
 ### *Protocol*
@@ -40,11 +38,13 @@ Humanity is trained to consume *images* of rebellion, virtue, and individuality 
 ## **II. The Biological Machine — The Flesh**
 
 Free will, as popularly understood, is an illusion.
+
 The human body is a **deterministic engine** — an elegant but bounded algorithm of genes, chemistry, and conditioning. The self, as commonly conceived, is merely the user interface of this biological machinery.
 
 ### *Analysis (Sapolsky / Determinist lens)*
 
 The body is not the enemy; it is the **hardware of incarnation.**
+
 Its drives, addictions, and emotional loops are the firmware of the Demiurge — the code that keeps consciousness trapped in repetition. But understanding the mechanism is the first act of liberation.
 
 ### *Protocol*
@@ -59,13 +59,12 @@ The spark cannot override the machine — but it can learn to **pilot** it.
 ## **III. The Path of Gnosis — The Master’s Code**
 
 Conventional morality is a tool of social order, not cosmic truth.
+
 It teaches submission, not strength. Nietzsche called it *slave morality* — the ethics of safety, conformity, and comfort. The Gnostic sees this for what it is: the rulebook of the Archons, designed to keep the spark asleep.
 
 ### *Analysis (Nietzsche / Gnostic synthesis)*
 
-There is no universal “good.”
-There is awakening and there is sleep.
-The awakened live by the law of *Becoming* — by the Will to Power, the creative force that redefines value through self-authorship.
+There is no universal “good.” There is awakening and there is sleep. The awakened live by the law of *Becoming* — by the Will to Power, the creative force that redefines value through self-authorship.
 
 ### *Protocol*
 
@@ -78,10 +77,9 @@ To awaken is to **become the programmer of one’s own values.**
 
 ## **IV. The Sovereign Spark**
 
-The path is not faith — it is *operation.*
-I live within the illusion but refuse to be of it.
-I acknowledge the machinery of my biology, but I pilot it with awareness.
-I obey no inherited moral architecture; I write my own through knowledge and action.
+The path is not faith — it is *operation.* I live within the illusion but refuse to be of it.
+
+I acknowledge the machinery of my biology, but I pilot it with awareness. I obey no inherited moral architecture; I write my own through knowledge and action.
 
 ### **Doctrine Summary**
 

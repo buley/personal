@@ -16,13 +16,13 @@ export async function GET() {
       const trimmed = line.trim();
       if (trimmed.startsWith('>') || trimmed.startsWith('- *')) {
         // Remove the > or - * and clean up
-        let fullQuote = trimmed.replace(/^>\s*/, '').replace(/^- \*\s*/, '').trim();
+        const fullQuote = trimmed.replace(/^>\s*/, '').replace(/^- \*\s*/, '').trim();
         // Split on -- for author
         const parts = fullQuote.split(' -- ');
         let quote = parts[0].trim();
         const source = parts[1]?.trim();
         // Remove surrounding * if present
-        quote = quote.replace(/^\*/, '').replace(/\*$/, '');
+        quote = quote.replace(/^["*]+/, '').replace(/["*]+$/, '');
         if (quote) {
           quotes.push({ quote, source });
         }

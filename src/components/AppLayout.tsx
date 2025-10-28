@@ -8,13 +8,16 @@ import {
   Menu,
   X,
   ChevronDown,
-  ChevronRight,
   Home,
 } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
 import FunFact from "./FunFact";
 import RandomFragment from "./RandomFragment";
+import RandomWord from "./RandomWord";
+import RandomAdvice from "./RandomAdvice";
+import RandomModel from "./RandomModel";
+import RandomMantra from "./RandomMantra";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -28,6 +31,7 @@ const AppLayout = () => {
     operation: false,
     growth: false,
     impact: false,
+    meta: true,
   });
 
   // Initialize with a static seed to match the server-rendered HTML.
@@ -67,45 +71,63 @@ const AppLayout = () => {
   const secondaryNav: SecondaryNavType = {
     identity: [
       { title: "Who I Am", path: "personality" },
-      { title: "How I'm Wired", path: "wired" },
-      { title: "Interaction Style", path: "interaction-style" },
       { title: "At My Best", path: "best" },
       { title: "At My Worst", path: "worst" },
-      { title: "Mantras", path: "mantras" },
+      { title: "How I'm Wired", path: "wired" },
+      { title: "Interaction Style", path: "interaction-style" },
+      { title: "Values & Ethics", path: "values" },
+      { title: "Archetypes & Personas", path: "archetypes" },
+      { title: "Philosophy", path: "philosophy" },
       { title: "Manifesto", path: "manifesto" },
+      { title: "Mantras", path: "mantras" },
     ],
 
     operation: [
+      { title: "Attention", path: "adhd" },
+      { title: "AuADHD", path: "auadhd" },
+      { title: "Autism", path: "autism" },
       { title: "Strategy", path: "strategy" },
       { title: "Decision Making", path: "decisions" },
-      { title: "Attention Systems", path: "adhd" },
-      { title: "Autistic Processing", path: "autism" },
-      { title: "Hybrid Cognition", path: "auadhd" },
-      { title: "Learning & Knowledge", path: "learning" },
-      { title: "Time & Energy Management", path: "time-energy" },
-      { title: "Crisis Response", path: "crisis" },
+      { title: "Communication Protocols", path: "communication" },
+      { title: "Conflict & Negotiation", path: "conflict" },
       { title: "Competition & Collaboration", path: "competition-collaboration" },
+      { title: "Crisis Response", path: "crisis" },
+      { title: "Learning", path: "learning" },
+      { title: "System Design", path: "systems" },
+      { title: "Cognitive Architecture", path: "cognitive-architecture" },
+      { title: "Time & Energy", path: "time-energy" },
+      { title: "Advice", path: "advice" },
+      { title: "Biases", path: "biases" },
       { title: "Vulnerability", path: "vulnerability" },
       { title: "Counter-Vulnerability", path: "counter-vulnerability" },
-      { title: "Biases", path: "biases" },
-      { title: "Advice Protocol", path: "advice" },
     ],
 
     growth: [
       { title: "Challenges", path: "challenges" },
       { title: "Blind Spots", path: "blind-spots" },
       { title: "Anxiety", path: "anxiety" },
-      { title: "Stress & Regulation", path: "stress" },
-      { title: "Emotion & Integration", path: "emotion" },
-      { title: "Self-Sabotage Patterns", path: "self-sabotage" },
-      { title: "Cognitive Architecture", path: "cognitive-architecture" },
+      { title: "Emotion", path: "emotion" },
+      { title: "Stress", path: "stress" },
+      { title: "Self-Sabotage", path: "self-sabotage" },
+      { title: "Resilience & Recovery", path: "resilience" },
+      { title: "Reinvention", path: "reinvention" },
+      { title: "Reflection & Self-Audit", path: "reflection" },
     ],
 
     impact: [
       { title: "Action", path: "action" },
       { title: "Execution", path: "execution" },
-      { title: "Success Framework", path: "success" },
+      { title: "Leadership", path: "leadership" },
+      { title: "Influence & Persuasion", path: "influence" },
+      { title: "Politics", path: "politics" },
       { title: "Legacy", path: "legacy" },
+      { title: "Success", path: "success" },
+    ],
+
+    meta: [
+      { title: "Operating Manual", path: "manual" },
+      { title: "Lexicon", path: "lexicon" },
+      { title: "Mental Models", path: "models" },
     ],
   };
 
@@ -165,48 +187,48 @@ const AppLayout = () => {
     items: Array<{ title: string; path: string }>;
     isMobile?: boolean;
   }) => (
-    <div className={`${isMobile ? "space-y-3" : "space-y-2"}`}>
+    <div className={`${isMobile ? "space-y-3" : "space-y-2"} border-b border-white/8 pb-3`}>
       <button
         onClick={() => toggleSection(group)}
-        className="w-full flex items-center justify-between group"
+        className="w-full flex items-center justify-between group py-1"
       >
-        <h3
-          className={`font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 group-hover:text-white/60 ${
-            isMobile ? "text-base" : ""
-          }`}
-        >
-          {group}
-        </h3>
-        {expandedSections[group] ? (
+        <div className="flex items-center gap-2">
+          <div className={`w-1 h-3 bg-white/35 transition-all duration-300 ${expandedSections[group] ? 'h-4' : ''}`}></div>
+          <h3
+            className={`font-sans font-bold uppercase tracking-wide text-white/65 group-hover:text-white/85 transition-colors ${
+              isMobile ? "text-base" : "text-xs"
+            }`}
+          >
+            {group}
+          </h3>
+        </div>
+        <div className={`w-5 h-5 border border-white/25 group-hover:border-white/40 transition-colors flex items-center justify-center ${expandedSections[group] ? 'rotate-180' : ''}`}>
           <ChevronDown
-            size={12}
-            className="text-white/40 group-hover:text-white/60"
+            size={10}
+            className="text-white/45 group-hover:text-white/65 transition-colors"
           />
-        ) : (
-          <ChevronRight
-            size={12}
-            className="text-white/40 group-hover:text-white/60"
-          />
-        )}
+        </div>
       </button>
       {expandedSections[group] && (
-        <ul className={` ${isMobile ? "space-y-3 pl-3" : "space-y-1 pl-2"}`}>
+        <div className={`${isMobile ? "space-y-2 ml-5" : "space-y-1 ml-3"} border-l border-white/8 pl-3`}>
           {items.map((item) => (
-            <li key={item.path}>
+            <li key={item.path} className="list-none">
               <button
                 onClick={() => handleNavClick(item.path)}
-                className={`marker:text-white font-mono tracking-widest whitespace-normal w-full text-left hover:text-white transition-colors ${
+                className={`w-full text-left py-1 px-2 border-l-2 transition-all duration-200 ${
                   selectedContent === item.path
-                    ? "text-white"
-                    : "text-white/60"
-                } ${isMobile ? "text-base" : "text-xs"}`}
+                    ? "text-white border-white/70 bg-white/3"
+                    : "text-white/55 border-transparent hover:text-white/80 hover:border-white/25"
+                } ${isMobile ? "text-sm" : "text-xs"} font-medium tracking-wide`}
               >
-                {selectedContent === item.path ? "→ " : ""}
+                {selectedContent === item.path && (
+                  <span className="inline-block w-1 h-1 bg-white/80 rounded-full mr-2"></span>
+                )}
                 {item.title}
               </button>
             </li>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
@@ -252,30 +274,40 @@ const AppLayout = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex fixed left-8 bottom-16 z-40">
+      <nav className="hidden md:flex fixed left-8 top-16 z-40">
         {/* Content */}
-        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
-          <div className="max-w-[250px] w-full space-y-4 pr-4">
+        <div className="flex flex-col max-h-[calc(100vh-8rem)] overflow-y-auto custom-scrollbar">
+          <div className="max-w-[260px] w-full space-y-3 pr-4 pl-3 py-4 border-l border-white/15">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} />
             ))}
-            <div className="pt-4">
-              <hr className="border-white/20 pt-4" />
-              <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <Link href="/about">Taylor William Buley</Link>
+            <div className="pt-4 border-t border-white/15">
+              <div className="flex items-center justify-center py-2">
+                <div className="w-6 h-px bg-white/25"></div>
+                <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
+                <div className="w-6 h-px bg-white/25"></div>
+              </div>
+              <h1 className="text-center font-sans font-black text-white/85 uppercase tracking-wider text-sm mb-2">
+                <Link href="/about" className="hover:text-white transition-colors">
+                  Taylor William Buley
+                </Link>
               </h1>
-              <hr className="border-white/20 pt-4" />
+              <div className="flex items-center justify-center py-2">
+                <div className="w-6 h-px bg-white/25"></div>
+                <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
+                <div className="w-6 h-px bg-white/25"></div>
+              </div>
             </div>
-            <div className="flex flex-row space-x-4 items-center">
+            <div className="space-y-2">
               {primaryNav.map((item) => {
                 const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
                 let icon = null;
                 if (item.path && item.path.startsWith("http")) {
-                  icon = <ExternalLink size={14} className="ml-1" />;
+                  icon = <ExternalLink size={12} className="ml-1" />;
                 } else if (item.path && item.path.startsWith("mailto")) {
-                  icon = <Mail size={14} className="ml-1" />;
+                  icon = <Mail size={12} className="ml-1" />;
                 } else if (item.path && item.path.startsWith("tel")) {
-                  icon = <Phone size={14} className="ml-1" />;
+                  icon = <Phone size={12} className="ml-1" />;
                 }
                 return item.path && (item.path.startsWith("http") ||
                   item.path.startsWith("mailto") ||
@@ -285,26 +317,27 @@ const AppLayout = () => {
                     href={item.path}
                     target={item.path.startsWith("http") ? "_blank" : "_self"}
                     rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors text-white/60 hover:text-white flex items-center"
+                    className="flex items-center justify-center w-full py-1.5 px-3 border border-white/15 hover:border-white/30 transition-colors text-white/55 hover:text-white font-medium tracking-wide text-xs"
                   >
-                    {item.title}{" "}
+                    {item.title}
                     {icon && <span className="inline-flex items-center">{icon}</span>}
                   </a>
                 ) : (
                   <button
                     key={item.path || item.title}
                     onClick={() => handleNavClick(item.path)}
-                    className={`font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors ${
-                      isSelected ? "text-white" : "text-white/60"
+                    className={`w-full py-1.5 px-3 border transition-colors font-medium tracking-wide text-xs ${
+                      isSelected
+                        ? "text-white border-white/50 bg-white/3"
+                        : "text-white/55 border-white/15 hover:text-white hover:border-white/30"
                     }`}
                   >
-                    {isSelected && item.path !== null ? "→ " : ""}
-                    {item.path === null ? <Home size={14} /> : item.title}
+                    {item.title}
                   </button>
                 );
               })}
             </div>
-            <div>
+            <div className="pt-6">
               <FunFact />
             </div>
           </div>
@@ -318,37 +351,46 @@ const AppLayout = () => {
         }`}
       >
         <div className="h-full overflow-auto p-8 pt-16 custom-scrollbar">
-          <div className="space-y-8">
+          <div className="space-y-6 border border-white/10 rounded-lg p-6 bg-white/5 backdrop-blur-sm">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} isMobile />
             ))}
             <div className="pt-6 border-t border-white/20">
+              <div className="flex items-center justify-center py-4">
+                <div className="w-12 h-px bg-white/30"></div>
+                <div className="mx-4 w-3 h-3 bg-white/40 rounded-full"></div>
+                <div className="w-12 h-px bg-white/30"></div>
+              </div>
+              <h1 className="text-center font-sans font-black text-white/90 uppercase tracking-wider text-xl mb-4">
+                <Link href="/about" className="hover:text-white transition-colors">
+                  Taylor William Buley
+                </Link>
+              </h1>
+              <div className="flex items-center justify-center py-4">
+                <div className="w-12 h-px bg-white/30"></div>
+                <div className="mx-4 w-3 h-3 bg-white/40 rounded-full"></div>
+                <div className="w-12 h-px bg-white/30"></div>
+              </div>
+            </div>
+            <div className="space-y-4">
               {primaryNav.map((item) => {
                 const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
                 return (
                   <button
                     key={item.path || item.title}
                     onClick={() => handleNavClick(item.path)}
-                    className={`font-mono text-base tracking-widest block mt-4 w-full text-left ${
+                    className={`w-full py-3 px-4 border transition-colors font-medium tracking-wide text-center ${
                       isSelected
-                        ? "text-white"
-                        : "text-white/60"
+                        ? "text-white border-white/60 bg-white/5"
+                        : "text-white/60 border-white/20 hover:text-white hover:border-white/40"
                     }`}
                   >
-                    {isSelected && item.path !== null ? "→ " : ""}
-                    {item.path === null ? <Home size={16} /> : item.title}
+                    {item.path === null ? <Home size={18} /> : item.title}
                   </button>
                 );
               })}
             </div>
-            <div className="pt-4">
-              <hr className="border-white/20 pt-4" />
-              <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <Link href="/about">Taylor William Buley</Link>
-              </h1>
-              <hr className="border-white/20 pt-4" />
-            </div>
-            <div className="pt-4">
+            <div className="pt-6">
               <FunFact />
             </div>
           </div>
@@ -388,15 +430,23 @@ const AppLayout = () => {
             </div>
           </main>
         ) : (
-          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-bottom justify-center md:ml-[280px]">
-            <div className="text-left">
-              <h2 className="text-4xl md:text-6xl font-black tracking-tight">
-                Taylor William Buley
-              </h2>
-              <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
-                Systematic problem-solver
-              </p>
-              <RandomFragment />
+          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-start justify-center md:ml-[280px]">
+            <div className="w-full max-w-7xl">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4">
+                  Taylor William Buley
+                </h2>
+                <p className="text-white/60 font-mono text-sm tracking-widest">
+                  Systematic problem-solver
+                </p>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <RandomFragment />
+                <RandomWord />
+                <RandomAdvice />
+                <RandomModel />
+                <RandomMantra />
+              </div>
             </div>
           </main>
         )}

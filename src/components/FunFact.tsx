@@ -34,9 +34,24 @@ const FunFact = () => {
   if (isLoading || facts.length === 0) {
     return (
       <div className="w-full">
-        {/* Reserve space with min-h */}
-        <div className="min-h-[40px] flex items-center justify-center">
-          <span className="font-mono text-xs text-white/40">Loading facts...</span>
+        <div className="font-mono text-xs relative h-[60px] flex items-center">
+          <div className="grid grid-cols-[auto,1fr,auto] items-center gap-2 w-full">
+            <div className="flex-shrink-0">
+              <div className="w-3 h-3 border border-white/20 rounded"></div>
+            </div>
+            <div className="overflow-hidden relative">
+              <div className="whitespace-nowrap animate-ticker">
+                <span className="inline-block mr-8 text-white/40">Loading fun facts...</span>
+                <span className="inline-block mr-8 text-white/40">Loading fun facts...</span>
+                <span className="inline-block mr-8 text-white/40">Loading fun facts...</span>
+                <span className="inline-block mr-8 text-white/40">Loading fun facts...</span>
+                <span className="inline-block mr-8 text-white/40">Loading fun facts...</span>
+              </div>
+            </div>
+            <div className="flex-shrink-0">
+              <div className="w-3 h-3 border border-white/20 rounded"></div>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -48,8 +63,8 @@ const FunFact = () => {
   return (
     // Remove the fixed max-width so that it uses 100% of its container
     <div className="w-full">
-      <div className="font-mono text-xs mt-4 relative">
-        <div className="grid grid-cols-[auto,1fr,auto] items-center gap-2">
+      <div className="font-mono text-xs relative h-[60px] flex items-center">
+        <div className="grid grid-cols-[auto,1fr,auto] items-center gap-2 w-full">
           <div className="relative flex-shrink-0">
             <button
               onMouseEnter={() => setShowInfo(true)}

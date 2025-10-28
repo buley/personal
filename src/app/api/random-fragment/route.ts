@@ -14,7 +14,7 @@ function getAllFragments(): Fragment[] {
   if (cachedFragments) return cachedFragments;
 
   const contentDir = path.join(process.cwd(), 'src', 'content');
-  const files = fs.readdirSync(contentDir).filter(file => file.endsWith('.md'));
+  const files = fs.readdirSync(contentDir).filter(file => file.endsWith('.md') && !['lexicon.md', 'advice.md', 'models.md', 'mantras.md'].includes(file));
 
   const fragments: Fragment[] = [];
 

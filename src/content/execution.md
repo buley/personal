@@ -93,4 +93,4 @@ If I don't actively integrate these insights into my daily life, they become **i
 4. I build, execute, and leave behind something that lasts
 5. I don't just exist--I move, lead, and create
 
-Now, there is nothing left to analyze--**only action remains.**
+When there is nothing left to analyze--**only action remains.**

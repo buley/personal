@@ -80,7 +80,7 @@ const AppLayout = () => {
       { title: "Decision Making", path: "decisions" },
       { title: "Attention Systems", path: "adhd" },
       { title: "Autistic Processing", path: "autism" },
-      { title: "Hybrid Cognition", path: "audhd" },
+      { title: "Hybrid Cognition", path: "auadhd" },
       { title: "Learning & Knowledge", path: "learning" },
       { title: "Time & Energy Management", path: "time-energy" },
       { title: "Crisis Response", path: "crisis" },

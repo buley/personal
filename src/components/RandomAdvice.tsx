@@ -79,7 +79,7 @@ const RandomAdvice: React.FC = () => {
       </div>
       <div className="ml-4 pb-6">
         <div 
-          className="text-white/80 font-serif text-base leading-relaxed font-medium italic border-l-2 border-white/20 pl-4 mb-4 prose prose-invert prose-sm max-w-none"
+          className="text-white/80 font-serif text-base leading-relaxed font-medium italic border-l-2 border-yellow-400/40 pl-4 mb-4 prose prose-invert prose-sm max-w-none"
           dangerouslySetInnerHTML={{ __html: renderedQuote }}
         />
         {advice.source && (

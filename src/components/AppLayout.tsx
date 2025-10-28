@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense, useMemo } from "react";
 import {
   Mail,
   Phone,
@@ -233,6 +233,26 @@ const AppLayout = () => {
     </div>
   );
 
+  const [spans, setSpans] = useState<number[]>([1, 1, 1, 1, 1]); // Default for SSR
+  const [widgetOrder, setWidgetOrder] = useState<number[]>([0, 1, 2, 3, 4]);
+
+  useEffect(() => {
+    const shuffle = (array: number[]) => {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    };
+    const shuffledOthers = shuffle([0, 1, 2]);
+    setWidgetOrder([4, 3, ...shuffledOthers]);
+
+    const spanOptions = [1, 1, 2, 3];
+    const randomSpans = Array(5).fill(0).map(() => spanOptions[Math.floor(Math.random() * spanOptions.length)]);
+        randomSpans[4] = 2; // RandomFragment always spans 2 columns
+    setSpans(randomSpans);
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-black text-white antialiased">
       <style jsx global>{`
@@ -275,6 +295,7 @@ const AppLayout = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex fixed left-8 top-16 z-40">
+        <div className="max-w-[260px] w-full relative">
         {/* Content */}
         <div className="flex flex-col max-h-[calc(100vh-8rem)] overflow-y-auto custom-scrollbar">
           <div className="max-w-[260px] w-full space-y-3 pr-4 pl-3 py-4 border-l border-white/15">
@@ -288,9 +309,12 @@ const AppLayout = () => {
                 <div className="w-6 h-px bg-white/25"></div>
               </div>
               <h1 className="text-center font-sans font-black text-white/85 uppercase tracking-wider text-sm mb-2">
-                <Link href="/about" className="hover:text-white transition-colors">
+                <button 
+                  onClick={() => handleNavClick("about")}
+                  className="hover:text-white transition-colors"
+                >
                   Taylor William Buley
-                </Link>
+                </button>
               </h1>
               <div className="flex items-center justify-center py-2">
                 <div className="w-6 h-px bg-white/25"></div>
@@ -342,6 +366,8 @@ const AppLayout = () => {
             </div>
           </div>
         </div>
+        <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/10 to-transparent pointer-events-none z-10"></div>
+        </div>
       </nav>
 
       {/* Mobile Navigation */}
@@ -362,9 +388,12 @@ const AppLayout = () => {
                 <div className="w-12 h-px bg-white/30"></div>
               </div>
               <h1 className="text-center font-sans font-black text-white/90 uppercase tracking-wider text-xl mb-4">
-                <Link href="/about" className="hover:text-white transition-colors">
+                <button 
+                  onClick={() => handleNavClick("about")}
+                  className="hover:text-white transition-colors"
+                >
                   Taylor William Buley
-                </Link>
+                </button>
               </h1>
               <div className="flex items-center justify-center py-4">
                 <div className="w-12 h-px bg-white/30"></div>
@@ -434,18 +463,29 @@ const AppLayout = () => {
             <div className="w-full max-w-7xl">
               <div className="text-center mb-16">
                 <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4">
-                  Taylor William Buley
+                  <button 
+                    onClick={() => handleNavClick("about")}
+                    className="hover:text-white/80 transition-colors"
+                  >
+                    Taylor William Buley
+                  </button>
                 </h2>
                 <p className="text-white/60 font-mono text-sm tracking-widest">
-                  Systematic problem-solver
+                  Cognitive Architect
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                <RandomFragment />
-                <RandomWord />
-                <RandomAdvice />
-                <RandomModel />
-                <RandomMantra />
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div className="col-span-1">
+                  <RandomFragment />
+                </div>
+                <div className="col-span-1">
+                  <RandomModel />
+                </div>
+                <div className="col-span-1 flex flex-col gap-4">
+                  <RandomAdvice />
+                  <RandomWord />
+                  <RandomMantra />
+                </div>
               </div>
             </div>
           </main>

@@ -90,4 +90,4 @@ I acknowledge the machinery of my biology, but I pilot it with awareness. I obey
 This is the code of sovereignty — a living philosophy of consciousness under constraint, striving toward liberation through understanding, precision, and will.
 
 > *“The privilege of a lifetime is to become who you truly are.”* — Carl Jung
-> *“We do not rise above by denial of the world, but by understanding its architecture.”* — Consilium Aurelius
+> *“You have power over your mind - not outside events. Realize this, and you will find strength.”* — Marcus Aurelius

@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { RefreshCw, Brain } from 'lucide-react';
+import Link from 'next/link';
+import { RefreshCw, Brain, ExternalLink } from 'lucide-react';
+import { marked } from 'marked';
 
 interface Model {
   title: string;
@@ -58,6 +60,9 @@ const RandomModel: React.FC = () => {
     return null;
   }
 
+  const renderedDescription = marked(model.description, { breaks: true });
+  const renderedApplication = marked(model.application, { breaks: true });
+
   return (
     <div className="relative bg-gradient-to-br from-green-500/5 to-transparent border border-green-400/20 rounded-lg p-6 backdrop-blur-sm">
       <div className="absolute top-0 left-0 w-1 h-full bg-green-400/40 rounded-l-lg"></div>
@@ -76,19 +81,35 @@ const RandomModel: React.FC = () => {
           <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
         </button>
       </div>
-      <div className="ml-4">
+      <div className="ml-4 pb-6">
         <h4 className="text-xl font-black text-white font-serif mb-2">{model.title}</h4>
         <p className="text-white/70 font-serif text-sm italic mb-4">{model.subtitle}</p>
         <div className="space-y-3">
           <div>
             <h5 className="text-white/80 font-bold text-sm uppercase tracking-wide mb-1">Description</h5>
-            <p className="text-white/70 font-serif text-sm leading-relaxed">{model.description}</p>
+            <div 
+              className="text-white/70 font-serif text-sm leading-relaxed prose prose-invert prose-sm max-w-none"
+              dangerouslySetInnerHTML={{ __html: renderedDescription }}
+            />
           </div>
           <div>
             <h5 className="text-white/80 font-bold text-sm uppercase tracking-wide mb-1">Application</h5>
-            <p className="text-white/70 font-serif text-sm leading-relaxed">{model.application}</p>
+            <div 
+              className="text-white/70 font-serif text-sm leading-relaxed prose prose-invert prose-sm max-w-none"
+              dangerouslySetInnerHTML={{ __html: renderedApplication }}
+            />
           </div>
         </div>
+      </div>
+      <div className="ml-4 border-t border-white/10 pt-3">
+        <Link 
+          href="/models"
+          className="text-white/50 font-mono text-xs tracking-wider hover:text-white/80 transition-colors flex items-center gap-2 uppercase"
+        >
+          <span className="w-2 h-2 bg-white/30 rounded-full"></span>
+          Models
+          <ExternalLink size={10} />
+        </Link>
       </div>
       </div>
     </div>

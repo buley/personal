@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { RefreshCw, Target } from 'lucide-react';
+import Link from 'next/link';
+import { RefreshCw, Target, ExternalLink } from 'lucide-react';
+import { marked } from 'marked';
 
 interface Mantra {
   mantra: string;
@@ -55,32 +57,42 @@ const RandomMantra: React.FC = () => {
     return null;
   }
 
+  const renderedMantra = marked(mantra.mantra, { breaks: true });
+
   return (
     <div className="relative bg-gradient-to-br from-purple-500/5 to-transparent border border-purple-400/20 rounded-lg p-6 backdrop-blur-sm">
       <div className="absolute top-0 left-0 w-1 h-full bg-purple-400/40 rounded-l-lg"></div>
       <div className="relative z-10">
-      <div className="flex items-center justify-between mb-3">
-        <div className="flex items-center gap-3">
-          <Target size={16} className="text-white/60" />
-          <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">Mantra</h3>
+        <div className="flex items-center justify-between mb-3">
+          <div className="flex items-center gap-3">
+            <Target size={16} className="text-white/60" />
+            <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">Mantra</h3>
+          </div>
+          <button
+            onClick={fetchMantra}
+            disabled={loading}
+            className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group"
+            aria-label="Refresh mantra"
+          >
+            <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
+          </button>
         </div>
-        <button
-          onClick={fetchMantra}
-          disabled={loading}
-          className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group"
-          aria-label="Refresh mantra"
-        >
-          <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
-        </button>
-      </div>
-      <div className="ml-4">
-        <p className="text-white/80 font-serif text-base leading-relaxed font-medium mb-3">
-          {mantra.mantra}
-        </p>
-        <div className="text-white/50 font-mono text-xs tracking-wider uppercase">
-          {mantra.section}
+        <div className="ml-4">
+          <div 
+            className="text-white/80 font-serif text-base leading-relaxed font-medium border-b border-white/10 pb-4 prose prose-invert prose-sm max-w-none"
+            dangerouslySetInnerHTML={{ __html: renderedMantra }}
+          />
         </div>
-      </div>
+        <div className="ml-4 border-t border-white/10 pt-3">
+          <Link 
+            href="/mantras"
+            className="text-white/50 font-mono text-xs tracking-wider hover:text-white/80 transition-colors flex items-center gap-2 uppercase"
+          >
+            <span className="w-2 h-2 bg-white/30 rounded-full"></span>
+            Mantras
+            <ExternalLink size={10} />
+          </Link>
+        </div>
       </div>
     </div>
   );

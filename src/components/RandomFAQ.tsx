@@ -1,44 +1,43 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
+import { RefreshCw, HelpCircle, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
-import { RefreshCw, Target, ExternalLink } from 'lucide-react';
-import { marked } from 'marked';
 
-interface Mantra {
-  mantra: string;
-  section: string;
+interface FAQItem {
+  question: string;
+  answer: string;
 }
 
-const RandomMantra: React.FC = () => {
-  const [mantra, setMantra] = useState<Mantra | null>(null);
+const RandomFAQ: React.FC = () => {
+  const [faq, setFaq] = useState<FAQItem | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const fetchMantra = useCallback(async () => {
+  const fetchFAQ = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch('/api/random-mantra');
+      const response = await fetch('/api/faq');
       if (response.ok) {
-        const data: Mantra = await response.json();
-        setMantra(data);
+        const data: FAQItem = await response.json();
+        setFaq(data);
       }
     } catch (error) {
-      console.error('Failed to fetch mantra:', error);
+      console.error('Failed to fetch FAQ:', error);
     } finally {
       setLoading(false);
     }
   }, []);
 
   useEffect(() => {
-    fetchMantra();
-  }, [fetchMantra]);
+    fetchFAQ();
+  }, [fetchFAQ]);
 
   useEffect(() => {
-    const interval = setInterval(fetchMantra, 30000); // 30 seconds
+    const interval = setInterval(fetchFAQ, 30000); // 30 seconds
     return () => clearInterval(interval);
-  }, [fetchMantra]);
+  }, [fetchFAQ]);
 
-  if (loading && !mantra) {
+  if (loading && !faq) {
     return (
       <div className="mt-8 max-w-md space-y-3">
         <div className="flex items-center justify-between mb-2">
@@ -48,16 +47,15 @@ const RandomMantra: React.FC = () => {
         <div className="space-y-2">
           <div className="h-4 bg-white/5 w-full rounded" />
           <div className="h-4 bg-white/5 w-5/6 rounded" />
+          <div className="h-4 bg-white/5 w-4/5 rounded" />
         </div>
       </div>
     );
   }
 
-  if (!mantra) {
+  if (!faq) {
     return null;
   }
-
-  const renderedMantra = marked(mantra.mantra, { breaks: true });
 
   return (
     <div className="relative bg-gradient-to-br from-purple-500/5 to-transparent border border-purple-400/20 rounded-lg p-6 backdrop-blur-sm">
@@ -65,31 +63,35 @@ const RandomMantra: React.FC = () => {
       <div className="relative z-10">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">
-            <Target size={16} className="text-white/60" />
-            <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">Mantra</h3>
+            <HelpCircle size={16} className="text-white/60" />
+            <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">FAQ</h3>
           </div>
           <button
-            onClick={fetchMantra}
+            onClick={fetchFAQ}
             disabled={loading}
             className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group"
-            aria-label="Refresh mantra"
+            aria-label="Refresh FAQ"
           >
             <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
           </button>
         </div>
-        <div className="ml-4">
-          <div 
-            className="text-white/80 font-serif text-base leading-relaxed font-medium border-b border-white/10 pb-4 prose prose-invert prose-sm max-w-none"
-            dangerouslySetInnerHTML={{ __html: renderedMantra }}
-          />
+        <div className="ml-4 pb-6">
+          <div className="mb-3">
+            <h4 className="text-white/90 font-semibold text-base mb-2 leading-tight">
+              {faq.question}?
+            </h4>
+          </div>
+          <div className="text-white/80 font-serif text-sm leading-relaxed font-medium border-l-2 border-purple-400/40 pl-4 mb-4">
+            {faq.answer}
+          </div>
         </div>
         <div className="ml-4 border-t border-white/10 pt-3">
-          <Link 
-            href="/mantras"
+          <Link
+            href="/faq"
             className="text-white/50 font-mono text-xs tracking-wider hover:text-white/80 transition-colors flex items-center gap-2 uppercase"
           >
             <span className="w-2 h-2 bg-white/30 rounded-full"></span>
-            Mantras
+            FAQ
             <ExternalLink size={10} />
           </Link>
         </div>
@@ -98,4 +100,4 @@ const RandomMantra: React.FC = () => {
   );
 };
 
-export default RandomMantra;
+export default RandomFAQ;

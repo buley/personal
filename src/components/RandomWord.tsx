@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { RefreshCw } from 'lucide-react';
+import { RefreshCw, Type, ExternalLink } from 'lucide-react';
+import { marked } from 'marked';
+import Link from 'next/link';
 
 interface LexiconEntry {
   word: string;
@@ -55,14 +57,16 @@ const RandomWord: React.FC = () => {
     return null;
   }
 
+  const renderedDefinition = marked(entry.definition, { breaks: true });
+
   return (
     <div className="relative bg-gradient-to-br from-red-500/5 to-transparent border border-red-400/20 rounded-lg p-6 backdrop-blur-sm">
       <div className="absolute top-0 left-0 w-1 h-full bg-red-400/40 rounded-l-lg"></div>
       <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
-          <div className="w-1 h-8 bg-white/60"></div>
-          <h3 className="text-2xl font-black text-white font-serif tracking-tight uppercase leading-none">
+          <Type size={16} className="text-white/60" />
+          <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">
             {entry.word}
           </h3>
         </div>
@@ -76,9 +80,20 @@ const RandomWord: React.FC = () => {
         </button>
       </div>
       <div className="ml-4">
-        <p className="text-white/80 font-serif text-base leading-relaxed font-medium border-b border-white/10 pb-4">
-          {entry.definition}
-        </p>
+        <div 
+          className="text-white/80 font-serif text-base leading-relaxed font-medium border-b border-white/10 pb-4 prose prose-invert prose-sm max-w-none"
+          dangerouslySetInnerHTML={{ __html: renderedDefinition }}
+        />
+      </div>
+      <div className="ml-4 border-t border-white/10 pt-3">
+        <Link 
+          href="/lexicon"
+          className="text-white/50 font-mono text-xs tracking-wider hover:text-white/80 transition-colors flex items-center gap-2 uppercase"
+        >
+          <span className="w-2 h-2 bg-white/30 rounded-full"></span>
+          Lexicon
+          <ExternalLink size={10} />
+        </Link>
       </div>
       </div>
     </div>

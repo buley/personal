@@ -1,7 +1,9 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { RefreshCw } from 'lucide-react';
+import { RefreshCw, Lightbulb, ExternalLink } from 'lucide-react';
+import { marked } from 'marked';
+import Link from 'next/link';
 
 interface Advice {
   quote: string;
@@ -55,13 +57,15 @@ const RandomAdvice: React.FC = () => {
     return null;
   }
 
+  const renderedQuote = marked(advice.quote, { breaks: true });
+
   return (
     <div className="relative bg-gradient-to-br from-yellow-500/5 to-transparent border border-yellow-400/20 rounded-lg p-6 backdrop-blur-sm">
       <div className="absolute top-0 left-0 w-1 h-full bg-yellow-400/40 rounded-l-lg"></div>
       <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
-          <div className="w-1 h-8 bg-white/50"></div>
+          <Lightbulb size={16} className="text-white/60" />
           <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">Advice</h3>
         </div>
         <button
@@ -73,15 +77,26 @@ const RandomAdvice: React.FC = () => {
           <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
         </button>
       </div>
-      <div className="ml-4">
-        <blockquote className="text-white/80 font-serif text-base leading-relaxed font-medium italic border-l-2 border-white/20 pl-4 mb-4">
-          {advice.quote}
-        </blockquote>
+      <div className="ml-4 pb-6">
+        <div 
+          className="text-white/80 font-serif text-base leading-relaxed font-medium italic border-l-2 border-yellow-400/40 pl-4 mb-4 prose prose-invert prose-sm max-w-none"
+          dangerouslySetInnerHTML={{ __html: renderedQuote }}
+        />
         {advice.source && (
           <div className="text-white/50 font-mono text-xs tracking-wider">
             — {advice.source}
           </div>
         )}
+      </div>
+      <div className="ml-4 border-t border-white/10 pt-3">
+        <Link 
+          href="/advice"
+          className="text-white/50 font-mono text-xs tracking-wider hover:text-white/80 transition-colors flex items-center gap-2 uppercase"
+        >
+          <span className="w-2 h-2 bg-white/30 rounded-full"></span>
+          Advice
+          <ExternalLink size={10} />
+        </Link>
       </div>
       </div>
     </div>

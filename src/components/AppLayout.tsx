@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense, useMemo } from "react";
 import {
   Mail,
   Phone,
@@ -18,8 +18,9 @@ import RandomWord from "./RandomWord";
 import RandomAdvice from "./RandomAdvice";
 import RandomModel from "./RandomModel";
 import RandomMantra from "./RandomMantra";
+import RandomFAQ from "./RandomFAQ";
+import Brain3D from "./Brain3D";
 import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link";
 
 const AppLayout = () => {
   const router = useRouter();
@@ -33,6 +34,7 @@ const AppLayout = () => {
     impact: false,
     meta: true,
   });
+  const [activeBrainRegion, setActiveBrainRegion] = useState<string | null>(null);
 
   // Initialize with a static seed to match the server-rendered HTML.
   const [mediaUrl, setMediaUrl] = useState(`/api/placeholder/1920/1080?seed=static`);
@@ -68,7 +70,7 @@ const AppLayout = () => {
     [key: string]: { title: string; path: string }[];
   };
 
-  const secondaryNav: SecondaryNavType = {
+  const secondaryNav: SecondaryNavType = useMemo(() => ({
     identity: [
       { title: "Who I Am", path: "personality" },
       { title: "At My Best", path: "best" },
@@ -129,7 +131,7 @@ const AppLayout = () => {
       { title: "Lexicon", path: "lexicon" },
       { title: "Mental Models", path: "models" },
     ],
-  };
+  }), []);
 
   // Sync the URL with our state.
   useEffect(() => {
@@ -146,7 +148,7 @@ const AppLayout = () => {
       );
     }
     setExpandedSections(newExpanded);
-  }, [selectedContent]);
+  }, [selectedContent, secondaryNav]);
 
   const handleNavClick = (path: string | null) => {
     if (path === null) {
@@ -155,6 +157,14 @@ const AppLayout = () => {
       router.push(`/${path}`);
     }
     setMobileMenuOpen(false);
+  };
+
+  const handleNavHover = (group: string | null) => {
+    setActiveBrainRegion(group);
+  };
+
+  const handleNavLeave = () => {
+    setActiveBrainRegion(null);
   };
 
   const toggleSection = (section: string) => {
@@ -187,7 +197,11 @@ const AppLayout = () => {
     items: Array<{ title: string; path: string }>;
     isMobile?: boolean;
   }) => (
-    <div className={`${isMobile ? "space-y-3" : "space-y-2"} border-b border-white/8 pb-3`}>
+    <div 
+      className={`${isMobile ? "space-y-3" : "space-y-2"} border-b border-white/8 pb-3`}
+      onMouseEnter={() => handleNavHover(group)}
+      onMouseLeave={handleNavLeave}
+    >
       <button
         onClick={() => toggleSection(group)}
         className="w-full flex items-center justify-between group py-1"
@@ -233,6 +247,10 @@ const AppLayout = () => {
     </div>
   );
 
+  useEffect(() => {
+    // Removed unused shuffle logic
+  }, []);
+
   return (
     <div className="relative min-h-screen bg-black text-white antialiased">
       <style jsx global>{`
@@ -253,7 +271,7 @@ const AppLayout = () => {
       `}</style>
 
       {/* Background Image */}
-      <div className="fixed inset-0">
+      <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
         <img
           key={mediaUrl}
           src={mediaUrl}
@@ -275,76 +293,88 @@ const AppLayout = () => {
 
       {/* Desktop Navigation */}
       <nav className="hidden md:flex fixed left-8 top-16 z-40">
-        {/* Content */}
-        <div className="flex flex-col max-h-[calc(100vh-8rem)] overflow-y-auto custom-scrollbar">
-          <div className="max-w-[260px] w-full space-y-3 pr-4 pl-3 py-4 border-l border-white/15">
-            {Object.entries(secondaryNav).map(([group, items]) => (
-              <NavSection key={group} group={group} items={items} />
-            ))}
-            <div className="pt-4 border-t border-white/15">
-              <div className="flex items-center justify-center py-2">
-                <div className="w-6 h-px bg-white/25"></div>
-                <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
-                <div className="w-6 h-px bg-white/25"></div>
-              </div>
-              <h1 className="text-center font-sans font-black text-white/85 uppercase tracking-wider text-sm mb-2">
-                <Link href="/about" className="hover:text-white transition-colors">
-                  Taylor William Buley
-                </Link>
-              </h1>
-              <div className="flex items-center justify-center py-2">
-                <div className="w-6 h-px bg-white/25"></div>
-                <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
-                <div className="w-6 h-px bg-white/25"></div>
-              </div>
+        <div className="max-w-[260px] w-full relative">
+          {/* Brain Background */}
+          {selectedContent && (
+            <div className="absolute inset-0 z-0">
+              <Brain3D activeRegion={activeBrainRegion} background={true} location="nav" />
             </div>
-            <div className="space-y-2">
-              {primaryNav.map((item) => {
-                const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
-                let icon = null;
-                if (item.path && item.path.startsWith("http")) {
-                  icon = <ExternalLink size={12} className="ml-1" />;
-                } else if (item.path && item.path.startsWith("mailto")) {
-                  icon = <Mail size={12} className="ml-1" />;
-                } else if (item.path && item.path.startsWith("tel")) {
-                  icon = <Phone size={12} className="ml-1" />;
-                }
-                return item.path && (item.path.startsWith("http") ||
-                  item.path.startsWith("mailto") ||
-                  item.path.startsWith("tel")) ? (
-                  <a
-                    key={item.path || item.title}
-                    href={item.path}
-                    target={item.path.startsWith("http") ? "_blank" : "_self"}
-                    rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="flex items-center justify-center w-full py-1.5 px-3 border border-white/15 hover:border-white/30 transition-colors text-white/55 hover:text-white font-medium tracking-wide text-xs"
-                  >
-                    {item.title}
-                    {icon && <span className="inline-flex items-center">{icon}</span>}
-                  </a>
-                ) : (
-                  <button
-                    key={item.path || item.title}
-                    onClick={() => handleNavClick(item.path)}
-                    className={`w-full py-1.5 px-3 border transition-colors font-medium tracking-wide text-xs ${
-                      isSelected
-                        ? "text-white border-white/50 bg-white/3"
-                        : "text-white/55 border-white/15 hover:text-white hover:border-white/30"
-                    }`}
-                  >
-                    {item.title}
-                  </button>
-                );
-              })}
-            </div>
-            <div className="pt-6">
-              <FunFact />
+          )}
+          {/* Content */}
+          <div className="flex flex-col h-screen overflow-y-auto custom-scrollbar relative z-10">
+            <div className="max-w-[260px] w-full space-y-3 pr-4 pl-3 py-4 border-l border-white/15 bg-black/20 backdrop-blur-sm">
+              {Object.entries(secondaryNav).map(([group, items]) => (
+                <NavSection key={group} group={group} items={items} />
+              ))}
+              <div className="pt-4 border-t border-white/15">
+                <div className="flex items-center justify-center py-2">
+                  <div className="w-6 h-px bg-white/25"></div>
+                  <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
+                  <div className="w-6 h-px bg-white/25"></div>
+                </div>
+                <div className="flex items-center justify-center mb-2">
+                  <h1 className="text-center font-sans font-black text-white/85 uppercase tracking-wider text-sm">
+                    <button 
+                      onClick={() => handleNavClick("about")}
+                      className="hover:text-white transition-colors"
+                    >
+                      Who is Taylor?
+                    </button>
+                  </h1>
+                </div>
+                <div className="flex items-center justify-center py-2">
+                  <div className="w-6 h-px bg-white/25"></div>
+                  <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
+                  <div className="w-6 h-px bg-white/25"></div>
+                </div>
+              </div>
+              <div className="space-y-2">
+                {primaryNav.map((item) => {
+                  const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
+                  let icon = null;
+                  if (item.path && item.path.startsWith("http")) {
+                    icon = <ExternalLink size={12} className="ml-1" />;
+                  } else if (item.path && item.path.startsWith("mailto")) {
+                    icon = <Mail size={12} className="ml-1" />;
+                  } else if (item.path && item.path.startsWith("tel")) {
+                    icon = <Phone size={12} className="ml-1" />;
+                  }
+                  return item.path && (item.path.startsWith("http") ||
+                    item.path.startsWith("mailto") ||
+                    item.path.startsWith("tel")) ? (
+                    <a
+                      key={item.path || item.title}
+                      href={item.path}
+                      target={item.path.startsWith("http") ? "_blank" : "_self"}
+                      rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className="flex items-center justify-center w-full py-1.5 px-3 border border-white/15 hover:border-white/30 transition-colors text-white/55 hover:text-white font-medium tracking-wide text-xs"
+                    >
+                      {item.title}
+                      {icon && <span className="inline-flex items-center">{icon}</span>}
+                    </a>
+                  ) : (
+                    <button
+                      key={item.path || item.title}
+                      onClick={() => handleNavClick(item.path)}
+                      className={`w-full py-1.5 px-3 border transition-colors font-medium tracking-wide text-xs ${
+                        isSelected
+                          ? "text-white border-white/50 bg-white/3"
+                          : "text-white/55 border-white/15 hover:text-white hover:border-white/30"
+                      }`}
+                    >
+                      {item.title}
+                    </button>
+                  );
+                })}
+              </div>
+              <div className="pt-6">
+                <FunFact />
+              </div>
             </div>
           </div>
+          <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/10 to-transparent pointer-events-none z-20"></div>
         </div>
-      </nav>
-
-      {/* Mobile Navigation */}
+      </nav>      {/* Mobile Navigation */}
       <nav
         className={`md:hidden fixed inset-0 bg-black z-40 transition-transform duration-300 ${
           mobileMenuOpen ? "translate-y-0" : "translate-y-full"
@@ -362,9 +392,12 @@ const AppLayout = () => {
                 <div className="w-12 h-px bg-white/30"></div>
               </div>
               <h1 className="text-center font-sans font-black text-white/90 uppercase tracking-wider text-xl mb-4">
-                <Link href="/about" className="hover:text-white transition-colors">
+                <button 
+                  onClick={() => handleNavClick("about")}
+                  className="hover:text-white transition-colors"
+                >
                   Taylor William Buley
-                </Link>
+                </button>
               </h1>
               <div className="flex items-center justify-center py-4">
                 <div className="w-12 h-px bg-white/30"></div>
@@ -433,19 +466,37 @@ const AppLayout = () => {
           <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-start justify-center md:ml-[280px]">
             <div className="w-full max-w-7xl">
               <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4">
-                  Taylor William Buley
-                </h2>
+                <div className="flex items-center justify-center gap-6 mb-4">
+                  <Brain3D activeRegion={activeBrainRegion} small={true} location="title" />
+                  <h2 className="text-4xl md:text-6xl font-black tracking-tight">
+                    <button
+                      onClick={() => handleNavClick("about")}
+                      className="hover:text-white/80 transition-colors"
+                    >
+                      Taylor William Buley
+                    </button>
+                  </h2>
+                </div>
                 <p className="text-white/60 font-mono text-sm tracking-widest">
-                  Systematic problem-solver
+                  Cognitive Architect
                 </p>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
-                <RandomFragment />
-                <RandomWord />
-                <RandomAdvice />
-                <RandomModel />
-                <RandomMantra />
+              <div className="relative">
+                {/* Widgets overlay */}
+                <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                  <div className="col-span-1">
+                    <RandomFragment />
+                  </div>
+                  <div className="col-span-1">
+                    <RandomModel />
+                  </div>
+                  <div className="col-span-1 flex flex-col gap-4">
+                    <RandomAdvice />
+                    <RandomWord />
+                    <RandomMantra />
+                    <RandomFAQ />
+                  </div>
+                </div>
               </div>
             </div>
           </main>

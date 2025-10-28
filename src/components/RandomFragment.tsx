@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from 'react';
-import { RefreshCw, ExternalLink } from 'lucide-react';
+import { RefreshCw, FileText, ExternalLink } from 'lucide-react';
 import { marked } from 'marked';
 import Link from 'next/link';
 
@@ -70,7 +70,7 @@ const RandomFragment: React.FC = () => {
       <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
-          <div className="w-8 h-1 bg-white/40"></div>
+          <FileText size={16} className="text-white/60" />
           <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">{fragment.title}</h3>
         </div>
         <button

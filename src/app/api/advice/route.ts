@@ -22,7 +22,7 @@ export async function GET() {
         let quote = parts[0].trim();
         const source = parts[1]?.trim();
         // Remove surrounding * if present
-        quote = quote.replace(/^\*/, '').replace(/\*$/, '');
+        quote = quote.replace(/^["*]+/, '').replace(/["*]+$/, '');
         if (quote) {
           quotes.push({ quote, source });
         }

@@ -16,6 +16,7 @@ import ContentSkeleton from "./ContentSkeleton";
 import FunFact from "./FunFact";
 import RandomFragment from "./RandomFragment";
 import RandomWord from "./RandomWord";
+import RandomAdvice from "./RandomAdvice";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -117,6 +118,7 @@ const AppLayout = () => {
       { title: "Execution", path: "execution" },
       { title: "Leadership", path: "leadership" },
       { title: "Influence & Persuasion", path: "influence" },
+      { title: "Politics", path: "politics" },
       { title: "Legacy", path: "legacy" },
       { title: "Success", path: "success" },
     ],
@@ -442,6 +444,12 @@ const AppLayout = () => {
                 <div className="w-16 h-px bg-white/20"></div>
               </div>
               <RandomWord />
+              <div className="mt-12 mb-8 flex items-center justify-center">
+                <div className="w-16 h-px bg-white/20"></div>
+                <div className="mx-4 w-2 h-2 bg-white/30 rounded-full"></div>
+                <div className="w-16 h-px bg-white/20"></div>
+              </div>
+              <RandomAdvice />
             </div>
           </main>
         )}

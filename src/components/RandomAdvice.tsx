@@ -56,7 +56,9 @@ const RandomAdvice: React.FC = () => {
   }
 
   return (
-    <div className="mt-8 max-w-md border-t-4 border-white/25 pt-6">
+    <div className="relative bg-gradient-to-br from-yellow-500/5 to-transparent border border-yellow-400/20 rounded-lg p-6 backdrop-blur-sm">
+      <div className="absolute top-0 left-0 w-1 h-full bg-yellow-400/40 rounded-l-lg"></div>
+      <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
           <div className="w-1 h-8 bg-white/50"></div>
@@ -80,6 +82,7 @@ const RandomAdvice: React.FC = () => {
             — {advice.source}
           </div>
         )}
+      </div>
       </div>
     </div>
   );

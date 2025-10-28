@@ -65,7 +65,9 @@ const RandomFragment: React.FC = () => {
   const renderedContent = marked(fragment.content, { breaks: true });
 
   return (
-    <div className="mt-8 max-w-md border-r-4 border-white/20 pr-6">
+    <div className="relative bg-gradient-to-br from-blue-500/5 to-transparent border border-blue-400/20 rounded-lg p-6 backdrop-blur-sm">
+      <div className="absolute top-0 left-0 w-1 h-full bg-blue-400/40 rounded-l-lg"></div>
+      <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
           <div className="w-8 h-1 bg-white/40"></div>
@@ -95,6 +97,7 @@ const RandomFragment: React.FC = () => {
           {fragment.source}
           <ExternalLink size={10} />
         </Link>
+      </div>
       </div>
     </div>
   );

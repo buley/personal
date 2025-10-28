@@ -56,7 +56,9 @@ const RandomWord: React.FC = () => {
   }
 
   return (
-    <div className="mt-8 max-w-md border-l-4 border-white/30 pl-6">
+    <div className="relative bg-gradient-to-br from-red-500/5 to-transparent border border-red-400/20 rounded-lg p-6 backdrop-blur-sm">
+      <div className="absolute top-0 left-0 w-1 h-full bg-red-400/40 rounded-l-lg"></div>
+      <div className="relative z-10">
       <div className="flex items-center justify-between mb-3">
         <div className="flex items-center gap-3">
           <div className="w-1 h-8 bg-white/60"></div>
@@ -77,6 +79,7 @@ const RandomWord: React.FC = () => {
         <p className="text-white/80 font-serif text-base leading-relaxed font-medium border-b border-white/10 pb-4">
           {entry.definition}
         </p>
+      </div>
       </div>
     </div>
   );

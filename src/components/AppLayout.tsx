@@ -8,7 +8,6 @@ import {
   Menu,
   X,
   ChevronDown,
-  ChevronRight,
   Home,
 } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
@@ -17,6 +16,8 @@ import FunFact from "./FunFact";
 import RandomFragment from "./RandomFragment";
 import RandomWord from "./RandomWord";
 import RandomAdvice from "./RandomAdvice";
+import RandomModel from "./RandomModel";
+import RandomMantra from "./RandomMantra";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -429,27 +430,23 @@ const AppLayout = () => {
             </div>
           </main>
         ) : (
-          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-bottom justify-center md:ml-[280px]">
-            <div className="text-left">
-              <h2 className="text-4xl md:text-6xl font-black tracking-tight">
-                Taylor William Buley
-              </h2>
-              <p className="mt-4 text-white/60 font-mono text-sm tracking-widest">
-                Systematic problem-solver
-              </p>
-              <RandomFragment />
-              <div className="mt-12 mb-8 flex items-center justify-center">
-                <div className="w-16 h-px bg-white/20"></div>
-                <div className="mx-4 w-2 h-2 bg-white/30 rounded-full"></div>
-                <div className="w-16 h-px bg-white/20"></div>
+          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-start justify-center md:ml-[280px]">
+            <div className="w-full max-w-7xl">
+              <div className="text-center mb-16">
+                <h2 className="text-4xl md:text-6xl font-black tracking-tight mb-4">
+                  Taylor William Buley
+                </h2>
+                <p className="text-white/60 font-mono text-sm tracking-widest">
+                  Systematic problem-solver
+                </p>
               </div>
-              <RandomWord />
-              <div className="mt-12 mb-8 flex items-center justify-center">
-                <div className="w-16 h-px bg-white/20"></div>
-                <div className="mx-4 w-2 h-2 bg-white/30 rounded-full"></div>
-                <div className="w-16 h-px bg-white/20"></div>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
+                <RandomFragment />
+                <RandomWord />
+                <RandomAdvice />
+                <RandomModel />
+                <RandomMantra />
               </div>
-              <RandomAdvice />
             </div>
           </main>
         )}

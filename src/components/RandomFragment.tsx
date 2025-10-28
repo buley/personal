@@ -65,29 +65,37 @@ const RandomFragment: React.FC = () => {
   const renderedContent = marked(fragment.content, { breaks: true });
 
   return (
-    <div className="mt-8 max-w-md">
-      <div className="flex items-center justify-between mb-2">
-        <h3 className="text-md font-bold text-white/80">{fragment.title}</h3>
+    <div className="mt-8 max-w-md border-r-4 border-white/20 pr-6">
+      <div className="flex items-center justify-between mb-3">
+        <div className="flex items-center gap-3">
+          <div className="w-8 h-1 bg-white/40"></div>
+          <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">{fragment.title}</h3>
+        </div>
         <button
           onClick={fetchFragment}
           disabled={loading}
-          className="text-white/40 hover:text-white/60 transition-colors disabled:opacity-50"
+          className="w-8 h-8 flex items-center justify-center border border-white/20 hover:border-white/50 transition-colors disabled:opacity-50 group"
           aria-label="Refresh fragment"
         >
-          <RefreshCw size={16} className={loading ? 'animate-spin' : ''} />
+          <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
         </button>
       </div>
-      <div 
-        className="text-white/60 font-serif text-sm leading-relaxed mb-2 prose prose-invert prose-sm"
-        dangerouslySetInnerHTML={{ __html: renderedContent }}
-      />
-      <Link 
-        href={`/${fragment.source}`}
-        className="float-right text-white/40 font-mono text-xs tracking-widest hover:text-white/60 transition-colors flex items-center gap-1"
-      >
-        {fragment.source}
-        <ExternalLink size={12} />
-      </Link>
+      <div className="ml-4 mb-4">
+        <div 
+          className="text-white/70 font-serif text-sm leading-relaxed prose prose-invert prose-sm max-w-none"
+          dangerouslySetInnerHTML={{ __html: renderedContent }}
+        />
+      </div>
+      <div className="ml-4 border-t border-white/10 pt-3">
+        <Link 
+          href={`/${fragment.source}`}
+          className="text-white/50 font-mono text-xs tracking-wider hover:text-white/80 transition-colors flex items-center gap-2 uppercase"
+        >
+          <span className="w-2 h-2 bg-white/30 rounded-full"></span>
+          {fragment.source}
+          <ExternalLink size={10} />
+        </Link>
+      </div>
     </div>
   );
 };

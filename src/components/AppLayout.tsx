@@ -15,6 +15,7 @@ import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
 import FunFact from "./FunFact";
 import RandomFragment from "./RandomFragment";
+import RandomWord from "./RandomWord";
 import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -28,6 +29,7 @@ const AppLayout = () => {
     operation: false,
     growth: false,
     impact: false,
+    meta: true,
   });
 
   // Initialize with a static seed to match the server-rendered HTML.
@@ -80,7 +82,7 @@ const AppLayout = () => {
 
     operation: [
       { title: "Attention", path: "adhd" },
-      { title: "AuADHD", path: "audhd" },
+      { title: "AuADHD", path: "auadhd" },
       { title: "Autism", path: "autism" },
       { title: "Strategy", path: "strategy" },
       { title: "Decision Making", path: "decisions" },
@@ -182,48 +184,48 @@ const AppLayout = () => {
     items: Array<{ title: string; path: string }>;
     isMobile?: boolean;
   }) => (
-    <div className={`${isMobile ? "space-y-3" : "space-y-2"}`}>
+    <div className={`${isMobile ? "space-y-3" : "space-y-2"} border-b border-white/8 pb-3`}>
       <button
         onClick={() => toggleSection(group)}
-        className="w-full flex items-center justify-between group"
+        className="w-full flex items-center justify-between group py-1"
       >
-        <h3
-          className={`font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-white/40 group-hover:text-white/60 ${
-            isMobile ? "text-base" : ""
-          }`}
-        >
-          {group}
-        </h3>
-        {expandedSections[group] ? (
+        <div className="flex items-center gap-2">
+          <div className={`w-1 h-3 bg-white/35 transition-all duration-300 ${expandedSections[group] ? 'h-4' : ''}`}></div>
+          <h3
+            className={`font-sans font-bold uppercase tracking-wide text-white/65 group-hover:text-white/85 transition-colors ${
+              isMobile ? "text-base" : "text-xs"
+            }`}
+          >
+            {group}
+          </h3>
+        </div>
+        <div className={`w-5 h-5 border border-white/25 group-hover:border-white/40 transition-colors flex items-center justify-center ${expandedSections[group] ? 'rotate-180' : ''}`}>
           <ChevronDown
-            size={12}
-            className="text-white/40 group-hover:text-white/60"
+            size={10}
+            className="text-white/45 group-hover:text-white/65 transition-colors"
           />
-        ) : (
-          <ChevronRight
-            size={12}
-            className="text-white/40 group-hover:text-white/60"
-          />
-        )}
+        </div>
       </button>
       {expandedSections[group] && (
-        <ul className={` ${isMobile ? "space-y-3 pl-3" : "space-y-1 pl-2"}`}>
+        <div className={`${isMobile ? "space-y-2 ml-5" : "space-y-1 ml-3"} border-l border-white/8 pl-3`}>
           {items.map((item) => (
-            <li key={item.path}>
+            <li key={item.path} className="list-none">
               <button
                 onClick={() => handleNavClick(item.path)}
-                className={`marker:text-white font-mono tracking-widest whitespace-normal w-full text-left hover:text-white transition-colors ${
+                className={`w-full text-left py-1 px-2 border-l-2 transition-all duration-200 ${
                   selectedContent === item.path
-                    ? "text-white"
-                    : "text-white/60"
-                } ${isMobile ? "text-base" : "text-xs"}`}
+                    ? "text-white border-white/70 bg-white/3"
+                    : "text-white/55 border-transparent hover:text-white/80 hover:border-white/25"
+                } ${isMobile ? "text-sm" : "text-xs"} font-medium tracking-wide`}
               >
-                {selectedContent === item.path ? "→ " : ""}
+                {selectedContent === item.path && (
+                  <span className="inline-block w-1 h-1 bg-white/80 rounded-full mr-2"></span>
+                )}
                 {item.title}
               </button>
             </li>
           ))}
-        </ul>
+        </div>
       )}
     </div>
   );
@@ -269,30 +271,40 @@ const AppLayout = () => {
       </button>
 
       {/* Desktop Navigation */}
-      <nav className="hidden md:flex fixed left-8 bottom-16 z-40">
+      <nav className="hidden md:flex fixed left-8 top-16 z-40">
         {/* Content */}
-        <div className="flex flex-col justify-end max-h-[calc(100vh-4rem)] overflow-y-auto custom-scrollbar">
-          <div className="max-w-[250px] w-full space-y-4 pr-4">
+        <div className="flex flex-col max-h-[calc(100vh-8rem)] overflow-y-auto custom-scrollbar">
+          <div className="max-w-[260px] w-full space-y-3 pr-4 pl-3 py-4 border-l border-white/15">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} />
             ))}
-            <div className="pt-4">
-              <hr className="border-white/20 pt-4" />
-              <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <Link href="/about">Taylor William Buley</Link>
+            <div className="pt-4 border-t border-white/15">
+              <div className="flex items-center justify-center py-2">
+                <div className="w-6 h-px bg-white/25"></div>
+                <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
+                <div className="w-6 h-px bg-white/25"></div>
+              </div>
+              <h1 className="text-center font-sans font-black text-white/85 uppercase tracking-wider text-sm mb-2">
+                <Link href="/about" className="hover:text-white transition-colors">
+                  Taylor William Buley
+                </Link>
               </h1>
-              <hr className="border-white/20 pt-4" />
+              <div className="flex items-center justify-center py-2">
+                <div className="w-6 h-px bg-white/25"></div>
+                <div className="mx-2 w-1.5 h-1.5 bg-white/35 rounded-full"></div>
+                <div className="w-6 h-px bg-white/25"></div>
+              </div>
             </div>
-            <div className="flex flex-row space-x-4 items-center">
+            <div className="space-y-2">
               {primaryNav.map((item) => {
                 const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
                 let icon = null;
                 if (item.path && item.path.startsWith("http")) {
-                  icon = <ExternalLink size={14} className="ml-1" />;
+                  icon = <ExternalLink size={12} className="ml-1" />;
                 } else if (item.path && item.path.startsWith("mailto")) {
-                  icon = <Mail size={14} className="ml-1" />;
+                  icon = <Mail size={12} className="ml-1" />;
                 } else if (item.path && item.path.startsWith("tel")) {
-                  icon = <Phone size={14} className="ml-1" />;
+                  icon = <Phone size={12} className="ml-1" />;
                 }
                 return item.path && (item.path.startsWith("http") ||
                   item.path.startsWith("mailto") ||
@@ -302,26 +314,27 @@ const AppLayout = () => {
                     href={item.path}
                     target={item.path.startsWith("http") ? "_blank" : "_self"}
                     rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
-                    className="font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors text-white/60 hover:text-white flex items-center"
+                    className="flex items-center justify-center w-full py-1.5 px-3 border border-white/15 hover:border-white/30 transition-colors text-white/55 hover:text-white font-medium tracking-wide text-xs"
                   >
-                    {item.title}{" "}
+                    {item.title}
                     {icon && <span className="inline-flex items-center">{icon}</span>}
                   </a>
                 ) : (
                   <button
                     key={item.path || item.title}
                     onClick={() => handleNavClick(item.path)}
-                    className={`font-mono text-xs tracking-widest whitespace-nowrap hover:text-white transition-colors ${
-                      isSelected ? "text-white" : "text-white/60"
+                    className={`w-full py-1.5 px-3 border transition-colors font-medium tracking-wide text-xs ${
+                      isSelected
+                        ? "text-white border-white/50 bg-white/3"
+                        : "text-white/55 border-white/15 hover:text-white hover:border-white/30"
                     }`}
                   >
-                    {isSelected && item.path !== null ? "→ " : ""}
-                    {item.path === null ? <Home size={14} /> : item.title}
+                    {item.title}
                   </button>
                 );
               })}
             </div>
-            <div>
+            <div className="pt-6">
               <FunFact />
             </div>
           </div>
@@ -335,37 +348,46 @@ const AppLayout = () => {
         }`}
       >
         <div className="h-full overflow-auto p-8 pt-16 custom-scrollbar">
-          <div className="space-y-8">
+          <div className="space-y-6 border border-white/10 rounded-lg p-6 bg-white/5 backdrop-blur-sm">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} isMobile />
             ))}
             <div className="pt-6 border-t border-white/20">
+              <div className="flex items-center justify-center py-4">
+                <div className="w-12 h-px bg-white/30"></div>
+                <div className="mx-4 w-3 h-3 bg-white/40 rounded-full"></div>
+                <div className="w-12 h-px bg-white/30"></div>
+              </div>
+              <h1 className="text-center font-sans font-black text-white/90 uppercase tracking-wider text-xl mb-4">
+                <Link href="/about" className="hover:text-white transition-colors">
+                  Taylor William Buley
+                </Link>
+              </h1>
+              <div className="flex items-center justify-center py-4">
+                <div className="w-12 h-px bg-white/30"></div>
+                <div className="mx-4 w-3 h-3 bg-white/40 rounded-full"></div>
+                <div className="w-12 h-px bg-white/30"></div>
+              </div>
+            </div>
+            <div className="space-y-4">
               {primaryNav.map((item) => {
                 const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
                 return (
                   <button
                     key={item.path || item.title}
                     onClick={() => handleNavClick(item.path)}
-                    className={`font-mono text-base tracking-widest block mt-4 w-full text-left ${
+                    className={`w-full py-3 px-4 border transition-colors font-medium tracking-wide text-center ${
                       isSelected
-                        ? "text-white"
-                        : "text-white/60"
+                        ? "text-white border-white/60 bg-white/5"
+                        : "text-white/60 border-white/20 hover:text-white hover:border-white/40"
                     }`}
                   >
-                    {isSelected && item.path !== null ? "→ " : ""}
-                    {item.path === null ? <Home size={16} /> : item.title}
+                    {item.path === null ? <Home size={18} /> : item.title}
                   </button>
                 );
               })}
             </div>
-            <div className="pt-4">
-              <hr className="border-white/20 pt-4" />
-              <h1 className="pb-4 font-mono text-xs text-center font-bold uppercase tracking-[0.2em] text-white/80">
-                <Link href="/about">Taylor William Buley</Link>
-              </h1>
-              <hr className="border-white/20 pt-4" />
-            </div>
-            <div className="pt-4">
+            <div className="pt-6">
               <FunFact />
             </div>
           </div>
@@ -414,6 +436,12 @@ const AppLayout = () => {
                 Systematic problem-solver
               </p>
               <RandomFragment />
+              <div className="mt-12 mb-8 flex items-center justify-center">
+                <div className="w-16 h-px bg-white/20"></div>
+                <div className="mx-4 w-2 h-2 bg-white/30 rounded-full"></div>
+                <div className="w-16 h-px bg-white/20"></div>
+              </div>
+              <RandomWord />
             </div>
           </main>
         )}

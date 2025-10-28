@@ -15,7 +15,7 @@ Definitions matter. Vague language leads to vague thinking and flawed execution.
 - **Autonomy:** The foundational requirement for peak performance. Non-negotiable.
 - **Boundaries:** Not walls, but strategic filters. Essential systems for protecting energy, focus, and integrity.
 - **Challenge:** The primary catalyst for growth. A requirement, not an obstacle.
-- **Clarity:** The highest form of communication. The prerequisite for all meaningful action. *The opposite of comfort.*
+- **Clarity:** The highest form of communication. The prerequisite for all meaningful action. *The opposite of comfort.* A form of kindness.
 - **Comfort:** A state of stagnation. The enemy of progress. To be treated with suspicion.
 - **Competence:** The baseline expectation for engagement. The price of entry.
 - **Control:** The state of mastering one's internal world (mind, emotions, actions), regardless of external chaos. *The only control that matters.*

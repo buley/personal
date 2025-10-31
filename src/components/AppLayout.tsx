@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, Suspense, useMemo } from "react";
+import React, { useState, useEffect, Suspense, useMemo, useRef } from "react";
 import {
   Mail,
   Phone,
@@ -9,6 +9,7 @@ import {
   X,
   ChevronDown,
   Home,
+  HelpCircle,
 } from "lucide-react";
 import MarkdownContent from "./MarkdownContent";
 import ContentSkeleton from "./ContentSkeleton";
@@ -35,28 +36,7 @@ const AppLayout = () => {
     meta: true,
   });
   const [activeBrainRegion, setActiveBrainRegion] = useState<string | null>(null);
-
-  // Initialize with a static seed to match the server-rendered HTML.
-  const [mediaUrl, setMediaUrl] = useState(`/api/placeholder/1920/1080?seed=static`);
-  const [imageLoaded, setImageLoaded] = useState(false);
-
-  useEffect(() => {
-    // After mount, update the background image URL with a dynamic seed.
-    const updateMediaUrl = () => {
-      setMediaUrl(`/api/placeholder/1920/1080?seed=${Date.now()}`);
-    };
-
-    updateMediaUrl(); // Set the initial dynamic URL after mount.
-
-    // Set up the interval for subsequent updates.
-    const interval = setInterval(updateMediaUrl, 300000);
-    return () => clearInterval(interval);
-  }, []);
-
-  // Reset loaded state when URL changes
-  useEffect(() => {
-    setImageLoaded(false);
-  }, [mediaUrl]);
+  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
   const primaryNav = [
     { title: "Home", path: null },
@@ -111,7 +91,7 @@ const AppLayout = () => {
       { title: "Emotion", path: "emotion" },
       { title: "Stress", path: "stress" },
       { title: "Self-Sabotage", path: "self-sabotage" },
-      { title: "Resilience & Recovery", path: "resilience" },
+      { title: "Resilience & Recovery", path: "resiliance" },
       { title: "Reinvention", path: "reinvention" },
       { title: "Reflection & Self-Audit", path: "reflection" },
     ],
@@ -133,7 +113,37 @@ const AppLayout = () => {
     ],
   }), []);
 
-  // Sync the URL with our state.
+  // Create a mapping of subnav items to brain regions for individual hover effects
+  const subnavItemMapping = useMemo(() => {
+    const mapping: { [key: string]: string } = {};
+    
+    // Identity items -> frontal lobe
+    secondaryNav.identity.forEach(item => {
+      mapping[item.path] = 'frontal';
+    });
+    
+    // Operation items -> prefrontal cortex
+    secondaryNav.operation.forEach(item => {
+      mapping[item.path] = 'prefrontal';
+    });
+    
+    // Growth items -> limbic system
+    secondaryNav.growth.forEach(item => {
+      mapping[item.path] = 'limbic';
+    });
+    
+    // Impact items -> parietal lobes
+    secondaryNav.impact.forEach(item => {
+      mapping[item.path] = 'parietal';
+    });
+    
+    // Meta items -> temporal lobes
+    secondaryNav.meta.forEach(item => {
+      mapping[item.path] = 'temporal';
+    });
+    
+    return mapping;
+  }, [secondaryNav]);  // Sync the URL with our state.
   useEffect(() => {
     const path = pathname.replace(/^\//, "");
     setSelectedContent(path || null);
@@ -159,12 +169,26 @@ const AppLayout = () => {
     setMobileMenuOpen(false);
   };
 
-  const handleNavHover = (group: string | null) => {
-    setActiveBrainRegion(group);
+  const handleNavHover = (group: string | null, itemPath?: string) => {
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+    
+    // If hovering over a specific item, use its mapped region, otherwise use the group
+    const regionToActivate = itemPath ? subnavItemMapping[itemPath] || group : group;
+    
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveBrainRegion(regionToActivate);
+    }, 150); // 150ms delay to prevent rapid changes
   };
 
   const handleNavLeave = () => {
-    setActiveBrainRegion(null);
+    if (hoverTimeoutRef.current) {
+      clearTimeout(hoverTimeoutRef.current);
+    }
+    hoverTimeoutRef.current = setTimeout(() => {
+      setActiveBrainRegion(null);
+    }, 150);
   };
 
   const toggleSection = (section: string) => {
@@ -229,6 +253,8 @@ const AppLayout = () => {
             <li key={item.path} className="list-none">
               <button
                 onClick={() => handleNavClick(item.path)}
+                onMouseEnter={() => handleNavHover(group, item.path)}
+                onMouseLeave={handleNavLeave}
                 className={`w-full text-left py-1 px-2 border-l-2 transition-all duration-200 ${
                   selectedContent === item.path
                     ? "text-white border-white/70 bg-white/3"
@@ -251,6 +277,43 @@ const AppLayout = () => {
     // Removed unused shuffle logic
   }, []);
 
+  const nodeCounts = useMemo(() => {
+    const counts: { [region: string]: number } = {
+      frontal: secondaryNav.identity.length,
+      prefrontal: secondaryNav.operation.length,
+      limbic: secondaryNav.growth.length,
+      parietal: secondaryNav.impact.length,
+      temporal: secondaryNav.meta.length,
+    };
+    return counts;
+  }, [secondaryNav]);
+
+  const highlightedNodes = useMemo(() => {
+    const highlights: { [region: string]: string[] } = {
+      frontal: [],
+      prefrontal: [],
+      limbic: [],
+      parietal: [],
+      temporal: [],
+    };
+
+    if (activeBrainRegion) {
+      Object.entries(subnavItemMapping).forEach(([path, region]) => {
+        if (region === activeBrainRegion) {
+          highlights[region].push(path);
+        }
+      });
+    }
+
+    return highlights;
+  }, [activeBrainRegion, subnavItemMapping]);
+
+  useEffect(() => {
+    console.log('nodeCounts:', nodeCounts);
+    console.log('highlightedNodes:', highlightedNodes);
+    console.log('activeBrainRegion:', activeBrainRegion);
+  }, [nodeCounts, highlightedNodes, activeBrainRegion]);
+
   return (
     <div className="relative min-h-screen bg-black text-white antialiased">
       <style jsx global>{`
@@ -270,16 +333,16 @@ const AppLayout = () => {
         }
       `}</style>
 
-      {/* Background Image */}
-      <div className="fixed inset-0 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
-        <img
-          key={mediaUrl}
-          src={mediaUrl}
-          alt="Background"
-          onLoad={() => setImageLoaded(true)}
-          className={`w-full h-full object-cover transition-opacity duration-1000 ${
-            imageLoaded ? 'opacity-55' : 'opacity-0'
-          }`}
+      {/* Background Brain3D */}
+      <div className="fixed inset-0 z-0">
+        <Brain3D 
+          activeRegion={activeBrainRegion} 
+          background={false} 
+          location="nav" 
+          muted={true} 
+          colorScheme="grayscale" 
+          nodeCount={nodeCounts} 
+          highlightedNodes={highlightedNodes} 
         />
       </div>
 
@@ -294,8 +357,8 @@ const AppLayout = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex fixed left-8 top-16 z-40">
         <div className="max-w-[260px] w-full relative">
-          {/* Brain Background */}
-          {selectedContent && (
+          {/* Brain Background if on Home Page */}
+          {selectedContent && selectedContent === null && (
             <div className="absolute inset-0 z-0">
               <Brain3D activeRegion={activeBrainRegion} background={true} location="nav" />
             </div>
@@ -331,14 +394,12 @@ const AppLayout = () => {
               <div className="space-y-2">
                 {primaryNav.map((item) => {
                   const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
-                  let icon = null;
-                  if (item.path && item.path.startsWith("http")) {
-                    icon = <ExternalLink size={12} className="ml-1" />;
-                  } else if (item.path && item.path.startsWith("mailto")) {
-                    icon = <Mail size={12} className="ml-1" />;
-                  } else if (item.path && item.path.startsWith("tel")) {
-                    icon = <Phone size={12} className="ml-1" />;
-                  }
+                  const Icon = item.path === null ? Home :
+                    item.path === "faq" ? HelpCircle :
+                    item.path && item.path.startsWith("mailto") ? Mail :
+                    item.path && item.path.startsWith("tel") ? Phone :
+                    item.path && item.path.startsWith("http") ? ExternalLink :
+                    null;
                   return item.path && (item.path.startsWith("http") ||
                     item.path.startsWith("mailto") ||
                     item.path.startsWith("tel")) ? (
@@ -347,22 +408,23 @@ const AppLayout = () => {
                       href={item.path}
                       target={item.path.startsWith("http") ? "_blank" : "_self"}
                       rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
-                      className="flex items-center justify-center w-full py-1.5 px-3 border border-white/15 hover:border-white/30 transition-colors text-white/55 hover:text-white font-medium tracking-wide text-xs"
+                      className="flex items-center justify-center w-full py-1.5 px-3 border border-white/15 hover:border-white/30 transition-colors text-white/55 hover:text-white font-medium tracking-wide text-xs gap-1"
                     >
                       {item.title}
-                      {icon && <span className="inline-flex items-center">{icon}</span>}
+                      {Icon && <Icon size={12} />}
                     </a>
                   ) : (
                     <button
                       key={item.path || item.title}
                       onClick={() => handleNavClick(item.path)}
-                      className={`w-full py-1.5 px-3 border transition-colors font-medium tracking-wide text-xs ${
+                      className={`w-full py-1.5 px-3 border transition-colors font-medium tracking-wide text-xs flex items-center justify-center gap-1 ${
                         isSelected
                           ? "text-white border-white/50 bg-white/3"
                           : "text-white/55 border-white/15 hover:text-white hover:border-white/30"
                       }`}
                     >
                       {item.title}
+                      {Icon && <Icon size={12} />}
                     </button>
                   );
                 })}
@@ -374,13 +436,20 @@ const AppLayout = () => {
           </div>
           <div className="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-white/10 to-transparent pointer-events-none z-20"></div>
         </div>
-      </nav>      {/* Mobile Navigation */}
+      </nav>      
+      {/* Mobile Navigation */}
       <nav
         className={`md:hidden fixed inset-0 bg-black z-40 transition-transform duration-300 ${
           mobileMenuOpen ? "translate-y-0" : "translate-y-full"
         }`}
       >
-        <div className="h-full overflow-auto p-8 pt-16 custom-scrollbar">
+        {/* Mobile Brain Background */}
+        {mobileMenuOpen && (
+          <div className="absolute inset-0 z-0">
+            <Brain3D activeRegion={activeBrainRegion} background={true} location="mobile" />
+          </div>
+        )}
+        <div className="h-full overflow-auto p-8 pt-16 custom-scrollbar relative z-10">
           <div className="space-y-6 border border-white/10 rounded-lg p-6 bg-white/5 backdrop-blur-sm">
             {Object.entries(secondaryNav).map(([group, items]) => (
               <NavSection key={group} group={group} items={items} isMobile />
@@ -408,19 +477,43 @@ const AppLayout = () => {
             <div className="space-y-4">
               {primaryNav.map((item) => {
                 const isSelected = selectedContent === item.path || (item.path === null && selectedContent === null);
-                return (
-                  <button
-                    key={item.path || item.title}
-                    onClick={() => handleNavClick(item.path)}
-                    className={`w-full py-3 px-4 border transition-colors font-medium tracking-wide text-center ${
-                      isSelected
-                        ? "text-white border-white/60 bg-white/5"
-                        : "text-white/60 border-white/20 hover:text-white hover:border-white/40"
-                    }`}
-                  >
-                    {item.path === null ? <Home size={18} /> : item.title}
-                  </button>
-                );
+                const Icon = item.path === null ? Home :
+                  item.path === "faq" ? HelpCircle :
+                  item.path && item.path.startsWith("mailto") ? Mail :
+                  item.path && item.path.startsWith("tel") ? Phone :
+                  item.path && item.path.startsWith("http") ? ExternalLink :
+                  null;
+                const isExternal = item.path && (item.path.startsWith("http") || item.path.startsWith("mailto") || item.path.startsWith("tel"));
+                const commonClasses = `w-full py-3 px-4 border transition-colors font-medium tracking-wide text-center flex items-center justify-center gap-2 ${
+                  isSelected
+                    ? "text-white border-white/60 bg-white/5"
+                    : "text-white/60 border-white/20 hover:text-white hover:border-white/40"
+                }`;
+                if (isExternal) {
+                  return (
+                    <a
+                      key={item.path || item.title}
+                      href={item.path}
+                      target={item.path.startsWith("http") ? "_blank" : "_self"}
+                      rel={item.path.startsWith("http") ? "noopener noreferrer" : undefined}
+                      className={commonClasses}
+                    >
+                      {Icon && <Icon size={18} />}
+                      {item.title}
+                    </a>
+                  );
+                } else {
+                  return (
+                    <button
+                      key={item.path || item.title}
+                      onClick={() => handleNavClick(item.path)}
+                      className={commonClasses}
+                    >
+                      {Icon && <Icon size={18} />}
+                      {item.title}
+                    </button>
+                  );
+                }
               })}
             </div>
             <div className="pt-6">
@@ -463,37 +556,41 @@ const AppLayout = () => {
             </div>
           </main>
         ) : (
-          <main className="relative z-30 min-h-screen px-6 py-16 md:py-24 flex items-start justify-center md:ml-[280px]">
+          <main className="relative z-30 min-h-screen px-6 py-8 md:py-16 flex items-start justify-center md:ml-[280px]">
             <div className="w-full max-w-7xl">
-              <div className="text-center mb-16">
-                <div className="flex items-center justify-center gap-6 mb-4">
-                  <Brain3D activeRegion={activeBrainRegion} small={true} location="title" />
-                  <h2 className="text-4xl md:text-6xl font-black tracking-tight">
-                    <button
-                      onClick={() => handleNavClick("about")}
-                      className="hover:text-white/80 transition-colors"
-                    >
-                      Taylor William Buley
-                    </button>
-                  </h2>
+              <div className="text-center mb-16 md:mb-12 space-y-3">
+                <div className="flex items-center justify-center gap-6 mb-2">
+                  <div className="w-16 h-16 md:w-24 md:h-24 p-2">
+                    <img src="/icon.png" alt="Header Icon" className="w-full h-full object-cover rounded-full" />
+                  </div>
+                  <div className="text-left">
+                    <h2 className="text-4xl md:text-6xl font-black tracking-tight">
+                      <button
+                        onClick={() => handleNavClick("about")}
+                        className="hover:text-white/80 transition-colors reenie-beanie"
+                      >
+                        Taylor William Buley
+                      </button>
+                    </h2>
+                    <p className="text-white/60 font-mono text-3xl md:text-2xl  tracking-widest reenie-beanie">
+                      Cognitive Architect
+                    </p>
+                  </div>
                 </div>
-                <p className="text-white/60 font-mono text-sm tracking-widest">
-                  Cognitive Architect
-                </p>
               </div>
               <div className="relative">
                 {/* Widgets overlay */}
-                <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto">
+                <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto bg-dark p-4 rounded-lg shadow-md text-black">
                   <div className="col-span-1">
                     <RandomFragment />
                   </div>
                   <div className="col-span-1">
+                    <RandomMantra />
                     <RandomModel />
                   </div>
                   <div className="col-span-1 flex flex-col gap-4">
                     <RandomAdvice />
                     <RandomWord />
-                    <RandomMantra />
                     <RandomFAQ />
                   </div>
                 </div>

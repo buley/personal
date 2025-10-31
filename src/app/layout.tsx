@@ -1,7 +1,8 @@
 // app/layout.tsx (or wherever RootLayout is defined)
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Merriweather } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
+import localFont from 'next/font/local';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 
@@ -15,12 +16,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// Merriweather can have multiple weights: 400, 700, etc.
-// Adjust as needed for normal & bold text in paragraphs
-const merriweather = Merriweather({
-  variable: "--font-merriweather",
-  subsets: ["latin"],
-  weight: ["400", "700"], // can add 300, 600, 900 if desired
+// Local fonts
+const hedvig = localFont({
+  src: '../../public/fonts/Hedvig_Letters_Serif/static/HedvigLettersSerif_18pt-Regular.ttf',
+  variable: '--font-hedvig',
+});
+
+const nothingYouCouldDo = localFont({
+  src: '../../public/fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf',
+  variable: '--font-nothing',
 });
 
 export const metadata: Metadata = {
@@ -40,7 +44,8 @@ export default function RootLayout({
         className={`
           ${geistSans.variable} 
           ${geistMono.variable} 
-          ${merriweather.variable} 
+          ${hedvig.variable}
+          ${nothingYouCouldDo.variable}
           antialiased
         `}
       >

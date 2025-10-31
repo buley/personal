@@ -41,7 +41,7 @@ const RandomFragment: React.FC = () => {
 
   if (loading && !fragment) {
     return (
-      <div className="mt-8 max-w-md space-y-3">
+      <div className="mt-8 max-w-md space-y-3 mb-4">
         <div className="flex items-center justify-between mb-2">
           <div className="h-5 bg-white/5 w-3/4 rounded" />
           <div className="w-4 h-4 bg-white/5 rounded" />
@@ -76,7 +76,7 @@ const RandomFragment: React.FC = () => {
         <button
           onClick={fetchFragment}
           disabled={loading}
-          className="w-8 h-8 flex items-center justify-center border border-white/20 hover:border-white/50 transition-colors disabled:opacity-50 group"
+          className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group text-white"
           aria-label="Refresh fragment"
         >
           <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />

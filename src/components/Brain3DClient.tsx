@@ -43,7 +43,10 @@ function BrainParticles({
     const colors: THREE.Color[] = [];
     const regions: string[] = [];
 
-    Object.entries(nodeCount).forEach(([region, count]) => {
+    const defaultNodeCount = 64; // Default to 64 nodes if nodeCount is empty
+    const effectiveNodeCount = Object.keys(nodeCount).length > 0 ? nodeCount : { default: defaultNodeCount };
+
+    Object.entries(effectiveNodeCount).forEach(([region, count]) => {
       console.log(`Region: ${region}, Count: ${count}`);
       for (let i = 0; i < count; i++) {
         const theta = Math.random() * Math.PI * 2;

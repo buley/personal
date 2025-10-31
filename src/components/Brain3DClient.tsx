@@ -25,16 +25,16 @@ function BrainParticles({
   small = false,
   mousePos,
   location = 'title',
-  nodeCount = {},
-  highlightedNodes = {},
+  nodeCount,
+  highlightedNodes,
 }: Brain3DClientProps) {
   const groupRef = useRef<THREE.Group>(null);
   const particlesRef = useRef<THREE.InstancedMesh>(null);
   const assemblyCompleteRef = useRef(false);
   const assemblyProgressRef = useRef(0);
 
-  console.log('nodeCount:', nodeCount);
-  console.log('highlightedNodes:', highlightedNodes);
+  console.log('nodeCount:', nodeCount); // Debugging log
+  console.log('highlightedNodes:', highlightedNodes); // Debugging log
 
   // Create particle positions that form a brain-like shape with regions
   const particleData = useMemo(() => {
@@ -43,8 +43,7 @@ function BrainParticles({
     const colors: THREE.Color[] = [];
     const regions: string[] = [];
 
-    const defaultNodeCount = 64; // Default to 64 nodes if nodeCount is empty
-    const effectiveNodeCount = Object.keys(nodeCount).length > 0 ? nodeCount : { default: defaultNodeCount };
+    const effectiveNodeCount = nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }; // Fallback to 64 nodes if no regions
 
     Object.entries(effectiveNodeCount).forEach(([region, count]) => {
       console.log(`Region: ${region}, Count: ${count}`);
@@ -60,7 +59,7 @@ function BrainParticles({
         positions.push(new THREE.Vector3(x, y, z));
         regions.push(region);
 
-        const color = highlightedNodes[region]?.includes(`${i}`)
+        const color = highlightedNodes?.[region]?.includes(`${i}`)
           ? new THREE.Color(0xffff00) // Highlighted color
           : new THREE.Color(0x74b9ff); // Default color
 
@@ -126,7 +125,7 @@ function BrainParticles({
 
   // Store initial scattered positions
   const initialPositions = useMemo(() => {
-    const particleCount = small ? (location === 'nav' ? 50 : 100) : background ? 800 : 500;
+    const particleCount = particleData.positions.length;
     return Array.from({ length: particleCount }, () => 
       new THREE.Vector3(
         (Math.random() - 0.5) * 10,
@@ -134,33 +133,28 @@ function BrainParticles({
         (Math.random() - 0.5) * 10
       )
     );
-  }, [small, location, background]);
+  }, [particleData.positions.length]);
+
+  const prevMousePos = useRef(mousePos);
+  const velocity = useRef({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const deltaX = mousePos.x - prevMousePos.current.x;
+    const deltaY = mousePos.y - prevMousePos.current.y;
+
+    velocity.current = { x: deltaX, y: deltaY };
+    prevMousePos.current = mousePos;
+  }, [mousePos]);
 
   useFrame((state) => {
     if (groupRef.current) {
-      const rotationSpeed = background ? 0.002 : small ? 0.003 : 0.005;
-      groupRef.current.rotation.y += rotationSpeed;
-      groupRef.current.rotation.x += background ? 0.001 : small ? 0.0015 : 0.002;
+      const speedFactor = Math.sqrt(velocity.current.x ** 2 + velocity.current.y ** 2) * 5; // Adjust multiplier for sensitivity
 
-      // Cursor following behavior
-      if (mousePos) {
-        const mouseX = mousePos.x;
-        const mouseY = mousePos.y;
-        
-        if (small) {
-          // Dramatic rotation for small mode
-          const targetRotationY = mouseX * 0.6;
-          const targetRotationX = mouseY * 0.4;
-          groupRef.current.rotation.y += (targetRotationY - groupRef.current.rotation.y) * 0.15;
-          groupRef.current.rotation.x += (targetRotationX - groupRef.current.rotation.x) * 0.15;
-        } else if (background) {
-          // Subtle rotation for background mode
-          const targetRotationY = mouseX * 0.1;
-          const targetRotationX = mouseY * 0.05;
-          groupRef.current.rotation.y += (targetRotationY - groupRef.current.rotation.y) * 0.02;
-          groupRef.current.rotation.x += (targetRotationX - groupRef.current.rotation.x) * 0.01;
-        }
-      }
+      const targetRotationY = mousePos.x * Math.PI;
+      const targetRotationX = mousePos.y * Math.PI;
+
+      groupRef.current.rotation.y += (targetRotationY - groupRef.current.rotation.y) * 0.1 * speedFactor;
+      groupRef.current.rotation.x += (targetRotationX - groupRef.current.rotation.x) * 0.1 * speedFactor;
     }
 
     // Animate particles with region-specific activation
@@ -285,9 +279,11 @@ interface Brain3DClientProps {
   background?: boolean;
   small?: boolean;
   location?: 'title' | 'nav' | 'mobile';
+  nodeCount?: { [region: string]: number };
+  highlightedNodes?: { [region: string]: string[] };
 }
 
-export default function Brain3DClient({ activeRegion, background = false, small = false, location = 'title' }: Brain3DClientProps) {
+export default function Brain3DClient({ activeRegion, background = false, small = false, location = 'title', nodeCount = {}, highlightedNodes = {} }: Brain3DClientProps) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
 
@@ -312,11 +308,13 @@ export default function Brain3DClient({ activeRegion, background = false, small 
       const target = event.target as HTMLElement;
       const region = target.getAttribute('data-brain-region');
       if (region) {
+        console.log('Mouse entered region:', region); // Debugging log
         setHoveredRegion(region);
       }
     };
 
     const handleMouseLeave = () => {
+      console.log('Mouse left region'); // Debugging log
       setHoveredRegion(null);
     };
 
@@ -377,7 +375,7 @@ export default function Brain3DClient({ activeRegion, background = false, small 
         <pointLight position={[10, 10, 10]} intensity={0.8} />
         <pointLight position={[-10, -10, -10]} intensity={0.4} />
 
-        <BrainParticles activeRegion={hoveredRegion || activeRegion} background={background} small={small} mousePos={mousePos} location={location} />
+        <BrainParticles activeRegion={hoveredRegion || activeRegion} background={background} small={small} mousePos={mousePos} location={location} nodeCount={nodeCount} highlightedNodes={highlightedNodes} />
 
         <OrbitControls
           enableZoom={false}

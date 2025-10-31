@@ -173,10 +173,13 @@ const AppLayout = () => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
-    
+
+    // Debugging log to verify group and itemPath
+    console.log('handleNavHover called with:', { group, itemPath });
+
     // If hovering over a specific item, use its mapped region, otherwise use the group
     const regionToActivate = itemPath ? subnavItemMapping[itemPath] || group : group;
-    
+
     hoverTimeoutRef.current = setTimeout(() => {
       setActiveBrainRegion(regionToActivate);
     }, 150); // 150ms delay to prevent rapid changes
@@ -186,6 +189,10 @@ const AppLayout = () => {
     if (hoverTimeoutRef.current) {
       clearTimeout(hoverTimeoutRef.current);
     }
+
+    // Debugging log to verify leave event
+    console.log('handleNavLeave called');
+
     hoverTimeoutRef.current = setTimeout(() => {
       setActiveBrainRegion(null);
     }, 150);
@@ -314,6 +321,10 @@ const AppLayout = () => {
     console.log('activeBrainRegion:', activeBrainRegion);
   }, [nodeCounts, highlightedNodes, activeBrainRegion]);
 
+  useEffect(() => {
+    console.log('Rendering Brain3D with props:', { nodeCounts, highlightedNodes });
+  }, [nodeCounts, highlightedNodes]);
+
   return (
     <div className="relative min-h-screen bg-black text-white antialiased">
       <style jsx global>{`
@@ -336,6 +347,7 @@ const AppLayout = () => {
       {/* Background Brain3D */}
       <div className="fixed inset-0 z-0">
         <Brain3D 
+          key={`${JSON.stringify(nodeCounts)}-${JSON.stringify(highlightedNodes)}`}
           activeRegion={activeBrainRegion} 
           background={false} 
           location="nav" 
@@ -580,11 +592,11 @@ const AppLayout = () => {
               </div>
               <div className="relative">
                 {/* Widgets overlay */}
-                <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 max-w-6xl mx-auto bg-dark p-4 rounded-lg shadow-md text-black">
+                <div className="relative z-10 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 max-w-6xl mx-auto bg-dark p-6 rounded-lg shadow-md text-black">
                   <div className="col-span-1">
                     <RandomFragment />
                   </div>
-                  <div className="col-span-1">
+                  <div className="col-span-1 flex flex-col gap-4">
                     <RandomMantra />
                     <RandomModel />
                   </div>

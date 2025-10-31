@@ -1,6 +1,7 @@
 "use client";
 
 import dynamic from 'next/dynamic';
+import Brain3DClient from './Brain3DClient';
 
 interface Brain3DProps {
   activeRegion?: string | null;
@@ -14,11 +15,12 @@ interface Brain3DProps {
   mousePos?: { x: number; y: number }; // Added mousePos prop
 }
 
+// Removed dynamic import, using direct import instead
 // @ts-ignore
-const Brain3DClient = dynamic<Brain3DProps>(() => import('./Brain3DClient'), {
-  ssr: false,
-  loading: () => <div style={{ width: "100%", height: "100%", background: "transparent" }} />
-});
+// const Brain3DClient = dynamic<Brain3DProps>(() => import('./Brain3DClient'), {
+//   ssr: false,
+//   loading: () => <div style={{ width: "100%", height: "100%", background: "transparent" }} />
+// });
 
 export default function Brain3D({
   activeRegion,
@@ -27,18 +29,20 @@ export default function Brain3D({
   location = 'title',
   muted = false,
   colorScheme = 'default',
-  nodeCount = {},
-  highlightedNodes = {},
+  nodeCount,
+  highlightedNodes,
   mousePos = { x: 0, y: 0 },
 }: Brain3DProps) {
+  // Debugging logs to validate prop flow
+  console.log('Brain3D received props:', { nodeCount, highlightedNodes });
+
   return (
     <Brain3DClient
+      key={activeRegion || 'default'}
       activeRegion={activeRegion}
       background={background}
       small={small}
       location={location}
-      muted={muted}
-      colorScheme={colorScheme}
       nodeCount={nodeCount}
       highlightedNodes={highlightedNodes}
       mousePos={mousePos}

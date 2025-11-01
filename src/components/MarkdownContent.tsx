@@ -29,16 +29,26 @@ const MarkdownContent: React.FC<MarkdownContentProps> = ({ path }) => {
 
   if (isLoading) {
     return (
-      <div className="animate-pulse">
-        <div className="h-4 bg-gray-700 rounded w-3/4 mb-4"></div>
-        <div className="h-4 bg-gray-700 rounded w-1/2 mb-4"></div>
-        <div className="h-4 bg-gray-700 rounded w-5/6"></div>
+      <div className="animate-pulse min-h-[50vh]">
+        <div className="space-y-6">
+          <div className="h-12 bg-white/5 rounded w-3/4"></div>
+          <div className="h-6 bg-white/5 rounded w-full"></div>
+          <div className="h-6 bg-white/5 rounded w-5/6"></div>
+          <div className="h-6 bg-white/5 rounded w-full"></div>
+          <div className="h-6 bg-white/5 rounded w-4/5"></div>
+          <div className="h-8 bg-white/5 rounded w-1/2"></div>
+          <div className="space-y-3">
+            <div className="h-6 bg-white/5 rounded w-full"></div>
+            <div className="h-6 bg-white/5 rounded w-11/12"></div>
+            <div className="h-6 bg-white/5 rounded w-full"></div>
+          </div>
+        </div>
       </div>
     );
   }
 
   return (
-    <article className="prose prose-invert prose-sm md:prose-base lg:prose-lg">
+    <article className="prose prose-invert prose-sm md:prose-base lg:prose-lg prose-loading">
       <div dangerouslySetInnerHTML={{ __html: content }} />
     </article>
   );

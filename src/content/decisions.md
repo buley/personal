@@ -1,6 +1,6 @@
 # Decisions
 
-> *“If one does not know to which port one is sailing, no wind is favorable.” -- Seneca*
+> *“If one does not know to which port one is sailing, no wind is favorable.” — Seneca*
 
 > *"The quality of your life is determined by the quality of your decisions." -- Tony Robbins*
 

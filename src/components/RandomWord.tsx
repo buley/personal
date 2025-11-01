@@ -34,7 +34,7 @@ const RandomWord: React.FC = () => {
   }, [fetchWord]);
 
   useEffect(() => {
-    const interval = setInterval(fetchWord, 30000); // 30 seconds
+    const interval = setInterval(fetchWord, 20000); // 20 seconds
     return () => clearInterval(interval);
   }, [fetchWord]);
 

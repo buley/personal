@@ -36,13 +36,16 @@ export async function GET(
     const filePath = path.join(cwd(), 'src', 'content', `${contentPath}.md`);
     const markdown = await fs.readFile(filePath, 'utf8');
     
+    // Replace double dashes with emdash HTML entity
+    const processedMarkdown = markdown.replace(/--/g, '&mdash;');
+    
     const options: MarkedOptions = {
       gfm: true,   // GitHub Flavored Markdown
       breaks: true // Convert line breaks to <br>
     };
 
     // Convert markdown to HTML
-    const content = marked(markdown, options);
+    const content = marked(processedMarkdown, options);
 
     return new Response(JSON.stringify({ content }), {
       headers: {

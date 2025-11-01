@@ -36,7 +36,7 @@ const RandomModel: React.FC = () => {
   }, [fetchModel]);
 
   useEffect(() => {
-    const interval = setInterval(fetchModel, 30000); // 30 seconds
+    const interval = setInterval(fetchModel, 300000); // 5 minutes
     return () => clearInterval(interval);
   }, [fetchModel]);
 

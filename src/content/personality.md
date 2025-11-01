@@ -6,7 +6,7 @@
 
 *Understanding personality types isn't about fitting into boxes--it's about recognizing patterns that can be strategically leveraged or consciously redirected.*
 
-I am a **visionary strategist, independent thinker, and high-standard leader.**
+I am a **perspecacious strategist, independent thinker, and high-standard leader.**
 
 I thrive on autonomy, mastery, and innovation, and I reject mediocrity, control, and rigid structures.
 

@@ -42,7 +42,7 @@ const RandomFragment: React.FC = () => {
   }, [fetchFragment]);
 
   useEffect(() => {
-    const interval = setInterval(fetchFragment, 30000); // 30 seconds
+    const interval = setInterval(fetchFragment, 300000); // 5 minutes
     return () => clearInterval(interval);
   }, [fetchFragment]);
 

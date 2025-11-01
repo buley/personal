@@ -31,17 +31,19 @@ function BrainParticles({
   const assemblyCompleteRef = useRef(false);
   const assemblyProgressRef = useRef(0);
 
-  const effectiveNodeCount = nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }; // Fallback to 64 nodes if no regions
+  const effectiveNodeCount = useMemo(() => 
+    nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }, 
+    [nodeCount]
+  ); // Fallback to 64 nodes if no regions
 
   // Create random highlights for homepage when no active region
   const randomHighlights = useMemo(() => {
-    if (location === 'title' && !activeRegion) {
+    if (!activeRegion) {
       const highlights: { [region: string]: string[] } = {};
       
       // Highlight 2-3 items from each region for homepage activity
       Object.entries(effectiveNodeCount).forEach(([region, count]) => {
         const numToHighlight = Math.min(3, Math.max(1, Math.floor((count as number) * 0.4))); // 40% of each region, min 1, max 3
-        const indices: string[] = [];
         
         // Select random indices from this region
         const availableIndices = Array.from({ length: count as number }, (_, i) => i);
@@ -54,11 +56,13 @@ function BrainParticles({
       return highlights;
     }
     return {};
-  }, [location, activeRegion, effectiveNodeCount]);
+  }, [activeRegion, effectiveNodeCount]);
 
   // Combine manual highlights with random highlights
   const effectiveHighlightedNodes = useMemo(() => {
-    if (Object.keys(highlightedNodes || {}).length > 0) {
+    // Check if highlightedNodes has any actual highlights (non-empty arrays)
+    const hasManualHighlights = highlightedNodes && Object.values(highlightedNodes).some(arr => arr.length > 0);
+    if (hasManualHighlights) {
       return highlightedNodes;
     }
     return randomHighlights;
@@ -128,7 +132,7 @@ function BrainParticles({
     });
 
     return { positions, colors, emissiveColors, regions };
-  }, [effectiveNodeCount, highlightedNodes, location]);
+  }, [effectiveNodeCount, effectiveHighlightedNodes]);
 
   // Set up instanced mesh
   React.useEffect(() => {

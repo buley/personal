@@ -1,15 +1,10 @@
 // app/layout.tsx (or wherever RootLayout is defined)
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import localFont from 'next/font/local';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -17,14 +12,22 @@ const geistMono = Geist_Mono({
 });
 
 // Local fonts
+const archivo = localFont({
+  src: '../../public/fonts/Archivo/static/Archivo-Regular.ttf',
+  variable: '--font-archivo',
+  display: 'swap',
+});
+
 const hedvig = localFont({
   src: '../../public/fonts/Hedvig_Letters_Serif/static/HedvigLettersSerif_18pt-Regular.ttf',
   variable: '--font-hedvig',
+  display: 'swap',
 });
 
 const nothingYouCouldDo = localFont({
   src: '../../public/fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf',
   variable: '--font-nothing',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -39,10 +42,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* Include Merriweather variable */}
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Reenie_Beanie/ReenieBeanie-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`
-          ${geistSans.variable} 
+          ${archivo.variable} 
           ${geistMono.variable} 
           ${hedvig.variable}
           ${nothingYouCouldDo.variable}

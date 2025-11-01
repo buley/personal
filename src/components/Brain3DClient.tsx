@@ -33,6 +33,37 @@ function BrainParticles({
 
   const effectiveNodeCount = nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }; // Fallback to 64 nodes if no regions
 
+  // Create random highlights for homepage when no active region
+  const randomHighlights = useMemo(() => {
+    if (location === 'title' && !activeRegion) {
+      const highlights: { [region: string]: string[] } = {};
+      
+      // Highlight 2-3 items from each region for homepage activity
+      Object.entries(effectiveNodeCount).forEach(([region, count]) => {
+        const numToHighlight = Math.min(3, Math.max(1, Math.floor((count as number) * 0.4))); // 40% of each region, min 1, max 3
+        const indices: string[] = [];
+        
+        // Select random indices from this region
+        const availableIndices = Array.from({ length: count as number }, (_, i) => i);
+        const shuffled = [...availableIndices].sort(() => Math.random() - 0.5);
+        const selected = shuffled.slice(0, numToHighlight);
+        
+        highlights[region] = selected.map(i => i.toString());
+      });
+      
+      return highlights;
+    }
+    return {};
+  }, [location, activeRegion, effectiveNodeCount]);
+
+  // Combine manual highlights with random highlights
+  const effectiveHighlightedNodes = useMemo(() => {
+    if (Object.keys(highlightedNodes || {}).length > 0) {
+      return highlightedNodes;
+    }
+    return randomHighlights;
+  }, [highlightedNodes, randomHighlights]);
+
   // Create particle positions that form a brain-like shape with regions
   const particleData = useMemo(() => {
     const positions: THREE.Vector3[] = [];
@@ -53,8 +84,8 @@ function BrainParticles({
         positions.push(new THREE.Vector3(x, y, z));
         regions.push(region);
 
-        const isHighlighted = highlightedNodes?.[region]?.includes(`${i}`);
-        const isRandomlyLit = location === 'title' && Math.random() < 0.15; // 15% chance for homepage ambient lighting
+        const isHighlighted = effectiveHighlightedNodes?.[region]?.includes(`${i}`);
+        const isRandomlyLit = false; // Disable random ambient lighting since we now have structured highlights
         
         // Region-specific highlight colors
         const getHighlightColor = (region: string) => {
@@ -323,7 +354,7 @@ function BrainParticles({
         let regionStartIndex = 0;
         
         Object.entries(effectiveNodeCount).forEach(([region, count]) => {
-          const highlightedIndices = highlightedNodes?.[region] || [];
+          const highlightedIndices = effectiveHighlightedNodes?.[region] || [];
           highlightedIndices.forEach((indexStr) => {
             const localIndex = parseInt(indexStr);
             const globalIndex = regionStartIndex + localIndex;

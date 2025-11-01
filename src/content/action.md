@@ -62,12 +62,9 @@ If it doesn't meet my standard, **I cut it out--no hesitation.**
 4. Ensure work, relationships, and time align with long-term goals
 5. Move forward with absolute clarity and no second-guessing
 
-## Live It
+## Talk Comes Cheap
 
-Everything we've broken down is **now my foundation**--not just something I know, but something I embody. **Every decision, every habit, every relationship must reflect this.**
+To be **founded in action**--not just something to know, but to embody--**every decision, every habit, every relationship must reflect this.**
 
-I don't look back.  
-I don't hesitate.  
-I don't compromise.  
+Don't look back. Don't hesitate. Don't compromise. Move.
 
-Now, I move.

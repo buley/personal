@@ -36,7 +36,7 @@ const AppLayout = () => {
     meta: true,
   });
   const [activeBrainRegion, setActiveBrainRegion] = useState<string | null>(null);
-  const hoverTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [activeItemPath, setActiveItemPath] = useState<string | null>(null);
 
   const primaryNav = [
     { title: "Home", path: null },
@@ -158,6 +158,16 @@ const AppLayout = () => {
       );
     }
     setExpandedSections(newExpanded);
+
+    // Set active brain region for selected content
+    const group = getGroupFromPath(selectedContent);
+    if (group) {
+      setActiveBrainRegion(group);
+      setActiveItemPath(selectedContent);
+    } else {
+      setActiveBrainRegion(null);
+      setActiveItemPath(null);
+    }
   }, [selectedContent, secondaryNav]);
 
   const handleNavClick = (path: string | null) => {
@@ -170,32 +180,16 @@ const AppLayout = () => {
   };
 
   const handleNavHover = (group: string | null, itemPath?: string) => {
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current);
-    }
-
-    // Debugging log to verify group and itemPath
-    console.log('handleNavHover called with:', { group, itemPath });
-
-    // If hovering over a specific item, use its mapped region, otherwise use the group
-    const regionToActivate = itemPath ? subnavItemMapping[itemPath] || group : group;
-
-    hoverTimeoutRef.current = setTimeout(() => {
-      setActiveBrainRegion(regionToActivate);
-    }, 150); // 150ms delay to prevent rapid changes
+    setActiveBrainRegion(group);
+    setActiveItemPath(itemPath || null);
   };
 
-  const handleNavLeave = () => {
-    if (hoverTimeoutRef.current) {
-      clearTimeout(hoverTimeoutRef.current);
+  const handleNavLeave = (event?: React.MouseEvent) => {
+    if (event?.relatedTarget instanceof Element && event.relatedTarget.closest('[data-nav-item]')) {
+      return;
     }
-
-    // Debugging log to verify leave event
-    console.log('handleNavLeave called');
-
-    hoverTimeoutRef.current = setTimeout(() => {
-      setActiveBrainRegion(null);
-    }, 150);
+    setActiveBrainRegion(null);
+    setActiveItemPath(null);
   };
 
   const toggleSection = (section: string) => {
@@ -234,11 +228,12 @@ const AppLayout = () => {
       onMouseLeave={handleNavLeave}
     >
       <button
+        data-nav-item
         onClick={() => toggleSection(group)}
         className="w-full flex items-center justify-between group py-1"
       >
         <div className="flex items-center gap-2">
-          <div className={`w-1 h-3 bg-white/35 transition-all duration-300 ${expandedSections[group] ? 'h-4' : ''}`}></div>
+          <div className={`w-2 h-2 bg-white/35 rounded-full transition-all duration-300`}></div>
           <h3
             className={`font-sans font-bold uppercase tracking-wide text-white/65 group-hover:text-white/85 transition-colors ${
               isMobile ? "text-base" : "text-xs"
@@ -255,22 +250,20 @@ const AppLayout = () => {
         </div>
       </button>
       {expandedSections[group] && (
-        <div className={`${isMobile ? "space-y-2 ml-5" : "space-y-1 ml-3"} border-l border-white/8 pl-3`}>
+        <div className={`${isMobile ? "space-y-2 ml-5" : "space-y-1 ml-3"} pl-3`}>
           {items.map((item) => (
             <li key={item.path} className="list-none">
               <button
+                data-nav-item
                 onClick={() => handleNavClick(item.path)}
                 onMouseEnter={() => handleNavHover(group, item.path)}
                 onMouseLeave={handleNavLeave}
-                className={`w-full text-left py-1 px-2 border-l-2 transition-all duration-200 ${
+                className={`w-full text-left py-1 px-2 transition-all duration-200 relative ${
                   selectedContent === item.path
-                    ? "text-white border-white/70 bg-white/3"
-                    : "text-white/55 border-transparent hover:text-white/80 hover:border-white/25"
+                    ? "text-white bg-white/5 border-l-1 border-white/60 pl-4"
+                    : "text-white/55 hover:text-white/80 hover:bg-white/2 hover:border-l-2 hover:border-white/30 hover:pl-3"
                 } ${isMobile ? "text-sm" : "text-xs"} font-medium tracking-wide`}
               >
-                {selectedContent === item.path && (
-                  <span className="inline-block w-1 h-1 bg-white/80 rounded-full mr-2"></span>
-                )}
                 {item.title}
               </button>
             </li>
@@ -280,9 +273,26 @@ const AppLayout = () => {
     </div>
   );
 
-  useEffect(() => {
-    // Removed unused shuffle logic
-  }, []);
+  const mapGroupToRegion = (group: string) => {
+    switch (group) {
+      case 'identity': return 'frontal';
+      case 'operation': return 'prefrontal';
+      case 'growth': return 'limbic';
+      case 'impact': return 'parietal';
+      case 'meta': return 'temporal';
+      default: return 'default';
+    }
+  };
+
+  const getGroupFromPath = (path: string | null) => {
+    if (!path) return null;
+    for (const group in secondaryNav) {
+      if (secondaryNav[group].some(item => item.path === path)) {
+        return group;
+      }
+    }
+    return null;
+  };
 
   const nodeCounts = useMemo(() => {
     const counts: { [region: string]: number } = {
@@ -305,25 +315,23 @@ const AppLayout = () => {
     };
 
     if (activeBrainRegion) {
-      Object.entries(subnavItemMapping).forEach(([path, region]) => {
-        if (region === activeBrainRegion) {
-          highlights[region].push(path);
+      const region = mapGroupToRegion(activeBrainRegion);
+      if (activeItemPath) {
+        // Highlight specific item
+        const items = secondaryNav[activeBrainRegion];
+        const index = items.findIndex(item => item.path === activeItemPath);
+        if (index !== -1) {
+          highlights[region] = [index.toString()];
         }
-      });
+      } else {
+        // Highlight all in the region
+        const count = nodeCounts[region];
+        highlights[region] = Array.from({ length: count }, (_, i) => i.toString());
+      }
     }
 
     return highlights;
-  }, [activeBrainRegion, subnavItemMapping]);
-
-  useEffect(() => {
-    console.log('nodeCounts:', nodeCounts);
-    console.log('highlightedNodes:', highlightedNodes);
-    console.log('activeBrainRegion:', activeBrainRegion);
-  }, [nodeCounts, highlightedNodes, activeBrainRegion]);
-
-  useEffect(() => {
-    console.log('Rendering Brain3D with props:', { nodeCounts, highlightedNodes });
-  }, [nodeCounts, highlightedNodes]);
+  }, [activeBrainRegion, activeItemPath, nodeCounts, secondaryNav]);
 
   return (
     <div className="relative min-h-screen bg-black text-white antialiased">
@@ -347,9 +355,8 @@ const AppLayout = () => {
       {/* Background Brain3D */}
       <div className="fixed inset-0 z-0">
         <Brain3D 
-          key={`${JSON.stringify(nodeCounts)}-${JSON.stringify(highlightedNodes)}`}
           activeRegion={activeBrainRegion} 
-          background={false} 
+          background={true} 
           location="nav" 
           muted={true} 
           colorScheme="grayscale" 
@@ -369,12 +376,6 @@ const AppLayout = () => {
       {/* Desktop Navigation */}
       <nav className="hidden md:flex fixed left-8 top-16 z-40">
         <div className="max-w-[260px] w-full relative">
-          {/* Brain Background if on Home Page */}
-          {selectedContent && selectedContent === null && (
-            <div className="absolute inset-0 z-0">
-              <Brain3D activeRegion={activeBrainRegion} background={true} location="nav" />
-            </div>
-          )}
           {/* Content */}
           <div className="flex flex-col h-screen overflow-y-auto custom-scrollbar relative z-10">
             <div className="max-w-[260px] w-full space-y-3 pr-4 pl-3 py-4 border-l border-white/15 bg-black/20 backdrop-blur-sm">
@@ -458,7 +459,7 @@ const AppLayout = () => {
         {/* Mobile Brain Background */}
         {mobileMenuOpen && (
           <div className="absolute inset-0 z-0">
-            <Brain3D activeRegion={activeBrainRegion} background={true} location="mobile" />
+            <Brain3D activeRegion={activeBrainRegion} background={true} location="mobile" nodeCount={nodeCounts} highlightedNodes={highlightedNodes} />
           </div>
         )}
         <div className="h-full overflow-auto p-8 pt-16 custom-scrollbar relative z-10">

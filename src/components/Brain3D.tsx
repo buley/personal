@@ -33,12 +33,10 @@ export default function Brain3D({
   highlightedNodes,
   mousePos = { x: 0, y: 0 },
 }: Brain3DProps) {
-  // Debugging logs to validate prop flow
-  console.log('Brain3D received props:', { nodeCount, highlightedNodes });
+  // Removed debugging logs
 
   return (
     <Brain3DClient
-      key={activeRegion || 'default'}
       activeRegion={activeRegion}
       background={background}
       small={small}

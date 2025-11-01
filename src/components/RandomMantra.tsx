@@ -60,8 +60,8 @@ const RandomMantra: React.FC = () => {
   const renderedMantra = marked(mantra.mantra, { breaks: true });
 
   return (
-    <div className="relative bg-gradient-to-br from-purple-500/5 to-transparent border border-purple-400/20 rounded-lg p-6 backdrop-blur-sm">
-      <div className="absolute top-0 left-0 w-1 h-full bg-purple-400/40 rounded-l-lg"></div>
+    <div className="relative bg-gradient-to-br from-green-500/5 to-transparent border border-green-400/20 rounded-lg p-6 backdrop-blur-sm">
+      <div className="absolute top-0 left-0 w-1 h-full bg-green-400/40 rounded-l-lg"></div>
       <div className="relative z-10">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">

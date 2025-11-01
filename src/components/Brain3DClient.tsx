@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
@@ -33,20 +31,16 @@ function BrainParticles({
   const assemblyCompleteRef = useRef(false);
   const assemblyProgressRef = useRef(0);
 
-  console.log('nodeCount:', nodeCount); // Debugging log
-  console.log('highlightedNodes:', highlightedNodes); // Debugging log
+  const effectiveNodeCount = nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }; // Fallback to 64 nodes if no regions
 
   // Create particle positions that form a brain-like shape with regions
   const particleData = useMemo(() => {
-    console.log('Generating particle data with nodeCount:', nodeCount);
     const positions: THREE.Vector3[] = [];
     const colors: THREE.Color[] = [];
+    const emissiveColors: THREE.Color[] = [];
     const regions: string[] = [];
 
-    const effectiveNodeCount = nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }; // Fallback to 64 nodes if no regions
-
     Object.entries(effectiveNodeCount).forEach(([region, count]) => {
-      console.log(`Region: ${region}, Count: ${count}`);
       for (let i = 0; i < count; i++) {
         const theta = Math.random() * Math.PI * 2;
         const phi = Math.random() * Math.PI;
@@ -59,21 +53,65 @@ function BrainParticles({
         positions.push(new THREE.Vector3(x, y, z));
         regions.push(region);
 
-        const color = highlightedNodes?.[region]?.includes(`${i}`)
-          ? new THREE.Color(0xffff00) // Highlighted color
-          : new THREE.Color(0x74b9ff); // Default color
+        const isHighlighted = highlightedNodes?.[region]?.includes(`${i}`);
+        const isRandomlyLit = location === 'title' && Math.random() < 0.15; // 15% chance for homepage ambient lighting
+        
+        // Region-specific highlight colors
+        const getHighlightColor = (region: string) => {
+          switch (region) {
+            case 'frontal': return 0x00ffff; // Cyan for identity/frontal
+            case 'prefrontal': return 0xff6b6b; // Coral for operation/prefrontal
+            case 'limbic': return 0x4ecdc4; // Teal for growth/limbic
+            case 'parietal': return 0x45b7d1; // Sky blue for impact/parietal
+            case 'temporal': return 0x96ceb4; // Sage green for meta/temporal
+            default: return 0x00ffff; // Default cyan
+          }
+        };
+
+        const getEmissiveColor = (region: string) => {
+          switch (region) {
+            case 'frontal': return 0x004444; // Dark cyan
+            case 'prefrontal': return 0x442222; // Dark coral
+            case 'limbic': return 0x1a3a35; // Dark teal
+            case 'parietal': return 0x1a3440; // Dark sky blue
+            case 'temporal': return 0x2a3a30; // Dark sage
+            default: return 0x004444; // Default dark cyan
+          }
+        };
+        
+        const color = isHighlighted
+          ? new THREE.Color(getHighlightColor(region))
+          : isRandomlyLit
+          ? new THREE.Color(0x1a1a2e) // Dim dark blue-gray for ambient structure visibility
+          : new THREE.Color(0x000000); // Default color - black for stealth mode
+
+        const emissiveColor = isHighlighted
+          ? new THREE.Color(getEmissiveColor(region))
+          : isRandomlyLit
+          ? new THREE.Color(0x0a0a15) // Very subtle ambient glow
+          : new THREE.Color(0x000000); // No glow for default
 
         colors.push(color);
+        emissiveColors.push(emissiveColor);
       }
     });
 
-    console.log('Generated positions:', positions.length);
-    return { positions, colors, regions };
-  }, [nodeCount, highlightedNodes]);
+    return { positions, colors, emissiveColors, regions };
+  }, [effectiveNodeCount, highlightedNodes, location]);
 
   // Set up instanced mesh
   React.useEffect(() => {
     if (particlesRef.current && particleData.positions.length > 0) {
+      // Create emissive color attribute for glow effect
+      const emissiveColorArray = new Float32Array(particleData.positions.length * 3);
+      particleData.emissiveColors.forEach((color, i) => {
+        emissiveColorArray[i * 3] = color.r;
+        emissiveColorArray[i * 3 + 1] = color.g;
+        emissiveColorArray[i * 3 + 2] = color.b;
+      });
+      
+      particlesRef.current.geometry.setAttribute('emissiveColor', new THREE.InstancedBufferAttribute(emissiveColorArray, 3));
+
       const dummy = new THREE.Object3D();
 
       particleData.positions.forEach((position, i) => {
@@ -89,6 +127,7 @@ function BrainParticles({
       if (particlesRef.current.instanceColor) {
         particlesRef.current.instanceColor.needsUpdate = true;
       }
+      particlesRef.current.geometry.attributes.emissiveColor.needsUpdate = true;
     }
   }, [particleData, background, small]);
 
@@ -102,7 +141,14 @@ function BrainParticles({
       assemblyCompleteRef.current = false;
       assemblyProgressRef.current = 0;
     }
-  }, [location]);
+    
+    // If there are highlighted nodes, complete assembly immediately for direct article loads
+    const hasHighlights = highlightedNodes && Object.values(highlightedNodes).some(arr => arr.length > 0);
+    if (hasHighlights && !assemblyCompleteRef.current) {
+      assemblyCompleteRef.current = true;
+      assemblyProgressRef.current = 1;
+    }
+  }, [location, highlightedNodes]);
 
   // Save assembly state to global store when it changes
   React.useEffect(() => {
@@ -209,27 +255,27 @@ function BrainParticles({
           switch (activeRegion) {
             case 'identity':
               if (region === 'frontal') {
-                activationMultiplier = 1.3; // Reduced scale difference
+                activationMultiplier = 1.5; // Increased from 1.3
               }
               break;
             case 'operation':
               if (region === 'prefrontal') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
             case 'growth':
               if (region === 'limbic') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
             case 'impact':
               if (region === 'parietal') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
             case 'meta':
               if (region === 'temporal') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
           }
@@ -267,9 +313,52 @@ function BrainParticles({
   return (
     <group ref={groupRef}>
       <instancedMesh ref={particlesRef} args={[undefined, undefined, particleData.positions.length]}>
-        <sphereGeometry args={[1, 6, 6]} />
-        <meshBasicMaterial />
+        <cylinderGeometry args={[0.5, 0.5, 0.1, 6]} />
+        <meshStandardMaterial />
       </instancedMesh>
+      
+      {/* Add point lights for highlighted particles to create glow effect */}
+      {(() => {
+        const lights: React.ReactElement[] = [];
+        let regionStartIndex = 0;
+        
+        Object.entries(effectiveNodeCount).forEach(([region, count]) => {
+          const highlightedIndices = highlightedNodes?.[region] || [];
+          highlightedIndices.forEach((indexStr) => {
+            const localIndex = parseInt(indexStr);
+            const globalIndex = regionStartIndex + localIndex;
+            if (globalIndex < particleData.positions.length) {
+              const position = particleData.positions[globalIndex];
+              
+              // Get region-specific light color
+              const getLightColor = (region: string) => {
+                switch (region) {
+                  case 'frontal': return 0x00ffff; // Cyan
+                  case 'prefrontal': return 0xff6b6b; // Coral
+                  case 'limbic': return 0x4ecdc4; // Teal
+                  case 'parietal': return 0x45b7d1; // Sky blue
+                  case 'temporal': return 0x96ceb4; // Sage green
+                  default: return 0x00ffff;
+                }
+              };
+              
+              lights.push(
+                <pointLight
+                  key={`${region}-${localIndex}`}
+                  position={[position.x, position.y, position.z]}
+                  color={getLightColor(region)}
+                  intensity={0.8}
+                  distance={2}
+                  decay={2}
+                />
+              );
+            }
+          });
+          regionStartIndex += count as number;
+        });
+        
+        return lights;
+      })()}
     </group>
   );
 }
@@ -308,13 +397,11 @@ export default function Brain3DClient({ activeRegion, background = false, small 
       const target = event.target as HTMLElement;
       const region = target.getAttribute('data-brain-region');
       if (region) {
-        console.log('Mouse entered region:', region); // Debugging log
         setHoveredRegion(region);
       }
     };
 
     const handleMouseLeave = () => {
-      console.log('Mouse left region'); // Debugging log
       setHoveredRegion(null);
     };
 

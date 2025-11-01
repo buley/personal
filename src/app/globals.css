@@ -49,8 +49,8 @@ li {
 }
 
 li::before {
-  content: "■";
-  color: white;
+  content: "◘";
+  color: gray;
   position: absolute;
   left: -1em;
   font-weight: bold;

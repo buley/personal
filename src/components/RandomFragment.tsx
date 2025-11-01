@@ -15,16 +15,23 @@ const RandomFragment: React.FC = () => {
   const [fragment, setFragment] = useState<Fragment | null>(null);
   const [loading, setLoading] = useState(true);
 
-  const fetchFragment = useCallback(async () => {
+  const fetchFragment = useCallback(async (retryCount = 0) => {
     setLoading(true);
     try {
       const response = await fetch('/api/random-fragment');
       if (response.ok) {
         const data: Fragment = await response.json();
         setFragment(data);
+      } else {
+        throw new Error(`HTTP ${response.status}`);
       }
     } catch (error) {
       console.error('Failed to fetch fragment:', error);
+      // Retry up to 3 times with exponential backoff
+      if (retryCount < 3) {
+        setTimeout(() => fetchFragment(retryCount + 1), Math.pow(2, retryCount) * 1000);
+        return;
+      }
     } finally {
       setLoading(false);
     }
@@ -74,7 +81,7 @@ const RandomFragment: React.FC = () => {
           <h3 className="text-lg font-bold text-white/90 font-sans tracking-wide">{fragment.title}</h3>
         </div>
         <button
-          onClick={fetchFragment}
+          onClick={() => fetchFragment()}
           disabled={loading}
           className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group text-white"
           aria-label="Refresh fragment"

@@ -20,11 +20,13 @@ const geistMono = Geist_Mono({
 const hedvig = localFont({
   src: '../../public/fonts/Hedvig_Letters_Serif/static/HedvigLettersSerif_18pt-Regular.ttf',
   variable: '--font-hedvig',
+  display: 'swap',
 });
 
 const nothingYouCouldDo = localFont({
   src: '../../public/fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf',
   variable: '--font-nothing',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -39,7 +41,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* Include Merriweather variable */}
+      <head>
+        <link
+          rel="preload"
+          href="/fonts/Reenie_Beanie/ReenieBeanie-Regular.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body
         className={`
           ${geistSans.variable} 

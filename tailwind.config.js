@@ -39,6 +39,36 @@ module.exports = {
             'blockquote': {
               fontFamily: 'var(--font-nothing)',
             },
+            // Improve overall line-height and spacing
+            'p, li': {
+              lineHeight: '1.7',
+              marginBottom: '0.75rem',
+            },
+            'h1, h2, h3, h4': {
+              lineHeight: '1.2',
+              marginBottom: '1rem',
+            },
+            'h1': {
+              marginBottom: '1.5rem',
+            },
+            'h2': {
+              marginBottom: '1.25rem',
+            },
+            // Better blockquote styling
+            'blockquote': {
+              borderLeftWidth: '4px',
+              borderLeftColor: 'rgba(255, 255, 255, 0.4)',
+              paddingLeft: '1.5rem',
+              fontStyle: 'italic',
+              margin: '2rem 0',
+            },
+            // Improve list styling
+            'ul, ol': {
+              paddingLeft: '1.5rem',
+            },
+            'li': {
+              marginBottom: '0.5rem',
+            },
           },
         },
       },

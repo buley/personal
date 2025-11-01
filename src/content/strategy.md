@@ -170,8 +170,4 @@ The AuADHD mind is a **dual-processing system** -- analytic and impulsive, struc
 * **Emotional Alchemy** → Transforming tension into precision and creation.
 * **Metacognitive Command** → Continuous self-audit and adaptive strategy.
 
-**Final Directive**
-
 > *“We are what we repeatedly do. Excellence, then, is not an act, but a habit.”* -- **Aristotle**
-
-Would you like me to continue and add a **“Failure Modes and Countermeasures”** section next -- describing overload, burnout, and system reset as tactical phases (with matching quotes from Stoics, neuroscientists, and strategists)? It would complete this manual beautifully.

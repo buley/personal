@@ -821,12 +821,14 @@ const AppLayout = () => {
             </div>
           </main>
         ) : (
-          <main className="relative z-30 min-h-screen px-6 py-8 md:py-16 flex items-start justify-center pt-24">
+          <main className={`relative z-30 min-h-screen px-6 py-8 md:py-16 flex items-start justify-center pt-24 transition-all duration-300 ${
+            !navVisible ? 'md:ml-[280px]' : ''
+          }`}>
             <div className="w-full max-w-7xl">
               <div className="text-center mb-16 md:mb-12 space-y-3">
                 <div className="flex items-center justify-center gap-6 mb-2">
                   <div className="w-16 h-16 md:w-24 md:h-24 p-2">
-                    <img src="/icon.png" alt="Header Icon" className="w-full h-full object-cover rounded-full" />
+                    <a href="/" dangerouslySetInnerHTML={{ __html: '<img src="/icon.png" alt="Header Icon" class="w-full h-full object-cover rounded-full" />' }} />
                   </div>
                   <div>
                     <h2 className="text-4xl md:text-6xl font-black tracking-tight text-left">

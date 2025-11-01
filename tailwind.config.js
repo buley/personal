@@ -23,7 +23,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "sans-serif"],
+        sans: ["var(--font-archivo)", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
         serif: ["var(--font-hedvig)", "serif"], // <-- Use the custom var
       },
@@ -35,9 +35,6 @@ module.exports = {
             },
             'blockquote p:first-of-type::after': {
               content: 'none',
-            },
-            'blockquote': {
-              fontFamily: 'var(--font-nothing)',
             },
             // Improve overall line-height and spacing
             'p, li': {

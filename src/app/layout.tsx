@@ -1,15 +1,10 @@
 // app/layout.tsx (or wherever RootLayout is defined)
 
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist_Mono } from "next/font/google";
 import localFont from 'next/font/local';
 import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -17,6 +12,12 @@ const geistMono = Geist_Mono({
 });
 
 // Local fonts
+const archivo = localFont({
+  src: '../../public/fonts/Archivo/static/Archivo-Regular.ttf',
+  variable: '--font-archivo',
+  display: 'swap',
+});
+
 const hedvig = localFont({
   src: '../../public/fonts/Hedvig_Letters_Serif/static/HedvigLettersSerif_18pt-Regular.ttf',
   variable: '--font-hedvig',
@@ -52,7 +53,7 @@ export default function RootLayout({
       </head>
       <body
         className={`
-          ${geistSans.variable} 
+          ${archivo.variable} 
           ${geistMono.variable} 
           ${hedvig.variable}
           ${nothingYouCouldDo.variable}

@@ -5,7 +5,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --font-geist-sans: 'Archivo', sans-serif;
+  --font-archivo: 'Archivo', sans-serif;
   --muted: #666666;
   --muted-foreground: #888888;
   --border: #e5e5e5;
@@ -26,7 +26,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'Archivo', sans-serif;
+  font-family: var(--font-archivo);
   font-weight: 400;
   font-variation-settings: 'normal';
   font-display: swap;

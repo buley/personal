@@ -808,7 +808,7 @@ const AppLayout = () => {
                   prose-a:text-white prose-a:underline hover:prose-a:text-white/80
                   prose-blockquote:border-l-4 prose-blockquote:border-white/40 
                   prose-blockquote:pl-6 prose-blockquote:text-white/80
-                  prose-blockquote:text-xl prose-blockquote:font-mono prose-blockquote:leading-relaxed prose-blockquote:tracking-wide
+                  prose-blockquote:text-3xl prose-blockquote:leading-relaxed prose-blockquote:tracking-wide
                   prose-hr:border-white/20 prose-hr:my-12
                   prose-code:font-mono
                   max-w-[42em]

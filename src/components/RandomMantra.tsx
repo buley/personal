@@ -40,7 +40,7 @@ const RandomMantra: React.FC = () => {
 
   if (loading && !mantra) {
     return (
-      <div className="mt-8 max-w-md space-y-3">
+      <div className="mt-8 max-w-md space-y-3 mb-4">
         <div className="flex items-center justify-between mb-2">
           <div className="h-5 bg-white/5 w-3/4 rounded" />
           <div className="w-4 h-4 bg-white/5 rounded" />
@@ -60,8 +60,8 @@ const RandomMantra: React.FC = () => {
   const renderedMantra = marked(mantra.mantra, { breaks: true });
 
   return (
-    <div className="relative bg-gradient-to-br from-purple-500/5 to-transparent border border-purple-400/20 rounded-lg p-6 backdrop-blur-sm">
-      <div className="absolute top-0 left-0 w-1 h-full bg-purple-400/40 rounded-l-lg"></div>
+    <div className="relative bg-gradient-to-br from-green-500/5 to-transparent border border-green-400/20 rounded-lg p-6 backdrop-blur-sm">
+      <div className="absolute top-0 left-0 w-1 h-full bg-green-400/40 rounded-l-lg"></div>
       <div className="relative z-10">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-3">
@@ -71,7 +71,7 @@ const RandomMantra: React.FC = () => {
           <button
             onClick={fetchMantra}
             disabled={loading}
-            className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group"
+            className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group text-white"
             aria-label="Refresh mantra"
           >
             <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />

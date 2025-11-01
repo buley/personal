@@ -25,7 +25,7 @@ export async function GET() {
       const line = lines[i].trim();
 
       // Check if this is a question (starts with ** and ends with **?)
-      if (line.startsWith('**') && line.endsWith('**?') && line.includes('?')) {
+      if (line.startsWith('**') && line.endsWith('**') && line.includes('?')) {
         // Save previous Q&A pair if exists
         if (currentQuestion && currentAnswer) {
           faqItems.push({
@@ -35,7 +35,7 @@ export async function GET() {
         }
 
         // Start new Q&A pair
-        currentQuestion = line.slice(2, -3); // Remove ** and ? at end
+        currentQuestion = line.slice(2, -2); // Remove ** from both ends
         currentAnswer = '';
       }
       // Check if this is an answer line (not a header, not empty, not a question)

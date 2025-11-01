@@ -25,7 +25,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-geist-sans)", "sans-serif"],
         mono: ["var(--font-geist-mono)", "monospace"],
-        serif: ["var(--font-merriweather)", "serif"], // <-- Use the custom var
+        serif: ["var(--font-hedvig)", "serif"], // <-- Use the custom var
       },
       typography: {
         DEFAULT: {
@@ -35,6 +35,9 @@ module.exports = {
             },
             'blockquote p:first-of-type::after': {
               content: 'none',
+            },
+            'blockquote': {
+              fontFamily: 'var(--font-nothing)',
             },
           },
         },

@@ -69,7 +69,7 @@ const RandomFAQ: React.FC = () => {
           <button
             onClick={fetchFAQ}
             disabled={loading}
-            className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group"
+            className="w-8 h-8 flex items-center justify-center border border-white/25 hover:border-white/50 transition-colors disabled:opacity-50 group text-white"
             aria-label="Refresh FAQ"
           >
             <RefreshCw size={14} className={`transition-transform group-hover:rotate-180 ${loading ? 'animate-spin' : ''}`} />
@@ -78,7 +78,7 @@ const RandomFAQ: React.FC = () => {
         <div className="ml-4 pb-6">
           <div className="mb-3">
             <h4 className="text-white/90 font-semibold text-base mb-2 leading-tight">
-              {faq.question}?
+              {faq.question}
             </h4>
           </div>
           <div className="text-white/80 font-serif text-sm leading-relaxed font-medium border-l-2 border-purple-400/40 pl-4 mb-4">

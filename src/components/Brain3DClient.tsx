@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
@@ -8,89 +6,143 @@ import * as THREE from 'three';
 // Global storage for assembly progress to persist across component mounts
 const assemblyProgressStore = new Map<string, { complete: boolean; progress: number }>();
 
+interface Brain3DClientProps {
+  activeRegion?: string | null;
+  background?: boolean;
+  small?: boolean;
+  location?: 'title' | 'nav' | 'mobile';
+  nodeCount?: { [region: string]: number };
+  highlightedNodes?: { [region: string]: string[] };
+  mousePos: { x: number; y: number };
+}
+
 // Create a simple particle system that forms a brain shape
-function BrainParticles({ activeRegion, background = false, small = false, mousePos, location = 'title' }: { activeRegion?: string | null; background?: boolean; small?: boolean; mousePos?: { x: number; y: number }; location?: 'title' | 'nav' }) {
+function BrainParticles({
+  activeRegion,
+  background = false,
+  small = false,
+  mousePos,
+  location = 'title',
+  nodeCount,
+  highlightedNodes,
+}: Brain3DClientProps) {
   const groupRef = useRef<THREE.Group>(null);
   const particlesRef = useRef<THREE.InstancedMesh>(null);
   const assemblyCompleteRef = useRef(false);
   const assemblyProgressRef = useRef(0);
 
+  const effectiveNodeCount = nodeCount && Object.keys(nodeCount).length > 0 ? nodeCount : { default: 64 }; // Fallback to 64 nodes if no regions
+
+  // Create random highlights for homepage when no active region
+  const randomHighlights = useMemo(() => {
+    if (location === 'title' && !activeRegion) {
+      const highlights: { [region: string]: string[] } = {};
+      
+      // Highlight 2-3 items from each region for homepage activity
+      Object.entries(effectiveNodeCount).forEach(([region, count]) => {
+        const numToHighlight = Math.min(3, Math.max(1, Math.floor((count as number) * 0.4))); // 40% of each region, min 1, max 3
+        const indices: string[] = [];
+        
+        // Select random indices from this region
+        const availableIndices = Array.from({ length: count as number }, (_, i) => i);
+        const shuffled = [...availableIndices].sort(() => Math.random() - 0.5);
+        const selected = shuffled.slice(0, numToHighlight);
+        
+        highlights[region] = selected.map(i => i.toString());
+      });
+      
+      return highlights;
+    }
+    return {};
+  }, [location, activeRegion, effectiveNodeCount]);
+
+  // Combine manual highlights with random highlights
+  const effectiveHighlightedNodes = useMemo(() => {
+    if (Object.keys(highlightedNodes || {}).length > 0) {
+      return highlightedNodes;
+    }
+    return randomHighlights;
+  }, [highlightedNodes, randomHighlights]);
+
   // Create particle positions that form a brain-like shape with regions
   const particleData = useMemo(() => {
     const positions: THREE.Vector3[] = [];
     const colors: THREE.Color[] = [];
+    const emissiveColors: THREE.Color[] = [];
     const regions: string[] = [];
 
-    // Adjust particle count based on size and location
-    const particleCount = small ? (location === 'nav' ? 50 : 100) : background ? 800 : 500; // More particles for background // Even smaller for nav
+    Object.entries(effectiveNodeCount).forEach(([region, count]) => {
+      for (let i = 0; i < count; i++) {
+        const theta = Math.random() * Math.PI * 2;
+        const phi = Math.random() * Math.PI;
+        const radius = 0.8 + Math.random() * 0.4;
 
-    // Create a brain-like distribution of particles with regions
-    for (let i = 0; i < particleCount; i++) {
-      // Create a rough brain shape using mathematical functions
-      const theta = Math.random() * Math.PI * 2;
-      const phi = Math.random() * Math.PI;
-      const radius = background ? 1.2 + Math.random() * 0.8 : (location === 'nav' ? 0.4 + Math.random() * 0.3 : 0.8 + Math.random() * 0.4); // Larger spread for background
+        const x = radius * Math.sin(phi) * Math.cos(theta);
+        const y = radius * Math.sin(phi) * Math.sin(theta);
+        const z = radius * Math.cos(phi);
 
-      // Brain shape modulation
-      const brainShape = background ? 1 + 0.2 * Math.sin(theta * 2) * Math.cos(phi * 1.5) : 1 + 0.3 * Math.sin(theta * 3) * Math.cos(phi * 2);
-
-      const x = radius * brainShape * Math.sin(phi) * Math.cos(theta);
-      const y = radius * brainShape * Math.sin(phi) * Math.sin(theta) * (background ? 1.2 : 0.8); // More vertical spread for background
-      const z = radius * brainShape * Math.cos(phi) + Math.random() * (background ? 0.4 : 0.2);
-
-      // Only keep particles within brain bounds
-      if (Math.abs(x) < (background ? 2.5 : (location === 'nav' ? 0.8 : 1.2)) && 
-          Math.abs(y) < (background ? 2.0 : (location === 'nav' ? 0.6 : 1)) && 
-          Math.abs(z) < (background ? 2.0 : (location === 'nav' ? 0.8 : 1.2))) {
         positions.push(new THREE.Vector3(x, y, z));
-
-        // Determine brain region based on position
-        let region = 'default';
-        if (z > 0.3 && Math.abs(y) < 0.3) {
-          region = 'frontal'; // Frontal lobes - identity, personality
-        } else if (z > 0 && z < 0.3 && Math.abs(x) < 0.5) {
-          region = 'prefrontal'; // Prefrontal cortex - operation, decisions
-        } else if (Math.abs(y) > 0.3 && z < 0) {
-          region = 'limbic'; // Limbic system - growth, emotions
-        } else if (Math.abs(x) > 0.5 && z < 0.2) {
-          region = 'parietal'; // Parietal lobes - impact, social cognition
-        } else if (Math.abs(x) > 0.3 && Math.abs(y) < 0.4) {
-          region = 'temporal'; // Temporal lobes - meta, language
-        }
-
         regions.push(region);
 
-        // Color palette optimized for dark slate background - vibrant and contrasting
-        let color: THREE.Color;
-        if (region === 'frontal') {
-          color = new THREE.Color(0x00d4ff); // Electric cyan - pops against dark background
-        } else if (region === 'prefrontal') {
-          color = new THREE.Color(0x00ff88); // Bright lime green - high contrast
-        } else if (region === 'limbic') {
-          color = new THREE.Color(0xff4757); // Vibrant coral red - energetic
-        } else if (region === 'parietal') {
-          color = new THREE.Color(0xffa502); // Bright orange - warm and visible
-        } else if (region === 'temporal') {
-          color = new THREE.Color(0xbd93f9); // Bright purple - mystical and vibrant
-        } else {
-          color = new THREE.Color(0x74b9ff); // Bright sky blue - default with good contrast
-        }
+        const isHighlighted = effectiveHighlightedNodes?.[region]?.includes(`${i}`);
+        const isRandomlyLit = false; // Disable random ambient lighting since we now have structured highlights
+        
+        // Region-specific highlight colors
+        const getHighlightColor = (region: string) => {
+          switch (region) {
+            case 'frontal': return 0x00ffff; // Cyan for identity/frontal
+            case 'prefrontal': return 0xff6b6b; // Coral for operation/prefrontal
+            case 'limbic': return 0x4ecdc4; // Teal for growth/limbic
+            case 'parietal': return 0x45b7d1; // Sky blue for impact/parietal
+            case 'temporal': return 0x96ceb4; // Sage green for meta/temporal
+            default: return 0x00ffff; // Default cyan
+          }
+        };
 
-        // Add slight variation
-        color.r += (Math.random() - 0.5) * 0.1;
-        color.g += (Math.random() - 0.5) * 0.1;
-        color.b += (Math.random() - 0.5) * 0.1;
+        const getEmissiveColor = (region: string) => {
+          switch (region) {
+            case 'frontal': return 0x004444; // Dark cyan
+            case 'prefrontal': return 0x442222; // Dark coral
+            case 'limbic': return 0x1a3a35; // Dark teal
+            case 'parietal': return 0x1a3440; // Dark sky blue
+            case 'temporal': return 0x2a3a30; // Dark sage
+            default: return 0x004444; // Default dark cyan
+          }
+        };
+        
+        const color = isHighlighted
+          ? new THREE.Color(getHighlightColor(region))
+          : isRandomlyLit
+          ? new THREE.Color(0x1a1a2e) // Dim dark blue-gray for ambient structure visibility
+          : new THREE.Color(0x000000); // Default color - black for stealth mode
+
+        const emissiveColor = isHighlighted
+          ? new THREE.Color(getEmissiveColor(region))
+          : isRandomlyLit
+          ? new THREE.Color(0x0a0a15) // Very subtle ambient glow
+          : new THREE.Color(0x000000); // No glow for default
 
         colors.push(color);
+        emissiveColors.push(emissiveColor);
       }
-    }
+    });
 
-    return { positions, colors, regions };
-  }, [small, location, background]);
+    return { positions, colors, emissiveColors, regions };
+  }, [effectiveNodeCount, highlightedNodes, location]);
 
   // Set up instanced mesh
   React.useEffect(() => {
     if (particlesRef.current && particleData.positions.length > 0) {
+      // Create emissive color attribute for glow effect
+      const emissiveColorArray = new Float32Array(particleData.positions.length * 3);
+      particleData.emissiveColors.forEach((color, i) => {
+        emissiveColorArray[i * 3] = color.r;
+        emissiveColorArray[i * 3 + 1] = color.g;
+        emissiveColorArray[i * 3 + 2] = color.b;
+      });
+      
+      particlesRef.current.geometry.setAttribute('emissiveColor', new THREE.InstancedBufferAttribute(emissiveColorArray, 3));
+
       const dummy = new THREE.Object3D();
 
       particleData.positions.forEach((position, i) => {
@@ -106,6 +158,7 @@ function BrainParticles({ activeRegion, background = false, small = false, mouse
       if (particlesRef.current.instanceColor) {
         particlesRef.current.instanceColor.needsUpdate = true;
       }
+      particlesRef.current.geometry.attributes.emissiveColor.needsUpdate = true;
     }
   }, [particleData, background, small]);
 
@@ -119,7 +172,14 @@ function BrainParticles({ activeRegion, background = false, small = false, mouse
       assemblyCompleteRef.current = false;
       assemblyProgressRef.current = 0;
     }
-  }, [location]);
+    
+    // If there are highlighted nodes, complete assembly immediately for direct article loads
+    const hasHighlights = highlightedNodes && Object.values(highlightedNodes).some(arr => arr.length > 0);
+    if (hasHighlights && !assemblyCompleteRef.current) {
+      assemblyCompleteRef.current = true;
+      assemblyProgressRef.current = 1;
+    }
+  }, [location, highlightedNodes]);
 
   // Save assembly state to global store when it changes
   React.useEffect(() => {
@@ -142,7 +202,7 @@ function BrainParticles({ activeRegion, background = false, small = false, mouse
 
   // Store initial scattered positions
   const initialPositions = useMemo(() => {
-    const particleCount = small ? (location === 'nav' ? 50 : 100) : background ? 800 : 500;
+    const particleCount = particleData.positions.length;
     return Array.from({ length: particleCount }, () => 
       new THREE.Vector3(
         (Math.random() - 0.5) * 10,
@@ -150,33 +210,28 @@ function BrainParticles({ activeRegion, background = false, small = false, mouse
         (Math.random() - 0.5) * 10
       )
     );
-  }, [small, location, background]);
+  }, [particleData.positions.length]);
+
+  const prevMousePos = useRef(mousePos);
+  const velocity = useRef({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const deltaX = mousePos.x - prevMousePos.current.x;
+    const deltaY = mousePos.y - prevMousePos.current.y;
+
+    velocity.current = { x: deltaX, y: deltaY };
+    prevMousePos.current = mousePos;
+  }, [mousePos]);
 
   useFrame((state) => {
     if (groupRef.current) {
-      const rotationSpeed = background ? 0.002 : small ? 0.003 : 0.005;
-      groupRef.current.rotation.y += rotationSpeed;
-      groupRef.current.rotation.x += background ? 0.001 : small ? 0.0015 : 0.002;
+      const speedFactor = Math.sqrt(velocity.current.x ** 2 + velocity.current.y ** 2) * 5; // Adjust multiplier for sensitivity
 
-      // Cursor following behavior
-      if (mousePos) {
-        const mouseX = mousePos.x;
-        const mouseY = mousePos.y;
-        
-        if (small) {
-          // Dramatic rotation for small mode
-          const targetRotationY = mouseX * 0.6;
-          const targetRotationX = mouseY * 0.4;
-          groupRef.current.rotation.y += (targetRotationY - groupRef.current.rotation.y) * 0.15;
-          groupRef.current.rotation.x += (targetRotationX - groupRef.current.rotation.x) * 0.15;
-        } else if (background) {
-          // Subtle rotation for background mode
-          const targetRotationY = mouseX * 0.1;
-          const targetRotationX = mouseY * 0.05;
-          groupRef.current.rotation.y += (targetRotationY - groupRef.current.rotation.y) * 0.02;
-          groupRef.current.rotation.x += (targetRotationX - groupRef.current.rotation.x) * 0.01;
-        }
-      }
+      const targetRotationY = mousePos.x * Math.PI;
+      const targetRotationX = mousePos.y * Math.PI;
+
+      groupRef.current.rotation.y += (targetRotationY - groupRef.current.rotation.y) * 0.1 * speedFactor;
+      groupRef.current.rotation.x += (targetRotationX - groupRef.current.rotation.x) * 0.1 * speedFactor;
     }
 
     // Animate particles with region-specific activation
@@ -231,27 +286,27 @@ function BrainParticles({ activeRegion, background = false, small = false, mouse
           switch (activeRegion) {
             case 'identity':
               if (region === 'frontal') {
-                activationMultiplier = 1.3; // Reduced scale difference
+                activationMultiplier = 1.5; // Increased from 1.3
               }
               break;
             case 'operation':
               if (region === 'prefrontal') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
             case 'growth':
               if (region === 'limbic') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
             case 'impact':
               if (region === 'parietal') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
             case 'meta':
               if (region === 'temporal') {
-                activationMultiplier = 1.3;
+                activationMultiplier = 1.5;
               }
               break;
           }
@@ -289,22 +344,68 @@ function BrainParticles({ activeRegion, background = false, small = false, mouse
   return (
     <group ref={groupRef}>
       <instancedMesh ref={particlesRef} args={[undefined, undefined, particleData.positions.length]}>
-        <sphereGeometry args={[1, 6, 6]} />
-        <meshBasicMaterial />
+        <cylinderGeometry args={[0.5, 0.5, 0.1, 6]} />
+        <meshStandardMaterial />
       </instancedMesh>
+      
+      {/* Add point lights for highlighted particles to create glow effect */}
+      {(() => {
+        const lights: React.ReactElement[] = [];
+        let regionStartIndex = 0;
+        
+        Object.entries(effectiveNodeCount).forEach(([region, count]) => {
+          const highlightedIndices = effectiveHighlightedNodes?.[region] || [];
+          highlightedIndices.forEach((indexStr) => {
+            const localIndex = parseInt(indexStr);
+            const globalIndex = regionStartIndex + localIndex;
+            if (globalIndex < particleData.positions.length) {
+              const position = particleData.positions[globalIndex];
+              
+              // Get region-specific light color
+              const getLightColor = (region: string) => {
+                switch (region) {
+                  case 'frontal': return 0x00ffff; // Cyan
+                  case 'prefrontal': return 0xff6b6b; // Coral
+                  case 'limbic': return 0x4ecdc4; // Teal
+                  case 'parietal': return 0x45b7d1; // Sky blue
+                  case 'temporal': return 0x96ceb4; // Sage green
+                  default: return 0x00ffff;
+                }
+              };
+              
+              lights.push(
+                <pointLight
+                  key={`${region}-${localIndex}`}
+                  position={[position.x, position.y, position.z]}
+                  color={getLightColor(region)}
+                  intensity={0.8}
+                  distance={2}
+                  decay={2}
+                />
+              );
+            }
+          });
+          regionStartIndex += count as number;
+        });
+        
+        return lights;
+      })()}
     </group>
   );
 }
 
 interface Brain3DClientProps {
-  activeRegion?: string | null;
+  activeRegion?: string | null | undefined
   background?: boolean;
   small?: boolean;
-  location?: 'title' | 'nav';
+  location?: 'title' | 'nav' | 'mobile';
+  nodeCount?: { [region: string]: number };
+  highlightedNodes?: { [region: string]: string[] };
 }
 
-export default function Brain3DClient({ activeRegion, background = false, small = false, location = 'title' }: Brain3DClientProps) {
+export default function Brain3DClient({ activeRegion, background = false, small = false, location = 'title', nodeCount = {}, highlightedNodes = {} }: Brain3DClientProps) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
 
   useEffect(() => {
     if (small || background) {
@@ -319,6 +420,34 @@ export default function Brain3DClient({ activeRegion, background = false, small 
       return () => window.removeEventListener('mousemove', handleMouseMove);
     }
   }, [small, background]);
+
+  useEffect(() => {
+    const navItems = document.querySelectorAll('[data-brain-region]');
+
+    const handleMouseEnter = (event: Event) => {
+      const target = event.target as HTMLElement;
+      const region = target.getAttribute('data-brain-region');
+      if (region) {
+        setHoveredRegion(region);
+      }
+    };
+
+    const handleMouseLeave = () => {
+      setHoveredRegion(null);
+    };
+
+    navItems.forEach((item) => {
+      item.addEventListener('mouseenter', handleMouseEnter);
+      item.addEventListener('mouseleave', handleMouseLeave);
+    });
+
+    return () => {
+      navItems.forEach((item) => {
+        item.removeEventListener('mouseenter', handleMouseEnter);
+        item.removeEventListener('mouseleave', handleMouseLeave);
+      });
+    };
+  }, []);
 
   const containerStyle = small
     ? {
@@ -364,7 +493,7 @@ export default function Brain3DClient({ activeRegion, background = false, small 
         <pointLight position={[10, 10, 10]} intensity={0.8} />
         <pointLight position={[-10, -10, -10]} intensity={0.4} />
 
-        <BrainParticles activeRegion={activeRegion} background={background} small={small} mousePos={mousePos} location={location} />
+        <BrainParticles activeRegion={hoveredRegion || activeRegion} background={background} small={small} mousePos={mousePos} location={location} nodeCount={nodeCount} highlightedNodes={highlightedNodes} />
 
         <OrbitControls
           enableZoom={false}

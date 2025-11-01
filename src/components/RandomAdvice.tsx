@@ -34,7 +34,7 @@ const RandomAdvice: React.FC = () => {
   }, [fetchAdvice]);
 
   useEffect(() => {
-    const interval = setInterval(fetchAdvice, 300000); // 5 minutes
+    const interval = setInterval(fetchAdvice, 30000); // 30 seconds
     return () => clearInterval(interval);
   }, [fetchAdvice]);
 

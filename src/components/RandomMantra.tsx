@@ -34,7 +34,7 @@ const RandomMantra: React.FC = () => {
   }, [fetchMantra]);
 
   useEffect(() => {
-    const interval = setInterval(fetchMantra, 300000); // 5 minutes
+    const interval = setInterval(fetchMantra, 10000); // 10 seconds
     return () => clearInterval(interval);
   }, [fetchMantra]);
 

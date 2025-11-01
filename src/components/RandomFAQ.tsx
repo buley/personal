@@ -33,7 +33,7 @@ const RandomFAQ: React.FC = () => {
   }, [fetchFAQ]);
 
   useEffect(() => {
-    const interval = setInterval(fetchFAQ, 300000); // 5 minutes
+    const interval = setInterval(fetchFAQ, 30000); // 30 seconds
     return () => clearInterval(interval);
   }, [fetchFAQ]);
 

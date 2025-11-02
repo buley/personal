@@ -192,6 +192,7 @@ const AppLayout = () => {
   };
 
   const handleNavHover = (group: string | null, itemPath?: string) => {
+    console.log('handleNavHover called:', { group, itemPath });
     setActiveBrainRegion(group);
     setActiveItemPath(itemPath || null);
   };
@@ -407,7 +408,12 @@ const AppLayout = () => {
             {/* Secondary Nav Sections */}
             {Object.entries(secondaryNav).map(([group, items]) => (
               <div key={group} className="relative group">
-                <button className="w-24 text-center text-foreground-muted hover:text-foreground transition-colors font-medium capitalize">
+                <button 
+                  data-brain-region={mapGroupToRegion(group)}
+                  onMouseEnter={() => handleNavHover(group)}
+                  onMouseLeave={handleNavLeave}
+                  className="w-24 text-center text-foreground-muted hover:text-foreground transition-colors font-medium capitalize"
+                >
                   {group}
                 </button>
                 {/* Dropdown */}
@@ -416,6 +422,9 @@ const AppLayout = () => {
                     {items.map((item) => (
                       <button
                         key={item.path}
+                        data-brain-region={mapGroupToRegion(group)}
+                        onMouseEnter={() => handleNavHover(group, item.path)}
+                        onMouseLeave={handleNavLeave}
                         onClick={() => handleNavClick(item.path)}
                         className="block w-full text-left text-foreground-muted hover:text-foreground hover:bg-[var(--accent)] px-3 py-2 rounded transition-colors text-sm"
                       >

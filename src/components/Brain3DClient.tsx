@@ -15,6 +15,7 @@ interface Brain3DClientProps {
   nodeCount?: { [region: string]: number };
   highlightedNodes?: { [region: string]: string[] };
   mousePos: { x: number; y: number };
+  audioData?: { frequency: number; amplitude: number };
 }
 
 // Create a simple particle system that forms a brain shape
@@ -28,6 +29,7 @@ function BrainParticles({
   highlightedNodes,
   audioData,
 }: Brain3DClientProps & { audioData: { frequency: number; amplitude: number } }) {
+  console.log('BrainParticles activeRegion:', activeRegion);
   const groupRef = useRef<THREE.Group>(null);
   const particlesRef = useRef<THREE.InstancedMesh>(null);
   const assemblyCompleteRef = useRef(false);
@@ -232,6 +234,11 @@ function BrainParticles({
 
   // Store connection line references for animation
   const connectionLines = useRef<THREE.Line[]>([]);
+
+  // Initialize connection lines array when particleData changes
+  React.useEffect(() => {
+    connectionLines.current = new Array(particleData.connections.length);
+  }, [particleData.connections.length]);
 
   // Create connection lines
   const connectionObjects = useMemo(() => {
@@ -481,7 +488,7 @@ function BrainParticles({
 
       // Animate neural connections
       connectionLines.current.forEach((line, index) => {
-        if (line && line.material instanceof THREE.LineBasicMaterial) {
+        if (line && line.material instanceof THREE.LineBasicMaterial && particleData.connections[index]) {
           // Create pulsing effect based on time and connection strength
           const pulse = Math.sin(time * 2 + index * 0.5) * 0.5 + 0.5;
           const baseOpacity = particleData.connections[index].strength * 0.3;
@@ -626,30 +633,34 @@ interface Brain3DClientProps {
   }, [small, background]);
 
   useEffect(() => {
-    const navItems = document.querySelectorAll('[data-brain-region]');
-
     const handleMouseEnter = (event: Event) => {
       const target = event.target as HTMLElement;
-      const region = target.getAttribute('data-brain-region');
+      const region = target.getAttribute('data-brain-region') || target.closest('[data-brain-region]')?.getAttribute('data-brain-region');
       if (region) {
         setHoveredRegion(region);
       }
     };
 
-    const handleMouseLeave = () => {
-      setHoveredRegion(null);
+    const handleMouseLeave = (event: Event) => {
+      const target = event.target as HTMLElement;
+      const relatedTarget = (event as MouseEvent).relatedTarget as HTMLElement;
+      
+      // Only clear hovered region if we're actually leaving a brain region element
+      const isLeavingBrainRegion = target?.hasAttribute('data-brain-region') || target?.closest('[data-brain-region]');
+      const isEnteringBrainRegion = relatedTarget?.hasAttribute('data-brain-region') || relatedTarget?.closest('[data-brain-region]');
+      
+      if (isLeavingBrainRegion && !isEnteringBrainRegion) {
+        setHoveredRegion(null);
+      }
     };
 
-    navItems.forEach((item) => {
-      item.addEventListener('mouseenter', handleMouseEnter);
-      item.addEventListener('mouseleave', handleMouseLeave);
-    });
+    // Use event delegation on document body to catch all mouse events
+    document.body.addEventListener('mouseenter', handleMouseEnter, true);
+    document.body.addEventListener('mouseleave', handleMouseLeave, true);
 
     return () => {
-      navItems.forEach((item) => {
-        item.removeEventListener('mouseenter', handleMouseEnter);
-        item.removeEventListener('mouseleave', handleMouseLeave);
-      });
+      document.body.removeEventListener('mouseenter', handleMouseEnter, true);
+      document.body.removeEventListener('mouseleave', handleMouseLeave, true);
     };
   }, []);
 

@@ -15,8 +15,6 @@ renderer.blockquote = function (token) {
   html = html.replace(/^<p>|<\/p>$/g, "");
   html = html.replace(/<\/p>/g, "");
 
-  console.log(html);
-
   return `<blockquote>${html}</blockquote>`;
 };
 
@@ -45,7 +43,14 @@ export async function GET(
     };
 
     // Convert markdown to HTML
-    const content = marked(processedMarkdown, options);
+    let content = await marked(processedMarkdown, options);
+
+    console.log('Before enhancement:', content.substring(0, 500));
+
+    // Enhance all quotes by bolding the quote giver's name after emdash
+    content = content.replace(/(&mdash;\s+)([^<\n]+)(<\/[^>]+>)/g, '$1<strong>$2</strong>$3');
+
+    console.log('After enhancement:', content.substring(0, 500));
 
     return new Response(JSON.stringify({ content }), {
       headers: {

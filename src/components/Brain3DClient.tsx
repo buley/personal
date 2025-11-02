@@ -1,6 +1,7 @@
 import React, { useRef, useMemo, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
+import { EffectComposer, Bloom, DepthOfField } from '@react-three/postprocessing';
 import * as THREE from 'three';
 
 // Global storage for assembly progress to persist across component mounts
@@ -25,7 +26,8 @@ function BrainParticles({
   location = 'title',
   nodeCount,
   highlightedNodes,
-}: Brain3DClientProps) {
+  audioData,
+}: Brain3DClientProps & { audioData: { frequency: number; amplitude: number } }) {
   const groupRef = useRef<THREE.Group>(null);
   const particlesRef = useRef<THREE.InstancedMesh>(null);
   const assemblyCompleteRef = useRef(false);
@@ -74,6 +76,7 @@ function BrainParticles({
     const colors: THREE.Color[] = [];
     const emissiveColors: THREE.Color[] = [];
     const regions: string[] = [];
+    const connections: { start: number; end: number; strength: number }[] = [];
 
     Object.entries(effectiveNodeCount).forEach(([region, count]) => {
       for (let i = 0; i < count; i++) {
@@ -131,8 +134,31 @@ function BrainParticles({
       }
     });
 
-    return { positions, colors, emissiveColors, regions };
-  }, [effectiveNodeCount, effectiveHighlightedNodes]);
+    // Generate neural connections between nearby particles
+    const maxDistance = 0.5; // Maximum distance for connections
+    const maxConnections = background ? 2 : 3; // Fewer connections for background to reduce performance impact
+    
+    for (let i = 0; i < positions.length; i++) {
+      let connectionCount = 0;
+      for (let j = i + 1; j < positions.length && connectionCount < maxConnections; j++) {
+        const distance = positions[i].distanceTo(positions[j]);
+        if (distance < maxDistance) {
+          // Prefer connections within the same region, but allow cross-region connections
+          const sameRegion = regions[i] === regions[j];
+          const connectionStrength = sameRegion ? 0.8 : 0.3;
+          
+          connections.push({
+            start: i,
+            end: j,
+            strength: connectionStrength * (1 - distance / maxDistance) // Stronger for closer particles
+          });
+          connectionCount++;
+        }
+      }
+    }
+
+    return { positions, colors, emissiveColors, regions, connections };
+  }, [effectiveNodeCount, effectiveHighlightedNodes, background]);
 
   // Set up instanced mesh
   React.useEffect(() => {
@@ -204,6 +230,101 @@ function BrainParticles({
     };
   }, [location]);
 
+  // Store connection line references for animation
+  const connectionLines = useRef<THREE.Line[]>([]);
+
+  // Create connection lines
+  const connectionObjects = useMemo(() => {
+    return particleData.connections.map((connection, index) => {
+      const startPos = particleData.positions[connection.start];
+      const endPos = particleData.positions[connection.end];
+      const startRegion = particleData.regions[connection.start];
+      const endRegion = particleData.regions[connection.end];
+      
+      // Use the brighter color of the two regions, or a blend
+      const getConnectionColor = () => {
+        if (startRegion === endRegion) {
+          switch (startRegion) {
+            case 'frontal': return 0x00ffff;
+            case 'prefrontal': return 0xff6b6b;
+            case 'limbic': return 0x4ecdc4;
+            case 'parietal': return 0x45b7d1;
+            case 'temporal': return 0x96ceb4;
+            default: return 0x00ffff;
+          }
+        } else {
+          // Blend colors for cross-region connections
+          return 0x666666; // Neutral gray for cross-region
+        }
+      };
+      
+      const geometry = new THREE.BufferGeometry().setFromPoints([startPos, endPos]);
+      const material = new THREE.LineBasicMaterial({
+        color: getConnectionColor(),
+        opacity: connection.strength * 0.3,
+        transparent: true
+      });
+      
+      const line = new THREE.Line(geometry, material);
+      connectionLines.current[index] = line;
+      return line;
+    });
+  }, [particleData.connections, particleData.positions, particleData.regions]);
+
+  // Physics forces between particles
+  const applyPhysicsForces = (positions: THREE.Vector3[], regions: string[], time: number) => {
+    const forces = positions.map(() => new THREE.Vector3());
+    
+    positions.forEach((pos, i) => {
+      positions.forEach((otherPos, j) => {
+        if (i === j) return;
+        
+        const distance = pos.distanceTo(otherPos);
+        if (distance > 1.5) return; // Only apply forces within range
+        
+        const direction = new THREE.Vector3().subVectors(otherPos, pos).normalize();
+        let force = 0;
+        
+        // Attraction between same region particles
+        if (regions[i] === regions[j]) {
+          force = (1.5 - distance) * 0.001; // Attraction
+        } else {
+          // Repulsion between different regions
+          force = -(1.5 - distance) * 0.0005; // Repulsion
+        }
+        
+        // Add some organic variation
+        force += Math.sin(time * 0.5 + i * 0.1) * 0.0002;
+        
+        forces[i].add(direction.multiplyScalar(force));
+      });
+    });
+    
+    return forces;
+  };
+
+  // Data flow particles that travel along connections
+  const dataPackets = useMemo(() => {
+    const packets: { connectionIndex: number; progress: number; speed: number; color: number }[] = [];
+    
+    // Create data packets for active connections
+    particleData.connections.forEach((connection, index) => {
+      if (Math.random() < 0.3) { // 30% chance of having a data packet
+        packets.push({
+          connectionIndex: index,
+          progress: Math.random(), // Random starting position
+          speed: 0.01 + Math.random() * 0.02, // Random speed
+          color: connection.strength > 0.5 ? 0xffffff : 0x888888 // Bright for strong connections
+        });
+      }
+    });
+    
+    return packets;
+  }, [particleData.connections]);
+
+  // Refs for data packet meshes
+  const dataPacketRefs = useRef<THREE.Mesh[]>([]);
+
   // Store initial scattered positions
   const initialPositions = useMemo(() => {
     const particleCount = particleData.positions.length;
@@ -270,7 +391,14 @@ function BrainParticles({
         const targetPosition = particleData.positions[i];
         const initialPosition = initialPositions[i];
         
-        dummy.position.lerpVectors(initialPosition, targetPosition, assemblyProgress);
+        // Apply physics forces after assembly is mostly complete
+        let finalPosition = targetPosition.clone();
+        if (assemblyProgress > 0.8) {
+          const forces = applyPhysicsForces(particleData.positions, particleData.regions, time);
+          finalPosition.add(forces[i]);
+        }
+        
+        dummy.position.lerpVectors(initialPosition, finalPosition, assemblyProgress);
 
         // Subtle floating motion after assembly
         if (assemblyProgress > 0.9) {
@@ -316,6 +444,18 @@ function BrainParticles({
           }
         }
 
+        // Audio reactivity - boost activation based on sound
+        if (audioData.amplitude > 0.1) {
+          // Low frequencies affect frontal regions, high frequencies affect temporal
+          const frequencyRatio = Math.min(audioData.frequency / 1000, 1); // Normalize to 0-1
+          const regionIndex = ['frontal', 'prefrontal', 'limbic', 'parietal', 'temporal'].indexOf(region);
+          
+          if (regionIndex >= 0) {
+            const regionFrequencyMatch = 1 - Math.abs(frequencyRatio - regionIndex / 4);
+            activationMultiplier *= 1 + (audioData.amplitude * regionFrequencyMatch * 0.5);
+          }
+        }
+
         // Direct scale setting for instant response
         const baseScale = background ? 0.08 : (small ? 0.02 : 0.03);
         const targetScale = baseScale * activationMultiplier;
@@ -338,6 +478,39 @@ function BrainParticles({
           particlesRef.current.instanceColor.needsUpdate = true;
         }
       }
+
+      // Animate neural connections
+      connectionLines.current.forEach((line, index) => {
+        if (line && line.material instanceof THREE.LineBasicMaterial) {
+          // Create pulsing effect based on time and connection strength
+          const pulse = Math.sin(time * 2 + index * 0.5) * 0.5 + 0.5;
+          const baseOpacity = particleData.connections[index].strength * 0.3;
+          line.material.opacity = baseOpacity + (pulse * baseOpacity * 0.5);
+        }
+      });
+
+      // Animate data packets
+      dataPackets.forEach((packet, index) => {
+        packet.progress += packet.speed;
+        if (packet.progress > 1) {
+          packet.progress = 0; // Loop back to start
+        }
+        
+        const connection = particleData.connections[packet.connectionIndex];
+        const startPos = particleData.positions[connection.start];
+        const endPos = particleData.positions[connection.end];
+        
+        // Interpolate position along the connection
+        const currentPos = new THREE.Vector3().lerpVectors(startPos, endPos, packet.progress);
+        
+        const mesh = dataPacketRefs.current[index];
+        if (mesh) {
+          mesh.position.copy(currentPos);
+          // Add slight floating motion
+          mesh.position.y += Math.sin(time * 5 + index) * 0.02;
+        }
+      });
+
       } catch (error) {
         // Silently handle animation errors to prevent crashes
         console.warn('Brain particle animation error:', error);
@@ -351,6 +524,26 @@ function BrainParticles({
         <cylinderGeometry args={[0.5, 0.5, 0.1, 6]} />
         <meshStandardMaterial />
       </instancedMesh>
+      
+      {/* Neural Connections */}
+      {connectionObjects.map((line, index) => (
+        <primitive key={`connection-${index}`} object={line} />
+      ))}
+      
+      {/* Data Flow Packets */}
+      {dataPackets.map((packet, index) => (
+        <mesh 
+          key={`packet-${index}`}
+          ref={(ref) => { if (ref) dataPacketRefs.current[index] = ref; }}
+        >
+          <sphereGeometry args={[0.01, 8, 8]} />
+          <meshBasicMaterial 
+            color={packet.color} 
+            transparent 
+            opacity={0.8}
+          />
+        </mesh>
+      ))}
       
       {/* Add point lights for highlighted particles to create glow effect */}
       {(() => {
@@ -407,9 +600,16 @@ interface Brain3DClientProps {
   highlightedNodes?: { [region: string]: string[] };
 }
 
-export default function Brain3DClient({ activeRegion, background = false, small = false, location = 'title', nodeCount = {}, highlightedNodes = {} }: Brain3DClientProps) {
+  export default function Brain3DClient({ activeRegion, background = false, small = false, location = 'title', nodeCount = {}, highlightedNodes = {} }: Brain3DClientProps) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
   const [hoveredRegion, setHoveredRegion] = useState<string | null>(null);
+  
+  // Audio reactivity state
+  const [audioData, setAudioData] = useState<{ frequency: number; amplitude: number }>({ frequency: 0, amplitude: 0 });
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const analyserRef = useRef<AnalyserNode | null>(null);
+  const microphoneRef = useRef<MediaStreamAudioSourceNode | null>(null);
+  const animationFrameRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     if (small || background) {
@@ -452,6 +652,74 @@ export default function Brain3DClient({ activeRegion, background = false, small 
       });
     };
   }, []);
+
+  // Initialize audio context and microphone
+  useEffect(() => {
+    const initAudio = async () => {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        const audioContext = new AudioContext();
+        const analyser = audioContext.createAnalyser();
+        const microphone = audioContext.createMediaStreamSource(stream);
+        
+        analyser.fftSize = 256;
+        microphone.connect(analyser);
+        
+        audioContextRef.current = audioContext;
+        analyserRef.current = analyser;
+        microphoneRef.current = microphone;
+        
+        const dataArray = new Uint8Array(analyser.frequencyBinCount);
+        
+        const updateAudioData = () => {
+          if (analyserRef.current) {
+            analyserRef.current.getByteFrequencyData(dataArray);
+            
+            // Calculate average frequency and amplitude
+            let sum = 0;
+            let maxFreq = 0;
+            let maxAmp = 0;
+            
+            for (let i = 0; i < dataArray.length; i++) {
+              sum += dataArray[i];
+              if (dataArray[i] > maxAmp) {
+                maxAmp = dataArray[i];
+                maxFreq = i;
+              }
+            }
+            
+            const averageAmplitude = sum / dataArray.length;
+            const dominantFrequency = (maxFreq / dataArray.length) * (audioContext.sampleRate / 2);
+            
+            setAudioData({
+              frequency: dominantFrequency,
+              amplitude: averageAmplitude / 255 // Normalize to 0-1
+            });
+          }
+          
+          animationFrameRef.current = requestAnimationFrame(updateAudioData);
+        };
+        
+        updateAudioData();
+      } catch (error) {
+        console.warn('Audio initialization failed:', error);
+      }
+    };
+    
+    // Only initialize audio if not small/background (performance)
+    if (!small && !background) {
+      initAudio();
+    }
+    
+    return () => {
+      if (animationFrameRef.current) {
+        cancelAnimationFrame(animationFrameRef.current);
+      }
+      if (audioContextRef.current) {
+        audioContextRef.current.close();
+      }
+    };
+  }, [small, background]);
 
   const containerStyle = small
     ? {
@@ -497,7 +765,7 @@ export default function Brain3DClient({ activeRegion, background = false, small 
         <pointLight position={[10, 10, 10]} intensity={0.8} />
         <pointLight position={[-10, -10, -10]} intensity={0.4} />
 
-        <BrainParticles activeRegion={hoveredRegion || activeRegion} background={background} small={small} mousePos={mousePos} location={location} nodeCount={nodeCount} highlightedNodes={highlightedNodes} />
+        <BrainParticles activeRegion={hoveredRegion || activeRegion} background={background} small={small} mousePos={mousePos} location={location} nodeCount={nodeCount} highlightedNodes={highlightedNodes} audioData={audioData} />
 
         <OrbitControls
           enableZoom={false}
@@ -507,6 +775,22 @@ export default function Brain3DClient({ activeRegion, background = false, small 
           minDistance={2}
           maxDistance={6}
         />
+
+        {/* Post-processing effects for enhanced visuals */}
+        {!small && (
+          <EffectComposer>
+            <Bloom 
+              intensity={0.5} 
+              luminanceThreshold={0.2} 
+              luminanceSmoothing={0.9} 
+            />
+            <DepthOfField 
+              focusDistance={0.5} 
+              focalLength={0.5} 
+              bokehScale={2} 
+            />
+          </EffectComposer>
+        )}
       </Canvas>
     </div>
   );

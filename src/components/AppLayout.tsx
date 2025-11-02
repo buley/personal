@@ -192,13 +192,14 @@ const AppLayout = () => {
   };
 
   const handleNavHover = (group: string | null, itemPath?: string) => {
-    console.log('handleNavHover called:', { group, itemPath });
     setActiveBrainRegion(group);
     setActiveItemPath(itemPath || null);
   };
 
   const handleNavLeave = (event?: React.MouseEvent) => {
-    if (event?.relatedTarget instanceof Element && event.relatedTarget.closest('[data-nav-item]')) {
+    if (event?.relatedTarget instanceof Element && 
+        (event.relatedTarget.closest('[data-nav-item]') || 
+         event.relatedTarget.closest('[data-brain-region]'))) {
       return;
     }
     setActiveBrainRegion(null);

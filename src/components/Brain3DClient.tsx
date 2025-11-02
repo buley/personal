@@ -29,7 +29,6 @@ function BrainParticles({
   highlightedNodes,
   audioData,
 }: Brain3DClientProps & { audioData: { frequency: number; amplitude: number } }) {
-  console.log('BrainParticles activeRegion:', activeRegion);
   const groupRef = useRef<THREE.Group>(null);
   const particlesRef = useRef<THREE.InstancedMesh>(null);
   const assemblyCompleteRef = useRef(false);

@@ -6,6 +6,8 @@
 
 > *"There is nothing noble in being superior to your fellow man; true nobility is being superior to your former self."* -- Ernest Hemingway
 
+> *""The art of life lies in a constant readjustment to our surroundings."* -― Kakuzo Okakura
+
 Strength is not given; it is sculpted.
 
 Every thought, action, and principle I live by shapes that image.
@@ -90,6 +92,30 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"Education is not the filling of a pail, but the lighting of a fire."* -- William Butler Yeats
 - *"Be the change that you wish to see in the world."* -- Mahatma Gandhi
 - *"There is no single self. Who you are is an ever-shifting state, dictated by context and past experience."* -- Robert Sapolsky
+
+### Adaptability & Change
+*Quotes on adaptability and change.*
+
+- *"It is not the strongest of the species that survives, nor the most intelligent. It is the one that is most adaptable to change."* ―Charles Darwin
+- *"Adaptability is not imitation. It means the power of resistance and assimilation."* ―Mahatma Gandhi
+- *"The art of life lies in a constant readjustment to our surroundings."* ―Kakuzo Okakura
+- *"The most successful people are those who accept and adapt to constant change. This adaptability requires a degree of flexibility and humility most people can’t manage."* ―Paul Lutus
+- *"Action and adaptability create opportunity."* ―Garrison Wynn
+- *"Adaptability is the simple secret of survival."* ―Jessica Hagedorn
+- *"All failure is the failure to adapt; all success is successful adaptation."* ―Max McKeown
+- *"Enjoying success requires the ability to adapt. Only by being open to change will you have a true opportunity to get the most from your talent."* ―Nolan Ryan
+- *"The reasonable man adapts himself to the world; the unreasonable one persists in trying to adapt the world to himself."* ―George Bernard Shaw
+- *"A man is worked upon by what he works on. He may carve out his circumstances, but his circumstances will carve him out as well."* ―Frederick Douglass
+- *"There can be no life without change, and to be afraid of what is different or unfamiliar is to be afraid of life."* ―Theodore Roosevelt
+- *"Human nature is water, not stone."* ―Marty Rubin
+- *"An adaptive mind has better learning capability."* ―Pearl Zhu
+- *"Life isn’t about waiting for the storm to pass. It’s about learning how to dance in the rain."* ―Vivien Greene
+- *"Adaptability cushions the impact of change or disappointment."* ―Marvin J. Ashton
+- *"We must cut our coat according to our cloth, and adapt ourselves to changing circumstances."* ―William Ralph Inge
+- *"The strongest will is the will that knows how to bend."* —Alice Duer Miller
+- *"Change is the law of life, and those who look only to the past or present are certain to miss the future."* —JFK
+- *"You never change things by fighting the existing reality. To change something, build a new model that makes the existing model obsolete."* —Buckminster Fuller
+- *"Become a student of change. It is the only thing that will remain constant."* —Anthony D’Angelo
 
 ## Balancing Strengths and Weaknesses
 *Know your best to avoid your worst--strengths unchecked become liabilities.*

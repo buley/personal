@@ -93,8 +93,13 @@ const AppLayout = () => {
       { title: "Stress", path: "stress" },
       { title: "Self-Sabotage", path: "self-sabotage" },
       { title: "Resilience & Recovery", path: "resiliance" },
-      { title: "Reinvention", path: "reinvention" },
-      { title: "Reflection & Self-Audit", path: "reflection" },
+      { title: "Débrouillard", path: "debrouillard" },
+      { title: "Amor Fati", path: "amor-fati" },
+  { title: "Clinical Understanding", path: "clinical-understanding" },
+  { title: "Lowest-Entropy Labeling", path: "lowest-entropy-labeling" },
+  { title: "Reinvention", path: "reinvention" },
+  { title: "Retrospectives", path: "retrospectives" },
+  { title: "Reflection & Self-Audit", path: "reflection" },
     ],
 
     impact: [
@@ -110,6 +115,9 @@ const AppLayout = () => {
     meta: [
       { title: "Operating Manual", path: "manual" },
       { title: "Lexicon", path: "lexicon" },
+      { title: "Fourth Turning", path: "fourth-turning" },
+      { title: "Immediate Perspective", path: "immediate-perspective" },
+  { title: "Control", path: "control" },
       { title: "Mental Models", path: "models" },
     ],
   }), []);

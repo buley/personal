@@ -1,4 +1,4 @@
-# Débrouillard
+# Débrouillard Perspectives
 
 Understanding and embodying the concept of "débrouillard" can enhance resilience and effectiveness. The "débrouillard" persona aligns with healthy behaviors:
 

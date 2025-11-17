@@ -83,6 +83,9 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"Failure is simply the opportunity to begin again, this time more intelligently."* -- Henry Ford
 - *"Our inward power, when it obeys Nature, adapts itself to every circumstance. It turns each impediment into fuel, and each obstacle into steps by which we rise."* -- Marcus Aurelius
 
+ - *"After a whole day in the woods, we are already immortal."* -- John Muir
+ - *"Keep close to Nature’s heart… and break clear away, once in a while, and climb a mountain or spend a week in the woods. Wash your spirit clean."* -- John Muir
+
 ## Growth & Adaptation
 *If you're not evolving, you're fading.*
 
@@ -92,6 +95,8 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"Education is not the filling of a pail, but the lighting of a fire."* -- William Butler Yeats
 - *"Be the change that you wish to see in the world."* -- Mahatma Gandhi
 - *"There is no single self. Who you are is an ever-shifting state, dictated by context and past experience."* -- Robert Sapolsky
+ - *"Of all the paths you take in life, make sure a few of them are dirt."* -- John Muir (attributed)
+ - *"Therefore we are all, in some sense, mountaineers, and going to the mountains is going home."* -- John Muir
 
 ### Adaptability & Change
 *Quotes on adaptability and change.*
@@ -142,6 +147,10 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"The further a society drifts from truth, the more it will hate those who speak it."* -- George Orwell
 - *"Your assumptions are your windows on the world. Scrub them off every once in a while, or the light won't come in."* -- Isaac Asimov
 - *"Whoever controls the media, controls the mind."* -- Jim Morrison
+ - *"But in every walk with Nature one receives far more than he seeks."* -- John Muir
+ - *"The clearest way into the Universe is through a forest wilderness."* -- John Muir
+ - *"One touch of nature makes the whole world kin."* -- John Muir
+ - *"Most people are on the world, not in it—having no conscious sympathy or relationship to anything about them—undiffused, separate, and rigidly alone like marbles of polished stone, touching but separate."* -- John Muir
 
 ## Mental Sovereignty & Cognitive Warfare
 *Control your own mind before others do it for you.*
@@ -216,6 +225,8 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"To be governed is to be watched, inspected, spied upon, directed, law-driven, numbered, regulated, enrolled, indoctrinated, preached at, controlled, checked, estimated, valued, censured, commanded, by creatures who have neither the right nor the wisdom nor the virtue to do so."* -- Pierre-Joseph Proudhon
 - *"The state is the coldest of all cold monsters."* -- Friedrich Nietzsche
 - *"Anarchy is the mother of order."* -- Pierre-Joseph Proudhon
+ 
+ - *"Civilization has not much to brag about. It drives its victims in flocks, repressing the growth of individuality."* -- John Muir
 
 ## Anarchy, Authority, and The Nature of Power
 *Who rules? Who obeys? And why?*
@@ -247,6 +258,8 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"There are no solutions, only trade-offs."* -- Thomas Sowell
 - *"First they ignore you, then they laugh at you, then they fight you, then you win."* -- Mahatma Gandhi
 - *"You never want a serious crisis to go to waste. And what I mean by that is an opportunity to do things that you think you could not do before."* -- Rahm Emanuel
+ 
+ - *"When one tugs at a single thing in nature, he finds it attached to the rest of the world."* -- John Muir
 
 ## Game Theory, Leverage & Power Dynamics
 *How influence is gained, lost, and weaponized.*
@@ -323,6 +336,9 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"Give a man a mask and he'll show you his true face."* -- Oscar Wilde
 - *"Rather than love, than money, than fame, give me truth."* -- Henry David Thoreau
 - *"Transformation is not about control. It is about curiosity, courage, and commitment."* -- Ken Cloke
+ 
+ - *"It is by far the grandest of all the special temples of Nature I was ever permitted to enter."* -- John Muir
+ - *"It is a vast wilderness of rocks in a sea of light, colored and glowing like oak and maple woods in autumn, when the sun gold is richest."* -- John Muir
 
 ## Additional Quotes
 

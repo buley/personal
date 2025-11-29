@@ -354,6 +354,7 @@ These quotes are not about empty philosophy--they are strategies for operation, 
 - *"The only way to make sense out of change is to plunge into it, move with it, and join the dance."* -- Alan Watts
 - *"The only limit to our realization of tomorrow will be our doubts of today."* -- Franklin D. Roosevelt
 - *"Today I escaped anxiety. Or no, I discarded it, because it was within me, in my own perceptions--not outside."* -- Marcus Aurelius
+- *"Worry does not empty tomorrow of its sorrow. It empties today of its strength."* - Corrie Ten Boom
 - *"The greatest weapon against stress is our ability to choose one thought over another."* -- William James
 - *"Peace comes from within. Do not seek it without."* -- Buddha
 - *"The unexamined life is not worth living."* -- Socrates
